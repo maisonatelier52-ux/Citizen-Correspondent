@@ -1,0 +1,34 @@
+{
+  "featuredArticle": {
+    "slug": "solar-power-cheapest-energy-worldwide",
+    "category": "Renewable Energy",
+    "title": "Solar Power Officially Becomes Cheapest Energy Source in 90% of Countries",
+    "excerpt": "A landmark report confirms that solar energy is now the cheapest form of electricity generation in most of the world. The cost of solar panels has dropped 90% in the last decade, accelerating the global transition away from fossil fuels.",
+    "date": "December 17, 2025",
+    "image": "/images/news/solar-panels.webp",
+    "bookmarked": false
+  },
+  "rightArticles": [
+    {
+      "slug": "offshore-wind-farm-record-capacity",
+      "title": "Live: World's Largest Offshore Wind Farm Goes Online in UK",
+      "date": "December 17, 2025",
+      "image": "/images/news/wind-turbines.webp",
+      "live": true,
+      "bookmarked": false
+    },
+    {
+      "slug": "battery-storage-breakthrough-2025",
+      "title": "Tesla's New Battery Technology Doubles Energy Storage Capacity",
+      "date": "December 16, 2025",
+      "image": "/images/news/ev-charging.webp",
+      "live": false,
+      "bookmarked": false
+    }
+  ],
+  "adBanner": {
+    "image": "/images/news/ad-banner.webp",
+    "link": "https://example.com",
+    "alt": "Advertisement"
+  }
+}

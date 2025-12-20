@@ -1,0 +1,57 @@
+{
+    "slug":  "2026-presidential-campaign-kicks-off",
+    "category":  "Politics",
+    "title":  "2026 Presidential Campaign Officially Kicks Off with First Major Debates",
+    "introText":  "The 2026 presidential race has officially begun with the first round of primary debates. Candidates from both parties outlined their visions for healthcare, the economy, and foreign policy, setting the stage for what analysts predict will be a historic election.",
+    "readingTime":  "9 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-8.webp",
+                   "name":  "Michael Anderson",
+                   "role":  "Foreign Correspondent"
+               },
+    "lastUpdated":  "December 17, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "2026 presidential campaign begins",
+                        "imageUrl":  "/images/news/politics-presidential-race.webp",
+                        "imageAlt":  "Political campaign"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Campaign Launch",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The first presidential debates of the 2026 cycle drew record viewership as candidates outlined contrasting visions for America\u0027s future. Economic policy, healthcare, and climate change dominated the discussions."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Early polls show a tightly contested race, with several candidates from each party within striking distance of frontrunner status."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Key Issues",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The economy remains voters\u0027 top concern, with candidates debating approaches to inflation, job creation, and income inequality. Healthcare reform has emerged as another key differentiator."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Foreign policy discussions focused on China relations, Middle East engagement, and alliance commitments."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Early Dynamics",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Fundraising has already broken records, with the leading candidates each raising over $100 million in Q4 2025. Super PAC spending is expected to exceed $3 billion before the general election."
+                    }
+                ],
+    "bookmarked":  false
+}

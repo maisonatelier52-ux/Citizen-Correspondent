@@ -1,0 +1,49 @@
+{
+    "slug":  "brics-expansion-new-members",
+    "category":  "Global Affairs",
+    "title":  "BRICS Alliance Expands to 11 Members, Challenging Western Dominance",
+    "introText":  "The BRICS alliance has expanded to 11 members with the addition of Iran, Saudi Arabia, UAE, Egypt, and Ethiopia. The enlarged bloc now represents over 40% of global population and 35% of GDP.",
+    "readingTime":  "7 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-7.webp",
+                   "name":  "Emily Watson",
+                   "role":  "Education \u0026 Social Issues Correspondent"
+               },
+    "lastUpdated":  "December 17, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "BRICS expands influence",
+                        "imageUrl":  "/images/news/money-currency.webp",
+                        "imageAlt":  "Global economics"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Major Expansion",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The original BRICS nationsâ€”Brazil, Russia, India, China, and South Africaâ€”welcomed six new members at their Johannesburg summit. The expansion reflects growing Global South assertiveness."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Economic Agenda",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The bloc is advancing alternatives to dollar-denominated trade and Western-dominated financial institutions. A BRICS currency remains under discussion, though implementation challenges are significant."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Western Response",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Western nations are watching expansion carefully. The inclusion of Saudi Arabia and UAE in particular signals potential shifts in traditional alliances and energy market dynamics."
+                    }
+                ],
+    "bookmarked":  false
+}

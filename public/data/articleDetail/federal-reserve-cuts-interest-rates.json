@@ -1,0 +1,57 @@
+{
+    "slug":  "federal-reserve-cuts-interest-rates",
+    "category":  "Finance",
+    "title":  "Federal Reserve Cuts Interest Rates by 0.5% in Surprise December Decision",
+    "introText":  "The Federal Reserve has cut interest rates by 50 basis points in an unexpected move, citing cooling inflation and strong employment data. Markets rallied on the news, with the S\u0026P 500 reaching new all-time highs.",
+    "readingTime":  "8 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-7.webp",
+                   "name":  "Emily Watson",
+                   "role":  "Education \u0026 Social Issues Correspondent"
+               },
+    "lastUpdated":  "December 17, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Federal Reserve announces surprise rate cut",
+                        "imageUrl":  "/images/news/finance-stock-market.webp",
+                        "imageAlt":  "Stock market"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Surprise Decision",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The Federal Open Market Committee voted 9-1 to cut the federal funds rate by 50 basis points to 4.0-4.25%, double what most economists expected. Fed Chair Powell cited faster-than-anticipated progress on inflation and a desire to support continued economic growth."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The decision marks the third rate cut this year, bringing total reductions to 125 basis points since September."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Economic Outlook",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Inflation has fallen to 2.2%, near the Fed\u0027s 2% target, while unemployment remains at a historically low 3.7%. The combination of price stability and strong employment has created conditions the Fed calls \u0027soft landing\u0027 success."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "GDP growth remains robust at 2.8% annually, defying predictions of a recession."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Market Reaction",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Markets surged on the announcement, with the S\u0026P 500 gaining 2.5% to close at a record 6,200. Bond yields fell sharply, with the 10-year Treasury dropping to 3.6%. Mortgage rates are expected to follow."
+                    }
+                ],
+    "bookmarked":  false
+}

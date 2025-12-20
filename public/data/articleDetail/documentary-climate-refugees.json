@@ -1,0 +1,49 @@
+{
+    "slug":  "documentary-climate-refugees",
+    "category":  "Featured",
+    "title":  "Documentary: The Untold Stories of Climate Refugees",
+    "introText":  "Millions of people are already fleeing climate change impacts, yet they have no legal protection as refugees. This documentary follows families displaced by rising seas, drought, and extreme weather across four continents.",
+    "readingTime":  "15 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-5.webp",
+                   "name":  "Aisha Patel",
+                   "role":  "Health \u0026 Science Correspondent"
+               },
+    "lastUpdated":  "December 16, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Climate refugees documentary",
+                        "imageUrl":  "/images/news/refugees.webp",
+                        "imageAlt":  "Climate refugees"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Pacific Islands",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "In Tuvalu and Kiribati, families are watching their nations disappear beneath rising seas. We documented communities making impossible choices about whether to stay or abandon ancestral homes."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "African Sahel",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Expanding deserts are pushing millions southward. Farmers who sustained families for generations on the same land now walk hundreds of miles seeking viable soil and water."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Legal Limbo",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "International law does not recognize climate refugees. People fleeing environmental catastrophe have no guaranteed right to asylum. Reform efforts are underway but face political obstacles."
+                    }
+                ],
+    "bookmarked":  false
+}

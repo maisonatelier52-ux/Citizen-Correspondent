@@ -1,0 +1,49 @@
+{
+    "slug":  "aging-reversal-study-mice",
+    "category":  "Research",
+    "title":  "Stanford Scientists Reverse Aging in Mice, Human Trials Planned",
+    "introText":  "Stanford researchers have successfully reversed aging in mice using a combination of gene therapy and cellular reprogramming. The mice regained youthful organ function and extended lifespans by 50%. Human trials are being planned.",
+    "readingTime":  "8 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-8.webp",
+                   "name":  "Michael Anderson",
+                   "role":  "Foreign Correspondent"
+               },
+    "lastUpdated":  "December 15, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Aging reversal research",
+                        "imageUrl":  "/images/news/lab-research.webp",
+                        "imageAlt":  "Lab research"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Research Results",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Mice treated with partial cellular reprogramming showed reversed aging in multiple organs. Heart, liver, and brain function returned to levels seen in young mice. Lifespan increased 50%."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Mechanism",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The treatment uses Yamanaka factors to partially reprogram cells without fully reverting them to stem cells. The approach rejuvenates cells while maintaining their specialized functions."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Human Application",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Human trials could begin within three years. Researchers emphasize that translating animal results to humans is uncertain, but the potential for treating age-related diseases is enormous."
+                    }
+                ],
+    "bookmarked":  false
+}

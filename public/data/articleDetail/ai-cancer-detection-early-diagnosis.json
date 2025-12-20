@@ -1,0 +1,49 @@
+{
+    "slug":  "ai-cancer-detection-early-diagnosis",
+    "category":  "Health",
+    "title":  "AI Cancer Detection System Identifies Tumors 5 Years Before Symptoms",
+    "introText":  "A groundbreaking AI system developed by Google Health can now detect cancer up to five years before symptoms appear. Clinical trials show 94% accuracy in early detection, potentially saving millions of lives through early intervention.",
+    "readingTime":  "8 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-6.webp",
+                   "name":  "Robert Kim",
+                   "role":  "Political Correspondent"
+               },
+    "lastUpdated":  "December 17, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "AI cancer detection breakthrough",
+                        "imageUrl":  "/images/news/medical-research.webp",
+                        "imageAlt":  "Medical research"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Early Detection",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The AI system analyzes blood biomarkers, imaging data, and medical history to detect cancer up to five years before conventional diagnosis. Accuracy reaches 94% for 12 cancer types."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "How It Works",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Machine learning algorithms identify subtle patterns in routine blood tests that indicate early tumor development. The system flags patients for further testing before tumors become visible on scans."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Clinical Impact",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Early-stage cancers are far more treatable. If deployed widely, the technology could prevent millions of cancer deaths annually. FDA approval is expected by mid-2026."
+                    }
+                ],
+    "bookmarked":  false
+}

@@ -1,0 +1,49 @@
+{
+    "slug":  "ev-charging-infrastructure-expansion",
+    "category":  "Renewable Energy",
+    "title":  "US EV Charging Network Expands to 1 Million Stations Nationwide",
+    "introText":  "The United States has reached one million EV charging stations, tripling infrastructure in three years. The expansion addresses range anxiety and supports accelerating electric vehicle adoption.",
+    "readingTime":  "6 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-2.webp",
+                   "name":  "James Chen",
+                   "role":  "Technology Correspondent"
+               },
+    "lastUpdated":  "December 16, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "EV charging network expansion",
+                        "imageUrl":  "/images/news/ev-charging.webp",
+                        "imageAlt":  "EV charging"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Network Growth",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "One million charging stations are now operational across the US, including 200,000 DC fast chargers capable of 80% charge in 20 minutes. Every interstate highway exit within 50 miles of a major city has charging."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Federal Investment",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The Infrastructure Investment and Jobs Act provided $7.5 billion for charging deployment. Private investment has contributed an additional $15 billion."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Consumer Impact",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Range anxiety has diminished significantly. EV owners report charging infrastructure is no longer a barrier to purchase, accelerating the transition from gasoline vehicles."
+                    }
+                ],
+    "bookmarked":  false
+}

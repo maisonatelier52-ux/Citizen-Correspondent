@@ -1,0 +1,49 @@
+{
+    "slug":  "opinion-social-media-mental-health",
+    "category":  "Opinion",
+    "title":  "Opinion: Social Media\u0027s Toll on Teen Mental Health Demands Action",
+    "introText":  "The evidence is overwhelming: social media is contributing to a mental health crisis among teenagers. Parents, schools, and legislators must act to protect young minds from algorithmic manipulation designed to maximize engagement at any cost.",
+    "readingTime":  "7 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-4.webp",
+                   "name":  "David Thompson",
+                   "role":  "Financial Correspondent"
+               },
+    "lastUpdated":  "December 15, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Social media\u0027s impact on teens",
+                        "imageUrl":  "/images/news/social-media.webp",
+                        "imageAlt":  "Social media"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Alarming Trends",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Teen depression and anxiety have doubled since smartphones became ubiquitous. Suicide rates among teenage girls have reached historic highs. Internal documents from social media companies show they knew their products were harmful."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Design Choices Matter",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Infinite scroll, notification bombardment, and algorithmic amplification of extreme content are not accidentsâ€”they\u0027re intentional design choices to maximize engagement. We must demand better."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "What We Can Do",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Age verification, chronological feeds, and meaningful parental controls should be mandated. Schools need digital literacy curricula. Parents must set boundaries and model healthy technology use."
+                    }
+                ],
+    "bookmarked":  false
+}

@@ -1,0 +1,49 @@
+{
+    "slug":  "opinion-universal-healthcare-time",
+    "category":  "Opinion",
+    "title":  "Opinion: It\u0027s Finally Time for Universal Healthcare in America",
+    "introText":  "America remains the only developed nation without universal healthcare coverage. The economic and moral case has never been stronger. Political obstacles are real but not insurmountable if we demand change.",
+    "readingTime":  "8 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-2.webp",
+                   "name":  "James Chen",
+                   "role":  "Technology Correspondent"
+               },
+    "lastUpdated":  "December 15, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Universal healthcare advocacy",
+                        "imageUrl":  "/images/news/healthcare-medical.webp",
+                        "imageAlt":  "Healthcare"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "The American Anomaly",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "We spend twice as much per capita as other developed nations yet achieve worse outcomes. Medical bankruptcy remains a uniquely American phenomenon. This is a policy choice, not an inevitability."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Economic Benefits",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Universal coverage would actually reduce total healthcare spending while improving outcomes. Administrative savings alone could fund expanded coverage. Businesses would benefit from predictable costs."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "The Path Forward",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Multiple pathways existâ€”Medicare for All, public option, regulated multi-payer. What matters is universal coverage and cost control. Political will is the only missing ingredient."
+                    }
+                ],
+    "bookmarked":  false
+}

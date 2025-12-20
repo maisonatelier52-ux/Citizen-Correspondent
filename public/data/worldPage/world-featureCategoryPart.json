@@ -1,0 +1,34 @@
+{
+  "featuredArticle": {
+    "slug": "russia-ukraine-peace-talks-breakthrough",
+    "category": "World",
+    "title": "Russia-Ukraine Peace Talks: Major Breakthrough as Both Sides Agree to Ceasefire Framework",
+    "excerpt": "In a historic development, negotiators from Russia and Ukraine have agreed on a preliminary ceasefire framework after marathon talks in Istanbul. The agreement, mediated by Turkey and the UN, outlines a phased withdrawal and humanitarian corridors.",
+    "date": "December 17, 2025",
+    "image": "/images/news/politics-presidential-race.webp",
+    "bookmarked": false
+  },
+  "rightArticles": [
+    {
+      "slug": "china-taiwan-diplomatic-tensions-escalate",
+      "title": "Live: US-China Tensions Rise Over Taiwan Strait Military Exercises",
+      "date": "December 17, 2025",
+      "image": "/images/news/military-ship.webp",
+      "live": true,
+      "bookmarked": false
+    },
+    {
+      "slug": "israel-hamas-hostage-negotiations",
+      "title": "Israel-Hamas Negotiations: New Hostage Deal Under Discussion in Doha",
+      "date": "December 16, 2025",
+      "image": "/images/news/middle-east.webp",
+      "live": false,
+      "bookmarked": false
+    }
+  ],
+  "adBanner": {
+    "image": "/images/news/ad-banner.webp",
+    "link": "https://example.com",
+    "alt": "Advertisement"
+  }
+}

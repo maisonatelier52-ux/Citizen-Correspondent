@@ -1,0 +1,49 @@
+{
+    "slug":  "cop30-brazil-emissions-agreement",
+    "category":  "Climate Change",
+    "title":  "COP30 Brazil: 195 Nations Pledge to Cut Emissions 60% by 2035",
+    "introText":  "In a historic agreement at COP30 in BelÃ©m, Brazil, world leaders committed to reducing greenhouse gas emissions by 60% by 2035. The deal includes binding targets, financial commitments for developing nations, and new mechanisms for accountability.",
+    "readingTime":  "9 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-7.webp",
+                   "name":  "Emily Watson",
+                   "role":  "Education \u0026 Social Issues Correspondent"
+               },
+    "lastUpdated":  "December 17, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "COP30 delivers historic agreement",
+                        "imageUrl":  "/images/news/climate-summit.webp",
+                        "imageAlt":  "Climate summit"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Historic Agreement",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The BelÃ©m Climate Compact commits 195 nations to 60% emissions reductions by 2035, with developed nations pledging 70%. Unlike previous agreements, it includes binding enforcement mechanisms and trade-related consequences."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Financial Commitments",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Wealthy nations committed $500 billion annually for developing country climate action. A separate $100 billion loss and damage fund will compensate nations suffering climate impacts they did not cause."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Amazon Host",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Hosting COP30 in the Amazon underscored the stakes. Brazil committed to ending deforestation by 2028. Indigenous leaders participated prominently, sharing traditional knowledge about forest protection."
+                    }
+                ],
+    "bookmarked":  false
+}

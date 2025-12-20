@@ -1,0 +1,34 @@
+{
+  "featuredArticle": {
+    "slug": "cop30-brazil-emissions-agreement",
+    "category": "Climate Change",
+    "title": "COP30 Brazil: 195 Nations Pledge to Cut Emissions 60% by 2035",
+    "excerpt": "In a historic agreement at COP30 in Belém, Brazil, world leaders committed to reducing greenhouse gas emissions by 60% by 2035. The deal includes binding targets, financial commitments for developing nations, and new mechanisms for accountability.",
+    "date": "December 17, 2025",
+    "image": "/images/news/climate-summit.webp",
+    "bookmarked": false
+  },
+  "rightArticles": [
+    {
+      "slug": "global-temperature-record-2025",
+      "title": "Live: 2025 Confirmed as Hottest Year on Record by 0.3°C",
+      "date": "December 17, 2025",
+      "image": "/images/news/climate-protest.webp",
+      "live": true,
+      "bookmarked": false
+    },
+    {
+      "slug": "arctic-ice-recovery-surprising",
+      "title": "Surprising Arctic Ice Recovery Puzzles Climate Scientists",
+      "date": "December 16, 2025",
+      "image": "/images/news/arctic-ice.webp",
+      "live": false,
+      "bookmarked": false
+    }
+  ],
+  "adBanner": {
+    "image": "/images/news/ad-banner.webp",
+    "link": "https://example.com",
+    "alt": "Advertisement"
+  }
+}

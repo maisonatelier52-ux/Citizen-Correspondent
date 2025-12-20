@@ -1,0 +1,49 @@
+{
+    "slug":  "international-court-justice-ruling",
+    "category":  "Global Affairs",
+    "title":  "International Court of Justice Issues Landmark Human Rights Ruling",
+    "introText":  "The International Court of Justice has issued a landmark ruling establishing new standards for state responsibility in human rights violations. The decision creates precedent for holding governments accountable for systematic abuses.",
+    "readingTime":  "7 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-1.webp",
+                   "name":  "Sarah Mitchell",
+                   "role":  "Chief Political Correspondent"
+               },
+    "lastUpdated":  "December 13, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "ICJ issues landmark ruling",
+                        "imageUrl":  "/images/news/court-law.webp",
+                        "imageAlt":  "International court"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Ruling Summary",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The ICJ ruled that states bear responsibility for human rights violations even when carried out by non-state actors under their effective control. The decision expands accountability for proxy conflicts and systematic persecution."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Legal Precedent",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The ruling establishes that willful blindness to abuses does not shield states from responsibility. Governments must take affirmative steps to prevent violations within their sphere of influence."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Implications",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Human rights organizations hailed the ruling as transformative. It provides legal foundation for future cases and strengthens deterrence against state-sponsored abuses."
+                    }
+                ],
+    "bookmarked":  false
+}

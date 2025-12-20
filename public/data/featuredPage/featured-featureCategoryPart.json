@@ -1,0 +1,34 @@
+{
+  "featuredArticle": {
+    "slug": "year-in-review-2025-defining-moments",
+    "category": "Featured",
+    "title": "Year in Review: The 10 Stories That Defined 2025",
+    "excerpt": "From breakthrough AI developments to geopolitical shifts, 2025 has been a year of transformation. We look back at the stories that shaped our world and set the stage for the challenges and opportunities of 2026.",
+    "date": "December 17, 2025",
+    "image": "/images/news/newspaper.webp",
+    "bookmarked": false
+  },
+  "rightArticles": [
+    {
+      "slug": "exclusive-interview-tech-ceo",
+      "title": "Exclusive: OpenAI CEO Sam Altman on the Future of AGI",
+      "date": "December 16, 2025",
+      "image": "/images/news/ai-technology.webp",
+      "live": false,
+      "bookmarked": false
+    },
+    {
+      "slug": "investigative-report-climate-data",
+      "title": "Investigation: How Climate Data Is Being Manipulated by Industry",
+      "date": "December 15, 2025",
+      "image": "/images/news/climate-summit.webp",
+      "live": false,
+      "bookmarked": false
+    }
+  ],
+  "adBanner": {
+    "image": "/images/news/ad-banner.webp",
+    "link": "https://example.com",
+    "alt": "Advertisement"
+  }
+}

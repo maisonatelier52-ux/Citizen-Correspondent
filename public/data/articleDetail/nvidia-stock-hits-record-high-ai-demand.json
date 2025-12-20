@@ -1,0 +1,70 @@
+{
+    "slug":  "nvidia-stock-hits-record-high-ai-demand",
+    "category":  "Finance",
+    "title":  "NVIDIA Stock Hits Record $180 as AI Chip Demand Soars",
+    "introText":  "NVIDIA shares have reached an all-time high of $180, driven by unprecedented demand for AI chips across industries. The company\u0027s market capitalization has surpassed $4.4 trillion, making it the world\u0027s most valuable company.",
+    "readingTime":  "7 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-1.webp",
+                   "name":  "Sarah Mitchell",
+                   "role":  "Chief Political Correspondent"
+               },
+    "lastUpdated":  "December 17, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "NVIDIA stock reaches historic highs amid AI boom",
+                        "imageUrl":  "/images/news/finance-stock-market.webp",
+                        "imageAlt":  "Stock market trading display"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Unstoppable Rise",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "NVIDIA\u0027s stock has gained over 400% in the past two years, driven by insatiable demand for its AI training chips. The H100 and new H200 GPUs power the majority of AI infrastructure worldwide, from ChatGPT to enterprise AI applications."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "CEO Jensen Huang announced that the company has sold out of chips through 2026, with customers including Microsoft, Google, Amazon, and Meta competing for allocation. The supply shortage has forced customers to plan purchases years in advance."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Revenue Explosion",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Q4 revenue is expected to exceed $35 billion, more than triple the same quarter last year. Data center revenue, which includes AI chips, now accounts for 85% of total sales, up from 50% just three years ago."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Profit margins have expanded to nearly 75%, among the highest of any major technology company. The company\u0027s efficiency stems from its dominant market position and the high value customers place on AI capabilities."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Competitive Landscape",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Despite efforts by AMD, Intel, and custom chip developers at major tech companies, NVIDIA maintains over 90% market share in AI training chips. Its CUDA software ecosystem creates significant switching costs for developers."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Analysts see limited near-term threats to NVIDIA\u0027s dominance, though long-term competition from custom silicon and emerging architectures could eventually impact market share."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Future Outlook",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "With the AI revolution still in early stages, analysts project continued growth for NVIDIA. The company is expanding into new markets including autonomous vehicles, robotics, and edge AI devices."
+                    }
+                ],
+    "bookmarked":  false
+}

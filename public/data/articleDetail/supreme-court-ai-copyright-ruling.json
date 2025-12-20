@@ -1,0 +1,53 @@
+{
+    "slug":  "supreme-court-ai-copyright-ruling",
+    "category":  "Politics",
+    "title":  "Supreme Court Rules on Landmark AI Copyright Case",
+    "introText":  "The Supreme Court has issued a landmark ruling on AI and copyright, determining that AI-generated content can be copyrighted if sufficient human creative input is involved. The decision provides clarity for creators and technology companies alike.",
+    "readingTime":  "7 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-6.webp",
+                   "name":  "Robert Kim",
+                   "role":  "Political Correspondent"
+               },
+    "lastUpdated":  "December 16, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Supreme Court rules on AI copyright",
+                        "imageUrl":  "/images/news/court-law.webp",
+                        "imageAlt":  "Supreme Court"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Landmark Decision",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "In a 6-3 decision, the Supreme Court ruled that AI-generated works can receive copyright protection when human creative direction and selection constitute sufficient authorship. The ruling rejects the position that only purely human-created works qualify."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The decision arose from a case involving AI-generated artwork that sold for millions at auction."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Human Involvement Standard",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The Court established a \u0027meaningful human creative control\u0027 standard. Copyright applies when humans provide creative prompts, select outputs, and make editorial decisions, even if AI performs execution."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Industry Impact",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The ruling provides legal clarity for the growing AI content industry. Technology companies welcomed the decision, while traditional creators expressed concerns about devaluation of human artistry."
+                    }
+                ],
+    "bookmarked":  false
+}

@@ -1,0 +1,49 @@
+{
+    "slug":  "student-loan-forgiveness-expansion",
+    "category":  "Education",
+    "title":  "Biden Announces $50 Billion Student Loan Forgiveness Expansion",
+    "introText":  "President Biden has announced a $50 billion expansion of student loan forgiveness programs, targeting borrowers who have been paying for 20+ years and those in public service. The move is expected to eliminate debt for 2 million additional borrowers.",
+    "readingTime":  "7 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-2.webp",
+                   "name":  "James Chen",
+                   "role":  "Technology Correspondent"
+               },
+    "lastUpdated":  "December 17, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Student loan relief expanded",
+                        "imageUrl":  "/images/news/graduation.webp",
+                        "imageAlt":  "Graduation ceremony"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "New Programs",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The expansion includes automatic forgiveness for borrowers with 20+ years of payments, accelerated Public Service Loan Forgiveness for teachers and healthcare workers, and income-driven repayment reforms."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Beneficiaries",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "An estimated 2 million borrowers will see complete loan forgiveness. Another 10 million will benefit from reduced payments under reformed income-driven plans. Average relief per borrower is $25,000."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Legal Challenges",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Republican attorneys general have announced plans to challenge the expansion in court. The administration argues it has clear authority under existing student loan statutes."
+                    }
+                ],
+    "bookmarked":  false
+}

@@ -1,0 +1,49 @@
+{
+    "slug":  "editorial-education-reform-needed",
+    "category":  "Opinion",
+    "title":  "Editorial: American Education Needs Radical Reform, Not Band-Aids",
+    "introText":  "American students continue falling behind international peers despite decades of incremental reforms. The system itself needs fundamental restructuringâ€”from how we train teachers to what we teach and how we measure success.",
+    "readingTime":  "8 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-2.webp",
+                   "name":  "James Chen",
+                   "role":  "Technology Correspondent"
+               },
+    "lastUpdated":  "December 13, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Education reform needed",
+                        "imageUrl":  "/images/news/education-students.webp",
+                        "imageAlt":  "Students"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "The Problem",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "American students rank in the middle of developed nations despite spending more per pupil than almost any country. Reading and math scores have stagnated for decades. The achievement gap persists."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "What\u0027s Not Working",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Standardized testing has narrowed curriculum without improving outcomes. Teacher training is disconnected from classroom realities. Funding inequities perpetuate advantage for the already privileged."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Bold Reforms Needed",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Raise teacher pay and prestige. Equalize funding across districts. Integrate technology thoughtfully. Focus on critical thinking, not test preparation. These changes require political courage we\u0027ve lacked."
+                    }
+                ],
+    "bookmarked":  false
+}

@@ -1,0 +1,49 @@
+{
+    "slug":  "universal-flu-vaccine-trials",
+    "category":  "Health",
+    "title":  "Universal Flu Vaccine Shows 95% Efficacy in Final Trials",
+    "introText":  "A universal flu vaccine that protects against all influenza strains has shown 95% efficacy in Phase 3 trials. The vaccine could eliminate the need for annual flu shots and provide protection against future pandemic strains.",
+    "readingTime":  "7 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-3.webp",
+                   "name":  "Maria Rodriguez",
+                   "role":  "Environmental Correspondent"
+               },
+    "lastUpdated":  "December 17, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Universal flu vaccine success",
+                        "imageUrl":  "/images/news/vaccine.webp",
+                        "imageAlt":  "Vaccine"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Trial Results",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The vaccine showed 95% efficacy against all tested influenza strains in a 30,000-participant trial. Protection lasted at least three years, eliminating the need for annual vaccination."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Broad Protection",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Unlike current vaccines targeting variable surface proteins, the universal vaccine targets conserved regions that are common to all influenza viruses, including potential pandemic strains."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Public Health Impact",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Flu kills 290,000-650,000 people annually worldwide. A universal vaccine could save hundreds of thousands of lives each year and prevent future pandemics."
+                    }
+                ],
+    "bookmarked":  false
+}

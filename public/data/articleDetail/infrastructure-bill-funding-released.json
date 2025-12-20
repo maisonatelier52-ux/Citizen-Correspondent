@@ -1,0 +1,49 @@
+{
+    "slug":  "infrastructure-bill-funding-released",
+    "category":  "Politics",
+    "title":  "Biden Administration Releases $50 Billion in Infrastructure Funding",
+    "introText":  "The Biden administration has released $50 billion in infrastructure funding for roads, bridges, and broadband expansion. The funds represent the largest single disbursement under the Infrastructure Investment and Jobs Act.",
+    "readingTime":  "6 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-3.webp",
+                   "name":  "Maria Rodriguez",
+                   "role":  "Environmental Correspondent"
+               },
+    "lastUpdated":  "December 17, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Infrastructure funding released to states",
+                        "imageUrl":  "/images/news/infrastructure.webp",
+                        "imageAlt":  "Infrastructure"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Major Disbursement",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The $50 billion release includes $30 billion for highway and bridge repairs, $15 billion for rural broadband, and $5 billion for public transit. All 50 states will receive funding based on formulas considering population and infrastructure needs."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Priority Projects",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Major projects include bridge replacements in Pennsylvania and Ohio, highway expansions in Texas, and broadband networks across Appalachia. The administration estimates the funding will create 500,000 construction jobs."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Implementation",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "States have 18 months to allocate funds to specific projects. Federal oversight will ensure compliance with environmental and labor requirements."
+                    }
+                ],
+    "bookmarked":  false
+}

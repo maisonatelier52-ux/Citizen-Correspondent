@@ -1,0 +1,49 @@
+{
+    "slug":  "exclusive-interview-tech-ceo",
+    "category":  "Featured",
+    "title":  "Exclusive: OpenAI CEO Sam Altman on the Future of AGI",
+    "introText":  "In an exclusive interview, OpenAI CEO Sam Altman discusses the company\u0027s path to artificial general intelligence, the risks and opportunities ahead, and why he believes AI will ultimately benefit humanity.",
+    "readingTime":  "15 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-4.webp",
+                   "name":  "David Thompson",
+                   "role":  "Financial Correspondent"
+               },
+    "lastUpdated":  "December 16, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Exclusive interview with Sam Altman",
+                        "imageUrl":  "/images/news/ai-technology.webp",
+                        "imageAlt":  "AI technology"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "The AGI Timeline",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Altman believes AGIâ€”artificial general intelligence capable of performing any intellectual taskâ€”could arrive within five years. \u0027We\u0027re seeing capabilities emerge faster than even we expected,\u0027 he explains."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Managing Risks",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "On safety, Altman is cautiously optimistic. \u0027We have more time to get this right than doomers suggest, but less time than techno-optimists believe. The next few years are critical.\u0027"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Vision for the Future",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "\u0027AI should amplify human capability, not replace human purpose,\u0027 Altman concludes. \u0027The best outcomes require intentional choices about how we develop and deploy these systems.\u0027"
+                    }
+                ],
+    "bookmarked":  false
+}

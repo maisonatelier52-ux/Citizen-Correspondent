@@ -1,0 +1,57 @@
+{
+    "slug":  "bitcoin-surges-150000-institutional-buying",
+    "category":  "Finance",
+    "title":  "Bitcoin Surges Past $150,000 on Massive Institutional Buying",
+    "introText":  "Bitcoin has reached a new all-time high above $150,000, driven by unprecedented institutional adoption. Major banks and asset managers have announced significant cryptocurrency allocations, signaling mainstream acceptance.",
+    "readingTime":  "7 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-2.webp",
+                   "name":  "James Chen",
+                   "role":  "Technology Correspondent"
+               },
+    "lastUpdated":  "December 17, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Bitcoin reaches $150,000 milestone",
+                        "imageUrl":  "/images/news/bitcoin-crypto.webp",
+                        "imageAlt":  "Bitcoin cryptocurrency"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Historic Price Level",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Bitcoin crossed $150,000 for the first time, representing a 200% gain from January lows. The rally has been driven by institutional demand following spot ETF approvals and banking custody announcements."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Total cryptocurrency market capitalization now exceeds $6 trillion, with Bitcoin representing about half."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Institutional Adoption",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "BlackRock\u0027s Bitcoin ETF has attracted over $50 billion in assets, making it the fastest-growing ETF in history. JPMorgan, Goldman Sachs, and Bank of America now offer Bitcoin custody services to wealth management clients."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Pension funds and sovereign wealth funds have begun allocating small percentages to cryptocurrency."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Market Dynamics",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The 2024 halving reduced new Bitcoin supply by half, creating supply constraints amid rising demand. Analysts project potential price targets of $200,000-$250,000 if institutional adoption continues."
+                    }
+                ],
+    "bookmarked":  false
+}

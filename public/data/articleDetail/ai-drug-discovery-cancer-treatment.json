@@ -1,0 +1,70 @@
+{
+    "slug":  "ai-drug-discovery-cancer-treatment",
+    "category":  "Health",
+    "title":  "AI-Discovered Cancer Drug Enters Final Clinical Trials with 89% Success Rate",
+    "introText":  "A revolutionary cancer treatment discovered entirely through artificial intelligence has entered Phase 3 clinical trials after demonstrating an unprecedented 89% response rate in earlier studies. The drug could transform oncology and validate AI-driven pharmaceutical development.",
+    "readingTime":  "8 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-3.webp",
+                   "name":  "Maria Rodriguez",
+                   "role":  "Environmental Correspondent"
+               },
+    "lastUpdated":  "December 15, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "AI-discovered drug shows remarkable promise in cancer treatment",
+                        "imageUrl":  "/images/news/medical-research.webp",
+                        "imageAlt":  "Medical research laboratory"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "AI-First Discovery",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Insilico Medicine\u0027s ISM001-055 is the first drug discovered entirely by AI to reach final clinical trials. The molecule was identified, designed, and optimized using the company\u0027s Pharma.AI platform in just 18 months â€“ a process that typically takes 4-6 years."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The drug targets a protein pathway involved in multiple solid tumor cancers. Phase 2 trials showed tumor shrinkage in 89% of patients with non-small cell lung cancer, far exceeding existing treatments."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "How AI Accelerated Discovery",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The AI system analyzed millions of molecular structures and biological targets to identify promising drug candidates. It then predicted which modifications would improve efficacy while reducing side effects."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Virtual simulations replaced many early laboratory tests, dramatically reducing time and cost. The AI also predicted optimal dosing and identified patient populations most likely to respond."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Trial Progress",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The Phase 3 trial will enroll 1,200 patients across 80 sites worldwide. If results match earlier phases, the drug could receive accelerated FDA approval by late 2026."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Side effects have been notably mild compared to traditional chemotherapy, with most patients able to maintain normal activities during treatment. This represents another advantage of AI-optimized molecular design."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Industry Implications",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Success could trigger a wave of AI-driven drug development across the pharmaceutical industry. Major companies have invested heavily in AI platforms, but ISM001-055 would be the first AI-discovered drug to reach patients."
+                    }
+                ],
+    "bookmarked":  false
+}

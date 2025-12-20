@@ -1,0 +1,44 @@
+{
+  "mainGrid": [
+    {
+      "slug": "opinion-housing-crisis-solutions",
+      "title": "Opinion: America's Housing Crisis Requires Bold Government Intervention",
+      "image": "/images/news/house-keys.webp",
+      "categories": ["Opinion"],
+      "date": "December 17, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "editorial-democracy-threat",
+      "title": "Editorial: Why 2026 May Be Democracy's Most Important Year",
+      "image": "/images/news/voting.webp",
+      "categories": ["Opinion"],
+      "date": "December 16, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "opinion-universal-healthcare-time",
+      "title": "Opinion: It's Finally Time for Universal Healthcare in America",
+      "image": "/images/news/healthcare-medical.webp",
+      "categories": ["Opinion"],
+      "date": "December 15, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "opinion-space-exploration-priority",
+      "title": "Opinion: Why Space Exploration Should Be a National Priority Again",
+      "image": "/images/news/space-earth.webp",
+      "categories": ["Opinion"],
+      "date": "December 14, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "editorial-education-reform-needed",
+      "title": "Editorial: American Education Needs Radical Reform, Not Band-Aids",
+      "image": "/images/news/education-students.webp",
+      "categories": ["Opinion"],
+      "date": "December 13, 2025",
+      "bookmarked": false
+    }
+  ]
+}

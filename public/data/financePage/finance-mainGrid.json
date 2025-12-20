@@ -1,0 +1,44 @@
+{
+  "mainGrid": [
+    {
+      "slug": "jpmorgan-chase-record-profits-2025",
+      "title": "JPMorgan Chase Reports Record $55 Billion Profit for 2025",
+      "image": "/images/news/data-analytics.webp",
+      "categories": ["Finance"],
+      "date": "December 17, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "gold-prices-hit-2500-ounce",
+      "title": "Gold Prices Reach $2,500 Per Ounce Amid Global Uncertainty",
+      "image": "/images/news/gold-bars.webp",
+      "categories": ["Finance"],
+      "date": "December 16, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "ethereum-etf-approved-sec",
+      "title": "SEC Approves First Spot Ethereum ETFs for US Markets",
+      "image": "/images/news/ethereum.webp",
+      "categories": ["Finance"],
+      "date": "December 15, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "housing-market-stabilizes-2025",
+      "title": "US Housing Market Shows Signs of Stabilization After Two-Year Slump",
+      "image": "/images/news/house-keys.webp",
+      "categories": ["Finance"],
+      "date": "December 14, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "retirement-age-increase-proposal",
+      "title": "Congress Considers Raising Social Security Retirement Age to 70",
+      "image": "/images/news/calculator-finance.webp",
+      "categories": ["Finance"],
+      "date": "December 13, 2025",
+      "bookmarked": false
+    }
+  ]
+}

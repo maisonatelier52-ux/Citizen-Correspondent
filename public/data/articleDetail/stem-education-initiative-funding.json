@@ -1,0 +1,49 @@
+{
+    "slug":  "stem-education-initiative-funding",
+    "category":  "Education",
+    "title":  "$10 Billion Federal STEM Initiative to Train 1 Million New Teachers",
+    "introText":  "Congress has approved a $10 billion STEM education initiative aimed at training one million new science and math teachers over the next decade. The program addresses critical teacher shortages in technical fields.",
+    "readingTime":  "7 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-4.webp",
+                   "name":  "David Thompson",
+                   "role":  "Financial Correspondent"
+               },
+    "lastUpdated":  "December 17, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "STEM education initiative launched",
+                        "imageUrl":  "/images/news/quantum-computer.webp",
+                        "imageAlt":  "Science education"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Program Details",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The initiative provides scholarships for STEM teachers, loan forgiveness for those serving in high-need schools, and grants for universities to expand teacher training programs. Funding begins in fiscal 2026."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Addressing Shortages",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "America faces a shortage of 100,000 STEM teachers, concentrated in rural and urban districts. The initiative particularly targets underserved communities where students have limited access to qualified instructors."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Industry Support",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Technology companies have pledged matching funds and internship opportunities for program participants. The partnership addresses workforce pipeline concerns while improving K-12 education."
+                    }
+                ],
+    "bookmarked":  false
+}

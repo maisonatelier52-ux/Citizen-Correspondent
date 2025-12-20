@@ -1,0 +1,70 @@
+{
+    "slug":  "electric-vehicle-sales-record-2025",
+    "category":  "Business",
+    "title":  "Electric Vehicle Sales Hit Record 18 Million Globally in 2025",
+    "introText":  "Global electric vehicle sales have reached an unprecedented 18 million units in 2025, representing 25% of all new car purchases. China leads adoption, while Europe and the US show accelerating growth amid expanding charging infrastructure.",
+    "readingTime":  "7 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-4.webp",
+                   "name":  "David Thompson",
+                   "role":  "Financial Correspondent"
+               },
+    "lastUpdated":  "December 17, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Electric vehicle adoption accelerates worldwide",
+                        "imageUrl":  "/images/news/ev-charging.webp",
+                        "imageAlt":  "Electric vehicle charging station"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Record-Breaking Year",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Global EV sales surged 40% year-over-year, reaching 18 million units in 2025. One in four new cars sold worldwide is now electric, up from one in seven just two years ago. The milestone arrives years ahead of industry projections."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "China accounts for 60% of global EV sales, with BYD surpassing Tesla as the world\u0027s largest EV manufacturer. European sales grew 35%, while the US market expanded 45% following federal incentive programs."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Price Parity Achieved",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "For the first time, multiple EV models are priced equivalently to comparable gasoline vehicles before incentives. Battery costs have fallen below $100 per kilowatt-hour, a threshold long considered necessary for mass adoption."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Tesla\u0027s Model 2 and BYD\u0027s Seagull, both priced around $25,000, have democratized EV ownership. Consumers report lower total cost of ownership due to reduced fuel and maintenance expenses."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Charging Infrastructure",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Public charging stations have tripled in two years, with 5 million fast chargers now available globally. Range anxiety has diminished as networks expand along highways and in urban areas."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Home charging remains the primary method for most owners, with 90% of charging occurring overnight. Utilities have implemented time-of-use rates that incentivize off-peak charging."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Industry Transformation",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Traditional automakers are rapidly transitioning production. GM, Ford, and Volkswagen have announced plans to phase out internal combustion engines by 2035, accelerating previously announced timelines."
+                    }
+                ],
+    "bookmarked":  false
+}

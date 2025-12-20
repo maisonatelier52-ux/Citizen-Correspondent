@@ -1,0 +1,74 @@
+{
+    "slug":  "tesla-launches-affordable-25000-electric-vehicle-mass-market",
+    "category":  "Business",
+    "title":  "Tesla Launches Affordable $25,000 Electric Vehicle for Mass Market",
+    "introText":  "Tesla has officially unveiled its long-awaited affordable electric vehicle, priced at $25,000 before tax incentives. The compact sedan, dubbed \u0027Model 2,\u0027 represents Tesla\u0027s push to bring electric transportation to mainstream consumers and could fundamentally reshape the automotive industry.",
+    "readingTime":  "8 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-3.webp",
+                   "name":  "Maria Rodriguez",
+                   "role":  "Environmental Correspondent"
+               },
+    "lastUpdated":  "December 15, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Tesla\u0027s new affordable EV targets mainstream consumers",
+                        "imageUrl":  "/images/news/tesla-electric-vehicle.webp",
+                        "imageAlt":  "Tesla Model 2 electric vehicle"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "The $25,000 Promise Delivered",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Elon Musk has long promised to deliver an affordable Tesla, and the Model 2 finally makes that vision reality. The compact sedan offers 280 miles of range, 0-60 acceleration in 5.8 seconds, and access to Tesla\u0027s Supercharger network â€“ all at a price point that competes directly with conventional gasoline vehicles."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "With federal and state incentives, the effective price drops to under $20,000 in many markets, making it the most affordable long-range EV ever produced by a major manufacturer."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Manufacturing Innovation",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Tesla achieved the aggressive price point through revolutionary manufacturing techniques. The company\u0027s \u0027unboxed\u0027 production process reduces assembly time by 40% compared to traditional methods. A new battery chemistry using iron-based cells instead of nickel significantly lowers costs while maintaining performance."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Production will begin at Tesla\u0027s Texas Gigafactory, with additional capacity coming online at the Mexico plant in early 2026. Tesla aims to produce 2 million Model 2 units annually once fully ramped."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Industry Impact",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Traditional automakers face intense pressure to respond. The Model 2\u0027s combination of range, performance, and price undercuts most competitors significantly. Ford and GM have announced accelerated timelines for their own affordable EV programs."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Analysts predict the Model 2 could accelerate EV adoption dramatically, potentially reaching demographics that have been priced out of electric vehicles until now."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Early Demand",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Pre-orders opened immediately following the announcement, with Tesla reporting over 500,000 reservations in the first 48 hours. The demand surge temporarily crashed Tesla\u0027s website and overwhelmed its order system."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Deliveries are expected to begin in Q2 2026, though Tesla\u0027s history of production delays has prompted some skepticism. The company insists it has learned from past challenges and is well-prepared to meet demand."
+                    }
+                ],
+    "bookmarked":  false
+}

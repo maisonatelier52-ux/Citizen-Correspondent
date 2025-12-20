@@ -1,0 +1,49 @@
+{
+    "slug":  "geothermal-energy-expansion-iceland",
+    "category":  "Renewable Energy",
+    "title":  "Iceland\u0027s Geothermal Success Story Inspires Global Adoption",
+    "introText":  "Iceland now generates 100% of its electricity from renewable sources, with geothermal providing the baseload. Other nations are studying the model for application in volcanic regions worldwide.",
+    "readingTime":  "6 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-7.webp",
+                   "name":  "Emily Watson",
+                   "role":  "Education \u0026 Social Issues Correspondent"
+               },
+    "lastUpdated":  "December 14, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Iceland geothermal success",
+                        "imageUrl":  "/images/news/geothermal.webp",
+                        "imageAlt":  "Geothermal energy"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Complete Transition",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Iceland generates 100% of electricity from renewables: 70% hydro and 30% geothermal. The country also heats 90% of homes directly with geothermal hot water."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Economic Benefits",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Cheap, abundant power has attracted energy-intensive industries like aluminum smelting and data centers. Iceland\u0027s energy independence shields the economy from fossil fuel price volatility."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Global Applications",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Countries along the Pacific Ring of Fireâ€”Indonesia, Philippines, Japanâ€”are expanding geothermal development based on Iceland\u0027s example. New drilling technologies make previously inaccessible resources viable."
+                    }
+                ],
+    "bookmarked":  false
+}

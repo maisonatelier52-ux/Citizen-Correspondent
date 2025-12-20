@@ -1,0 +1,70 @@
+{
+    "slug":  "solar-power-cheapest-energy-source",
+    "category":  "Renewable Energy",
+    "title":  "Solar Power Officially Becomes Cheapest Energy Source in 90% of Countries",
+    "introText":  "Solar power has become the cheapest form of new electricity generation in 90% of the world\u0027s countries, according to the International Energy Agency. The milestone marks a fundamental shift in global energy economics with profound implications for climate goals.",
+    "readingTime":  "7 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-8.webp",
+                   "name":  "Michael Anderson",
+                   "role":  "Foreign Correspondent"
+               },
+    "lastUpdated":  "December 10, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Solar energy achieves cost dominance globally",
+                        "imageUrl":  "/images/news/solar-panels.webp",
+                        "imageAlt":  "Solar panel installation"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Cost Revolution",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The IEA\u0027s annual World Energy Outlook confirms that utility-scale solar now costs less than any competing source in 170 of 190 countries analyzed. The average cost has fallen to $20 per megawatt-hour, compared to $50 for new gas plants and $65 for coal."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "In sunny regions like the Middle East and Australia, solar costs have dropped below $15 per megawatt-hour â€“ cheaper than operating existing fossil fuel plants, let alone building new ones."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Technology Improvements",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Panel efficiency has reached 24% for standard modules, up from 15% a decade ago. Manufacturing costs have plummeted as Chinese producers achieved massive scale, while innovations in perovskite cells promise further gains."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Installation costs have also declined as installers gain experience and soft costs like permitting are streamlined. Residential solar now pays for itself in 5-7 years in most markets."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Storage Integration",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Battery storage costs have fallen 80% in five years, addressing solar\u0027s intermittency. Solar-plus-storage projects now compete with gas peaker plants for providing power during demand peaks."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Grid operators are increasingly comfortable with high solar penetration, with some regions regularly exceeding 50% solar power during peak production hours."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Climate Implications",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The economic case for solar now aligns with climate goals. New solar installations are expected to exceed 400 gigawatts annually by 2026, potentially displacing enough fossil fuels to bend the emissions curve."
+                    }
+                ],
+    "bookmarked":  false
+}

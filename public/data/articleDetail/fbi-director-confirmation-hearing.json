@@ -1,0 +1,49 @@
+{
+    "slug":  "fbi-director-confirmation-hearing",
+    "category":  "Politics",
+    "title":  "New FBI Director Nomination Faces Contentious Senate Hearing",
+    "introText":  "The president\u0027s nominee for FBI Director faced hours of contentious questioning during Senate confirmation hearings. Senators from both parties pressed the nominee on law enforcement priorities, civil liberties, and political independence.",
+    "readingTime":  "6 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-7.webp",
+                   "name":  "Emily Watson",
+                   "role":  "Education \u0026 Social Issues Correspondent"
+               },
+    "lastUpdated":  "December 14, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "FBI Director nominee testifies before Senate",
+                        "imageUrl":  "/images/news/government-building.webp",
+                        "imageAlt":  "Government building"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Tough Questions",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Senators grilled the nominee on FBI independence, surveillance practices, and approaches to domestic terrorism. Republicans pressed on concerns about political bias, while Democrats questioned civil liberties protections."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Nominee\u0027s Response",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The nominee pledged to maintain political independence and resist any improper influence. \u0027The FBI must be above politics,\u0027 the nominee declared, committing to transparent operations."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Confirmation Outlook",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The nomination is expected to receive a committee vote next week. Confirmation is likely but not certain, with some senators reserving judgment."
+                    }
+                ],
+    "bookmarked":  false
+}

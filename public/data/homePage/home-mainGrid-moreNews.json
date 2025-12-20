@@ -1,0 +1,84 @@
+{
+  "mainGrid": [
+    {
+      "slug": "electric-vehicle-sales-record-2025",
+      "title": "Electric Vehicle Sales Hit Record 18 Million Globally in 2025",
+      "image": "/images/news/ev-charging.webp",
+      "categories": ["Business"],
+      "date": "December 17, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "universal-basic-income-finland-success",
+      "title": "Finland's Universal Basic Income Program Reports Overwhelming Success",
+      "image": "/images/news/money-currency.webp",
+      "categories": ["World"],
+      "date": "December 16, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "ai-drug-discovery-cancer-treatment",
+      "title": "AI-Discovered Cancer Drug Enters Final Clinical Trials with 89% Success Rate",
+      "image": "/images/news/medical-research.webp",
+      "categories": ["Health"],
+      "date": "December 15, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "bitcoin-hits-150k-institutional-adoption",
+      "title": "Bitcoin Surges Past $150,000 as Major Banks Announce Custody Services",
+      "image": "/images/news/bitcoin-crypto.webp",
+      "categories": ["Finance"],
+      "date": "December 14, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "fusion-energy-breakthrough-mit",
+      "title": "MIT Achieves Net-Positive Fusion Energy, Paving Way for Clean Power",
+      "image": "/images/news/power-lines.webp",
+      "categories": ["Research"],
+      "date": "December 13, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "remote-work-legislation-passes-congress",
+      "title": "Congress Passes Historic Remote Work Rights Bill Protecting 50M Workers",
+      "image": "/images/news/remote-work.webp",
+      "categories": ["Politics"],
+      "date": "December 12, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "taylor-swift-eras-tour-breaks-records",
+      "title": "Taylor Swift's Eras Tour Becomes First to Gross $2 Billion Worldwide",
+      "image": "/images/news/concert-music.webp",
+      "categories": ["Hot"],
+      "date": "December 11, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "solar-power-cheapest-energy-source",
+      "title": "Solar Power Officially Becomes Cheapest Energy Source in 90% of Countries",
+      "image": "/images/news/solar-panels.webp",
+      "categories": ["Renewable Energy"],
+      "date": "December 10, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "ai-teachers-revolutionize-education",
+      "title": "AI Tutors Now Used by 40% of US Students, Revolutionizing Education",
+      "image": "/images/news/education-students.webp",
+      "categories": ["Education"],
+      "date": "December 9, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "un-reform-security-council-expansion",
+      "title": "UN Security Council Expands to Include India, Brazil, and Germany",
+      "image": "/images/news/politics-presidential-race.webp",
+      "categories": ["World"],
+      "date": "December 8, 2025",
+      "bookmarked": false
+    }
+  ]
+}

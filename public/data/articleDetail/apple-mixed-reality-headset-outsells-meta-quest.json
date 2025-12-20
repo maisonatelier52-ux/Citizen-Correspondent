@@ -1,0 +1,70 @@
+{
+    "slug":  "apple-mixed-reality-headset-outsells-meta-quest",
+    "category":  "Technology",
+    "title":  "Apple Vision Pro 2 Outsells Meta Quest 3 in Holiday Season Rush",
+    "introText":  "Apple\u0027s second-generation mixed reality headset has dominated the holiday shopping season, outselling Meta\u0027s Quest 3 by a 3-to-1 margin. Industry analysts attribute the success to improved comfort, reduced price point, and exclusive content partnerships with major streaming platforms.",
+    "readingTime":  "7 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-5.webp",
+                   "name":  "Aisha Patel",
+                   "role":  "Health \u0026 Science Correspondent"
+               },
+    "lastUpdated":  "December 17, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Apple Vision Pro 2 dominates holiday sales",
+                        "imageUrl":  "/images/news/vr-headset.webp",
+                        "imageAlt":  "Mixed reality headset"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Holiday Sales Dominance",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Black Friday through Cyber Monday saw Apple sell an estimated 2 million Vision Pro 2 units, compared to approximately 700,000 Quest 3 headsets. The 3:1 ratio represents a dramatic shift in a market Meta has dominated for years."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The Vision Pro 2\u0027s $2,499 price point, while still premium, proved more accessible than the original $3,499 model. Analyst surveys show many buyers are upgrading from Quest devices, attracted by Apple\u0027s superior display technology."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Content Advantage",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Apple\u0027s partnerships with Disney, Netflix, and HBO have created a content library that Meta struggles to match. Exclusive spatial video content and immersive experiences have become key differentiators."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The app ecosystem has matured significantly, with over 5,000 spatial apps now available. Productivity applications have proven particularly popular for professional users."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Meta\u0027s Response",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Meta has announced price cuts for Quest 3 and accelerated development of Quest 4. Mark Zuckerberg acknowledged the competitive pressure while emphasizing Meta\u0027s focus on the broader metaverse vision."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The company continues to lead in social VR applications and gaming, areas where Apple has less presence. Meta\u0027s lower price point maintains appeal for casual consumers and gamers."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Market Implications",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The spatial computing market is projected to reach $50 billion by 2027, with Apple and Meta expected to remain the dominant players. Enterprise adoption is accelerating, particularly for training and design applications."
+                    }
+                ],
+    "bookmarked":  false
+}

@@ -1,0 +1,44 @@
+{
+  "mainGrid": [
+    {
+      "slug": "brics-expansion-new-members",
+      "title": "BRICS Alliance Expands to 11 Members, Challenging Western Dominance",
+      "image": "/images/news/money-currency.webp",
+      "categories": ["Global Affairs"],
+      "date": "December 17, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "african-union-free-trade-success",
+      "title": "African Continental Free Trade Area Reports $100B in First Year",
+      "image": "/images/news/africa-landscape.webp",
+      "categories": ["Global Affairs"],
+      "date": "December 16, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "arctic-council-climate-cooperation",
+      "title": "Arctic Council Nations Agree on Historic Climate Cooperation Pact",
+      "image": "/images/news/arctic-ice.webp",
+      "categories": ["Global Affairs"],
+      "date": "December 15, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "asean-economic-integration",
+      "title": "ASEAN Economic Integration Deepens with New Digital Trade Framework",
+      "image": "/images/news/asia-city.webp",
+      "categories": ["Global Affairs"],
+      "date": "December 14, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "international-court-justice-ruling",
+      "title": "International Court of Justice Issues Landmark Human Rights Ruling",
+      "image": "/images/news/court-law.webp",
+      "categories": ["Global Affairs"],
+      "date": "December 13, 2025",
+      "bookmarked": false
+    }
+  ]
+}

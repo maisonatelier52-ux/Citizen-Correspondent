@@ -1,0 +1,49 @@
+{
+    "slug":  "fusion-energy-net-positive-milestone",
+    "category":  "Research",
+    "title":  "MIT Achieves Sustained Net-Positive Fusion Energy for First Time",
+    "introText":  "MIT\u0027s fusion experiment has achieved sustained net-positive energy output for the first time in history. The breakthrough demonstrates that fusion power plants are scientifically feasible, accelerating the path to commercial deployment.",
+    "readingTime":  "7 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-7.webp",
+                   "name":  "Emily Watson",
+                   "role":  "Education \u0026 Social Issues Correspondent"
+               },
+    "lastUpdated":  "December 17, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "MIT fusion breakthrough",
+                        "imageUrl":  "/images/news/quantum-computer.webp",
+                        "imageAlt":  "Fusion research"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Historic Achievement",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "MIT\u0027s SPARC tokamak achieved Q\u003e2, meaning the fusion reaction produced twice as much energy as was used to heat the plasma. The reaction was sustained for 30 seconds."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Technical Breakthrough",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "High-temperature superconducting magnets enabled a compact design with magnetic fields four times stronger than previous experiments. The innovation dramatically reduced cost and complexity."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Path Forward",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Commonwealth Fusion Systems, MIT\u0027s spin-off, is building a demonstration power plant targeting 2030 operation. Fusion could provide unlimited clean energy within a generation."
+                    }
+                ],
+    "bookmarked":  false
+}

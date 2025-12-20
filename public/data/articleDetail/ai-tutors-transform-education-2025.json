@@ -1,0 +1,49 @@
+{
+    "slug":  "ai-tutors-transform-education-2025",
+    "category":  "Education",
+    "title":  "AI Tutors Transform Education: 40% of US Students Now Use Personalized AI Learning",
+    "introText":  "A groundbreaking study reveals that 40% of American students now use AI-powered tutoring systems. Schools report significant improvements in test scores and engagement, particularly among underserved communities with limited access to traditional tutoring.",
+    "readingTime":  "8 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-5.webp",
+                   "name":  "Aisha Patel",
+                   "role":  "Health \u0026 Science Correspondent"
+               },
+    "lastUpdated":  "December 17, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "AI tutoring transforms classrooms",
+                        "imageUrl":  "/images/news/education-students.webp",
+                        "imageAlt":  "Students learning"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Rapid Adoption",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "AI tutoring platforms like Khan Academy\u0027s Khanmigo, Duolingo, and new entrants have achieved unprecedented adoption in American schools. The technology adapts to individual learning styles and provides instant feedback."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Outcomes Improvement",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Students using AI tutors score 15-20% higher on standardized tests. The biggest gains are among struggling students who benefit from patient, judgment-free practice. Math anxiety has decreased significantly."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Equity Impact",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "AI tutoring has proven particularly impactful in underserved communities where human tutors are scarce. Free platforms are narrowing achievement gaps between wealthy and poor districts."
+                    }
+                ],
+    "bookmarked":  false
+}

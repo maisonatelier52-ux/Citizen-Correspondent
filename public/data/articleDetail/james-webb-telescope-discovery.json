@@ -1,0 +1,49 @@
+{
+    "slug":  "james-webb-telescope-discovery",
+    "category":  "Research",
+    "title":  "James Webb Telescope Discovers Signs of Life on Exoplanet K2-18b",
+    "introText":  "The James Webb Space Telescope has detected biosignature gases in the atmosphere of exoplanet K2-18b, the strongest evidence yet of potential life beyond Earth. Scientists are cautiously interpreting the groundbreaking findings.",
+    "readingTime":  "8 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-8.webp",
+                   "name":  "Michael Anderson",
+                   "role":  "Foreign Correspondent"
+               },
+    "lastUpdated":  "December 16, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "James Webb telescope discovery",
+                        "imageUrl":  "/images/news/space-earth.webp",
+                        "imageAlt":  "Space"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Detection",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "JWST detected dimethyl sulfide and phosphine in K2-18b\u0027s atmosphereâ€”gases produced on Earth primarily by biological processes. The combination is difficult to explain through non-biological chemistry."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Cautious Interpretation",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Scientists emphasize this is not confirmation of life. Alternative explanations are being explored. More observations are needed, and the findings require independent verification."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Significance",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "If confirmed, the discovery would be among the most significant in human history. K2-18b is 120 light-years away, making direct study impossible with current technology."
+                    }
+                ],
+    "bookmarked":  false
+}

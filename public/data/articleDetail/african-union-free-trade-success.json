@@ -1,0 +1,49 @@
+{
+    "slug":  "african-union-free-trade-success",
+    "category":  "Global Affairs",
+    "title":  "African Continental Free Trade Area Reports $100B in First Year",
+    "introText":  "The African Continental Free Trade Area has generated $100 billion in intra-African trade in its first full year of operation. The agreement is accelerating economic integration across the continent of 1.3 billion people.",
+    "readingTime":  "6 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-1.webp",
+                   "name":  "Sarah Mitchell",
+                   "role":  "Chief Political Correspondent"
+               },
+    "lastUpdated":  "December 16, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "African trade integration succeeds",
+                        "imageUrl":  "/images/news/africa-landscape.webp",
+                        "imageAlt":  "African landscape"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Trade Growth",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Intra-African trade reached $100 billion, a 25% increase from pre-agreement levels. Tariff elimination on 90% of goods has made African products more competitive against imports."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Economic Benefits",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Manufacturing exports have grown significantly as companies establish regional supply chains. Job creation in tradeable sectors has exceeded projections, particularly in East and West Africa."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Implementation Progress",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Infrastructure investments are connecting markets previously isolated by poor roads and customs delays. Digital platforms are simplifying trade documentation and payment processing."
+                    }
+                ],
+    "bookmarked":  false
+}

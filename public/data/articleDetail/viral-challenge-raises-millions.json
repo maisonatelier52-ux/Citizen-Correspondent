@@ -1,0 +1,49 @@
+{
+    "slug":  "viral-challenge-raises-millions",
+    "category":  "Hot",
+    "title":  "Viral TikTok Challenge Raises $50 Million for Children\u0027s Hospitals",
+    "introText":  "A viral TikTok challenge has raised over $50 million for children\u0027s hospitals worldwide. The #DanceForKids challenge saw celebrities and ordinary users donating to participate, demonstrating social media\u0027s power for good.",
+    "readingTime":  "5 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-3.webp",
+                   "name":  "Maria Rodriguez",
+                   "role":  "Environmental Correspondent"
+               },
+    "lastUpdated":  "December 15, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Viral challenge raises millions",
+                        "imageUrl":  "/images/news/smartphone-app.webp",
+                        "imageAlt":  "Smartphone app"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Challenge Success",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The #DanceForKids challenge asked participants to post a dance video and donate $10 to children\u0027s hospitals. Over 5 million videos were posted, raising $50 million in two weeks."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Celebrity Participation",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Major celebrities including actors, athletes, and musicians participated, dramatically amplifying reach. Several donated $100,000 or more while participating."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Impact",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Funds will support pediatric research and patient care at children\u0027s hospitals in 30 countries. The campaign demonstrates how viral moments can drive meaningful charitable giving."
+                    }
+                ],
+    "bookmarked":  false
+}

@@ -1,0 +1,49 @@
+{
+    "slug":  "long-read-future-of-cities",
+    "category":  "Featured",
+    "title":  "Long Read: How Smart Cities Will Transform Urban Living by 2030",
+    "introText":  "Cities are being reimagined with AI, sensors, and sustainable design. From Singapore to Barcelona to Kansas City, we explore how technology is reshaping urban life and what it means for the billions who call cities home.",
+    "readingTime":  "18 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-8.webp",
+                   "name":  "Michael Anderson",
+                   "role":  "Foreign Correspondent"
+               },
+    "lastUpdated":  "December 14, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Smart cities of the future",
+                        "imageUrl":  "/images/news/city-skyline.webp",
+                        "imageAlt":  "City skyline"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "The Smart City Vision",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Sensors embedded throughout urban infrastructure collect data on traffic, air quality, energy use, and public safety. AI systems optimize city services in real-time, from traffic lights to garbage collection."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Leading Examples",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Singapore\u0027s smart nation initiative has reduced traffic congestion 20% and energy consumption 15%. Barcelona\u0027s superblocks have reclaimed streets for pedestrians. Kansas City\u0027s smart lighting saves millions annually."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Privacy Concerns",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Ubiquitous sensors raise surveillance concerns. The challenge is balancing efficiency gains with civil liberties. Cities are experimenting with anonymization and governance frameworks."
+                    }
+                ],
+    "bookmarked":  false
+}

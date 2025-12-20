@@ -1,0 +1,49 @@
+{
+    "slug":  "offshore-wind-farm-record-capacity",
+    "category":  "Renewable Energy",
+    "title":  "World\u0027s Largest Offshore Wind Farm Goes Online in UK",
+    "introText":  "The Dogger Bank wind farm in the North Sea has begun generating power, becoming the world\u0027s largest offshore wind installation. At full capacity, it will power 6 million British homes with clean electricity.",
+    "readingTime":  "6 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-2.webp",
+                   "name":  "James Chen",
+                   "role":  "Technology Correspondent"
+               },
+    "lastUpdated":  "December 17, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "World\u0027s largest offshore wind farm",
+                        "imageUrl":  "/images/news/wind-turbines.webp",
+                        "imageAlt":  "Wind turbines"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Record Scale",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Dogger Bank features 277 turbines, each standing 260 meters tall with 107-meter blades. Total capacity of 3.6 gigawatts makes it the largest offshore wind installation ever constructed."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Clean Energy Impact",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The project will generate enough electricity for 6 million homes, roughly 5% of UK demand. It displaces approximately 4 million tons of CO2 annually compared to gas generation."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Economic Benefits",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Construction created 10,000 jobs in northeast England. Operational jobs and supply chain opportunities will continue for the project\u0027s 25-year lifespan."
+                    }
+                ],
+    "bookmarked":  false
+}

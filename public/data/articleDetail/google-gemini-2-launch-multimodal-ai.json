@@ -1,0 +1,70 @@
+{
+    "slug":  "google-gemini-2-launch-multimodal-ai",
+    "category":  "Technology",
+    "title":  "Google Launches Gemini 2.0 with Advanced Multimodal Reasoning",
+    "introText":  "Google has released Gemini 2.0, its most capable AI model yet, featuring unprecedented ability to reason across text, images, video, and code. The model outperforms competitors on key benchmarks and introduces new capabilities for complex problem-solving.",
+    "readingTime":  "8 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-2.webp",
+                   "name":  "James Chen",
+                   "role":  "Technology Correspondent"
+               },
+    "lastUpdated":  "December 17, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Google Gemini 2.0 represents a major leap in AI capabilities",
+                        "imageUrl":  "/images/news/ai-technology.webp",
+                        "imageAlt":  "AI technology visualization"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Next-Generation AI",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Gemini 2.0 achieves state-of-the-art performance on 32 of 35 standard AI benchmarks. Most impressively, it demonstrates emergent capabilities in multi-step reasoning that previous models couldn\u0027t match, solving complex problems by breaking them into logical components."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The model processes text, images, audio, and video natively, understanding relationships across modalities. Users can ask questions about videos, analyze documents with embedded images, or generate code from visual mockups."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Technical Breakthroughs",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Google achieved the improvements through a novel training approach called \u0027chain-of-thought distillation,\u0027 which transfers reasoning capabilities from larger to smaller models more effectively. The result is better performance with lower computational costs."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The model\u0027s context window has expanded to 2 million tokens, allowing it to process entire books or codebases while maintaining coherence. This enables new applications in legal document analysis and large-scale code review."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Integration Across Google",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Gemini 2.0 is being integrated throughout Google\u0027s products, from Search to Workspace. Gmail can now summarize long email threads and suggest responses that account for previous context. Google Docs offers AI-powered writing assistance that understands document structure."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Developers gain access through Google Cloud, with APIs that support building custom AI applications. Enterprise customers can fine-tune the model on proprietary data while maintaining security."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Competitive Position",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The launch intensifies competition with OpenAI and Anthropic. Google\u0027s advantage lies in distribution through its massive user base and cloud infrastructure, though competitors maintain leads in specific applications."
+                    }
+                ],
+    "bookmarked":  false
+}

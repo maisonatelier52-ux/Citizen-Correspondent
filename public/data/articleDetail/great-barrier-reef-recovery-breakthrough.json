@@ -1,0 +1,70 @@
+{
+    "slug":  "great-barrier-reef-recovery-breakthrough",
+    "category":  "Environment",
+    "title":  "Great Barrier Reef Shows Signs of Recovery After Coral Restoration Project",
+    "introText":  "Australia\u0027s Great Barrier Reef is showing remarkable signs of recovery following the world\u0027s largest coral restoration project. Scientists report that 30% of previously bleached areas now show healthy coral growth, offering hope for one of Earth\u0027s most threatened ecosystems.",
+    "readingTime":  "8 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-7.webp",
+                   "name":  "Emily Watson",
+                   "role":  "Education \u0026 Social Issues Correspondent"
+               },
+    "lastUpdated":  "December 16, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Coral restoration brings hope to the Great Barrier Reef",
+                        "imageUrl":  "/images/news/coral-reef.webp",
+                        "imageAlt":  "Coral reef ecosystem"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Signs of Recovery",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Annual surveys by the Australian Institute of Marine Science reveal that coral cover has increased by 15% over the past two years in areas receiving restoration treatments. Some sites have returned to pre-bleaching levels for the first time since 2016."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The recovery follows a $3 billion investment in coral restoration, water quality improvement, and crown-of-thorns starfish control. Scientists describe the results as \u0027exceeding our most optimistic projections.\u0027"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Innovative Techniques",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Researchers have deployed several innovative restoration techniques, including \u0027coral IVF\u0027 â€“ collecting eggs and sperm during spawning events and raising larvae in controlled conditions before releasing them onto damaged reefs."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Heat-resistant coral strains developed through selective breeding are being introduced to areas most vulnerable to bleaching. These \u0027super corals\u0027 can withstand temperatures 2Â°C higher than natural variants."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Water Quality Improvements",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Significant reductions in agricultural runoff have improved water quality in key reef areas. Queensland farmers have adopted new practices that reduce sediment and fertilizer flowing into reef waters by 40%."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Clearer water allows more sunlight to reach corals and reduces stress from nutrient pollution, complementing direct restoration efforts."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Climate Concerns Remain",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Scientists caution that long-term reef survival ultimately depends on reducing global emissions. Without action on climate change, even restored corals face repeated bleaching events that could overwhelm recovery efforts."
+                    }
+                ],
+    "bookmarked":  false
+}

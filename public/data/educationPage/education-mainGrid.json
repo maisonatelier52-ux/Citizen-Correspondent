@@ -1,0 +1,44 @@
+{
+  "mainGrid": [
+    {
+      "slug": "stem-education-initiative-funding",
+      "title": "$10 Billion Federal STEM Initiative to Train 1 Million New Teachers",
+      "image": "/images/news/quantum-computer.webp",
+      "categories": ["Education"],
+      "date": "December 17, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "mental-health-support-schools",
+      "title": "Schools Nationwide Expand Mental Health Services After Funding Boost",
+      "image": "/images/news/mental-health.webp",
+      "categories": ["Education"],
+      "date": "December 16, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "vocational-training-renaissance",
+      "title": "Vocational Training Sees Renaissance as Employers Prioritize Skills",
+      "image": "/images/news/infrastructure.webp",
+      "categories": ["Education"],
+      "date": "December 15, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "online-degrees-gain-acceptance",
+      "title": "Online Degrees Gain Full Acceptance as Top Employers Drop Bias",
+      "image": "/images/news/remote-work.webp",
+      "categories": ["Education"],
+      "date": "December 14, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "teacher-salary-increases-nationwide",
+      "title": "15 States Announce Historic Teacher Salary Increases for 2026",
+      "image": "/images/news/teacher-classroom.webp",
+      "categories": ["Education"],
+      "date": "December 13, 2025",
+      "bookmarked": false
+    }
+  ]
+}

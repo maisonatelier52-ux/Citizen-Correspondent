@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Sarah Mitchell",
+    "email": "sarah.mitchell@citizencorrespondent.com",
+    "bio": "Sarah Mitchell is an award-winning investigative journalist with over 15 years of experience covering global politics and international affairs. Her in-depth reporting has exposed corruption scandals and human rights violations across multiple continents. Sarah holds a Master's degree in International Relations from Oxford University and has been recognized with the Pulitzer Prize for International Reporting.",
+    "photo": "/images/authors/author-1.webp",
+    "website": "https://sarahmitchell.com"
+  },
+  {
+    "name": "James Chen",
+    "email": "james.chen@citizencorrespondent.com",
+    "bio": "James Chen is a technology and business correspondent specializing in artificial intelligence, startups, and the intersection of innovation and policy. With a background in computer science and journalism, James brings a unique perspective to tech reporting. His work has been featured in major publications and he regularly appears as a technology analyst on leading news networks.",
+    "photo": "/images/authors/author-2.webp",
+    "website": "https://jameschen.tech"
+  },
+  {
+    "name": "Maria Rodriguez",
+    "email": "maria.rodriguez@citizencorrespondent.com",
+    "bio": "Maria Rodriguez is an environmental journalist and climate change expert with a passion for covering renewable energy, sustainability, and environmental policy. She has reported from over 40 countries, documenting the impacts of climate change and the solutions being implemented worldwide. Maria holds a Ph.D. in Environmental Science and has authored two books on climate action.",
+    "photo": "/images/authors/author-3.webp",
+    "website": "https://mariarodriguez.eco"
+  },
+  {
+    "name": "David Thompson",
+    "email": "david.thompson@citizencorrespondent.com",
+    "bio": "David Thompson is a veteran financial journalist with two decades of experience covering markets, economics, and corporate finance. He has broken numerous stories on major financial institutions and economic policies. David's analytical reporting has helped readers navigate complex financial landscapes, and he is a regular contributor to financial news programs and economic forums.",
+    "photo": "/images/authors/author-4.webp",
+    "website": "https://davidthompson.finance"
+  },
+  {
+    "name": "Aisha Patel",
+    "email": "aisha.patel@citizencorrespondent.com",
+    "bio": "Aisha Patel is a health and science journalist focusing on medical breakthroughs, public health policy, and healthcare innovation. Her reporting has covered everything from pandemic responses to cutting-edge medical research. Aisha holds a Master's in Public Health and has won multiple awards for her coverage of global health crises and medical ethics.",
+    "photo": "/images/authors/author-5.webp",
+    "website": "https://aishapatel.health"
+  },
+  {
+    "name": "Robert Kim",
+    "email": "robert.kim@citizencorrespondent.com",
+    "bio": "Robert Kim is a political correspondent specializing in elections, policy analysis, and government accountability. With extensive experience covering local, state, and federal politics, Robert provides readers with clear, unbiased analysis of complex political developments. His investigative work has led to policy changes and increased government transparency.",
+    "photo": "/images/authors/author-6.webp"
+  },
+  {
+    "name": "Emily Watson",
+    "email": "emily.watson@citizencorrespondent.com",
+    "bio": "Emily Watson is a versatile journalist covering education, social issues, and cultural trends. With a background in sociology and journalism, Emily brings depth and empathy to stories about education reform, social justice, and community development. Her feature articles have sparked important conversations and policy discussions across the country.",
+    "photo": "/images/authors/author-7.webp",
+    "website": "https://emilywatson.news"
+  },
+  {
+    "name": "Michael Anderson",
+    "email": "michael.anderson@citizencorrespondent.com",
+    "bio": "Michael Anderson is a breaking news reporter and foreign correspondent with expertise in international relations, conflict zones, and global security. He has reported from war zones, covered major international summits, and broken stories on diplomatic developments. Michael's fearless reporting has earned him recognition from press organizations worldwide.",
+    "photo": "/images/authors/author-8.webp",
+    "website": "https://michaelanderson.global"
+  }
+]

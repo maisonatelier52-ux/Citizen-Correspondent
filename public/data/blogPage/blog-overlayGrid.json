@@ -1,0 +1,26 @@
+{
+  "overlayArticles": [
+    {
+      "slug": "year-in-review-2025-defining-moments",
+      "title": "Year in Review: The 10 Stories That Defined 2025",
+      "category": "Featured",
+      "date": "December 17, 2025",
+      "image": "/images/news/newspaper.webp"
+    },
+    {
+      "slug": "exclusive-interview-tech-ceo",
+      "title": "Exclusive: OpenAI CEO Sam Altman on the Future of AGI",
+      "category": "Featured",
+      "date": "December 16, 2025",
+      "image": "/images/news/ai-technology.webp"
+    },
+    {
+      "slug": "long-read-future-of-cities",
+      "title": "Long Read: How Smart Cities Will Transform Urban Living by 2030",
+      "category": "Featured",
+      "date": "December 14, 2025",
+      "image": "/images/news/city-skyline.webp"
+    }
+  ]
+}
+

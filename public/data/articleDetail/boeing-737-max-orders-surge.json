@@ -1,0 +1,57 @@
+{
+    "slug":  "boeing-737-max-orders-surge",
+    "category":  "Business",
+    "title":  "Boeing 737 MAX Orders Surge After Safety Certification Renewal",
+    "introText":  "Boeing has reported a surge in 737 MAX orders following renewed safety certifications from global aviation authorities. Airlines have committed to purchasing over 500 aircraft, signaling restored confidence in Boeing\u0027s best-selling jet.",
+    "readingTime":  "7 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-4.webp",
+                   "name":  "David Thompson",
+                   "role":  "Financial Correspondent"
+               },
+    "lastUpdated":  "December 14, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Boeing 737 MAX orders rebound strongly",
+                        "imageUrl":  "/images/news/airplane.webp",
+                        "imageAlt":  "Commercial airplane"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Order Surge",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Boeing has secured over 500 new 737 MAX orders in the past quarter, the strongest booking period since before the aircraft\u0027s grounding. Major customers include United Airlines, Southwest, and several Asian carriers."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The orders are valued at approximately $60 billion at list prices, though airlines typically receive significant discounts."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Safety Certification",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Aviation regulators in China and Indonesia, two holdout markets, have finally recertified the 737 MAX for commercial service. The approvals open the world\u0027s two fastest-growing aviation markets to Boeing."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Boeing has implemented extensive safety improvements and enhanced pilot training requirements."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Production Ramp",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Boeing plans to increase 737 MAX production to 50 aircraft per month by late 2026, up from the current 38. The ramp-up will require significant workforce expansion at Boeing\u0027s Renton, Washington facility."
+                    }
+                ],
+    "bookmarked":  false
+}

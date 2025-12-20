@@ -1,0 +1,49 @@
+{
+    "slug":  "celebrity-wedding-breaks-internet",
+    "category":  "Hot",
+    "title":  "Hollywood\u0027s Biggest Wedding of the Year Crashes Social Media Platforms",
+    "introText":  "The wedding of two A-list celebrities crashed Instagram and Twitter as fans flooded platforms to see photos. The lavish Italian ceremony has been called the wedding of the decade.",
+    "readingTime":  "5 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-5.webp",
+                   "name":  "Aisha Patel",
+                   "role":  "Health \u0026 Science Correspondent"
+               },
+    "lastUpdated":  "December 16, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Celebrity wedding of the year",
+                        "imageUrl":  "/images/news/wedding.webp",
+                        "imageAlt":  "Wedding"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Social Media Meltdown",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "When the couple posted their first wedding photo, Instagram and Twitter experienced outages lasting 30 minutes. The image became the most-liked post in social media history within hours."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Lavish Ceremony",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The wedding took place at a 16th-century Italian villa with 400 guests including Hollywood royalty, musicians, and world leaders. The event reportedly cost $15 million."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Cultural Moment",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The wedding dominated global conversation for days, demonstrating the continued power of celebrity culture even in an era of fragmented media attention."
+                    }
+                ],
+    "bookmarked":  false
+}

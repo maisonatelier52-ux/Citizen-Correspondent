@@ -1,0 +1,29 @@
+{
+  "overlayGrid": [
+    {
+      "slug": "2026-midterm-elections-preview",
+      "title": "2026 Midterm Elections: Democrats and Republicans Battle for Senate Control",
+      "category": "Politics",
+      "date": "December 17, 2025",
+      "image": "/images/news/politics-presidential-race.webp",
+      "excerpt": "With control of the Senate hanging in the balance, both parties are deploying massive resources to key battleground states as the 2026 midterm election cycle officially kicks off.",
+      "bookmarked": false
+    },
+    {
+      "slug": "supreme-court-ai-regulation-ruling",
+      "title": "Supreme Court Rules on Landmark AI Regulation Case, Sets New Precedent",
+      "category": "Politics",
+      "date": "December 16, 2025",
+      "image": "/images/news/court-law.webp",
+      "bookmarked": false
+    },
+    {
+      "slug": "immigration-reform-bill-bipartisan-support",
+      "title": "Bipartisan Immigration Reform Bill Gains Momentum with 70 Senate Votes",
+      "category": "Politics",
+      "date": "December 15, 2025",
+      "image": "/images/news/immigration.webp",
+      "bookmarked": false
+    }
+  ]
+}

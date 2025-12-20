@@ -1,0 +1,268 @@
+{
+  "articles": [
+    {
+      "slug": "2026-presidential-race-key-candidates-announce-platforms",
+      "title": "2026 Presidential Race Heats Up as Key Candidates Announce Platforms",
+      "shortdescription": "The upcoming presidential election is drawing unprecedented attention as leading candidates unveil their economic and foreign policy agendas.",
+      "category": "Politics",
+      "author": "Sarah Mitchell",
+      "date": "December 17, 2025"
+    },
+    {
+      "slug": "un-climate-summit-historic-agreement-carbon-emissions",
+      "title": "UN Climate Summit Reaches Historic Agreement on Carbon Emissions",
+      "shortdescription": "World leaders commit to 60% emission cuts by 2035 in landmark climate deal.",
+      "category": "World",
+      "author": "James Chen",
+      "date": "December 17, 2025"
+    },
+    {
+      "slug": "openai-unveils-gpt-6-revolutionary-reasoning-capabilities",
+      "title": "OpenAI Unveils GPT-6 with Revolutionary Reasoning Capabilities",
+      "shortdescription": "The latest AI model demonstrates human-level reasoning and problem-solving abilities.",
+      "category": "Technology",
+      "author": "Emily Watson",
+      "date": "December 16, 2025"
+    },
+    {
+      "slug": "tesla-launches-affordable-25000-electric-vehicle-mass-market",
+      "title": "Tesla Launches Affordable $25,000 Electric Vehicle for Mass Market",
+      "shortdescription": "Tesla's most affordable EV yet aims to bring electric vehicles to mainstream consumers.",
+      "category": "Business",
+      "author": "Michael Roberts",
+      "date": "December 15, 2025"
+    },
+    {
+      "slug": "fda-approves-groundbreaking-alzheimers-treatment-70-improvement",
+      "title": "FDA Approves Groundbreaking Alzheimer's Treatment Showing 70% Improvement",
+      "shortdescription": "Revolutionary treatment offers hope to millions of Alzheimer's patients and families.",
+      "category": "Health",
+      "author": "Dr. Amanda Foster",
+      "date": "December 14, 2025"
+    },
+    {
+      "slug": "federal-reserve-signals-rate-cuts-strong-economic-growth",
+      "title": "Federal Reserve Signals Rate Cuts Amid Strong Economic Growth",
+      "shortdescription": "The Fed announces unexpected rate cuts citing cooling inflation and strong employment data.",
+      "category": "Finance",
+      "author": "Robert Chang",
+      "date": "December 17, 2025"
+    },
+    {
+      "slug": "russia-ukraine-peace-talks-breakthrough",
+      "title": "Russia-Ukraine Peace Talks: Major Breakthrough as Both Sides Agree to Ceasefire Framework",
+      "shortdescription": "Historic development as negotiators agree on preliminary ceasefire framework in Istanbul.",
+      "category": "World",
+      "author": "Anna Petrov",
+      "date": "December 17, 2025"
+    },
+    {
+      "slug": "amazon-unveils-ai-powered-delivery-drones-2025",
+      "title": "Amazon Unveils AI-Powered Delivery Drones Across 50 US Cities",
+      "shortdescription": "Amazon Prime Air launches the largest commercial drone deployment in history.",
+      "category": "Business",
+      "author": "Lisa Thompson",
+      "date": "December 16, 2025"
+    },
+    {
+      "slug": "nvidia-stock-hits-record-high-ai-demand",
+      "title": "NVIDIA Stock Hits Record $180 as AI Chip Demand Soars",
+      "shortdescription": "NVIDIA shares reach all-time high driven by unprecedented AI chip demand.",
+      "category": "Finance",
+      "author": "David Kim",
+      "date": "December 17, 2025"
+    },
+    {
+      "slug": "apple-mixed-reality-headset-outsells-meta-quest",
+      "title": "Apple Vision Pro 2 Outsells Meta Quest 3 in Holiday Season Rush",
+      "shortdescription": "Apple's second-generation mixed reality headset dominates holiday shopping season.",
+      "category": "Technology",
+      "author": "Jennifer Park",
+      "date": "December 17, 2025"
+    },
+    {
+      "slug": "russia-ukraine-ceasefire-negotiations-2025",
+      "title": "Russia-Ukraine Peace Talks Resume as Both Sides Signal Openness to Ceasefire",
+      "shortdescription": "Diplomatic breakthrough as both nations agree to restart peace negotiations.",
+      "category": "World",
+      "author": "Mark Anderson",
+      "date": "December 17, 2025"
+    },
+    {
+      "slug": "google-gemini-2-launch-multimodal-ai",
+      "title": "Google Launches Gemini 2.0 with Advanced Multimodal Reasoning",
+      "shortdescription": "Google's latest AI model combines text, image, and code understanding.",
+      "category": "Technology",
+      "author": "Chris Taylor",
+      "date": "December 17, 2025"
+    },
+    {
+      "slug": "cop30-brazil-emissions-agreement",
+      "title": "COP30 Brazil: 195 Nations Pledge to Cut Emissions 60% by 2035",
+      "shortdescription": "Historic climate agreement reached with binding targets for all signatory nations.",
+      "category": "Climate Change",
+      "author": "Maria Santos",
+      "date": "December 17, 2025"
+    },
+    {
+      "slug": "bitcoin-surges-150000-institutional-buying",
+      "title": "Bitcoin Surges Past $150,000 on Massive Institutional Buying",
+      "shortdescription": "Cryptocurrency reaches new all-time high as major banks announce custody services.",
+      "category": "Finance",
+      "author": "Alex Johnson",
+      "date": "December 14, 2025"
+    },
+    {
+      "slug": "electric-vehicle-sales-record-2025",
+      "title": "Electric Vehicle Sales Hit Record 18 Million Globally in 2025",
+      "shortdescription": "EV adoption accelerates as sales reach historic milestone worldwide.",
+      "category": "Business",
+      "author": "Rachel Green",
+      "date": "December 17, 2025"
+    },
+    {
+      "slug": "ai-drug-discovery-cancer-treatment",
+      "title": "AI-Discovered Cancer Drug Enters Final Clinical Trials with 89% Success Rate",
+      "shortdescription": "Revolutionary cancer treatment discovered by AI shows remarkable efficacy.",
+      "category": "Health",
+      "author": "Dr. Steven Chen",
+      "date": "December 15, 2025"
+    },
+    {
+      "slug": "fusion-energy-breakthrough-mit",
+      "title": "MIT Achieves Net-Positive Fusion Energy, Paving Way for Clean Power",
+      "shortdescription": "Historic breakthrough brings commercial fusion energy closer to reality.",
+      "category": "Research",
+      "author": "Dr. Helen Wright",
+      "date": "December 13, 2025"
+    },
+    {
+      "slug": "2026-midterm-elections-preview",
+      "title": "2026 Midterm Elections: Democrats and Republicans Battle for Senate Control",
+      "shortdescription": "Both parties deploy massive resources to key battleground states.",
+      "category": "Politics",
+      "author": "Tom Wilson",
+      "date": "December 17, 2025"
+    },
+    {
+      "slug": "solar-power-cheapest-energy-worldwide",
+      "title": "Solar Power Officially Becomes Cheapest Energy Source in 90% of Countries",
+      "shortdescription": "Landmark report confirms solar energy dominance in global electricity generation.",
+      "category": "Renewable Energy",
+      "author": "Laura Martinez",
+      "date": "December 17, 2025"
+    },
+    {
+      "slug": "ai-tutors-transform-education-2025",
+      "title": "AI Tutors Transform Education: 40% of US Students Now Use Personalized AI Learning",
+      "shortdescription": "AI-powered tutoring revolutionizes education with personalized learning.",
+      "category": "Education",
+      "author": "Dr. Patricia Moore",
+      "date": "December 17, 2025"
+    },
+    {
+      "slug": "viral-ai-generated-movie-breaks-records",
+      "title": "Viral AI-Generated Movie Becomes First to Gross $100 Million at Box Office",
+      "shortdescription": "AI-generated film sparks debate about the future of Hollywood.",
+      "category": "Hot",
+      "author": "Kevin Brown",
+      "date": "December 17, 2025"
+    },
+    {
+      "slug": "alzheimers-breakthrough-treatment-2025",
+      "title": "Breakthrough Alzheimer's Treatment Shows 70% Cognitive Improvement in Trials",
+      "shortdescription": "Revolutionary treatment offers unprecedented hope for Alzheimer's patients.",
+      "category": "Research",
+      "author": "Dr. Amanda Foster",
+      "date": "December 17, 2025"
+    },
+    {
+      "slug": "g20-summit-economic-cooperation",
+      "title": "G20 Summit: World Leaders Forge Historic Economic Cooperation Agreement",
+      "shortdescription": "Leaders commit to coordinated climate action and digital trade frameworks.",
+      "category": "Global Affairs",
+      "author": "Carlos Rodriguez",
+      "date": "December 17, 2025"
+    },
+    {
+      "slug": "year-in-review-2025-defining-moments",
+      "title": "Year in Review: The 10 Stories That Defined 2025",
+      "shortdescription": "Looking back at the breakthrough AI developments and geopolitical shifts of 2025.",
+      "category": "Featured",
+      "author": "Editorial Board",
+      "date": "December 17, 2025"
+    },
+    {
+      "slug": "opinion-ai-job-displacement-solution",
+      "title": "Opinion: AI Job Displacement Is Coming — Here's How We Can Prepare",
+      "shortdescription": "Proactive investment in education and UBI pilots can help workers thrive.",
+      "category": "Opinion",
+      "author": "Prof. Daniel Cohen",
+      "date": "December 17, 2025"
+    },
+    {
+      "slug": "ai-cancer-detection-early-diagnosis",
+      "title": "AI Cancer Detection System Identifies Tumors 5 Years Before Symptoms",
+      "shortdescription": "Google Health AI achieves 94% accuracy in early cancer detection.",
+      "category": "Health",
+      "author": "Dr. Sarah Mitchell",
+      "date": "December 17, 2025"
+    },
+    {
+      "slug": "spacex-starship-mars-mission-2026",
+      "title": "SpaceX Announces First Crewed Starship Mission to Mars for 2026",
+      "shortdescription": "Elon Musk reveals plans for historic crewed mission to the Red Planet.",
+      "category": "Technology",
+      "author": "Ryan Cooper",
+      "date": "December 16, 2025"
+    },
+    {
+      "slug": "china-taiwan-tensions-us-response",
+      "title": "US Deploys Additional Naval Forces to Pacific Amid China-Taiwan Tensions",
+      "shortdescription": "Pentagon announces increased military presence in response to rising tensions.",
+      "category": "World",
+      "author": "Jessica Wang",
+      "date": "December 16, 2025"
+    },
+    {
+      "slug": "taylor-swift-eras-tour-breaks-records",
+      "title": "Taylor Swift's Eras Tour Becomes First to Gross $2 Billion Worldwide",
+      "shortdescription": "Historic tour achievement sets new standard for live entertainment.",
+      "category": "Hot",
+      "author": "Michelle Lee",
+      "date": "December 11, 2025"
+    },
+    {
+      "slug": "india-becomes-worlds-third-largest-economy",
+      "title": "India Officially Becomes World's Third-Largest Economy, Surpassing Japan",
+      "shortdescription": "Historic economic milestone as India overtakes Japan in GDP rankings.",
+      "category": "World",
+      "author": "Priya Sharma",
+      "date": "December 15, 2025"
+    },
+    {
+      "slug": "remote-work-legislation-passes-congress",
+      "title": "Congress Passes Historic Remote Work Rights Bill Protecting 50M Workers",
+      "shortdescription": "Landmark legislation guarantees remote work rights for eligible employees.",
+      "category": "Politics",
+      "author": "Nancy Collins",
+      "date": "December 12, 2025"
+    },
+    {
+      "slug": "quantum-computer-breakthrough-ibm",
+      "title": "IBM Achieves Quantum Supremacy with 1000-Qubit Processor",
+      "shortdescription": "Historic milestone brings quantum computing closer to practical applications.",
+      "category": "Technology",
+      "author": "Dr. James Liu",
+      "date": "December 14, 2025"
+    },
+    {
+      "slug": "great-barrier-reef-recovery-breakthrough",
+      "title": "Great Barrier Reef Shows Signs of Recovery After Coral Restoration Project",
+      "shortdescription": "Innovative coral restoration techniques show promising results.",
+      "category": "Environment",
+      "author": "Dr. Emma Collins",
+      "date": "December 16, 2025"
+    }
+  ]
+}

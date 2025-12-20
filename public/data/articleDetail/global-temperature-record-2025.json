@@ -1,0 +1,49 @@
+{
+    "slug":  "global-temperature-record-2025",
+    "category":  "Climate Change",
+    "title":  "2025 Confirmed as Hottest Year on Record by 0.3Â°C",
+    "introText":  "Climate agencies have confirmed 2025 as the hottest year in recorded history, exceeding the previous record set in 2024 by 0.3Â°C. The milestone underscores the accelerating pace of global warming.",
+    "readingTime":  "7 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-7.webp",
+                   "name":  "Emily Watson",
+                   "role":  "Education \u0026 Social Issues Correspondent"
+               },
+    "lastUpdated":  "December 17, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "2025 hottest year on record",
+                        "imageUrl":  "/images/news/climate-protest.webp",
+                        "imageAlt":  "Climate impact"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Record Temperatures",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Global average temperature in 2025 reached 1.45Â°C above pre-industrial levels, the highest ever recorded. Every month from June through December set monthly records."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Contributing Factors",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Record temperatures resulted from rising greenhouse gas concentrations combined with a strong El NiÃ±o event. Ocean temperatures also reached unprecedented levels, with significant marine heat waves."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Impacts",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Extreme weather events intensified: record wildfires, floods, and heat waves affected every continent. Climate scientists warn that 1.5Â°C of permanent warming could be locked in within a decade."
+                    }
+                ],
+    "bookmarked":  false
+}

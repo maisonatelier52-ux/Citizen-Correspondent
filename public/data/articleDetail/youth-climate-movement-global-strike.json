@@ -1,0 +1,49 @@
+{
+    "slug":  "youth-climate-movement-global-strike",
+    "category":  "Climate Change",
+    "title":  "Youth Climate Movement Organizes Largest Global Strike in History",
+    "introText":  "Young climate activists have organized the largest coordinated protest in history, with over 20 million people striking across 150 countries. The movement demands immediate government action on climate change.",
+    "readingTime":  "6 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-7.webp",
+                   "name":  "Emily Watson",
+                   "role":  "Education \u0026 Social Issues Correspondent"
+               },
+    "lastUpdated":  "December 15, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Youth climate strike",
+                        "imageUrl":  "/images/news/protest-crowd.webp",
+                        "imageAlt":  "Climate protest"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Global Mobilization",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Over 20 million students and supporters walked out of schools and workplaces worldwide, demanding emergency climate action. The strike exceeded previous records by 50%."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Movement Growth",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The youth climate movement has matured from school strikes to sophisticated political organizing. Young activists are running for office and building electoral coalitions around climate."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Political Impact",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Polls show climate is now a top-three issue for voters under 35. Politicians are increasingly responsive to youth pressure, with several countries lowering voting ages to 16."
+                    }
+                ],
+    "bookmarked":  false
+}

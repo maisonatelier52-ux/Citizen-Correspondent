@@ -1,0 +1,49 @@
+{
+    "slug":  "arctic-council-climate-cooperation",
+    "category":  "Global Affairs",
+    "title":  "Arctic Council Nations Agree on Historic Climate Cooperation Pact",
+    "introText":  "Arctic Council nations have signed a comprehensive climate cooperation agreement, pledging to protect melting ecosystems and manage emerging shipping routes. The pact addresses environmental and geopolitical challenges in the rapidly warming region.",
+    "readingTime":  "6 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-3.webp",
+                   "name":  "Maria Rodriguez",
+                   "role":  "Environmental Correspondent"
+               },
+    "lastUpdated":  "December 15, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Arctic nations cooperate on climate",
+                        "imageUrl":  "/images/news/arctic-ice.webp",
+                        "imageAlt":  "Arctic ice"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Agreement Details",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The eight Arctic nations agreed to ban heavy fuel oil in Arctic shipping, establish marine protected areas, and coordinate emergency response capabilities. Russia participated despite broader diplomatic tensions."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Environmental Focus",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The agreement creates the world\u0027s largest network of marine protected areas. Fishing in newly ice-free waters will be regulated to prevent overharvesting."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Shipping Governance",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "As Arctic sea routes open, the pact establishes traffic management and safety standards. The Northern Sea Route and Northwest Passage will operate under coordinated regulations."
+                    }
+                ],
+    "bookmarked":  false
+}

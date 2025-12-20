@@ -1,0 +1,49 @@
+{
+    "slug":  "telehealth-permanent-medicare",
+    "category":  "Health",
+    "title":  "Telehealth Visits Made Permanent Under Medicare, Medicaid Programs",
+    "introText":  "Congress has made pandemic-era telehealth flexibilities permanent for Medicare and Medicaid. Patients can now receive virtual care from home indefinitely, transforming how healthcare is delivered in America.",
+    "readingTime":  "6 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-4.webp",
+                   "name":  "David Thompson",
+                   "role":  "Financial Correspondent"
+               },
+    "lastUpdated":  "December 16, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Telehealth made permanent",
+                        "imageUrl":  "/images/news/remote-work.webp",
+                        "imageAlt":  "Telehealth"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Permanent Policy",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Bipartisan legislation makes telehealth coverage permanent, ending uncertainty that has plagued providers and patients. Virtual visits will be reimbursed at the same rate as in-person appointments."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Access Improvements",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Telehealth has proven especially valuable for rural patients, those with mobility challenges, and mental health services. Usage has remained 30x higher than pre-pandemic levels."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Future Development",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The legislation also supports expansion of remote patient monitoring and hospital-at-home programs. Healthcare delivery is being permanently transformed by digital technology."
+                    }
+                ],
+    "bookmarked":  false
+}

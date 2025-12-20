@@ -1,0 +1,44 @@
+{
+  "mainGrid": [
+    {
+      "slug": "inside-the-white-house-exclusive",
+      "title": "Inside the White House: An Exclusive Look at the Decision-Making Process",
+      "image": "/images/news/politics-presidential-race.webp",
+      "categories": ["Featured"],
+      "date": "December 17, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "documentary-climate-refugees",
+      "title": "Documentary: The Untold Stories of Climate Refugees",
+      "image": "/images/news/refugees.webp",
+      "categories": ["Featured"],
+      "date": "December 16, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "profile-scientist-cancer-breakthrough",
+      "title": "Profile: The Scientist Behind the Revolutionary Cancer Treatment",
+      "image": "/images/news/medical-research.webp",
+      "categories": ["Featured"],
+      "date": "December 15, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "long-read-future-of-cities",
+      "title": "Long Read: How Smart Cities Will Transform Urban Living by 2030",
+      "image": "/images/news/city-skyline.webp",
+      "categories": ["Featured"],
+      "date": "December 14, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "interview-nobel-peace-prize-winner",
+      "title": "Interview: 2025 Nobel Peace Prize Winner on Global Cooperation",
+      "image": "/images/news/handshake.webp",
+      "categories": ["Featured"],
+      "date": "December 13, 2025",
+      "bookmarked": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+    "slug":  "world-cup-2026-host-cities-announced",
+    "category":  "Hot",
+    "title":  "FIFA Announces All 16 Host Cities for 2026 World Cup",
+    "introText":  "FIFA has finalized the 16 host cities for the 2026 World Cup across the United States, Mexico, and Canada. The tournament will be the largest ever, featuring 48 teams and 104 matches.",
+    "readingTime":  "6 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-8.webp",
+                   "name":  "Michael Anderson",
+                   "role":  "Foreign Correspondent"
+               },
+    "lastUpdated":  "December 16, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "World Cup 2026 host cities",
+                        "imageUrl":  "/images/news/soccer-football.webp",
+                        "imageAlt":  "Football"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Host Cities",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The 16 cities include New York, Los Angeles, Miami, Dallas, Atlanta, Boston, Philadelphia, Houston, Kansas City, San Francisco, Seattle, Toronto, Vancouver, Mexico City, Guadalajara, and Monterrey."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Expanded Format",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "For the first time, 48 teams will compete in 104 matches over 39 days. The final will be held at MetLife Stadium in New Jersey."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Economic Impact",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Host cities expect $5 billion in combined economic impact. Stadium upgrades and transportation improvements are accelerating across all venues."
+                    }
+                ],
+    "bookmarked":  false
+}

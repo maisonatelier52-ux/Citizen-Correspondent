@@ -1,0 +1,70 @@
+{
+    "slug":  "amazon-deforestation-drops-record-low",
+    "category":  "Environment",
+    "title":  "Amazon Deforestation Drops to Lowest Level in 15 Years Under New Policies",
+    "introText":  "Brazil has reported its lowest Amazon deforestation rate in 15 years, with forest clearing dropping 60% from peak levels. The dramatic improvement follows aggressive enforcement of environmental laws and international financial support for conservation.",
+    "readingTime":  "7 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-1.webp",
+                   "name":  "Sarah Mitchell",
+                   "role":  "Chief Political Correspondent"
+               },
+    "lastUpdated":  "December 15, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Amazon rainforest benefits from new conservation policies",
+                        "imageUrl":  "/images/news/forest-trees.webp",
+                        "imageAlt":  "Amazon rainforest canopy"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Historic Decline",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Brazil\u0027s space agency INPE recorded just 4,500 square kilometers of Amazon deforestation in 2025, down from 11,000 square kilometers at the peak in 2021. The 60% reduction represents the fastest improvement in monitoring history."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "President Lula declared the milestone \u0027a victory for Brazil and for the planet,\u0027 crediting renewed environmental enforcement and international partnerships."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Enforcement Actions",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The government deployed 5,000 additional environmental agents to the Amazon and increased penalties for illegal logging. Satellite monitoring now triggers rapid response within 24 hours of detecting new clearing."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Major operations dismantled criminal networks responsible for large-scale deforestation. Hundreds of arrests and billions in seized assets have disrupted the economics of illegal logging."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Economic Alternatives",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "International funding has supported sustainable livelihoods for communities that previously relied on forest clearing. Programs promoting Brazil nuts, sustainable timber, and ecotourism now provide income for over 200,000 families."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Carbon credit markets have emerged as significant revenue source, with standing forest generating more income than cleared land for many landowners."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Continued Challenges",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Despite progress, illegal mining and road construction continue to threaten remote areas. Environmentalists call for extending protections and addressing the underlying demand for Amazon resources."
+                    }
+                ],
+    "bookmarked":  false
+}

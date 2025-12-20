@@ -1,0 +1,70 @@
+{
+    "slug":  "samsung-foldable-phone-dominates-market",
+    "category":  "Technology",
+    "title":  "Samsung Galaxy Z Fold 6 Dominates Foldable Phone Market with 65% Share",
+    "introText":  "Samsung has solidified its dominance in the foldable smartphone market, with the Galaxy Z Fold 6 capturing 65% of global sales. The latest iteration addresses durability concerns while introducing AI-powered productivity features.",
+    "readingTime":  "7 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-7.webp",
+                   "name":  "Emily Watson",
+                   "role":  "Education \u0026 Social Issues Correspondent"
+               },
+    "lastUpdated":  "December 15, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Samsung Galaxy Z Fold 6 leads the foldable market",
+                        "imageUrl":  "/images/news/smartphone.webp",
+                        "imageAlt":  "Samsung foldable smartphone"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Market Dominance",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Samsung shipped 15 million foldable devices in Q3 2025, representing 65% of the global market. The Galaxy Z Fold 6 alone accounted for 45% of all foldable sales, with the Z Flip 6 capturing an additional 20%."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Chinese competitors Huawei, Oppo, and Honor have gained ground but remain limited to their domestic market. Samsung\u0027s global distribution and brand trust continue to provide significant advantages."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Key Improvements",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The Z Fold 6 introduces a new hinge mechanism that Samsung claims will withstand 400,000 folds â€“ roughly 10 years of typical use. The screen crease has been reduced by 70%, addressing the most common consumer complaint."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Battery life has improved by 25% through more efficient chips and display technology. The device now easily lasts a full day of heavy use, removing a previous barrier to adoption."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "AI Integration",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Samsung\u0027s Galaxy AI features take advantage of the foldable form factor. Split-screen translation allows real-time conversation across languages, while the large internal display enables powerful document editing and multitasking."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Productivity users report that the foldable format has replaced their need to carry both phone and tablet, justifying the premium price point."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Future Outlook",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Analysts project foldables will represent 10% of smartphone sales by 2027. Samsung is well-positioned to maintain leadership, though Apple\u0027s rumored foldable iPhone could disrupt the market dynamics."
+                    }
+                ],
+    "bookmarked":  false
+}

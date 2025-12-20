@@ -1,0 +1,49 @@
+{
+    "slug":  "green-hydrogen-production-scale",
+    "category":  "Renewable Energy",
+    "title":  "Green Hydrogen Production Reaches Commercial Scale in Australia",
+    "introText":  "Australia has opened the world\u0027s largest green hydrogen production facility, using solar power to split water into hydrogen fuel. The project demonstrates that renewable hydrogen can compete economically with fossil alternatives.",
+    "readingTime":  "7 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-2.webp",
+                   "name":  "James Chen",
+                   "role":  "Technology Correspondent"
+               },
+    "lastUpdated":  "December 17, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Green hydrogen at scale",
+                        "imageUrl":  "/images/news/power-lines.webp",
+                        "imageAlt":  "Power infrastructure"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Commercial Scale",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The Western Australia facility produces 100 tons of green hydrogen daily using 500 megawatts of solar power. Production costs have reached $3 per kilogram, approaching competitiveness with gray hydrogen."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Export Market",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Japan and South Korea have signed long-term offtake agreements, viewing Australian green hydrogen as essential to their decarbonization strategies. Export facilities are under construction."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Applications",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Green hydrogen enables decarbonization of steel, shipping, and aviationâ€”sectors difficult to electrify directly. The Australian project proves commercial viability of this critical technology."
+                    }
+                ],
+    "bookmarked":  false
+}

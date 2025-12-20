@@ -1,0 +1,57 @@
+{
+    "slug":  "starbucks-closes-underperforming-stores",
+    "category":  "Business",
+    "title":  "Starbucks Announces Closure of 400 Underperforming US Stores",
+    "introText":  "Starbucks will close 400 underperforming US locations as part of a strategic restructuring plan. The coffee giant is shifting focus to drive-through and mobile pickup formats while reducing its urban footprint.",
+    "readingTime":  "6 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-3.webp",
+                   "name":  "Maria Rodriguez",
+                   "role":  "Environmental Correspondent"
+               },
+    "lastUpdated":  "December 15, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Starbucks restructures US store network",
+                        "imageUrl":  "/images/news/coffee-shop.webp",
+                        "imageAlt":  "Coffee shop"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Strategic Closures",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Starbucks will close 400 stores by mid-2026, representing about 4% of its US locations. The closures target urban stores with declining foot traffic and high labor costs, particularly in downtown areas still recovering from remote work shifts."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "CEO confirmed that most affected employees will be offered transfers to nearby locations or severance packages."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Format Evolution",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The company is investing heavily in drive-through and mobile pickup formats, which now account for 75% of US orders. New store openings will prioritize suburban locations with drive-through access."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Starbucks is also piloting smaller-format pickup-only stores in select markets."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Market Response",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Investors reacted positively to the restructuring announcement, with shares rising 5% on news of improved efficiency targets. The company expects $200 million in annual savings from the closures."
+                    }
+                ],
+    "bookmarked":  false
+}

@@ -1,0 +1,34 @@
+{
+  "featuredArticle": {
+    "slug": "amazon-unveils-ai-powered-delivery-drones-2025",
+    "category": "Business",
+    "title": "Amazon Unveils AI-Powered Delivery Drones Across 50 US Cities",
+    "excerpt": "Amazon has officially launched its Prime Air drone delivery service in 50 major US cities, promising 30-minute deliveries for packages under 5 pounds. The move marks the largest commercial drone deployment in history and is expected to revolutionize last-mile delivery logistics...",
+    "date": "December 16, 2025",
+    "image": "/images/news/drone-delivery.webp",
+    "bookmarked": false
+  },
+  "rightArticles": [
+    {
+      "slug": "nvidia-stock-hits-record-high-ai-demand",
+      "title": "Live: NVIDIA Stock Hits Record $180 as AI Chip Demand Soars",
+      "date": "December 17, 2025",
+      "image": "/images/news/finance-stock-market.webp",
+      "live": true,
+      "bookmarked": false
+    },
+    {
+      "slug": "microsoft-activision-gaming-dominance",
+      "title": "Microsoft-Activision Merger Reshapes Gaming Industry Landscape",
+      "date": "December 15, 2025",
+      "image": "/images/news/gaming-esports.webp",
+      "live": false,
+      "bookmarked": false
+    }
+  ],
+  "adBanner": {
+    "image": "/images/news/ad-banner.webp",
+    "link": "https://example.com",
+    "alt": "Advertisement - Website Builder"
+  }
+}

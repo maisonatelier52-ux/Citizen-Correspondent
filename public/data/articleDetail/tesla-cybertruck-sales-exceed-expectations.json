@@ -1,0 +1,57 @@
+{
+    "slug":  "tesla-cybertruck-sales-exceed-expectations",
+    "category":  "Business",
+    "title":  "Tesla Cybertruck Sales Exceed 400,000 Units in First Full Year",
+    "introText":  "Tesla\u0027s Cybertruck has exceeded all expectations, selling over 400,000 units in its first full year of production. The unconventional electric pickup has become a cultural phenomenon and a significant profit driver for the company.",
+    "readingTime":  "7 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-1.webp",
+                   "name":  "Sarah Mitchell",
+                   "role":  "Chief Political Correspondent"
+               },
+    "lastUpdated":  "December 17, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Tesla Cybertruck dominates electric truck market",
+                        "imageUrl":  "/images/news/tesla-electric-vehicle.webp",
+                        "imageAlt":  "Tesla electric vehicle"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Record Sales",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Tesla delivered 400,000 Cybertrucks in 2025, making it the best-selling electric pickup and the third-best-selling pickup overall in America. The vehicle\u0027s distinctive stainless steel design has proven more popular than critics predicted."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Production has ramped to 10,000 units per week at Tesla\u0027s Texas Gigafactory, with plans to reach 15,000 weekly by mid-2026."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Market Impact",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The Cybertruck\u0027s success has forced Ford and GM to accelerate their electric truck programs. Ford\u0027s F-150 Lightning and GM\u0027s Silverado EV have struggled to match Tesla\u0027s combination of range, performance, and brand appeal."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Average selling prices remain above $80,000, contributing significant margins to Tesla\u0027s bottom line."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "New Variants",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Tesla has announced a lower-cost single-motor variant for 2026, priced starting at $50,000. The company is also developing a commercial fleet version for business customers."
+                    }
+                ],
+    "bookmarked":  false
+}

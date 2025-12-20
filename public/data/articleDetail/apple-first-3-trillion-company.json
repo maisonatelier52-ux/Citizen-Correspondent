@@ -1,0 +1,57 @@
+{
+    "slug":  "apple-first-3-trillion-company",
+    "category":  "Business",
+    "title":  "Apple Becomes First Company to Reach $3.5 Trillion Market Cap",
+    "introText":  "Apple has achieved another historic milestone, becoming the first company to reach a $3.5 trillion market capitalization. The achievement comes as the company\u0027s services business and AI initiatives drive renewed investor optimism.",
+    "readingTime":  "7 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-2.webp",
+                   "name":  "James Chen",
+                   "role":  "Technology Correspondent"
+               },
+    "lastUpdated":  "December 16, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Apple reaches unprecedented valuation milestone",
+                        "imageUrl":  "/images/news/apple-store.webp",
+                        "imageAlt":  "Apple store"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Historic Valuation",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Apple\u0027s market cap crossed $3.5 trillion, extending its lead as the world\u0027s most valuable public company. The milestone reflects investor confidence in Apple\u0027s ability to maintain growth through new products and expanding services."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Shares have gained 45% in 2025, driven by strong iPhone sales, services growth, and AI feature announcements."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Services Growth",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Apple\u0027s services business now generates $100 billion annually, with App Store, Apple Music, iCloud, and Apple TV+ all showing strong growth. The high-margin services segment has become increasingly important to Apple\u0027s profitability."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Advertising revenue from the App Store and News app has grown 50% year-over-year."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "AI and Innovation",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Apple Intelligence, the company\u0027s AI suite, has driven strong iPhone 16 upgrade rates. The Vision Pro 2 has exceeded sales expectations, establishing Apple in the spatial computing market."
+                    }
+                ],
+    "bookmarked":  false
+}

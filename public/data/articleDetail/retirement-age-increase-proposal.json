@@ -1,0 +1,57 @@
+{
+    "slug":  "retirement-age-increase-proposal",
+    "category":  "Finance",
+    "title":  "Congress Considers Raising Social Security Retirement Age to 70",
+    "introText":  "A bipartisan congressional committee has proposed raising the Social Security full retirement age from 67 to 70, phased in over 12 years. The proposal aims to address the program\u0027s looming funding shortfall but faces significant opposition.",
+    "readingTime":  "7 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-6.webp",
+                   "name":  "Robert Kim",
+                   "role":  "Political Correspondent"
+               },
+    "lastUpdated":  "December 13, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "Retirement age increase under consideration",
+                        "imageUrl":  "/images/news/calculator-finance.webp",
+                        "imageAlt":  "Financial planning"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Reform Proposal",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The proposal would gradually increase the full retirement age by two months each year, reaching 70 for workers born after 1975. Early retirement at 62 would still be available, but with larger benefit reductions."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Committee members argue the change reflects increased life expectancy and is necessary to avoid benefit cuts when the trust fund exhausts in 2033."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Opposition",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "AARP and labor unions strongly oppose the proposal, arguing it would disproportionately harm lower-income workers who often cannot work into their late 60s due to physical job demands or health issues."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Alternative proposals include raising the payroll tax cap, which currently only applies to income up to $168,600."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Political Reality",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Any Social Security changes face difficult political prospects. Both parties have historically avoided benefit cuts, though the approaching trust fund deadline is forcing the conversation."
+                    }
+                ],
+    "bookmarked":  false
+}

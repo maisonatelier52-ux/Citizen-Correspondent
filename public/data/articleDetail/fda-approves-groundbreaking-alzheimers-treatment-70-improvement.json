@@ -1,0 +1,83 @@
+{
+    "slug":  "fda-approves-groundbreaking-alzheimers-treatment-70-improvement",
+    "category":  "Health",
+    "title":  "FDA Approves Groundbreaking Alzheimer\u0027s Treatment Showing 70% Improvement",
+    "introText":  "The FDA has granted full approval to a revolutionary Alzheimer\u0027s treatment that demonstrated 70% improvement in cognitive function during clinical trials. The drug, developed by Eli Lilly, represents the most significant advance in Alzheimer\u0027s treatment in decades and offers new hope to millions of patients and families.",
+    "readingTime":  "9 Min Read",
+    "author":  {
+                   "image":  "/images/authors/author-7.webp",
+                   "name":  "Emily Watson",
+                   "role":  "Education \u0026 Social Issues Correspondent"
+               },
+    "lastUpdated":  "December 14, 2025",
+    "content":  [
+                    {
+                        "type":  "image",
+                        "content":  "New Alzheimer\u0027s treatment offers hope to millions of patients",
+                        "imageUrl":  "/images/news/healthcare-medical.webp",
+                        "imageAlt":  "Medical research laboratory"
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "A Historic Approval",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "After decades of failed attempts to develop effective Alzheimer\u0027s treatments, the FDA\u0027s approval of donanemab marks a turning point. The drug, marketed as Kisunla, is the first to demonstrate not just slowing of cognitive decline, but actual improvement in many patients."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "In Phase 3 trials involving 1,700 patients with early-stage Alzheimer\u0027s, 70% showed measurable improvement in cognitive tests after 18 months of treatment. The results exceeded expectations and prompted the FDA to expedite its review process."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "How It Works",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Donanemab targets amyloid plaques, the protein buildups in the brain long associated with Alzheimer\u0027s disease. Unlike previous drugs that merely slowed plaque accumulation, this treatment actively clears existing deposits, allowing brain function to recover in many cases."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The drug is administered via monthly infusions, with most patients completing treatment within 12-18 months as their amyloid levels normalize. Ongoing monitoring ensures sustained benefits."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Patient Stories",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Clinical trial participants have shared remarkable stories of recovery. One 68-year-old patient, who had been unable to recognize family members, regained the ability to have conversations and recall recent events after six months of treatment."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Caregivers report that the improvements transform daily life â€“ patients regaining independence in activities like managing medications, cooking, and engaging in hobbies they had abandoned."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Access and Cost",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Eli Lilly has priced the treatment at $26,500 for a full course, significantly less than some analysts expected. Medicare has announced it will cover the drug for eligible patients, making it accessible to millions of seniors."
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "The company is rapidly scaling production to meet anticipated demand. Treatment centers across the country are preparing to offer the infusions, with neurologists undergoing specialized training."
+                    },
+                    {
+                        "type":  "heading",
+                        "content":  "Future Implications",
+                        "level":  2
+                    },
+                    {
+                        "type":  "paragraph",
+                        "content":  "Researchers are already exploring whether the treatment might be effective for prevention in high-risk individuals. Early intervention trials are planned, which could fundamentally change how society approaches Alzheimer\u0027s disease."
+                    }
+                ],
+    "bookmarked":  false
+}

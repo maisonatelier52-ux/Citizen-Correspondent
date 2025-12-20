@@ -1,0 +1,148 @@
+{
+  "mainGrid": [
+    {
+      "slug": "openai-valued-200-billion-funding-round",
+      "title": "OpenAI Valued at $200 Billion in Largest Private Tech Funding Round Ever",
+      "image": "/images/news/ai-technology.webp",
+      "categories": ["Business"],
+      "date": "December 17, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "solar-power-cheapest-energy-worldwide",
+      "title": "Solar Power Officially Becomes Cheapest Energy Source in 90% of Countries",
+      "image": "/images/news/solar-panels.webp",
+      "categories": ["Renewable Energy"],
+      "date": "December 17, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "alzheimers-breakthrough-treatment-2025",
+      "title": "Breakthrough Alzheimer's Treatment Shows 70% Cognitive Improvement in Trials",
+      "image": "/images/news/healthcare-medical.webp",
+      "categories": ["Research"],
+      "date": "December 17, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "2026-presidential-campaign-kicks-off",
+      "title": "2026 Presidential Campaign Officially Kicks Off with First Major Debates",
+      "image": "/images/news/politics-presidential-race.webp",
+      "categories": ["Politics"],
+      "date": "December 17, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "cop30-brazil-emissions-agreement",
+      "title": "COP30 Brazil: 195 Nations Pledge to Cut Emissions 60% by 2035",
+      "image": "/images/news/climate-summit.webp",
+      "categories": ["Climate Change"],
+      "date": "December 17, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "g20-summit-economic-cooperation",
+      "title": "G20 Summit: World Leaders Forge Historic Economic Cooperation Agreement",
+      "image": "/images/news/london-city.webp",
+      "categories": ["Global Affairs"],
+      "date": "December 17, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "ai-tutors-transform-education-2025",
+      "title": "AI Tutors Transform Education: 40% of US Students Now Use Personalized AI Learning",
+      "image": "/images/news/education-students.webp",
+      "categories": ["Education"],
+      "date": "December 17, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "federal-reserve-cuts-interest-rates",
+      "title": "Federal Reserve Cuts Interest Rates by 0.5% in Surprise December Decision",
+      "image": "/images/news/finance-stock-market.webp",
+      "categories": ["Finance"],
+      "date": "December 17, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "tesla-cybertruck-sales-exceed-expectations",
+      "title": "Tesla Cybertruck Sales Exceed 400,000 Units in First Full Year",
+      "image": "/images/news/tesla-electric-vehicle.webp",
+      "categories": ["Business"],
+      "date": "December 17, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "bitcoin-surges-150000-institutional-buying",
+      "title": "Bitcoin Surges Past $150,000 on Massive Institutional Buying",
+      "image": "/images/news/bitcoin-crypto.webp",
+      "categories": ["Finance"],
+      "date": "December 17, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "viral-ai-generated-movie-breaks-records",
+      "title": "Viral AI-Generated Movie Becomes First to Gross $100 Million at Box Office",
+      "image": "/images/news/movie-theater.webp",
+      "categories": ["Hot"],
+      "date": "December 17, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "crispr-gene-therapy-breakthrough",
+      "title": "CRISPR Gene Therapy Cures Sickle Cell Disease in 100 Patients",
+      "image": "/images/news/medical-research.webp",
+      "categories": ["Research"],
+      "date": "December 17, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "russia-ukraine-peace-talks-breakthrough",
+      "title": "Russia-Ukraine Peace Talks Show Signs of Breakthrough in Geneva",
+      "image": "/images/news/peace-talks.webp",
+      "categories": ["World"],
+      "date": "December 17, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "opinion-ai-job-displacement-solution",
+      "title": "Opinion: AI Job Displacement Is Coming — Here's How We Can Prepare",
+      "image": "/images/news/ai-technology.webp",
+      "categories": ["Opinion"],
+      "date": "December 17, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "offshore-wind-farm-record-capacity",
+      "title": "World's Largest Offshore Wind Farm Goes Online in UK",
+      "image": "/images/news/wind-turbines.webp",
+      "categories": ["Renewable Energy"],
+      "date": "December 17, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "ai-cancer-detection-early-diagnosis",
+      "title": "AI Cancer Detection System Identifies Tumors 5 Years Before Symptoms",
+      "image": "/images/news/medical-research.webp",
+      "categories": ["Health"],
+      "date": "December 17, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "gaming-esports-olympics-inclusion",
+      "title": "IOC Officially Adds Esports to 2028 Los Angeles Olympics",
+      "image": "/images/news/gaming-esports.webp",
+      "categories": ["Hot"],
+      "date": "December 13, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "james-webb-telescope-discovery",
+      "title": "James Webb Telescope Discovers Signs of Life on Exoplanet K2-18b",
+      "image": "/images/news/space-earth.webp",
+      "categories": ["Research"],
+      "date": "December 16, 2025",
+      "bookmarked": false
+    }
+  ]
+}
