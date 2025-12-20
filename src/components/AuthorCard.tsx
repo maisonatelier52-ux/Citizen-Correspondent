@@ -45,7 +45,7 @@ const AuthorCard: React.FC<AuthorCardProps> = ({ author, reverse = false }) => {
 
           {author.website && (
             <p className="text-orange-500 font-medium">
-              <Link 
+              <Link  
                 href={author.website} 
                 className="underline hover:no-underline"
                 title={`Visit ${author.name}'s website`}
