@@ -100,7 +100,7 @@ const MainGrid: React.FC<MainGridProps> = ({
               title={item.title}
               className="block"
             >
-              <h2 className="text-lg font-semibold text-gray-900 leading-snug hover:text-orange-600 transition-colors">
+              <h2 className="text-md font-semibold text-gray-900 leading-snug hover:text-orange-600 transition-colors">
                 {item.title}
               </h2>
             </Link>

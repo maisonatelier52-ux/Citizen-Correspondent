@@ -42,7 +42,7 @@ const HeroLead: React.FC<HeroLeadProps> = ({
 
   return (
     <section className="bg-white">
-      <div className="max-w-360 mx-auto pr-6 py-2">
+      <div className="max-w-360 mx-auto pr-3 py-2">
         <div className="flex flex-col lg:flex-row gap-3 items-start">
           {/* Text column */}
           <div className="flex-2 space-y-4 mt-12">
