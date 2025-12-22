@@ -13,12 +13,14 @@ import { HorizontalSidebarItem } from "@/src/components/HorizontalSidebar";
 import { MainGridItem } from "@/src/components/MainGrid";
 import homeData from "@/public/data/homePage/home-featureHomepart.json";
 import mainGridData from "@/public/data/homePage/home-mainGrid.json";
+import homeLandingPartData from "@/public/data/homePage/home-homelandingpart.json";
 
 // Critical above-the-fold components - import directly (no dynamic import for faster load)
 import DateBar from "@/src/components/DateBar";
 import MainNav from "@/src/components/MainNav";
 import CategoryNav from "@/src/components/CategoryNav";
 import FeatureHomePart from "@/src/components/FeatureHomePart";
+import HomeLandingPart from "@/src/components/HomeLandingPart";
 
 // Lazy load below-the-fold components for code splitting
 const MainGrid = dynamic(() => import("@/src/components/MainGrid"), {
@@ -146,6 +148,11 @@ export default async function HomePage() {
   const adBanner = featureCategoryData.default.adBanner as AdBannerProps;
   const horizontalArticle = horizontalArticleData.default.article as HorizontalArticleCardProps;
 
+  // Data for HomeLandingPart (business layout) from dedicated JSON
+  const homeLandingMain = (homeLandingPartData as any).mainFeature;
+  const homeLandingSecondary = (homeLandingPartData as any).secondaryFeature;
+  const homeLandingSidebar = (homeLandingPartData as any).sidebar as SidebarItem[];
+
   return (
     <>
       {/* Preload critical hero image for LCP */}
@@ -201,14 +208,12 @@ export default async function HomePage() {
           </div>
         </Suspense>
 
-        <Suspense fallback={<div className="h-96 animate-pulse bg-gray-100" />}>
-          <FeatureCategoryPart
-            featuredArticle={featuredArticle}
-            rightArticles={rightArticles}
-            adBanner={adBanner}
-            heading="Business News"
-          />
-        </Suspense>
+        {/* Business landing layout (data from home-homelandingpart.json) */}
+        <HomeLandingPart
+          mainFeature={homeLandingMain}
+          secondaryFeature={homeLandingSecondary}
+          sidebarItems={homeLandingSidebar}
+        />
 
         <Suspense fallback={<div className="h-64 animate-pulse bg-gray-100" />}>
           <div className="max-w-360 mx-auto px-6 py-2">

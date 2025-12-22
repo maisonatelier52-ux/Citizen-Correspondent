@@ -31,7 +31,7 @@ const HorizontalArticleCard: React.FC<HorizontalArticleCardProps> = ({
   return (
     <div className="bg-white border-t border-gray-200 pt-4">
       {heading && (
-        <div className="flex items-center gap-2 mb-6">
+        <div className="flex items-center gap-2 mb-2">
           <h2 className="text-xl font-semibold text-gray-900">{heading}</h2>
           <span className="text-gray-500 text-lg">›</span>
         </div>
@@ -54,7 +54,7 @@ const HorizontalArticleCard: React.FC<HorizontalArticleCardProps> = ({
       </Link>
 
       {/* Text Section */}
-      <div className="flex-1 flex flex-col justify-center space-y-4 py-4">
+      <div className="flex-1 flex flex-col  space-y-2 py-0">
         <div className="text-sm font-semibold text-gray-600 uppercase tracking-wide">
           {category}
         </div>

@@ -1,0 +1,57 @@
+{
+  "mainFeature": {
+    "category": "Business",
+    "title": "Live: Amazon Prime Air Launches Drone Delivery in 50 US Cities",
+    "excerpt": "Amazon expands its Prime Air drone network to 50 US cities, promising under-30-minute deliveries and reshaping the last-mile logistics market.",
+    "date": "December 17, 2025",
+    "image": "/images/news/drone-delivery.webp",
+    "slug": "amazon-drone-delivery-50-cities-launch",
+    "live": true
+  },
+  "secondaryFeature": {
+    "category": "Business",
+    "title": "OpenAI Valued at $200 Billion in Largest Private Tech Funding Round Ever",
+    "date": "December 17, 2025",
+    "image": "/images/news/ai-technology.webp",
+    "slug": "openai-valued-200-billion-funding-round"
+  },
+  "sidebar": [
+    {
+      "category": "Business",
+      "title": "Walmart Completes $2.3 Billion Acquisition of Vizio Smart TV",
+      "date": "December 16, 2025",
+      "image": "/images/news/business-team.webp",
+      "slug": "walmart-acquires-vizio-smart-tv"
+    },
+    {
+      "category": "Business",
+      "title": "Tesla Cybertruck Sales Exceed 400,000 Units in First Full Year",
+      "date": "December 17, 2025",
+      "image": "/images/news/tesla-electric-vehicle.webp",
+      "slug": "tesla-cybertruck-sales-exceed-expectations"
+    },
+    {
+      "category": "Business",
+      "title": "Apple Becomes First Company to Reach $3.5 Trillion Market Cap",
+      "date": "December 16, 2025",
+      "image": "/images/news/apple-store.webp",
+      "slug": "apple-first-3-trillion-company"
+    },
+    {
+      "category": "Business",
+      "title": "Starbucks Announces Closure of 400 Underperforming US Stores",
+      "date": "December 15, 2025",
+      "image": "/images/news/coffee-shop.webp",
+      "slug": "starbucks-closes-underperforming-stores"
+    },
+    {
+      "category": "Business",
+      "title": "Disney+ Reaches Profitability with 180 Million Subscribers",
+      "date": "December 13, 2025",
+      "image": "/images/news/movie-theater.webp",
+      "slug": "disney-streaming-profitability-milestone"
+    }
+  ]
+}
+
+
