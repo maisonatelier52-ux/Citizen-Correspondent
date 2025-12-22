@@ -28,7 +28,7 @@ const FeatureCategoryPart: React.FC<FeatureCategoryPartProps> = ({
 }) => {
   return (
     <section className={`bg-white py-8 ${className}`}>
-      <div className="max-w-7xl mx-auto px-6 ">
+      <div className="max-w-360 mx-auto px-6 ">
         {heading && (
           <div className="flex items-center gap-2 mb-6">
             <h2 className="text-xl font-semibold text-gray-900">{heading}</h2>

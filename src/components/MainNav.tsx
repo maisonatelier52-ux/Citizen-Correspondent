@@ -49,7 +49,7 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "home" }) => {
     return (
         <>
             <nav className="sticky top-0 z-50 bg-white border-b border-gray-200">
-                <div className="max-w-7xl mx-auto px-6">
+                <div className="max-w-360 mx-auto px-6">
                     <div className="flex items-center justify-between h-16">
                         <div className="flex items-center justify-between gap-6">
                         {/* Left: Logo */}
@@ -96,10 +96,10 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "home" }) => {
                                             onMouseLeave={handleMouseLeave}
                                         >
                                             <button
-                                                className={`relative text-sm font-medium transition-colors duration-200 ${
+                                                className={`relative text-sm font-semibold transition-colors duration-200 ${
                                                     isActive
                                                         ? "text-orange-500"
-                                                        : "text-gray-700 hover:text-orange-500"
+                                                        : "text-black hover:text-orange-500"
                                                 }`}
                                             >
                                                 {item.name}
@@ -119,7 +119,7 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "home" }) => {
                                                                 <Link
                                                                     key={dropdownItem.name}
                                                                     href={dropdownItem.href}
-                                                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 transition-colors duration-200"
+                                                                    className="block px-4 py-2 text-sm text-black hover:bg-gray-50 hover:text-orange-500 transition-colors duration-200"
                                                                     title={dropdownItem.title}
                                                                 >
                                                                     {dropdownItem.name}
@@ -138,9 +138,9 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "home" }) => {
                                         <Link
                                             href={item.href}
                                             title={item.title}
-                                            className={`relative text-sm font-medium transition-colors duration-200 ${isActive
+                                            className={`relative text-sm font-semibold transition-colors duration-200 ${isActive
                                                 ? "text-orange-500"
-                                                : "text-gray-700 hover:text-orange-500"
+                                                : "text-black hover:text-orange-500"
                                                 }`}
                                         >
                                             {item.name}

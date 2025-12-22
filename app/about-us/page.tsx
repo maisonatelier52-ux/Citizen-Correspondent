@@ -65,7 +65,7 @@ export default function AboutUsPage() {
 
         {/* Main Content - Our Story */}
         <section className="py-12 px-6">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-360 mx-auto">
             <div className="bg-white border border-gray-200 rounded-lg p-8 md:p-12 ">
               <div className="flex items-center gap-2 mb-8">
                 <h1 className="text-3xl md:text-4xl font-bold text-gray-900">Our Story</h1>
@@ -91,7 +91,7 @@ export default function AboutUsPage() {
 
         {/* Mission & Vision Cards */}
         <section className="py-8 px-6">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-360 mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Our Mission */}
               <div className="bg-white border border-gray-200 rounded-lg p-8 hover:shadow-md transition-shadow">
@@ -128,7 +128,7 @@ export default function AboutUsPage() {
 
         {/* Editorial Principles */}
         <section className="py-12 px-6">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-360 mx-auto">
             <div className="flex items-center gap-2 mb-10">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Our Editorial Principles</h2>
               <span className="text-gray-500 text-lg">›</span>
@@ -183,7 +183,7 @@ export default function AboutUsPage() {
 
         {/* Stats Banner */}
         <section className="py-12 px-6">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-360 mx-auto">
             <div className="bg-white border border-gray-200 rounded-lg p-8 md:p-12 shadow-sm">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div>

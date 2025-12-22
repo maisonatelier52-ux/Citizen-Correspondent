@@ -28,8 +28,8 @@ const DateBar: React.FC<DateBarProps> = ({
   if (!isVisible) return null;
 
   return (
-    <div className="bg-black text-white px-6">
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between flex-wrap gap-4">
+    <div className="bg-black text-white">
+      <div className="max-w-360 mx-auto px-6 flex items-center justify-between flex-wrap gap-4">
         {/* Left: Date */}
         <div className="text-sm font-medium">{date}</div>
 

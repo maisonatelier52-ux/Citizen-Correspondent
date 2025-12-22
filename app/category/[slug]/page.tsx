@@ -232,10 +232,9 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           featuredArticle={featuredArticle}
           rightArticles={rightArticles}
           adBanner={adBanner}
-          heading={`${categoryName} News`}
         />
 
-        <div className="max-w-7xl mx-auto px-6 pb-12 border-t border-gray-400">
+        <div className="max-w-360 mx-auto px-6 pb-12 border-t border-gray-400">
           <MainGrid items={mainGridItems} heading={categoryName} />
         </div>
 

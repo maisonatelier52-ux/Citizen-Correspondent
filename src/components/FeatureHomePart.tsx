@@ -34,7 +34,7 @@ const FeatureHomePart: React.FC<FeatureHomePartProps> = ({
 }) => {
   return (
     <section className="bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-360 mx-auto px-6">
         <div className="flex flex-col xl:flex-row gap-4 py-4">
           <div className="flex-1 min-w-0">
             <HeroLead

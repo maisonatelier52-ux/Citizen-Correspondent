@@ -36,7 +36,7 @@ const CategoryIntro: React.FC<CategoryIntroProps> = ({
 
   return (
     <section className={`bg-white pt-8 ${className}`}>
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-360 mx-auto px-6">
         {/* Header with Category Name and Follow Button */}
         <div className="flex items-center justify-between mb-4">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
@@ -82,7 +82,7 @@ const CategoryIntro: React.FC<CategoryIntroProps> = ({
               <Link
                 key={topic}
                 href={`/category/${topic.toLowerCase().replace(/\s+/g, "-")}`}
-                className="px-4 py-1.5 border border-gray-300 rounded text-sm font-medium text-gray-700 hover:bg-gray-50 hover:border-orange-500 hover:text-orange-500 transition-colors duration-200"
+                className="px-4 py-1.5 border border-gray-900 rounded-3xl text-sm font-bold text-gray-700 hover:bg-gray-50 hover:border-orange-500 hover:text-orange-500 transition-colors duration-200"
               >
                 {topic}
               </Link>

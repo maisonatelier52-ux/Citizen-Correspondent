@@ -42,25 +42,25 @@ const HeroLead: React.FC<HeroLeadProps> = ({
 
   return (
     <section className="bg-white">
-      <div className="max-w-7xl mx-auto pr-6 py-2">
-        <div className="flex flex-col lg:flex-row gap-8 items-start">
+      <div className="max-w-360 mx-auto pr-6 py-2">
+        <div className="flex flex-col lg:flex-row gap-3 items-start">
           {/* Text column */}
-          <div className="flex-1 space-y-4">
+          <div className="flex-2 space-y-4 mt-12">
             {/* Category pill */}
             <div className="flex items-center gap-2 text-sm font-semibold text-gray-700">
               <span className="w-3 h-3 rounded-full bg-orange-600" />
               <span className={categoryColorClass}>{category}</span>
             </div>
 
-          {/* Title */}
-          <Wrapper>
-            <h1 className="text-4xl sm:text-5xl font-bold leading-tight text-gray-900 hover:text-orange-600 transition-colors">
-              {title}
-            </h1>
-          </Wrapper>
+            {/* Title */}
+            <Wrapper>
+              <h1 className="text-4xl sm:text-4xl font-bold leading-tight text-gray-900 hover:text-orange-600 transition-colors">
+                {title}
+              </h1>
+            </Wrapper>
 
             {/* Excerpt */}
-            <p className="text-lg text-gray-700 leading-7">{excerpt}</p>
+            <p className="text-sm text-gray-700 leading-7">{excerpt}</p>
 
             {/* Meta row */}
             <div className="flex items-center gap-4 text-sm text-gray-600">
@@ -81,9 +81,9 @@ const HeroLead: React.FC<HeroLeadProps> = ({
           </div>
 
           {/* Image column */}
-          <div className="flex-1 w-full">
+          <div className="flex-3 w-full">
             <Wrapper>
-              <div className="relative w-full h-[360px] sm:h-[420px] lg:h-[560px] overflow-hidden">
+              <div className="relative w-full h-[360px] sm:h-[420px] lg:h-[410px] overflow-hidden">
                 <Image
                   src={image}
                   alt={title}

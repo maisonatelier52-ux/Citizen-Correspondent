@@ -7,7 +7,7 @@ import Link from "next/link";
 const BigAddBanner: React.FC = () => {
   return (
     <section>
-    <div className="max-w-7xl mx-auto  sm:px-0 lg:px-6">
+    <div className="max-w-360 mx-auto  sm:px-0 lg:px-6">
       <div className="flex justify-center">
         <Link href="#" className="block w-full">
           <Image

@@ -60,7 +60,7 @@ const ArticleWithSidebar: React.FC<ArticleWithSidebarProps> = ({
   }, []);
 
   return (
-    <div className={`max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-6 gap-6 py-4 bg-white ${className}`}>
+    <div className={`max-w-360 mx-auto px-6 grid grid-cols-1 lg:grid-cols-6 gap-6 py-4 bg-white ${className}`}>
       {/* Left: Article Detail + End Marker */}
       <div className="lg:col-span-4">
         <ArticleDetail

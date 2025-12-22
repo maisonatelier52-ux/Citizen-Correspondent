@@ -181,12 +181,12 @@ export default async function HomePage() {
           horizontalItems={horizontalItems}
         />
 
-        <div className="max-w-7xl mx-auto px-6 pb-12 border-t border-gray-200">
+        <div className="max-w-360 mx-auto px-6 pb-12 border-t border-gray-200">
           <MainGrid items={mainGridItems} heading="World" />
         </div>
 
         {/* Visible heading with title keywords for SEO */}
-        <div className="max-w-7xl mx-auto px-6 py-4">
+        <div className="max-w-360 mx-auto px-6 py-4">
           <div className="text-1xl md:text-1xl font-bold text-gray-900 mb-2">
             Latest News & Breaking Stories 2025
           </div>
@@ -211,7 +211,7 @@ export default async function HomePage() {
         </Suspense>
 
         <Suspense fallback={<div className="h-64 animate-pulse bg-gray-100" />}>
-          <div className="max-w-7xl mx-auto px-6 py-2">
+          <div className="max-w-360 mx-auto px-6 py-2">
             <HorizontalArticleCard
               slug={horizontalArticle.slug}
               category={horizontalArticle.category}
@@ -226,7 +226,7 @@ export default async function HomePage() {
         </Suspense>
 
         <Suspense fallback={<div className="h-64 animate-pulse bg-gray-100" />}>
-          <div className="max-w-7xl mx-auto pt-4 px-6 pb-12">
+          <div className="max-w-360 mx-auto pt-4 px-6 pb-12">
             <MainGridLazy items={mainGridTechnologyItems} />
           </div>
         </Suspense>
@@ -238,19 +238,19 @@ export default async function HomePage() {
         </Suspense>
 
         <Suspense fallback={<div className="h-64 animate-pulse bg-gray-100" />}>
-          <div className="max-w-7xl mx-auto px-6 pb-12">
+          <div className="max-w-360 mx-auto px-6 pb-12">
             <MainGridLazy items={mainGridEnvironmentItems} heading="Environment" />
           </div>
         </Suspense>
 
         <Suspense fallback={<div className="h-96 animate-pulse bg-gray-100" />}>
-          <div className="max-w-7xl mx-auto px-6 pb-12 border-t border-gray-200">
+          <div className="max-w-360 mx-auto px-6 pb-12 border-t border-gray-200">
             <OverlayArticleGrid items={overlayGridPoliticsItems} heading="Politics" />
           </div>
         </Suspense>
 
         <Suspense fallback={<div className="h-64 animate-pulse bg-gray-100" />}>
-          <div className="max-w-7xl mx-auto px-6 pb-12 border-t border-gray-200">
+          <div className="max-w-360 mx-auto px-6 pb-12 border-t border-gray-200">
             <MainGridLazy items={mainGridMoreNewsItems} heading="More News" initialRows={2} />
         </div>
         </Suspense>

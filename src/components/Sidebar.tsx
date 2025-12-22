@@ -48,7 +48,7 @@ const Sidebar: React.FC<SidebarProps> = ({ items, heading, onBookmarkToggle }) =
                 className="block"
                 title={item.title}
               >
-                <h2 className="text-base font-semibold text-gray-900 leading-snug hover:text-orange-600 transition-colors">
+                <h2 className="text-sm font-semibold text-gray-900 leading-snug hover:text-orange-600 transition-colors">
                   {item.title}
                 </h2>
               </Link>
