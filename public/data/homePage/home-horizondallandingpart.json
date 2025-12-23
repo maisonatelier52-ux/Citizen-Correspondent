@@ -1,0 +1,53 @@
+{
+  "intro": {
+    "title": "Discover the future today, right here!",
+    "body": "Your one-stop destination for the latest in phones, laptops, and cutting-edge gadgets. Stay on the pulse of innovation as we unravel the tech universe, offering in-depth reviews, insightful analyses, and expert insights.",
+    "buttonLabel": "All in Technology",
+    "buttonHref": "/category/technology"
+  },
+  "article": {
+    "slug": "apple-mixed-reality-headset-outsells-meta-quest",
+    "category": "Technology",
+    "title": "Apple Vision Pro 2 Outsells Meta Quest 3 in Holiday Season Rush",
+    "excerpt": "Apple's second-generation mixed reality headset has dominated the holiday shopping season, outselling Meta's Quest 3 by a 3-to-1 margin. Industry analysts attribute the success to improved comfort, reduced price point, and exclusive content partnerships with major streaming platforms...",
+    "date": "December 17, 2025",
+    "image": "/images/news/vr-headset.webp",
+    "bookmarked": false
+  },
+  "mainGrid": [
+    {
+      "slug": "google-gemini-2-launch-multimodal-ai",
+      "title": "Google Launches Gemini 2.0 with Advanced Multimodal Reasoning",
+      "image": "/images/news/ai-technology.webp",
+      "categories": ["Technology"],
+      "date": "December 17, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "spacex-starship-mars-mission-2026",
+      "title": "SpaceX Announces First Crewed Starship Mission to Mars for 2026",
+      "image": "/images/news/spacex-rocket.webp",
+      "categories": ["Technology"],
+      "date": "December 16, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "samsung-foldable-phone-dominates-market",
+      "title": "Samsung Galaxy Z Fold 6 Dominates Foldable Phone Market with 65% Share",
+      "image": "/images/news/smartphone.webp",
+      "categories": ["Technology"],
+      "date": "December 15, 2025",
+      "bookmarked": false
+    },
+    {
+      "slug": "quantum-computer-breakthrough-ibm",
+      "title": "IBM Achieves Quantum Supremacy with 1000-Qubit Processor",
+      "image": "/images/news/quantum-computer.webp",
+      "categories": ["Technology"],
+      "date": "December 14, 2025",
+      "bookmarked": false
+    }
+  ]
+}
+
+

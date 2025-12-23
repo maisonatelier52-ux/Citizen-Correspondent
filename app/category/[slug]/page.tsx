@@ -2,7 +2,11 @@ import DateBar from "@/src/components/DateBar";
 import MainNav from "@/src/components/MainNav";
 import CategoryNav from "@/src/components/CategoryNav";
 import CategoryIntro from "@/src/components/CategoryIntro";
-import FeatureCategoryPart from "@/src/components/FeatureCategoryPart";
+import CategoryLandingPart, {
+  CategoryLandingMainFeature,
+  CategoryLandingArticle,
+  CategoryLandingPromo,
+} from "@/src/components/CategoryLandingPart";
 import { FeaturedArticleCardProps } from "@/src/components/FeaturedArticleCard";
 import { ArticleCardSmallProps } from "@/src/components/ArticleCardSmall";
 import { AdBannerProps } from "@/src/components/AdBanner";
@@ -185,12 +189,40 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const featuredArticle = featureData.featuredArticle as FeaturedArticleCardProps;
   // Check if this is a Julio article and set the correct href
   const julioSlugs = ["bridging-nations-through-finance", "global-financial-leadership", "philanthropic-impact", "economic-diplomacy", "innovation-banking", "sustainable-growth"];
-  if (julioSlugs.includes(featuredArticle.slug)) {
-    featuredArticle.href = `/julio-herrera-velutini/${featuredArticle.slug}`;
-  }
+  const isJulioArticle = julioSlugs.includes(featuredArticle.slug);
+  const articleHref = isJulioArticle ? `/julio-herrera-velutini/${featuredArticle.slug}` : undefined;
+  
   const rightArticles = featureData.rightArticles as ArticleCardSmallProps[];
   const adBanner = featureData.adBanner as AdBannerProps;
   const mainGridItems = mainGridData.mainGrid as MainGridItem[];
+
+  // Map data for CategoryLandingPart
+  const mainFeature: CategoryLandingMainFeature = {
+    slug: featuredArticle.slug,
+    title: featuredArticle.title,
+    excerpt: featuredArticle.excerpt,
+    date: featuredArticle.date,
+    image: featuredArticle.image,
+    tags: [featuredArticle.category],
+    live: false, // Can be set from data if available
+    bookmarked: featuredArticle.bookmarked,
+    href: articleHref,
+  };
+
+  const articles: CategoryLandingArticle[] = rightArticles.slice(0, 2).map((article) => ({
+    slug: article.slug,
+    title: article.title,
+    date: article.date,
+    image: article.image,
+    bookmarked: article.bookmarked,
+  }));
+
+  const promo: CategoryLandingPromo = {
+    title: `Impressive ${categoryName} News Coverage`,
+    body: `Stay informed with the latest ${categoryName.toLowerCase()} news, insights, and analysis. Get comprehensive coverage of breaking stories, trends, and developments shaping the ${categoryName.toLowerCase()} landscape.`,
+    buttonLabel: "Explore More",
+    buttonHref: `/category/${slug}`,
+  };
 
   return (
     <>
@@ -228,10 +260,10 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           relatedTopics={relatedTopics}
         />
 
-        <FeatureCategoryPart
-          featuredArticle={featuredArticle}
-          rightArticles={rightArticles}
-          adBanner={adBanner}
+        <CategoryLandingPart
+          mainFeature={mainFeature}
+          articles={articles}
+          promo={promo}
         />
 
         <div className="max-w-360 mx-auto px-6 pb-12 border-t border-gray-400">

@@ -14,6 +14,7 @@ import { MainGridItem } from "@/src/components/MainGrid";
 import homeData from "@/public/data/homePage/home-featureHomepart.json";
 import mainGridData from "@/public/data/homePage/home-mainGrid.json";
 import homeLandingPartData from "@/public/data/homePage/home-homelandingpart.json";
+import horizontalLandingPartData from "@/public/data/homePage/home-horizondallandingpart.json";
 
 // Critical above-the-fold components - import directly (no dynamic import for faster load)
 import DateBar from "@/src/components/DateBar";
@@ -21,6 +22,7 @@ import MainNav from "@/src/components/MainNav";
 import CategoryNav from "@/src/components/CategoryNav";
 import FeatureHomePart from "@/src/components/FeatureHomePart";
 import HomeLandingPart from "@/src/components/HomeLandingPart";
+import HorizontalLandingPart from "@/src/components/HorizontalLandingPart";
 
 // Lazy load below-the-fold components for code splitting
 const MainGrid = dynamic(() => import("@/src/components/MainGrid"), {
@@ -122,36 +124,33 @@ export default async function HomePage() {
   // Preload critical hero image for LCP
   const heroImage = heroArticle.image;
 
-  // Lazy load below-the-fold data
-  const [
-    mainGridTechnologyData,
-    mainGridEnvironmentData,
-    mainGridMoreNewsData,
-    overlayGridPoliticsData,
-    featureCategoryData,
-    horizontalArticleData,
-  ] = await Promise.all([
-    import("@/public/data/homePage/home-mainGrid-technology.json"),
-    import("@/public/data/homePage/home-mainGrid-environment.json"),
-    import("@/public/data/homePage/home-mainGrid-moreNews.json"),
-    import("@/public/data/homePage/home-overlayGrid-politics.json"),
-    import("@/public/data/homePage/home-featureCategoryPart.json"),
-    import("@/public/data/homePage/home-horizontalArticle.json"),
-  ]);
+  // Lazy load below-the-fold data (non-technology sections)
+  const [mainGridEnvironmentData, mainGridMoreNewsData, overlayGridPoliticsData, featureCategoryData] =
+    await Promise.all([
+      import("@/public/data/homePage/home-mainGrid-environment.json"),
+      import("@/public/data/homePage/home-mainGrid-moreNews.json"),
+      import("@/public/data/homePage/home-overlayGrid-politics.json"),
+      import("@/public/data/homePage/home-featureCategoryPart.json"),
+    ]);
 
-  const mainGridTechnologyItems = mainGridTechnologyData.default.mainGrid as MainGridItem[];
   const mainGridEnvironmentItems = mainGridEnvironmentData.default.mainGrid as MainGridItem[];
   const mainGridMoreNewsItems = mainGridMoreNewsData.default.mainGrid as MainGridItem[];
   const overlayGridPoliticsItems = overlayGridPoliticsData.default.overlayGrid as OverlayArticleGridItem[];
   const featuredArticle = featureCategoryData.default.featuredArticle as FeaturedArticleCardProps;
   const rightArticles = featureCategoryData.default.rightArticles as ArticleCardSmallProps[];
   const adBanner = featureCategoryData.default.adBanner as AdBannerProps;
-  const horizontalArticle = horizontalArticleData.default.article as HorizontalArticleCardProps;
 
   // Data for HomeLandingPart (business layout) from dedicated JSON
   const homeLandingMain = (homeLandingPartData as any).mainFeature;
   const homeLandingSecondary = (homeLandingPartData as any).secondaryFeature;
   const homeLandingSidebar = (homeLandingPartData as any).sidebar as SidebarItem[];
+
+  // Data for HorizontalLandingPart (technology layout) from dedicated JSON
+  const horizontalLandingIntro = (horizontalLandingPartData as any).intro;
+  const horizontalLandingArticle = (horizontalLandingPartData as any)
+    .article as HorizontalArticleCardProps;
+  const horizontalLandingGrid = (horizontalLandingPartData as any)
+    .mainGrid as MainGridItem[];
 
   return (
     <>
@@ -215,26 +214,15 @@ export default async function HomePage() {
           sidebarItems={homeLandingSidebar}
         />
 
-        <Suspense fallback={<div className="h-64 animate-pulse bg-gray-100" />}>
-          <div className="max-w-360 mx-auto px-6 py-2">
-            <HorizontalArticleCard
-              slug={horizontalArticle.slug}
-              category={horizontalArticle.category}
-              title={horizontalArticle.title}
-              excerpt={horizontalArticle.excerpt}
-              date={horizontalArticle.date}
-              image={horizontalArticle.image}
-              bookmarked={horizontalArticle.bookmarked}
-              heading="Technology"
-            />
-          </div>
-        </Suspense>
-
-        <Suspense fallback={<div className="h-64 animate-pulse bg-gray-100" />}>
-          <div className="max-w-360 mx-auto pt-4 px-6 pb-12">
-            <MainGridLazy items={mainGridTechnologyItems} />
-          </div>
-        </Suspense>
+        {/* Technology horizontal landing section */}
+        <div className="max-w-360 mx-auto px-6 py-0">
+        <HorizontalLandingPart
+          intro={horizontalLandingIntro}
+          article={horizontalLandingArticle}
+          mainGridItems={horizontalLandingGrid}
+          heading="Technology" 
+        />
+        </div>
 
         <Suspense fallback={<div className="h-32 animate-pulse bg-gray-100" />}>
           <div className="w-full py-2">
