@@ -75,7 +75,7 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
 
   return (
     <article className={`bg-white ${className}`}>
-      <div className="w-full pr-6 py-8">
+      <div className="w-full py-0">
         {/* Category Tag */}
         <div className="flex items-center gap-2 mb-4">
           <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
@@ -93,7 +93,7 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
         </h1>
 
         {/* Introductory Text */}
-        <p className="text-lg text-gray-700 leading-relaxed mb-2">
+        <p className="text-md text-gray-700 leading-relaxed mb-2">
           {introText}
         </p>
 

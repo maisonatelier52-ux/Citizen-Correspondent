@@ -199,7 +199,7 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "home" }) => {
                                         <div key={item.name}>
                                             <button
                                                 onClick={() => setPagesDropdownOpen(!pagesDropdownOpen)}
-                                                className="w-full text-left py-2 text-sm font-semibold text-black hover:text-orange-500 transition-colors duration-200 flex items-center justify-between"
+                                                className="w-full text-left py-2 text-xs font-semibold text-black hover:text-orange-500 transition-colors duration-200 flex items-center justify-between"
                                             >
                                                 {item.name}
                                                 <span className="text-xs">{pagesDropdownOpen ? "▲" : "▼"}</span>
@@ -211,7 +211,7 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "home" }) => {
                                                             key={dropdownItem.name}
                                                             href={dropdownItem.href}
                                                             onClick={() => setMobileMenuOpen(false)}
-                                                            className="block py-2 text-sm text-gray-700 hover:text-orange-500 transition-colors duration-200"
+                                                            className="block py-2 text-xs text-gray-700 hover:text-orange-500 transition-colors duration-200"
                                                             title={dropdownItem.title}
                                                         >
                                                             {dropdownItem.name}
@@ -229,7 +229,7 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "home" }) => {
                                         href={item.href}
                                         onClick={() => setMobileMenuOpen(false)}
                                         title={item.title}
-                                        className={`block py-2 text-sm font-semibold transition-colors duration-200 ${
+                                        className={`block py-2 text-xs font-semibold transition-colors duration-200 ${
                                             isActive
                                                 ? "text-orange-500"
                                                 : "text-black hover:text-orange-500"
