@@ -31,7 +31,7 @@ const CategoryNav: React.FC<CategoryNavProps> = ({
                 key={category}
                 href={`/category/${categorySlug}`}
                 title={`${category} News`}
-                className="text-sm font-medium text-gray-700 hover:text-orange-500 whitespace-nowrap transition-colors duration-200"
+                className="text-xs font-medium text-gray-700 hover:text-orange-500 whitespace-nowrap transition-colors duration-200"
               >
                 {category}
               </Link>
