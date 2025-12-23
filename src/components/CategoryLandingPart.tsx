@@ -173,7 +173,7 @@ const CategoryLandingPart: React.FC<CategoryLandingPartProps> = ({
 
                     {/* Right Column: Promotional Block */}
                     <div className="lg:col-span-2">
-                        <div className="bg-orange-50 border border-orange-100 p-6 sm:p-8 h-[520px] sm:h-[580px] flex flex-col justify-between">
+                        <div className="bg-orange-50 border border-orange-100 p-6 sm:p-8 lg:h-[580px] flex flex-col justify-between">
                             <div className="space-y-3 sm:space-y-4">
                                 <h3 className="text-2xl sm:text-3xl font-bold leading-tight text-red-900">
                                     {promo.title}

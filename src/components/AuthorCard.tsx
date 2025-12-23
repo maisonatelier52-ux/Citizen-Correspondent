@@ -22,32 +22,32 @@ const AuthorCard: React.FC<AuthorCardProps> = ({ author, reverse = false }) => {
     <div className="max-w-360 mx-auto bg-red-900 border border-gray-800 rounded-lg overflow-hidden shadow-2xl">
       <div className={`md:flex ${reverse ? "md:flex-row-reverse" : ""}`}>
         {/* Left: Text */}
-        <div className="md:w-2/3 p-10 md:p-16">
-          <h1 className="text-3xl md:text-4xl text-white font-black tracking-widest mb-6">
+        <div className="md:w-2/3 p-6 md:p-16">
+          <h1 className="text-2xl md:text-4xl text-white font-black tracking-widest mb-4 md:mb-6">
             {author.name.toUpperCase()}
           </h1>
 
           {/* Email */}
-          <div className="flex items-center gap-3 mb-8 text-orange-500">
-            <Mail size={28} />
+          <div className="flex items-center gap-2 md:gap-3 mb-5 md:mb-8 text-orange-500">
+            <Mail size={20} className="md:w-7 md:h-7" />
             <a
               href={`mailto:${author.email}`}
-              className="text-lg font-medium hover:underline transition"
+              className="text-base md:text-lg font-medium hover:underline transition break-all"
               title={`Email ${author.name}`}
             >
               {author.email}
             </a>
           </div>
 
-          <p className="text-lg leading-relaxed text-white mb-6">
+          <p className="text-sm md:text-lg leading-relaxed text-white mb-4 md:mb-6">
             {author.bio}
           </p>
 
           {author.website && (
-            <p className="text-orange-500 font-medium">
+            <p className="text-orange-500 font-medium text-sm md:text-base">
               <Link  
                 href={author.website} 
-                className="underline hover:no-underline"
+                className="underline hover:no-underline break-all"
                 title={`Visit ${author.name}'s website`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -59,7 +59,7 @@ const AuthorCard: React.FC<AuthorCardProps> = ({ author, reverse = false }) => {
         </div>
 
         {/* Right: Photo */}
-        <div className="md:w-1/3 relative min-h-96 md:min-h-0">
+        <div className="md:w-1/3 relative min-h-64 md:min-h-0">
           <Image
             src={author.photo}
             alt={`${author.name} – CitizenCorrespondent Author`}

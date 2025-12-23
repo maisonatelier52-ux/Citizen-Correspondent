@@ -35,7 +35,7 @@ const FeatureHomePart: React.FC<FeatureHomePartProps> = ({
   return (
     <section className="bg-white">
       <div className="max-w-360 mx-auto px-6">
-        <div className="flex flex-col xl:flex-row gap-4 py-4">
+        <div className="flex flex-col xl:flex-row gap-6 py-4">
           <div className="flex-1 min-w-0">
             <HeroLead
               category={hero.category}
@@ -48,7 +48,7 @@ const FeatureHomePart: React.FC<FeatureHomePartProps> = ({
               onBookmarkToggle={onHeroBookmarkToggle}
             />
           </div>
-          <div className="w-full xl:w-[420px] shrink-0">
+          <div className="w-full xl:w-105 shrink-0">
             <Sidebar items={sidebarItems} onBookmarkToggle={onSidebarBookmarkToggle} />
           </div>
         </div>

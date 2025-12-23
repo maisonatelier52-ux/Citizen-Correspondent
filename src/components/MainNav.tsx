@@ -18,6 +18,7 @@ interface MainNavProps {
 const MainNav: React.FC<MainNavProps> = ({ currentPage = "home" }) => {
     const [searchOpen, setSearchOpen] = useState(false);
     const [pagesDropdownOpen, setPagesDropdownOpen] = useState(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [dropdownTimeout, setDropdownTimeout] = useState<NodeJS.Timeout | null>(null);
 
     const menuItems = [
@@ -165,15 +166,82 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "home" }) => {
 
                         {/* Mobile Menu Button */}
                         <button
+                            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                             className="lg:hidden text-gray-700 hover:text-orange-500 transition-colors duration-200"
                             title="Menu"
+                            aria-label="Toggle menu"
                         >
-                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                            </svg>
+                            {mobileMenuOpen ? (
+                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            ) : (
+                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                                </svg>
+                            )}
                         </button>
                     </div>
                 </div>
+
+                {/* Mobile Menu */}
+                {mobileMenuOpen && (
+                    <div className="lg:hidden border-t border-gray-200 bg-white">
+                        <div className="px-6 py-4 space-y-3">
+                            {menuItems.map((item) => {
+                                const isActive = 
+                                    (currentPage === "home" && item.href === "/") ||
+                                    (item.href.startsWith("/category/") && currentPage?.includes(item.href.replace("/category/", ""))) ||
+                                    (!item.href.startsWith("/category/") && currentPage === item.href.slice(1));
+                                
+                                if (item.hasDropdown) {
+                                    return (
+                                        <div key={item.name}>
+                                            <button
+                                                onClick={() => setPagesDropdownOpen(!pagesDropdownOpen)}
+                                                className="w-full text-left py-2 text-sm font-semibold text-black hover:text-orange-500 transition-colors duration-200 flex items-center justify-between"
+                                            >
+                                                {item.name}
+                                                <span className="text-xs">{pagesDropdownOpen ? "▲" : "▼"}</span>
+                                            </button>
+                                            {pagesDropdownOpen && (
+                                                <div className="pl-4 space-y-2 mt-2">
+                                                    {pagesDropdownItems.map((dropdownItem) => (
+                                                        <Link
+                                                            key={dropdownItem.name}
+                                                            href={dropdownItem.href}
+                                                            onClick={() => setMobileMenuOpen(false)}
+                                                            className="block py-2 text-sm text-gray-700 hover:text-orange-500 transition-colors duration-200"
+                                                            title={dropdownItem.title}
+                                                        >
+                                                            {dropdownItem.name}
+                                                        </Link>
+                                                    ))}
+                                                </div>
+                                            )}
+                                        </div>
+                                    );
+                                }
+                                
+                                return (
+                                    <Link
+                                        key={item.name}
+                                        href={item.href}
+                                        onClick={() => setMobileMenuOpen(false)}
+                                        title={item.title}
+                                        className={`block py-2 text-sm font-semibold transition-colors duration-200 ${
+                                            isActive
+                                                ? "text-orange-500"
+                                                : "text-black hover:text-orange-500"
+                                        }`}
+                                    >
+                                        {item.name}
+                                    </Link>
+                                );
+                            })}
+                        </div>
+                    </div>
+                )}
             </nav>
 
             {/* Search Modal */}
