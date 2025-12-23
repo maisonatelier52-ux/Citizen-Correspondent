@@ -83,7 +83,7 @@ const HeroLead: React.FC<HeroLeadProps> = ({
           {/* Image column */}
           <div className="flex-3 w-full">
             <Wrapper>
-              <div className="relative w-full h-90 sm:h-105 lg:h-102.5 overflow-hidden">
+              <div className="relative w-full h-90 sm:h-105 lg:h-108.5 overflow-hidden">
                 <Image
                   src={image}
                   alt={title}
