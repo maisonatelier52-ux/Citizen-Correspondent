@@ -100,7 +100,7 @@ export default function BlogPage() {
         <CategoryNav />
 
       {/* Overlay Article Grid */}
-      <section className="max-w-360 mx-auto px-6 py-8">
+      <section className="max-w-360 mx-auto px-6 py-6">
         <h1 className="text-3xl font-bold hidden text-gray-900 mb-6">Blog</h1>
         <OverlayArticleGrid items={overlayData.overlayArticles} />
       </section>
