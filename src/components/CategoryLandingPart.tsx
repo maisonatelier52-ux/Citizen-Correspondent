@@ -52,12 +52,12 @@ const CategoryLandingPart: React.FC<CategoryLandingPartProps> = ({
     const mainFeatureHref = mainFeature.href || `/article/${mainFeature.slug}`;
 
     return (
-        <section className={`bg-white py-8 ${className}`}>
-            <div className="max-w-360 mx-auto px-6">
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+        <section className={`bg-white py-6 sm:py-8 ${className}`}>
+            <div className="max-w-360 mx-auto px-4 sm:px-6">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 items-start">
                     {/* Left Column: Main Feature Article */}
                     <div className="lg:col-span-7">
-                        <article className="relative w-full h-[590px] overflow-hidden group">
+                        <article className="relative w-full h-[520px] sm:h-[590px] overflow-hidden group">
                             <Link href={mainFeatureHref} title={mainFeature.title} className="block h-full">
                                 <Image
                                     src={mainFeature.image}
@@ -92,7 +92,7 @@ const CategoryLandingPart: React.FC<CategoryLandingPartProps> = ({
                                 {/* Bottom: Title, Excerpt, Date, Bookmark */}
                                 <div className="space-y-3">
                                     <Link href={mainFeatureHref} title={mainFeature.title}>
-                                        <h2 className="text-3xl font-bold leading-tight hover:text-orange-400 transition-colors">
+                                        <h2 className="text-2xl sm:text-3xl font-bold leading-tight hover:text-orange-400 transition-colors">
                                             {mainFeature.live && (
                                                 <span className="text-red-500 mr-2">Live:</span>
                                             )}
@@ -125,7 +125,7 @@ const CategoryLandingPart: React.FC<CategoryLandingPartProps> = ({
                     </div>
 
                     {/* Middle Column: Two Articles */}
-                    <div className="lg:col-span-3 flex flex-col gap-6">
+                    <div className="lg:col-span-3 flex flex-col gap-4 sm:gap-6">
                         {articles.slice(0, 2).map((article, index) => (
                             <article key={`${article.slug}-${index}`} className="space-y-3">
                                 <Link href={`/article/${article.slug}`} title={article.title} className="block">
@@ -143,7 +143,7 @@ const CategoryLandingPart: React.FC<CategoryLandingPartProps> = ({
                                 </Link>
                                 <div className="space-y-2">
                                     <Link href={`/article/${article.slug}`} title={article.title}>
-                                        <h3 className="text-lg font-bold text-gray-900 leading-tight hover:text-orange-600 transition-colors">
+                                        <h3 className="text-base sm:text-lg font-bold text-gray-900 leading-tight hover:text-orange-600 transition-colors">
                                             {article.title}
                                         </h3>
                                     </Link>
@@ -173,9 +173,9 @@ const CategoryLandingPart: React.FC<CategoryLandingPartProps> = ({
 
                     {/* Right Column: Promotional Block */}
                     <div className="lg:col-span-2">
-                        <div className="bg-orange-50 border border-orange-100 p-8 h-[580px] flex flex-col justify-between">
-                            <div className="space-y-4">
-                                <h3 className="text-3xl font-bold leading-tight text-red-900">
+                        <div className="bg-orange-50 border border-orange-100 p-6 sm:p-8 h-[520px] sm:h-[580px] flex flex-col justify-between">
+                            <div className="space-y-3 sm:space-y-4">
+                                <h3 className="text-2xl sm:text-3xl font-bold leading-tight text-red-900">
                                     {promo.title}
                                 </h3>
                                 <p className="text-sm text-gray-700 leading-relaxed">

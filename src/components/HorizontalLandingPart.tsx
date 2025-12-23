@@ -30,22 +30,22 @@ const HorizontalLandingPart: React.FC<HorizontalLandingPartProps> = ({
 }) => {
   return (
     <section className="bg-white">
-      <div className="max-w-360 mx-auto px=6 py-4">
-      {heading && (
-        <div className="flex items-center gap-2 mb-2">
-          <h2 className="text-xl font-semibold text-gray-900">{heading}</h2>
-          <span className="text-gray-500 text-lg">›</span>
-        </div>
-      )}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 items-start">
+      <div className="max-w-360 mx-auto px-4 sm:px-6 py-6 sm:py-8">
+        {heading && (
+          <div className="flex items-center gap-2 mb-3 sm:mb-4">
+            <h2 className="text-lg sm:text-xl font-semibold text-gray-900">{heading}</h2>
+            <span className="text-gray-500 text-lg">›</span>
+          </div>
+        )}
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 sm:gap-6 items-start">
           {/* Left promo card */}
           <div className="lg:col-span-1">
-            <div className="bg-orange-50 border lg:h-[600px] border-orange-100 rounded-lg p-8 flex flex-col justify-between h-full">
+            <div className="bg-orange-50 border lg:h-[600px] border-orange-100 rounded-lg p-6 sm:p-8 flex flex-col justify-between h-full">
               <div className="space-y-4">
                 <p className="text-sm font-semibold text-orange-700 uppercase tracking-wide">
                   Technology
                 </p>
-                <h2 className="text-3xl font-black leading-tight text-red-900 whitespace-pre-line">
+                <h2 className="text-2xl sm:text-3xl font-black leading-tight text-red-900 whitespace-pre-line">
                   {intro.title}
                 </h2>
                 <p className="text-sm text-gray-700 leading-relaxed">
