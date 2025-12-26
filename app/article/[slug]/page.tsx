@@ -212,7 +212,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
         <ArticleWithSidebar
           article={{
-            slug: articleData.slug,
+            slug: articleData.slug, 
             category: articleData.category,
             title: articleData.title,
             introText: articleData.introText,
