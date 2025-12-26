@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Bookmark, Share2, Mail, Link as LinkIcon, Printer, MoreHorizontal, Clock } from "lucide-react";
+import LeaveAComment from "./LeaveAComment";
 
 export interface ArticleContentBlock {
   type: "heading" | "paragraph" | "image";
@@ -144,7 +145,7 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
               return (
                 <HeadingTag
                   key={index}
-                  className="text-2xl font-bold text-gray-900 mt-8 mb-4 first:mt-0"
+                  className="text-3xl font-bold text-gray-900 mt-8 mb-4 first:mt-0"
                 >
                   {block.content}
                 </HeadingTag>
@@ -175,6 +176,11 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
             }
             return null;
           })}
+        </div>
+
+        {/* Leave a Comment Section */}
+        <div className="mt-12 pt-8 border-t border-gray-200">
+          <LeaveAComment />
         </div>
       </div>
     </article>

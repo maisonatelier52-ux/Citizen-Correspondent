@@ -2,9 +2,12 @@ import DateBar from "@/src/components/DateBar";
 import MainNav from "@/src/components/MainNav";
 import CategoryNav from "@/src/components/CategoryNav";
 import ArticleWithSidebar from "@/src/components/ArticleWithSidebar";
+import MainGrid from "@/src/components/MainGrid";
+import ArticlePageNav from "@/src/components/ArticlePageNav";
 import Footer from "@/src/components/Footer";
 import { ArticleContentBlock } from "@/src/components/ArticleDetail";
 import { SidebarItem } from "@/src/components/Sidebar";
+import { MainGridItem } from "@/src/components/MainGrid";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 
@@ -204,6 +207,10 @@ export default async function JulioArticlePage({ params }: JulioArticlePageProps
     finalSidebarItems.splice(2, 1, nextJulioArticle);
   }
 
+  // Load "You May Also Like" data
+  const youMayAlsoLikeData = await import("@/public/data/homePage/home-mainGrid-moreNews.json").then((m) => m.default);
+  const youMayAlsoLikeItems = youMayAlsoLikeData.mainGrid.slice(0, 8) as MainGridItem[];
+
   // Get first image from content for schema
   const firstImageBlock = articleData.content.find((block: ArticleContentBlock) => block.type === "image");
   const firstImage = firstImageBlock?.imageUrl || "";
@@ -283,6 +290,14 @@ export default async function JulioArticlePage({ params }: JulioArticlePageProps
           sidebarItems={finalSidebarItems}
           sidebarHeading="Latest News"
         />
+
+        {/* You May Also Like Section */}
+        <div className="max-w-360 mx-auto px-6 pb-8 border-t border-gray-200">
+          <MainGrid items={youMayAlsoLikeItems} heading="You May Also Like" />
+        </div>
+
+        {/* Article Page Navigation */}
+        <ArticlePageNav />
 
         <Footer />
       </div>

@@ -75,7 +75,7 @@ const MainGrid: React.FC<MainGridProps> = ({
               title={item.title}
               className="block overflow-hidden"
             >
-              <div className="relative w-full aspect-4/3 bg-gray-100">
+              <div className="relative w-full aspect-5/3 bg-gray-100">
                 <Image
                   src={item.image}
                   alt={item.title}

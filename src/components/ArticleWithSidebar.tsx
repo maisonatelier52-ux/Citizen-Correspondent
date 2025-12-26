@@ -4,6 +4,7 @@
 import React, { useEffect, useState } from "react";
 import ArticleDetail, { ArticleDetailProps, ArticleContentBlock } from "./ArticleDetail";
 import Sidebar, { SidebarItem } from "./Sidebar";
+import SubscribeNewsletter from "./SubscribeNewsletter";
 
 interface ArticleWithSidebarProps {
   article: {
@@ -81,6 +82,10 @@ const ArticleWithSidebar: React.FC<ArticleWithSidebarProps> = ({
 
       {/* Right: Sticky Sidebar */}
       <aside className="lg:col-span-2">
+        {/* Subscribe Newsletter - Not Sticky */}
+        <SubscribeNewsletter />
+        
+        {/* Latest News Sidebar - Sticky */}
         <div className={`sidebar-sticky ${isSticky ? "sticky top-5 z-10" : ""}`}>
           <Sidebar
             items={sidebarItems}
