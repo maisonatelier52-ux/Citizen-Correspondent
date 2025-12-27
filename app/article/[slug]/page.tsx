@@ -234,7 +234,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         {/* Article Page Navigation */}
         <ArticlePageNav />
 
-        <Footer />
+        <Footer /> 
       </div>
     </>
   );
