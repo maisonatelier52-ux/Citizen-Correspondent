@@ -80,7 +80,7 @@ export const metadata: Metadata = {
     siteName: "CitizenCorrespondent",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://www.citizencorrespondent.com/images/cc-logo.svg",
         width: 1200,
         height: 630,
         alt: "CitizenCorrespondent – Latest News & Breaking Stories 2025",
@@ -98,7 +98,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CitizenCorrespondent – Latest News & Breaking Stories 2025",
     description: "Breaking news, in-depth analysis & comprehensive coverage of world events, politics, business, technology & health. Trusted journalism in 2025.",
-    images: ["/og-image.jpg"],
+    images: ["https://www.citizencorrespondent.com/images/cc-logo.svg"],
   },
   robots: {
     index: true,

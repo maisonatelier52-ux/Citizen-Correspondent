@@ -61,14 +61,16 @@ export async function generateMetadata({ params }: JulioArticlePageProps): Promi
   // Get image for social sharing - use heroImage if available, otherwise extract first image from content
   const getImageUrl = (): string => {
     if (articleData.heroImage) {
-      return articleData.heroImage;
+      // Convert relative URLs to absolute URLs
+      return articleData.heroImage.startsWith('/') ? `https://www.citizencorrespondent.com${articleData.heroImage}` : articleData.heroImage;
     }
     
     // Look for the first image in content array
     if (articleData.content && Array.isArray(articleData.content)) {
       const firstImageBlock = articleData.content.find(block => block.type === 'image');
       if (firstImageBlock && firstImageBlock.imageUrl) {
-        return firstImageBlock.imageUrl;
+        // Convert relative URLs to absolute URLs
+        return firstImageBlock.imageUrl.startsWith('/') ? `https://www.citizencorrespondent.com${firstImageBlock.imageUrl}` : firstImageBlock.imageUrl;
       }
     }
     
@@ -238,14 +240,16 @@ export default async function JulioArticlePage({ params }: JulioArticlePageProps
   // Get image for JSON-LD schema - use heroImage if available, otherwise extract first image from content
   const getSchemaImageUrl = (): string => {
     if (articleData.heroImage) {
-      return articleData.heroImage;
+      // Convert relative URLs to absolute URLs
+      return articleData.heroImage.startsWith('/') ? `https://www.citizencorrespondent.com${articleData.heroImage}` : articleData.heroImage;
     }
     
     // Look for the first image in content array
     if (articleData.content && Array.isArray(articleData.content)) {
       const firstImageBlock = articleData.content.find(block => block.type === 'image');
       if (firstImageBlock && firstImageBlock.imageUrl) {
-        return firstImageBlock.imageUrl;
+        // Convert relative URLs to absolute URLs
+        return firstImageBlock.imageUrl.startsWith('/') ? `https://www.citizencorrespondent.com${firstImageBlock.imageUrl}` : firstImageBlock.imageUrl;
       }
     }
     
@@ -273,7 +277,7 @@ export default async function JulioArticlePage({ params }: JulioArticlePageProps
       name: "CitizenCorrespondent",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.citizencorrespondent.com/logo.png",
+        url: "https://www.citizencorrespondent.com/images/cc-logo.svg",
       },
     },
     mainEntityOfPage: {

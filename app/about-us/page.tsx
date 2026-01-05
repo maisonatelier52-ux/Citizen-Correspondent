@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://www.citizencorrespondent.com/images/cc-logo.svg",
         width: 1200,
         height: 630,
         alt: "About Us | CitizenCorrespondent",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "About Us | CitizenCorrespondent",
     description: "Learn about CitizenCorrespondent - our mission, vision, and commitment to quality journalism.",
-    images: ["/og-image.jpg"],
+    images: ["https://www.citizencorrespondent.com/images/cc-logo.svg"],
   },
   robots: {
     index: true,

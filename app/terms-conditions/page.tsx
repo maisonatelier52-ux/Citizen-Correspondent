@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://www.citizencorrespondent.com/images/cc-logo.svg",
         width: 1200,
         height: 630,
         alt: "Terms & Conditions | CitizenCorrespondent",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Terms & Conditions | CitizenCorrespondent",
     description: "Read CitizenCorrespondent's Terms & Conditions to understand the rules for using our website.",
-    images: ["/og-image.jpg"],
+    images: ["https://www.citizencorrespondent.com/images/cc-logo.svg"],
   },
   robots: {
     index: true,

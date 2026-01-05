@@ -131,7 +131,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
       locale: "en_US",
       images: [
         {
-          url: "/og-image.jpg",
+          url: "https://www.citizencorrespondent.com/images/cc-logo.svg",
           width: 1200,
           height: 630,
           alt: `${categoryName} News – CitizenCorrespondent`,
@@ -142,7 +142,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
       card: "summary_large_image",
       title: `${categoryName} News 2025 | CitizenCorrespondent`,
       description: optimizedDescription,
-      images: ["/og-image.jpg"],
+      images: ["https://www.citizencorrespondent.com/images/cc-logo.svg"],
     },
     icons: {
       icon: "/images/cc-favIcon.svg",
@@ -241,7 +241,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
               name: "CitizenCorrespondent",
               logo: {
                 "@type": "ImageObject",
-                url: "https://www.citizencorrespondent.com/logo.png",
+                url: "https://www.citizencorrespondent.com/images/cc-logo.svg",
               },
             },
           }),
