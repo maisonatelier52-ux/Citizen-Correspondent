@@ -32,6 +32,9 @@ interface ArticleData {
   date?: string;
   lastUpdated: string;
   heroImage?: string;
+  julioData?: {
+    image: string;
+  };
   content: ArticleContentBlock[];
   bookmarked?: boolean;
 }
@@ -68,10 +71,19 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
     // Look for the first image in content array
     if (articleData.content && Array.isArray(articleData.content)) {
       const firstImageBlock = articleData.content.find(block => block.type === 'image');
-      if (firstImageBlock && firstImageBlock.imageUrl) {
-        // Convert relative URLs to absolute URLs
-        return firstImageBlock.imageUrl.startsWith('/') ? `https://www.citizencorrespondent.com${firstImageBlock.imageUrl}` : firstImageBlock.imageUrl;
+      if (firstImageBlock) {
+        // Check for imageUrl first (higher priority), then fallback to content field
+        const imageValue = firstImageBlock.imageUrl || firstImageBlock.content;
+        if (imageValue) {
+          // Convert relative URLs to absolute URLs
+          return imageValue.startsWith('/') ? `https://www.citizencorrespondent.com${imageValue}` : imageValue;
+        }
       }
+    }
+    
+    // Check for julioData image if available (lower priority)
+    if (articleData.julioData && articleData.julioData.image) {
+      return articleData.julioData.image.startsWith('/') ? `https://www.citizencorrespondent.com${articleData.julioData.image}` : articleData.julioData.image;
     }
     
     // Fallback to a default image if no image is found
@@ -182,10 +194,19 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     // Look for the first image in content array
     if (articleData.content && Array.isArray(articleData.content)) {
       const firstImageBlock = articleData.content.find(block => block.type === 'image');
-      if (firstImageBlock && firstImageBlock.imageUrl) {
-        // Convert relative URLs to absolute URLs
-        return firstImageBlock.imageUrl.startsWith('/') ? `https://www.citizencorrespondent.com${firstImageBlock.imageUrl}` : firstImageBlock.imageUrl;
+      if (firstImageBlock) {
+        // Check for imageUrl first (higher priority), then fallback to content field
+        const imageValue = firstImageBlock.imageUrl || firstImageBlock.content;
+        if (imageValue) {
+          // Convert relative URLs to absolute URLs
+          return imageValue.startsWith('/') ? `https://www.citizencorrespondent.com${imageValue}` : imageValue;
+        }
       }
+    }
+    
+    // Check for julioData image if available (lower priority)
+    if (articleData.julioData && articleData.julioData.image) {
+      return articleData.julioData.image.startsWith('/') ? `https://www.citizencorrespondent.com${articleData.julioData.image}` : articleData.julioData.image;
     }
     
     // Fallback to a default image if no image is found
