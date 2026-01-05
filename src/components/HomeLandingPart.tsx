@@ -40,8 +40,8 @@ const HomeLandingPart: React.FC<HomeLandingPartProps> = ({
 }) => {
     return (
         <section className="bg-white">
-            <div className="max-w-360 mx-auto px-6 py-6">
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+            <div className="max-w-360 mx-auto px-6 py-6 border-b border-gray-200">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                     {/* Left: Main feature */}
                     <article className="lg:col-span-6 flex flex-col gap-4">
                         <div className="flex items-center gap-2 text-sm font-semibold text-gray-700">
@@ -97,7 +97,7 @@ const HomeLandingPart: React.FC<HomeLandingPartProps> = ({
                     {/* Middle: Secondary feature */}
                     <article className="lg:col-span-2 flex flex-col gap-3">
                         <Link href={buildLink(secondaryFeature)}>
-                            <div className="relative w-full h-[360px] sm:h-[420px] lg:h-[350px] overflow-hidden">
+                            <div className="relative w-full h-[360px] sm:h-[420px] lg:h-[400px] overflow-hidden">
                                 <Image
                                     src={secondaryFeature.image}
                                     alt={secondaryFeature.title}
@@ -141,7 +141,7 @@ const HomeLandingPart: React.FC<HomeLandingPartProps> = ({
                     </article>
 
                     {/* Right: Sidebar */}
-                    <div className="lg:col-span-4 w-full">
+                    <div className="lg:col-span-4  w-full">
                         <Sidebar items={sidebarItems} onBookmarkToggle={onSidebarBookmarkToggle} />
                     </div>
                 </div>

@@ -30,7 +30,7 @@ const HorizontalLandingPart: React.FC<HorizontalLandingPartProps> = ({
 }) => {
   return (
     <section className="bg-white">
-      <div className="max-w-360 mx-auto px-4 sm:px-6 py-6 sm:py-8">
+      <div className="max-w-360 mx-auto py-6 sm:py-8">
         {heading && (
           <div className="flex items-center gap-2 mb-3 sm:mb-4">
             <h2 className="text-lg sm:text-xl font-semibold text-gray-900">{heading}</h2>

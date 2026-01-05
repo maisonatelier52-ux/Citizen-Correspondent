@@ -23,7 +23,7 @@ const CategoryNav: React.FC<CategoryNavProps> = ({
   return (
     <nav className="bg-white border-b border-gray-200">
       <div className="max-w-360 mx-auto px-6">
-        <div className="flex items-center space-x-6 overflow-x-auto py-1.5 scrollbar-hide">
+        <div className="flex items-center space-x-10 overflow-x-auto py-1.5 scrollbar-hide">
           {categories.map((category) => {
             const categorySlug = category.toLowerCase().replace(/\s+/g, "-");
             return (

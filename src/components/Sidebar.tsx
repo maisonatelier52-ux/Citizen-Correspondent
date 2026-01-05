@@ -71,7 +71,7 @@ const Sidebar: React.FC<SidebarProps> = ({ items, heading, onBookmarkToggle }) =
 
             <Link
               href={item.href || (item.slug ? `/article/${item.slug}` : "#")}
-              className="w-28 h-20 shrink-0 overflow-hidden border border-gray-200 block"
+              className="w-30 h-25 shrink-0 overflow-hidden border border-gray-200 block"
               title={item.title}
             >
               <img
