@@ -65,7 +65,7 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
   const getImageUrl = (): string => {
     if (articleData.heroImage) {
       // Convert relative URLs to absolute URLs
-      return articleData.heroImage.startsWith('/') ? `https://www.citizencorrespondent.com${articleData.heroImage}` : articleData.heroImage;
+      return articleData.heroImage.startsWith('/') ? articleData.heroImage : articleData.heroImage;
     }
     
     // Look for the first image in content array
