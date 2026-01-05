@@ -22,13 +22,16 @@ interface ArticleData {
   category: string;
   title: string;
   introText: string;
+  shortdescription?: string;
   readingTime?: string;
   author: {
     name: string;
     role: string;
     image: string;
   };
+  date?: string;
   lastUpdated: string;
+  heroImage?: string;
   content: ArticleContentBlock[];
   bookmarked?: boolean;
 }
@@ -48,12 +51,32 @@ export async function generateMetadata({ params }: JulioArticlePageProps): Promi
   }
 
   const url = `https://www.citizencorrespondent.com/julio-herrera-velutini/${slug}`;
+  
   // Optimize description: truncate to 155 characters for optimal snippet display
-  const rawDescription = articleData.introText || articleData.title;
+  const rawDescription = articleData.shortdescription || articleData.introText || articleData.title;
   const optimizedDescription = rawDescription.length > 155 
     ? rawDescription.substring(0, 152).trim() + "..."
     : rawDescription;
-  const imageUrl = articleData.content.find((block: ArticleContentBlock) => block.type === "image")?.imageUrl || "https://www.citizencorrespondent.com/og-image.jpg";
+    
+  // Get image for social sharing - use heroImage if available, otherwise extract first image from content
+  const getImageUrl = (): string => {
+    if (articleData.heroImage) {
+      return articleData.heroImage;
+    }
+    
+    // Look for the first image in content array
+    if (articleData.content && Array.isArray(articleData.content)) {
+      const firstImageBlock = articleData.content.find(block => block.type === 'image');
+      if (firstImageBlock && firstImageBlock.imageUrl) {
+        return firstImageBlock.imageUrl;
+      }
+    }
+    
+    // Fallback to a default image if no image is found
+    return "https://www.citizencorrespondent.com/images/cc-logo.svg";
+  };
+
+  const imageUrl = getImageUrl();
 
   // Optimize title: keep base title under 50 chars, then add site name (total ~72 chars max)
   const baseTitle = articleData.title.length > 50 
@@ -75,16 +98,17 @@ export async function generateMetadata({ params }: JulioArticlePageProps): Promi
       "breaking news",
       "citizen correspondent",
       articleData.title.split(" ").slice(0, 5).join(" ").toLowerCase(),
-    ].join(", "),
+      articleData.shortdescription?.split(" ").slice(0, 5).join(" ").toLowerCase() || "",
+    ].filter(Boolean).join(", "),
     alternates: { canonical: url },
     openGraph: {
       title: baseTitle,
-      description: optimizedDescription,
+      description: articleData.shortdescription || optimizedDescription,
       url,
       siteName: "CitizenCorrespondent",
       images: [{ url: imageUrl, width: 1200, height: 630, alt: articleData.title }],
       type: "article",
-      publishedTime: articleData.lastUpdated,
+      publishedTime: articleData.date || articleData.lastUpdated,
       modifiedTime: articleData.lastUpdated,
       authors: [articleData.author.name],
       section: articleData.category,
@@ -93,7 +117,7 @@ export async function generateMetadata({ params }: JulioArticlePageProps): Promi
     twitter: {
       card: "summary_large_image",
       title: baseTitle,
-      description: optimizedDescription,
+      description: articleData.shortdescription || optimizedDescription,
       images: [imageUrl],
     },
     icons: {
@@ -211,17 +235,33 @@ export default async function JulioArticlePage({ params }: JulioArticlePageProps
   const youMayAlsoLikeData = await import("@/public/data/homePage/home-mainGrid-moreNews.json").then((m) => m.default);
   const youMayAlsoLikeItems = youMayAlsoLikeData.mainGrid.slice(0, 8) as MainGridItem[];
 
-  // Get first image from content for schema
-  const firstImageBlock = articleData.content.find((block: ArticleContentBlock) => block.type === "image");
-  const firstImage = firstImageBlock?.imageUrl || "";
+  // Get image for JSON-LD schema - use heroImage if available, otherwise extract first image from content
+  const getSchemaImageUrl = (): string => {
+    if (articleData.heroImage) {
+      return articleData.heroImage;
+    }
+    
+    // Look for the first image in content array
+    if (articleData.content && Array.isArray(articleData.content)) {
+      const firstImageBlock = articleData.content.find(block => block.type === 'image');
+      if (firstImageBlock && firstImageBlock.imageUrl) {
+        return firstImageBlock.imageUrl;
+      }
+    }
+    
+    // Fallback to a default image if no image is found
+    return "https://www.citizencorrespondent.com/images/cc-logo.svg";
+  };
+
+  const schemaImageUrl = getSchemaImageUrl();
 
   // Build schema object
   const schemaData: any = {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
     headline: articleData.title,
-    description: articleData.introText || articleData.title,
-    datePublished: articleData.lastUpdated,
+    description: articleData.shortdescription || articleData.introText || articleData.title,
+    datePublished: articleData.date || articleData.lastUpdated,
     dateModified: articleData.lastUpdated,
     author: {
       "@type": "Person",
@@ -250,10 +290,10 @@ export default async function JulioArticlePage({ params }: JulioArticlePageProps
   };
 
   // Add image if available
-  if (firstImage) {
+  if (schemaImageUrl && schemaImageUrl !== "https://www.citizencorrespondent.com/images/cc-logo.svg") {
     schemaData.image = {
       "@type": "ImageObject",
-      url: firstImage,
+      url: schemaImageUrl,
       width: 1200,
       height: 630,
     };
