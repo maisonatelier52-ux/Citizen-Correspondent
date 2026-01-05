@@ -23,6 +23,7 @@ import CategoryNav from "@/src/components/CategoryNav";
 import FeatureHomePart from "@/src/components/FeatureHomePart";
 import HomeLandingPart from "@/src/components/HomeLandingPart";
 import HorizontalLandingPart from "@/src/components/HorizontalLandingPart";
+import ArticlePageNav from "@/src/components/ArticlePageNav";
 
 // Lazy load below-the-fold components for code splitting
 const MainGrid = dynamic(() => import("@/src/components/MainGrid"), {
@@ -235,6 +236,7 @@ export default async function HomePage() {
             <MainGridLazy items={mainGridEnvironmentItems} heading="Environment" />
           </div>
         </Suspense>
+        <ArticlePageNav />
 
         <Suspense fallback={<div className="h-96 animate-pulse bg-gray-100" />}>
           <div className="max-w-360 mx-auto px-6 pb-12 border-t border-gray-200">
