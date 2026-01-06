@@ -89,34 +89,34 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
         </div>
 
         {/* Main Title */}
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+        <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4 sm:mb-6 leading-tight">
           {title}
         </h1>
 
         {/* Introductory Text */}
-        <p className="text-md text-gray-700 leading-relaxed mb-2">
+        <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-2">
           {introText}
         </p>
 
 
         {/* Author Section */}
         <div className="flex items-start gap-4 mb-4 pb-2 pt-2 border-b border-t border-gray-200">
-          <div className="relative w-16 h-16 shrink-0">
+          <div className="relative w-12 h-12 sm:w-16 sm:h-16 shrink-0">
             <Image
               src={author.image}
               alt={author.name}
               fill
               className="rounded-full object-cover"
-              sizes="64px"
+              sizes="48px sm:64px"
             />
           </div>
           <div className="flex-1">
             <div className="flex items-center justify-between flex-wrap gap-4">
               <div>
-                <p className="text-base font-medium text-gray-900">
+                <p className="text-sm sm:text-base font-medium text-gray-900">
                   By {author.name} - {author.role}
                 </p>
-                <p className="text-sm text-gray-600 mt-1">
+                <p className="text-xs sm:text-sm text-gray-600 mt-1">
                   Last Updated: {lastUpdated}
                 </p>
               </div>
@@ -126,11 +126,11 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
                 aria-label={bookmarked ? "Remove bookmark" : "Save bookmark"}
               >
                 <Bookmark
-                  className="w-5 h-5"
+                  className="w-4 h-4 sm:w-5 sm:h-5"
                   fill={bookmarked ? "currentColor" : "none"}
                   strokeWidth={bookmarked ? 0 : 2}
                 />
-                <span className="text-sm font-medium">Save It</span>
+                <span className="text-xs sm:text-sm font-medium">Save It</span>
               </button>
             </div>
           </div>
@@ -145,14 +145,14 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
               return (
                 <HeadingTag
                   key={index}
-                  className="text-3xl font-bold text-gray-900 mt-8 mb-4 first:mt-0"
+                  className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mt-6 sm:mt-8 mb-3 sm:mb-4 first:mt-0"
                 >
                   {block.content}
                 </HeadingTag>
               );
             } else if (block.type === "image") {
               return (
-                <div key={index} className="my-6">
+                <div key={index} className="my-4 sm:my-6">
                   <div className="relative w-full aspect-video bg-gray-100">
                     <Image
                       src={block.imageUrl || ""}
@@ -163,13 +163,13 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
                     />
                   </div>
                   {block.content && (
-                    <p className="text-sm text-gray-600 mt-2 italic">{block.content}</p>
+                    <p className="text-xs sm:text-sm text-gray-600 mt-2 italic">{block.content}</p>
                   )}
                 </div>
               );
             } else if (block.type === "paragraph") {
               return (
-                <p key={index} className="text-base text-gray-700 leading-relaxed mb-4">
+                <p key={index} className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
                   {block.content}
                 </p>
               );

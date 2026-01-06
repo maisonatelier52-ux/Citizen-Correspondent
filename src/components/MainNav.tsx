@@ -156,7 +156,7 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "home" }) => {
                         <div className="flex items-center space-x-4">
                             {/* Subscribe Button */}
                             <button
-                                className="bg-black text-white px-3 py-1 text-sm font-medium hover:bg-gray-800 transition-colors duration-200"
+                                className="hidden md:block bg-black text-white px-3 py-1 text-sm font-medium hover:bg-gray-800 transition-colors duration-200"
                                 title="Subscribe"
                             >
                                 Subscribe

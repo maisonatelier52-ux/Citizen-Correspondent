@@ -67,58 +67,65 @@ const MainGrid: React.FC<MainGridProps> = ({
           <span className="text-gray-500 text-lg">›</span>
         </div>
       )}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
         {itemsToShow.map((item, index) => (
-          <article key={`${item.slug}-${index}`} className="space-y-3">
-            <Link
-              href={`/article/${item.slug}`}
-              title={item.title}
-              className="block overflow-hidden"
-            >
-              <div className="relative w-full aspect-5/3 bg-gray-100">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                  priority={index < 2}
-                  loading={index < 2 ? "eager" : "lazy"}
-                  decoding="async"
-                />
+          <article key={`${item.slug}-${index}`} className="space-y-3 md:space-y-3">
+            <div className="flex flex-row-reverse gap-3 md:flex-col">
+              <div className="w-2/5 md:w-full">
+                <Link
+                  href={`/article/${item.slug}`}
+                  title={item.title}
+                  className="block overflow-hidden"
+                >
+                  <div className="relative w-full h-20 md:h-auto md:aspect-5/3 bg-gray-100">
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 40vw, (max-width: 1200px) 50vw, 25vw"
+                      priority={index < 2}
+                      loading={index < 2 ? "eager" : "lazy"}
+                      decoding="async"
+                    />
+                  </div>
+                </Link>
               </div>
-            </Link>
+              <div className="w-3/5 md:w-full">
+                <div className="flex flex-col space-y-1 md:space-y-2">
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <span className="font-medium text-gray-700">
+                      {item.categories[0] || item.categories.join(" / ")}
+                    </span>
+                  </div>
 
-            <div className="flex items-center gap-2 text-sm text-gray-600">
-              <span className="font-medium text-gray-700">
-                {item.categories[0] || item.categories.join(" / ")}
-              </span>
-            </div>
+                  <Link
+                    href={`/article/${item.slug}`}
+                    title={item.title}
+                    className="block"
+                  >
+                    <h2 className="text-sm md:text-md font-semibold text-gray-900 leading-snug hover:text-orange-600 transition-colors">
+                      {item.title}
+                    </h2>
+                  </Link>
 
-            <Link
-              href={`/article/${item.slug}`}
-              title={item.title}
-              className="block"
-            >
-              <h2 className="text-md font-semibold text-gray-900 leading-snug hover:text-orange-600 transition-colors">
-                {item.title}
-              </h2>
-            </Link>
-
-            <div className="flex items-center gap-3 text-sm text-gray-600">
-              <span>{item.date}</span>
-              <button
-                type="button"
-                aria-label={item.bookmarked ? "Remove bookmark" : "Save bookmark"}
-                onClick={() => onBookmarkToggle?.(index)}
-                className="text-gray-400 hover:text-orange-600 transition-colors"
-              >
-                <Bookmark
-                  className="w-4 h-4"
-                  fill={item.bookmarked ? "currentColor" : "none"}
-                  strokeWidth={item.bookmarked ? 0 : 2}
-                />
-              </button>
+                  <div className="flex items-center gap-3 text-xs md:text-sm text-gray-600">
+                    <span>{item.date}</span>
+                    <button
+                      type="button"
+                      aria-label={item.bookmarked ? "Remove bookmark" : "Save bookmark"}
+                      onClick={() => onBookmarkToggle?.(index)}
+                      className="text-gray-400 hover:text-orange-600 transition-colors"
+                    >
+                      <Bookmark
+                        className="w-4 h-4"
+                        fill={item.bookmarked ? "currentColor" : "none"}
+                        strokeWidth={item.bookmarked ? 0 : 2}
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </article>
         ))}

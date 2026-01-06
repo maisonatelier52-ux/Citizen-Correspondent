@@ -42,7 +42,7 @@ const HeroLead: React.FC<HeroLeadProps> = ({
 
   return (
     <section className="bg-white">
-      <div className="max-w-360 mx-auto py-2">
+      <div className="max-w-360 mx-auto py-0 lg:py-2">
         <div className="flex flex-col-reverse lg:flex-row gap-3 items-start">
           {/* Text column */}
           <div className="flex-2 space-y-4 mt-0">
@@ -54,7 +54,7 @@ const HeroLead: React.FC<HeroLeadProps> = ({
 
             {/* Title */}
             <Wrapper>
-              <h1 className="text-4xl sm:text-4xl font-bold leading-tight text-gray-900 hover:text-orange-600 transition-colors">
+              <h1 className="text-3xl sm:text-4xl lg:text-4xl font-bold leading-tight text-gray-900 hover:text-orange-600 transition-colors">
                 {title}
               </h1>
             </Wrapper>
@@ -83,7 +83,7 @@ const HeroLead: React.FC<HeroLeadProps> = ({
           {/* Image column */}
           <div className="flex-3 w-full">
             <Wrapper>
-              <div className="relative w-full h-72 sm:h-84 lg:h-100 overflow-hidden">
+              <div className="relative w-full h-72 sm:h-74 lg:h-100 overflow-hidden">
                 <Image
                   src={image}
                   alt={title}

@@ -36,20 +36,20 @@ const OverlayArticleGrid: React.FC<OverlayArticleGridProps> = ({
           <span className="text-gray-500 text-lg">›</span>
         </div>
       )}
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-3">
+      <div className="grid grid-cols-1 gap-3 md:grid-cols-3 lg:grid-cols-5">
         {items.slice(0, 4).map((item, index) => (
           <article 
             key={`${item.slug}-${index}`} 
             className={`relative group ${index === 0 ? 'md:col-span-2 lg:col-span-2' : ''}`}
           >
             <Link href={`/article/${item.slug}`} title={item.title} className="block">
-              <div className="relative w-full h-[433px] overflow-hidden">
+              <div className="relative w-full aspect-[4/2] sm:aspect-[3/4] md:aspect-auto md:h-[433px] overflow-hidden">
                 <Image
                   src={item.image}
                   alt={item.title}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 20vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1200px) 33vw, 20vw"
                   priority={index < 2}
                   loading={index < 2 ? "eager" : "lazy"}
                   decoding="async"
@@ -59,19 +59,19 @@ const OverlayArticleGrid: React.FC<OverlayArticleGridProps> = ({
                 <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/50 to-transparent" />
                 
                 {/* Content Overlay */}
-                <div className="absolute inset-0 flex flex-col justify-end p-4 text-white">
-                  <div className="text-xs font-semibold uppercase tracking-wide mb-2">
+                <div className="absolute inset-0 flex flex-col justify-end p-3 sm:p-4 text-white">
+                  <div className="text-[10px] sm:text-xs font-semibold uppercase tracking-wide mb-1 sm:mb-2">
                     {item.category}
                   </div>
-                  <h2 className="text-2xl font-bold leading-tight mb-2 group-hover:text-orange-400 transition-colors">
+                  <h2 className="text-sm sm:text-base md:text-2xl font-bold leading-tight mb-1 sm:mb-2 group-hover:text-orange-400 transition-colors">
                     {item.title}
                   </h2>
                   {item.excerpt && (
-                    <p className="text-xs text-gray-200 line-clamp-2 mb-2">
+                    <p className="text-[10px] sm:text-xs text-gray-200 line-clamp-2 mb-1 sm:mb-2">
                       {item.excerpt}
                     </p>
                   )}
-                  <div className="flex items-center justify-between text-xs">
+                  <div className="flex items-center justify-between text-[10px] sm:text-xs">
                     <span>{item.date}</span>
                     <button
                       type="button"
@@ -84,7 +84,7 @@ const OverlayArticleGrid: React.FC<OverlayArticleGridProps> = ({
                       className="text-white hover:text-orange-400 transition-colors"
                     >
                       <Bookmark
-                        className="w-4 h-4"
+                        className="w-3 h-3 sm:w-4 sm:h-4"
                         fill={item.bookmarked ? "currentColor" : "none"}
                         strokeWidth={item.bookmarked ? 0 : 2}
                       />
