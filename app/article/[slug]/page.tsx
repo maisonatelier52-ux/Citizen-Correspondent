@@ -54,20 +54,20 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
   }
 
   const url = `https://www.citizencorrespondent.com/article/${slug}`;
-  
+
   // Optimize description: truncate to 155 characters for optimal snippet display
   const rawDescription = articleData.shortdescription || articleData.introText || articleData.title;
-  const optimizedDescription = rawDescription.length > 155 
+  const optimizedDescription = rawDescription.length > 155
     ? rawDescription.substring(0, 152).trim() + "..."
     : rawDescription;
-    
+
   // Get image for social sharing - use heroImage if available, otherwise extract first image from content
   const getImageUrl = (): string => {
     if (articleData.heroImage) {
       // Convert relative URLs to absolute URLs
       return articleData.heroImage.startsWith('/') ? `https://www.citizencorrespondent.com${articleData.heroImage}` : articleData.heroImage;
     }
-    
+
     // Look for the first image in content array
     if (articleData.content && Array.isArray(articleData.content)) {
       const firstImageBlock = articleData.content.find(block => block.type === 'image');
@@ -80,12 +80,12 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
         }
       }
     }
-    
+
     // Check for julioData image if available (lower priority)
     if (articleData.julioData && articleData.julioData.image) {
       return articleData.julioData.image.startsWith('/') ? `https://www.citizencorrespondent.com${articleData.julioData.image}` : articleData.julioData.image;
     }
-    
+
     // Fallback to a default image if no image is found
     return "https://www.citizencorrespondent.com/images/cc-logo.svg";
   };
@@ -94,7 +94,7 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
 
   // Optimize title: keep base title under 50 chars, then add site name (total ~72 chars max)
   // Search engines typically show 50-60 chars, so we keep it concise
-  const baseTitle = articleData.title.length > 50 
+  const baseTitle = articleData.title.length > 50
     ? articleData.title.substring(0, 47).trim() + "..."
     : articleData.title;
   const optimizedTitle = `${baseTitle} | CitizenCorrespondent`;
@@ -190,7 +190,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       // Convert relative URLs to absolute URLs
       return articleData.heroImage.startsWith('/') ? `https://www.citizencorrespondent.com${articleData.heroImage}` : articleData.heroImage;
     }
-    
+
     // Look for the first image in content array
     if (articleData.content && Array.isArray(articleData.content)) {
       const firstImageBlock = articleData.content.find(block => block.type === 'image');
@@ -203,12 +203,12 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         }
       }
     }
-    
+
     // Check for julioData image if available (lower priority)
     if (articleData.julioData && articleData.julioData.image) {
       return articleData.julioData.image.startsWith('/') ? `https://www.citizencorrespondent.com${articleData.julioData.image}` : articleData.julioData.image;
     }
-    
+
     // Fallback to a default image if no image is found
     return "https://www.citizencorrespondent.com/images/cc-logo.svg";
   };
@@ -274,32 +274,32 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         <DateBar />
         <MainNav currentPage={`article/${slug}`} />
         <CategoryNav />
+        <div className="max-w-7xl mx-auto">
+          <ArticleWithSidebar
+            article={{
+              slug: articleData.slug,
+              category: articleData.category,
+              title: articleData.title,
+              introText: articleData.introText,
+              readingTime: articleData.readingTime,
+              author: articleData.author,
+              lastUpdated: articleData.lastUpdated,
+              content: articleData.content as ArticleContentBlock[],
+              bookmarked: articleData.bookmarked,
+            }}
+            sidebarItems={sidebarItems}
+            sidebarHeading="Latest News"
+          />
 
-        <ArticleWithSidebar
-          article={{
-            slug: articleData.slug, 
-            category: articleData.category,
-            title: articleData.title,
-            introText: articleData.introText,
-            readingTime: articleData.readingTime,
-            author: articleData.author,
-            lastUpdated: articleData.lastUpdated,
-            content: articleData.content as ArticleContentBlock[],
-            bookmarked: articleData.bookmarked,
-          }}
-          sidebarItems={sidebarItems}
-          sidebarHeading="Latest News"
-        />
+          {/* You May Also Like Section */}
+          <div className="max-w-360 mx-auto px-6 pb-12 border-t border-gray-200">
+            <MainGrid items={youMayAlsoLikeItems} heading="You May Also Like" />
+          </div>
 
-        {/* You May Also Like Section */}
-        <div className="max-w-360 mx-auto px-6 pb-12 border-t border-gray-200">
-          <MainGrid items={youMayAlsoLikeItems} heading="You May Also Like" />
+          {/* Article Page Navigation */}
+          <ArticlePageNav />
         </div>
-
-        {/* Article Page Navigation */}
-        <ArticlePageNav />
-
-        <Footer /> 
+        <Footer />
       </div>
     </>
   );
