@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Bookmark, Share2, Mail, Link as LinkIcon, Printer, MoreHorizontal, Clock } from "lucide-react";
 import LeaveAComment from "./LeaveAComment";
+import ArticleActionBar from "./ArticleActionBar";
 
 export interface ArticleContentBlock {
   type: "heading" | "paragraph" | "image";
@@ -99,8 +100,16 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
         </p>
 
 
+        {/* Article Action Bar */}
+        <ArticleActionBar 
+          readingTime={parseInt(readingTime.replace(/[^0-9]/g, ""))}
+          onShare={onShare}
+          onBookmarkToggle={onBookmarkToggle}
+          onMoreOptions={() => {}}
+        />
+
         {/* Author Section */}
-        <div className="flex items-start gap-4 mb-4 pb-2 pt-2 border-b border-t border-gray-200">
+        <div className="flex items-start gap-4 mb-4  pt-2">
           <div className="relative w-12 h-12 sm:w-16 sm:h-16 shrink-0">
             <Image
               src={author.image}
@@ -152,7 +161,7 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
               );
             } else if (block.type === "image") {
               return (
-                <div key={index} className="my-4 sm:my-6">
+                <div key={index} className="my-2 sm:my-2">
                   <div className="relative w-full aspect-video bg-gray-100">
                     <Image
                       src={block.imageUrl || ""}

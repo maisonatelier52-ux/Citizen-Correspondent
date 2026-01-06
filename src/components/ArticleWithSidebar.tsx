@@ -61,9 +61,9 @@ const ArticleWithSidebar: React.FC<ArticleWithSidebarProps> = ({
   }, []);
 
   return (
-    <div className={`max-w-360 mx-auto px-6 grid grid-cols-1 lg:grid-cols-6 gap-6 py-4 bg-white ${className}`}>
+    <div className={`max-w-360 mx-auto px-6 grid grid-cols-1 lg:grid-cols-4 gap-12 py-4 bg-white ${className}`}>
       {/* Left: Article Detail + End Marker */}
-      <div className="lg:col-span-4">
+      <div className="lg:col-span-3">
         <ArticleDetail
           slug={article.slug}
           category={article.category}
@@ -81,7 +81,7 @@ const ArticleWithSidebar: React.FC<ArticleWithSidebarProps> = ({
       </div>
 
       {/* Right: Sticky Sidebar */}
-      <aside className="lg:col-span-2">
+      <aside className="lg:col-span-1">
         {/* Subscribe Newsletter - Not Sticky */}
         <SubscribeNewsletter />
         

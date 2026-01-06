@@ -2,7 +2,7 @@
   "sidebar": [
     {
       "category": "World",
-      "title": "Live: UN Climate Summit Reaches Historic Agreement on Carbon Emissions",
+      "title": "Live: UN Climate Summit Reaches Historic Agreement",
       "date": "December 17, 2025",
       "image": "/images/news/climate-summit.webp",
       "live": true,
@@ -11,7 +11,7 @@
     },
     {
       "category": "Technology",
-      "title": "OpenAI Unveils GPT-6 with Revolutionary Reasoning Capabilities",
+      "title": "OpenAI Unveils GPT-6 with Revolutionary Reasoning",
       "date": "December 16, 2025",
       "image": "/images/news/ai-technology.webp",
       "slug": "openai-unveils-gpt-6-revolutionary-reasoning-capabilities",
@@ -31,14 +31,6 @@
       "date": "December 14, 2025",
       "image": "/images/news/healthcare-medical.webp",
       "slug": "fda-approves-groundbreaking-alzheimers-treatment-70-improvement",
-      "bookmarked": false
-    },
-    {
-      "category": "Finance",
-      "title": "Federal Reserve Signals Rate Cuts Amid Strong Economic Growth",
-      "date": "December 17, 2025",
-      "image": "/images/news/finance-stock-market.webp",
-      "slug": "federal-reserve-signals-rate-cuts-strong-economic-growth",
       "bookmarked": false
     }
   ]
