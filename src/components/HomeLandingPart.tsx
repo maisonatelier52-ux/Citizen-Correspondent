@@ -50,9 +50,9 @@ const HomeLandingPart: React.FC<HomeLandingPartProps> = ({
                         </div>
 
                         <Link href={buildLink(mainFeature)}>
-                            <h1 className="text-4xl sm:text-4xl font-bold leading-tight text-gray-900 hover:text-orange-600 transition-colors">
+                            <div className="text-4xl sm:text-4xl font-bold leading-tight text-gray-900 hover:text-orange-600 transition-colors">
                                 {mainFeature.title}
-                            </h1>
+                            </div>
                         </Link>
 
                         <div className="flex items-center gap-2 text-sm font-semibold text-gray-700">
