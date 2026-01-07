@@ -29,7 +29,11 @@ export async function POST(request: NextRequest) {
       timestamp: new Date().toISOString()
     });
 
-    // Simulate email sending
+    // For now, just log the data (in a real app, you'd send the actual email)
+    console.log('Sending email to:', recipient);
+    console.log('Comment data:', { name, email, website, comment });
+
+    // Simulate successful email sending
     // In a real implementation, replace this with actual email sending code
     // Example with a service like Resend:
     /*
@@ -52,9 +56,16 @@ export async function POST(request: NextRequest) {
     });
     */
 
+    // Add CORS headers
+    const headers = new Headers();
+    headers.set('Content-Type', 'application/json');
+    headers.set('Access-Control-Allow-Origin', '*');
+    headers.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+    headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+
     return new Response(
       JSON.stringify({ success: true, message: 'Comment sent successfully' }),
-      { status: 200, headers: { 'Content-Type': 'application/json' } }
+      { status: 200, headers }
     );
   } catch (error) {
     console.error('Error sending comment:', error);

@@ -93,9 +93,14 @@ const LeaveAComment: React.FC = () => {
         }),
       });
 
+      const result = await response.json();
+      
       if (!response.ok) {
-        throw new Error('Failed to send comment');
+        console.error('API response error:', result);
+        throw new Error(result.error || 'Failed to send comment');
       }
+      
+      console.log('API response:', result);
 
       // Save info to localStorage if checkbox is checked
       if (formData.saveInfo) {
