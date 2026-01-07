@@ -20,6 +20,13 @@
       "category": "Featured",
       "date": "December 14, 2025",
       "image": "/images/news/city-skyline.webp"
+    },
+    {
+      "slug": "climate-legislation-state-level",
+      "title": "12 States Pass Aggressive Climate Legislation Ahead of Federal Action",
+      "image": "/images/news/climate-summit.webp",
+      "categories": "Featured",
+      "date": "December 13, 2025"
     }
   ]
 }
