@@ -78,8 +78,24 @@ const LeaveAComment: React.FC = () => {
     setIsSubmitting(true);
 
     try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+      // Send email via API route
+      const response = await fetch('/api/send-comment', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          comment: formData.comment,
+          name: formData.name,
+          email: formData.email,
+          website: formData.website,
+          recipient: 'ejk790929@gmail.com'
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send comment');
+      }
 
       // Save info to localStorage if checkbox is checked
       if (formData.saveInfo) {
