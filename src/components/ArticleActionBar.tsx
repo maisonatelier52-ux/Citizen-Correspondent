@@ -70,7 +70,7 @@ export default function ArticleActionBar({
   ];
 
   return (
-    <div className="flex items-center gap-4 sm:gap-6 py-4 text-black ">
+    <div className="flex items-center gap-4 sm:gap-6 py-4 text-gray-600 ">
       {/* Social Links */}
       {socialLinks.map((social) => (
         <a
@@ -79,7 +79,7 @@ export default function ArticleActionBar({
           target="_blank"
           rel="noopener noreferrer"
           aria-label={social.name}
-          className="hover:text-gray-600 transition-colors"
+          className="hover:text-black transition-colors"
         >
           {social.icon}
         </a>
