@@ -33,8 +33,20 @@ export async function POST(request: NextRequest) {
     console.log('Sending email to:', recipient);
     console.log('Comment data:', { name, email, website, comment });
 
-    // Simulate successful email sending
+    // Mock email sending functionality
     // In a real implementation, replace this with actual email sending code
+    
+    // Simulate email sending delay
+    await new Promise(resolve => setTimeout(resolve, 500));
+    
+    // In this mock implementation, we just log the data
+    // A real implementation would use an email service
+    console.log(`Mock email sent to ${recipient}:`);
+    console.log(`From: ${name} <${email}>`);
+    console.log(`Subject: New Comment from ${name}`);
+    console.log(`Message: ${comment}`);
+    console.log(`Website: ${website || 'Not provided'}`);
+    
     // Example with a service like Resend:
     /*
     import { Resend } from 'resend';
