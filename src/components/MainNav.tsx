@@ -31,9 +31,14 @@ const pathname = usePathname();
         { name: "Health", href: "/health", title: "Health News" },
         { name: "Education", href: "/education", title: "Education News" },
         { name: "Global Affairs", href: "/global-affairs", title: "Global Affairs News" },
+        { name: "Featured", href: "/featured", title: "Featured News" },
+        { name: "Climate Change", href: "/climate-change", title: "Climate Change News" },
+        { name: "Hot", href: "/hot", title: "Hot News" },
+        { name: "Research", href: "/research", title: "Research News" },
+
+
 
         // { name: "Pages", href: "#", title: "Pages", hasDropdown: true },
-        { name: "Blog", href: "/blog", title: "Blog" },
     ];
 
     // const pagesDropdownItems = [
@@ -55,7 +60,7 @@ const pathname = usePathname();
     return (
         <>
             <nav className="sticky top-0 z-50 bg-white border-b border-gray-200">
-                <div className="max-w-360 mx-auto px-16">
+                <div className="max-w-360 mx-auto px-2 md:px-16">
                     <div className="flex items-center justify-between h-16">
                         <div className="flex items-center justify-between gap-6">
                         {/* Left: Logo */}
@@ -70,7 +75,7 @@ const pathname = usePathname();
                         </Link>
 
                         {/* Center: Navigation Menu */}
-                        <div className="hidden lg:flex items-center space-x-6">
+                        <div className="hidden lg:flex items-center space-x-4">
                          {menuItems.map((item) => {
 const isActive =
   item.href === "/"

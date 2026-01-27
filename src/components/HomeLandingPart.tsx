@@ -40,10 +40,12 @@ const HomeLandingPart: React.FC<HomeLandingPartProps> = ({
 }) => {
     return (
         <section className="bg-white">
-            <div className="max-w-360 mx-auto px-16 py-6 border-b border-gray-200">
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <div className="max-w-360 mx-auto px-2 md:px-16 py-6 border-b border-gray-200">
+              <div className="grid grid-cols-1 lg:grid-cols-13 gap-8 items-start">
+
                     {/* Left: Main feature */}
-                    <article className="lg:col-span-6 flex flex-col gap-4">
+            <article className="lg:col-span-8 flex flex-col gap-4">
+
                         <div className="flex items-center gap-2 text-sm font-semibold text-gray-700">
                             <span className="w-3 h-3 rounded-full bg-orange-600" />
                             <span>{mainFeature.category}</span>
@@ -90,12 +92,12 @@ const HomeLandingPart: React.FC<HomeLandingPartProps> = ({
                         </Link>
 
                         {mainFeature.excerpt && (
-                            <p className="text-sm text-gray-700 leading-7">{mainFeature.excerpt}</p>
+                            <p className="text-sm text-gray-700 leading-[1.3]">{mainFeature.excerpt}</p>
                         )}
                     </article>
 
                     {/* Middle: Secondary feature */}
-                    <article className="lg:col-span-2 flex flex-col gap-3">
+                    {/* <article className="lg:col-span-4 flex flex-col gap-3">
                         <Link href={buildLink(secondaryFeature)}>
                             <div className="relative w-full h-[360px] sm:h-[420px] lg:h-[400px] overflow-hidden">
                                 <Image
@@ -138,10 +140,10 @@ const HomeLandingPart: React.FC<HomeLandingPartProps> = ({
                                 />
                             </button>
                         </div>
-                    </article>
+                    </article> */}
 
                     {/* Right: Sidebar */}
-                    <div className="lg:col-span-4  w-full">
+                    <div className="lg:col-span-5 w-full">
                         <Sidebar items={sidebarItems} onBookmarkToggle={onSidebarBookmarkToggle} />
                     </div>
                 </div>

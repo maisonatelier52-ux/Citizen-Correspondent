@@ -53,10 +53,10 @@ const CategoryLandingPart: React.FC<CategoryLandingPartProps> = ({
 
     return (
         <section className={`bg-white py-6 sm:py-8 ${className}`}>
-            <div className="max-w-360 mx-auto px-4 sm:px-16">
+            <div className="max-w-360 mx-auto px-2 md:px-16">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 items-start">
                     {/* Left Column: Main Feature Article */}
-                    <div className="lg:col-span-7">
+                    <div className="lg:col-span-6">
                         <article className="relative w-full h-[520px] sm:h-[590px] overflow-hidden group">
                             <Link href={mainFeatureHref} title={mainFeature.title} className="block h-full">
                                 <Image
@@ -172,13 +172,13 @@ const CategoryLandingPart: React.FC<CategoryLandingPartProps> = ({
                     </div>
 
                     {/* Right Column: Promotional Block */}
-                    <div className="lg:col-span-2">
+                    <div className="lg:col-span-3">
                         <div className="bg-orange-50 border border-orange-100 p-6 sm:p-8 lg:h-[580px] flex flex-col justify-between">
                             <div className="space-y-3 sm:space-y-4">
-                                <h3 className="text-2xl sm:text-3xl font-bold leading-tight text-red-900">
+                                <h3 className="text-2xl sm:text-[25px] font-bold leading-tight text-red-900">
                                     {promo.title}
                                 </h3>
-                                <p className="text-sm text-gray-700 leading-relaxed">
+                                <p className="text-sm text-gray-700 leading-[1.4]">
                                     {promo.body}
                                 </p>
                             </div>

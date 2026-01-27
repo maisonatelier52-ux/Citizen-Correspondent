@@ -285,7 +285,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           />
 
           {/* You May Also Like Section */}
-          <div className="max-w-360 mx-auto px-16 pb-12 border-t border-gray-200">
+          <div className="max-w-360 mx-auto px-2 md:px-16 pb-12 border-t border-gray-200">
             <MainGrid items={youMayAlsoLikeItems} heading="You May Also Like" />
           </div>
 

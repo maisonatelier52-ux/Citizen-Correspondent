@@ -76,7 +76,7 @@ const Footer: React.FC<FooterProps> = ({
 
   return (
     <footer className="bg-white border-t border-gray-200">
-      <div className="max-w-360 mx-auto px-16 py-6">
+      <div className="max-w-360 mx-auto px-2 md:px-16 py-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left Section: Logo, Description, Social */}
           <div className="space-y-6">

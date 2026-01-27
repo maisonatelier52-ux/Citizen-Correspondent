@@ -54,9 +54,8 @@ const HeroLead: React.FC<HeroLeadProps> = ({
 
             {/* Title */}
             <Wrapper>
-              <h1 className="text-3xl sm:text-4xl lg:text-4xl font-bold leading-[1.1]] text-gray-900 hover:text-orange-600 transition-colors">
-                {title}
-              </h1>
+              <h1 className="text-3xl sm:text-4xl lg:text-[35px] font-bold leading-[1.1] text-gray-900 hover:text-orange-600 transition-colors">
+2026 Presidential Race Accelerates with Major Platform Announcements</h1>
             </Wrapper>
 
             {/* Excerpt */}

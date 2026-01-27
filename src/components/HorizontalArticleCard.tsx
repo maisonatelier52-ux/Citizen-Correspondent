@@ -59,11 +59,11 @@ const HorizontalArticleCard: React.FC<HorizontalArticleCardProps> = ({
           {category}
         </div>
         <Link href={`/article/${slug}`} title={title}>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight hover:text-orange-600 transition-colors">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-[1.1] hover:text-orange-600 transition-colors">
             {title}
           </h2>
         </Link>
-        <p className="text-base text-gray-700 leading-relaxed line-clamp-3">
+        <p className="text-base text-gray-700 leading-[1.3] line-clamp-3">
           {excerpt}
         </p>
         <div className="flex items-center gap-4 text-[12px] text-gray-600">

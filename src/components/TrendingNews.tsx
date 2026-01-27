@@ -38,8 +38,6 @@ export default function TrendingNews() {
          <span className="bg-red-700 text-white text-xs font-bold px-3 py-1 uppercase tracking-wider">
   {item.label}
 </span>
-
-
             {/* Headline */}
             <span className="text-gray-100 font-medium">
               {item.title}

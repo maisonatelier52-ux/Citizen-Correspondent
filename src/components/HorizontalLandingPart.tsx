@@ -37,7 +37,7 @@ const HorizontalLandingPart: React.FC<HorizontalLandingPartProps> = ({
             <span className="text-gray-500 text-lg">›</span>
           </div>
         )}
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 sm:gap-6 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 sm:gap-6 items-start">
           {/* Left promo card */}
           <div className="lg:col-span-1">
             <div className="bg-orange-50 border lg:h-[550px] border-orange-100 rounded-lg p-6 sm:p-8 flex flex-col justify-between h-full">
@@ -45,10 +45,10 @@ const HorizontalLandingPart: React.FC<HorizontalLandingPartProps> = ({
                 <p className="text-sm font-semibold text-orange-700 uppercase tracking-wide">
                   Technology
                 </p>
-                <h2 className="text-2xl sm:text-3xl font-black leading-tight text-red-900 whitespace-pre-line">
+                <h2 className="text-2xl sm:text-[24px] font-black leading-tight text-red-900 whitespace-pre-line">
                   {intro.title}
                 </h2>
-                <p className="text-sm text-gray-700 leading-relaxed">
+                <p className="text-sm text-gray-700 leading-[1.4]">
                   {intro.body}
                 </p>
               </div>
@@ -64,7 +64,7 @@ const HorizontalLandingPart: React.FC<HorizontalLandingPartProps> = ({
           </div>
 
           {/* Right: horizontal article + grid */}
-          <div className="lg:col-span-4 space-y-6">
+          <div className="lg:col-span-3 space-y-6">
             <HorizontalArticleCard {...article} />
             <MainGrid items={mainGridItems} />
           </div>

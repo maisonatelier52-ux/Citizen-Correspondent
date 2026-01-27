@@ -44,7 +44,7 @@ const DateBar: React.FC<DateBarProps> = ({
 
   return (
     <div className="bg-black text-white">
-      <div className="max-w-360 mx-auto px-16 flex items-center justify-between flex-wrap gap-4">
+      <div className="max-w-360 mx-auto px-2 md:px-16 flex items-center justify-between flex-wrap gap-4">
         {/* Left: Date */}
         <div className="text-xs font-medium">{currentDate}</div>
 

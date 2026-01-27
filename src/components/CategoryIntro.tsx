@@ -36,7 +36,7 @@ const CategoryIntro: React.FC<CategoryIntroProps> = ({
 
   return (
     <section className={`bg-white pt-8 ${className}`}>
-      <div className="max-w-360 mx-auto px-16">
+      <div className="max-w-360 mx-auto px-2 md:px-16">
         {/* Header with Category Name and Follow Button */}
         <div className="flex items-center justify-between mb-4">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
