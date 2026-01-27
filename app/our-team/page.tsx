@@ -68,7 +68,7 @@ export default function AuthorsPage() {
     <>
       <div className="bg-white min-h-screen">
         <DateBar />
-        <MainNav currentPage="authors" />
+        <MainNav />
         <CategoryNav />
 
         <section className="py-12 px-6 space-y-24 bg-gray-50">

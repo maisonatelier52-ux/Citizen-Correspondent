@@ -58,7 +58,7 @@ export default function TermsConditionsPage() {
     <>
       <div className="bg-white min-h-screen">
         <DateBar />
-        <MainNav currentPage="terms-conditions" />
+        <MainNav />
         <CategoryNav />
 
         <section className="py-12 px-6">

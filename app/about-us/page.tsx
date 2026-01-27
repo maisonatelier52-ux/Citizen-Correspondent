@@ -60,7 +60,7 @@ export default function AboutUsPage() {
     <>
       <div className=" bg-white min-h-screen">
         <DateBar />
-        <MainNav currentPage="about-us" />
+        <MainNav />
         <CategoryNav />
 
         {/* Main Content - Our Story */}

@@ -58,7 +58,7 @@ export default function PrivacyPolicyPage() {
         <>
             <div className="bg-white min-h-screen">
                 <DateBar />
-                <MainNav currentPage="privacy-policy" />
+                <MainNav />
                 <CategoryNav />
 
                 <section className="py-12 px-6">
