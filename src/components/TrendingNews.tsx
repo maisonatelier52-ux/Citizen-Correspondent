@@ -32,7 +32,7 @@ export default function TrendingNews() {
             key={index}
             className="mx-32 text-sm font-medium"
           >
-            {item}
+            Trending News:{item}
           </span>
         ))}
       </div>
