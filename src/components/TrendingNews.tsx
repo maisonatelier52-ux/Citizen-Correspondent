@@ -11,29 +11,43 @@ import EducationData from '../../public/data/educationPage/education-featureCate
 import GlobalAffairsData from '../../public/data/global-affairsPage/global-affairs-featureCategoryPart.json';
 
 const newsItems = [
-  WorldData.featuredArticle.title,
-  BusinessData.featuredArticle.title,
-  PoliticsData.featuredArticle.title,
-  OpinionData.featuredArticle.title,
-  FinanceData.featuredArticle.title,
-  HealthData.featuredArticle.title,
-  EducationData.featuredArticle.title,
-  GlobalAffairsData.featuredArticle.title,
+  { label: 'WORLD', title: WorldData.featuredArticle.title },
+  { label: 'BUSINESS', title: BusinessData.featuredArticle.title },
+  { label: 'POLITICS', title: PoliticsData.featuredArticle.title },
+  { label: 'OPINION', title: OpinionData.featuredArticle.title },
+  { label: 'FINANCE', title: FinanceData.featuredArticle.title },
+  { label: 'HEALTH', title: HealthData.featuredArticle.title },
+  { label: 'EDUCATION', title: EducationData.featuredArticle.title },
+  { label: 'GLOBAL', title: GlobalAffairsData.featuredArticle.title },
 ];
 
+
+// duplicate for seamless loop
 const tickerItems = [...newsItems, ...newsItems];
 
 export default function TrendingNews() {
   return (
-    <div className="w-full overflow-hidden bg-black text-white">
-      <div className="ticker-track flex whitespace-nowrap py-2">
+    <div className="w-full overflow-hidden bg-black text-white border-y border-gray-800">
+      <div className="ticker-track flex whitespace-nowrap py-1.5">
         {tickerItems.map((item, index) => (
-          <span
+          <div
             key={index}
-            className="mx-32 text-sm font-medium"
+            className="flex items-center mx-8 gap-3 text-sm"
           >
-            Trending News:{item}
-          </span>
+            {/* Styled prefix badge */}
+         <span className="bg-red-700 text-white text-xs font-bold px-3 py-1 uppercase tracking-wider">
+  {item.label}
+</span>
+
+
+            {/* Headline */}
+            <span className="text-gray-100 font-medium">
+              {item.title}
+            </span>
+
+            {/* Animated separator */}
+            <span className="text-gray-600 text-lg">|</span>
+          </div>
         ))}
       </div>
 
@@ -50,6 +64,10 @@ export default function TrendingNews() {
           100% {
             transform: translateX(-50%);
           }
+        }
+
+        .ticker-track:hover {
+          animation-play-state: paused;
         }
       `}</style>
     </div>
