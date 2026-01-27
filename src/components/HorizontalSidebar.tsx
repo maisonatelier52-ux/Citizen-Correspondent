@@ -54,7 +54,7 @@ const HorizontalSidebar: React.FC<HorizontalSidebarProps> = ({
               </div>
             </div>
     
-            <div className="flex items-center gap-2 text-xs text-gray-600 pl-4">
+            <div className="flex items-center gap-2 text-[11px] text-gray-600 pl-4">
               <span>{item.date}</span>
               <button
                 type="button"

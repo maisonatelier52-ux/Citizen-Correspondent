@@ -52,7 +52,7 @@ const Sidebar: React.FC<SidebarProps> = ({ items, heading, onBookmarkToggle }) =
                   {item.title}
                 </h2>
               </Link>
-              <div className="flex items-center gap-3 text-sm text-gray-600">
+              <div className="flex items-center gap-3 text-[11px] text-gray-600">
                 <span>{item.date}</span>
                 <button
                   type="button"

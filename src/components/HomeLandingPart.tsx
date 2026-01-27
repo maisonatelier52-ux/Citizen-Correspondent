@@ -40,7 +40,7 @@ const HomeLandingPart: React.FC<HomeLandingPartProps> = ({
 }) => {
     return (
         <section className="bg-white">
-            <div className="max-w-360 mx-auto px-6 py-6 border-b border-gray-200">
+            <div className="max-w-360 mx-auto px-16 py-6 border-b border-gray-200">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                     {/* Left: Main feature */}
                     <article className="lg:col-span-6 flex flex-col gap-4">
@@ -55,7 +55,7 @@ const HomeLandingPart: React.FC<HomeLandingPartProps> = ({
                             </div>
                         </Link>
 
-                        <div className="flex items-center gap-2 text-sm font-semibold text-gray-700">
+                        <div className="flex items-center gap-2 text-[12px] font-semibold text-gray-700">
                             <span className="text-gray-600">{mainFeature.date}</span>
                             <button
                                 type="button"
@@ -123,7 +123,7 @@ const HomeLandingPart: React.FC<HomeLandingPartProps> = ({
                             </h2>
                         </Link>
 
-                        <div className="flex items-center gap-2 text-sm text-gray-600">
+                        <div className="flex items-center gap-2 text-[11px] text-gray-600">
                             <span>{secondaryFeature.date}</span>
                             <button
                                 type="button"

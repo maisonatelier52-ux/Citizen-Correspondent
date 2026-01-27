@@ -24,6 +24,8 @@ import FeatureHomePart from "@/src/components/FeatureHomePart";
 import HomeLandingPart from "@/src/components/HomeLandingPart";
 import HorizontalLandingPart from "@/src/components/HorizontalLandingPart";
 import ArticlePageNav from "@/src/components/ArticlePageNav";
+import TrendingNews from "@/src/components/TrendingNews";
+import SecondBanner from "@/src/components/SecondBanner";
 
 // Lazy load below-the-fold components for code splitting
 const MainGrid = dynamic(() => import("@/src/components/MainGrid"), {
@@ -178,9 +180,9 @@ export default async function HomePage() {
 
       <div className="bg-white min-h-screen">
         <DateBar />
-        <MainNav currentPage="home" />
-        <CategoryNav />
-
+        <MainNav />
+        {/* <CategoryNav /> */}
+        <TrendingNews />
 
         <FeatureHomePart
           hero={heroArticle}
@@ -188,12 +190,12 @@ export default async function HomePage() {
           horizontalItems={horizontalItems}
         />
 
-        <div className="max-w-360 mx-auto px-6 pb-12 border-t border-gray-200">
+        <div className="max-w-360 mx-auto px-16 pb-12 border-t border-gray-200">
           <MainGrid items={mainGridItems} heading="World" />
         </div>
 
         {/* Visible heading with title keywords for SEO */}
-        <div className="max-w-360 mx-auto px-6 py-4">
+        <div className="max-w-360 mx-auto px-16 py-4">
           <div className="text-1xl md:text-1xl font-bold text-gray-900 mb-2">
             Latest News & Breaking Stories 2025
           </div>
@@ -216,44 +218,44 @@ export default async function HomePage() {
         />
 
         {/* Technology horizontal landing section */}
-        <div className="max-w-360 mx-auto px-6 py-0">
-        <HorizontalLandingPart
-          intro={horizontalLandingIntro}
-          article={horizontalLandingArticle}
-          mainGridItems={horizontalLandingGrid}
-          heading="Technology" 
-        />
+        <div className="max-w-360 mx-auto px-16 py-0">
+          <HorizontalLandingPart
+            intro={horizontalLandingIntro}
+            article={horizontalLandingArticle}
+            mainGridItems={horizontalLandingGrid}
+            heading="Technology"
+          />
         </div>
 
         <Suspense fallback={<div className="h-32 animate-pulse bg-gray-100" />}>
           <div className="w-full py-2">
-            <BigAddBanner />
+            <SecondBanner />
           </div>
         </Suspense>
 
         <Suspense fallback={<div className="h-64 animate-pulse bg-gray-100" />}>
-          <div className="max-w-360 mx-auto px-6 pb-12">
+          <div className="max-w-360 mx-auto px-16 pb-12">
             <MainGridLazy items={mainGridEnvironmentItems} heading="Environment" />
           </div>
         </Suspense>
         <ArticlePageNav />
 
         <Suspense fallback={<div className="h-96 animate-pulse bg-gray-100" />}>
-          <div className="max-w-360 mx-auto px-6 pb-12 border-t border-gray-200">
+          <div className="max-w-360 mx-auto px-16 pb-12 border-t border-gray-200">
             <OverlayArticleGrid items={overlayGridPoliticsItems} heading="Politics" />
           </div>
         </Suspense>
 
         <Suspense fallback={<div className="h-64 animate-pulse bg-gray-100" />}>
-          <div className="max-w-360 mx-auto px-6 pb-12 border-t border-gray-200">
+          <div className="max-w-360 mx-auto px-16 pb-12 border-t border-gray-200">
             <MainGridLazy items={mainGridMoreNewsItems} heading="More News" initialRows={2} />
-        </div>
+          </div>
         </Suspense>
 
         <Suspense fallback={<div className="h-64 animate-pulse bg-gray-100" />}>
           <Footer />
         </Suspense>
-    </div>
+      </div>
     </>
   );
 }

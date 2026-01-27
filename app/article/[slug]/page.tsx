@@ -10,6 +10,7 @@ import { SidebarItem } from "@/src/components/Sidebar";
 import { MainGridItem } from "@/src/components/MainGrid";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
+import TrendingNews from "@/src/components/TrendingNews";
 
 interface ArticlePageProps {
   params: Promise<{
@@ -32,9 +33,7 @@ interface ArticleData {
   date?: string;
   lastUpdated: string;
   heroImage?: string;
-  julioData?: {
-    image: string;
-  };
+
   content: ArticleContentBlock[];
   bookmarked?: boolean;
 }
@@ -81,10 +80,7 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
       }
     }
 
-    // Check for julioData image if available (lower priority)
-    if (articleData.julioData && articleData.julioData.image) {
-      return articleData.julioData.image.startsWith('/') ? `https://www.citizencorrespondent.com${articleData.julioData.image}` : articleData.julioData.image;
-    }
+
 
     // Fallback to a default image if no image is found
     return "https://www.citizencorrespondent.com/images/cc-logo.svg";
@@ -204,10 +200,6 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       }
     }
 
-    // Check for julioData image if available (lower priority)
-    if (articleData.julioData && articleData.julioData.image) {
-      return articleData.julioData.image.startsWith('/') ? `https://www.citizencorrespondent.com${articleData.julioData.image}` : articleData.julioData.image;
-    }
 
     // Fallback to a default image if no image is found
     return "https://www.citizencorrespondent.com/images/cc-logo.svg";
@@ -272,9 +264,10 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       <div className="bg-white min-h-screen">
         <div className="hidden">{articleData.title} | CitizenCorrespondent</div>
         <DateBar />
-        <MainNav currentPage={`article/${slug}`} />
-        <CategoryNav />
-        <div className="max-w-7xl mx-auto">
+        <MainNav />
+        {/* <CategoryNav /> */}
+        <TrendingNews />
+        <div className="">
           <ArticleWithSidebar
             article={{
               slug: articleData.slug,
@@ -292,7 +285,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           />
 
           {/* You May Also Like Section */}
-          <div className="max-w-360 mx-auto px-6 pb-12 border-t border-gray-200">
+          <div className="max-w-360 mx-auto px-16 pb-12 border-t border-gray-200">
             <MainGrid items={youMayAlsoLikeItems} heading="You May Also Like" />
           </div>
 

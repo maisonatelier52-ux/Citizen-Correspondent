@@ -14,6 +14,7 @@ import MainGrid, { MainGridItem } from "@/src/components/MainGrid";
 import Footer from "@/src/components/Footer";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
+import TrendingNews from "@/src/components/TrendingNews";
 
 interface CategoryPageProps {
   params: Promise<{
@@ -104,7 +105,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   const url = `https://www.citizencorrespondent.com/category/${slug}`;
 
   // Optimize description: truncate to 155 characters for optimal snippet display
-  const optimizedDescription = description.length > 155 
+  const optimizedDescription = description.length > 155
     ? description.substring(0, 152).trim() + "..."
     : description;
 
@@ -187,11 +188,8 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   }
 
   const featuredArticle = featureData.featuredArticle as FeaturedArticleCardProps;
-  // Check if this is a Julio article and set the correct href
-  const julioSlugs = ["bridging-nations-through-finance", "global-financial-leadership", "philanthropic-impact", "economic-diplomacy", "innovation-banking", "sustainable-growth"];
-  const isJulioArticle = julioSlugs.includes(featuredArticle.slug);
-  const articleHref = isJulioArticle ? `/julio-herrera-velutini/${featuredArticle.slug}` : undefined;
-  
+
+
   const rightArticles = featureData.rightArticles as ArticleCardSmallProps[];
   const adBanner = featureData.adBanner as AdBannerProps;
   const mainGridItems = mainGridData.mainGrid as MainGridItem[];
@@ -206,7 +204,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     tags: [featuredArticle.category],
     live: false, // Can be set from data if available
     bookmarked: featuredArticle.bookmarked,
-    href: articleHref,
+    // href: articleHref,
   };
 
   const articles: CategoryLandingArticle[] = rightArticles.slice(0, 2).map((article) => ({
@@ -251,9 +249,9 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       <div className="bg-white min-h-screen">
         <div className="hidden">{categoryName} News – Latest Stories 2025</div>
         <DateBar />
-        <MainNav currentPage={`category/${slug}`} />
-        <CategoryNav />
-
+        <MainNav />
+        {/* <CategoryNav /> */}
+        <TrendingNews />
         <CategoryIntro
           categoryName={categoryName}
           description={categoryDescription}
@@ -266,7 +264,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           promo={promo}
         />
 
-        <div className="max-w-360 mx-auto px-6 pb-12 border-t border-gray-400">
+        <div className="max-w-360 mx-auto px-16 pb-12 border-t border-gray-400">
           <MainGrid items={mainGridItems} heading={categoryName} />
         </div>
 

@@ -54,16 +54,16 @@ const HeroLead: React.FC<HeroLeadProps> = ({
 
             {/* Title */}
             <Wrapper>
-              <h1 className="text-3xl sm:text-4xl lg:text-4xl font-bold leading-tight text-gray-900 hover:text-orange-600 transition-colors">
+              <h1 className="text-3xl sm:text-4xl lg:text-4xl font-bold leading-[1.1]] text-gray-900 hover:text-orange-600 transition-colors">
                 {title}
               </h1>
             </Wrapper>
 
             {/* Excerpt */}
-            <p className="text-sm text-gray-700 leading-7">{excerpt}</p>
+            <p className="text-sm text-gray-700 leading-tight">{excerpt}</p>
 
             {/* Meta row */}
-            <div className="flex items-center gap-4 text-sm text-gray-600">
+            <div className="flex items-center gap-4 text-[11px] text-gray-600">
               <span>{date}</span>
               <button
                 type="button"

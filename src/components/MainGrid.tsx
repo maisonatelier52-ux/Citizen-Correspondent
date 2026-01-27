@@ -109,7 +109,7 @@ const MainGrid: React.FC<MainGridProps> = ({
                     </h2>
                   </Link>
 
-                  <div className="flex items-center gap-3 text-xs md:text-sm text-gray-600">
+                  <div className="flex items-center gap-3 text-[11px] text-gray-600">
                     <span>{item.date}</span>
                     <button
                       type="button"

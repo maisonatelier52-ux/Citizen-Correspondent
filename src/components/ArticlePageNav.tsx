@@ -26,7 +26,7 @@ const ArticlePageNav: React.FC = () => {
 
   return (
     <div className="bg-white py-6">
-      <div className="max-w-360 mx-auto px-6">
+      <div className="max-w-360 mx-auto px-16">
         <div className="flex flex-wrap items-center gap-3">
           {/* More News Label */}
           <span className="text-orange-500 font-bold text-lg mr-2">

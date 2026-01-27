@@ -53,7 +53,7 @@ const ArticleCardSmall: React.FC<ArticleCardSmallProps> = ({
             {title}
           </h2>
         </Link>
-        <div className="flex items-center gap-3 text-sm text-gray-600">
+        <div className="flex items-center gap-3 text-[11px] text-gray-600">
           <span>{date}</span>
           <button
             type="button"

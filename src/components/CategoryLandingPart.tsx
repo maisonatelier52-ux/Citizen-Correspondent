@@ -53,7 +53,7 @@ const CategoryLandingPart: React.FC<CategoryLandingPartProps> = ({
 
     return (
         <section className={`bg-white py-6 sm:py-8 ${className}`}>
-            <div className="max-w-360 mx-auto px-4 sm:px-6">
+            <div className="max-w-360 mx-auto px-4 sm:px-16">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 items-start">
                     {/* Left Column: Main Feature Article */}
                     <div className="lg:col-span-7">

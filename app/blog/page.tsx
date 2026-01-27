@@ -96,11 +96,11 @@ export default function BlogPage() {
       <main className="min-h-screen bg-white">
         <div className="hidden">Blog | CitizenCorrespondent – Curated Articles & In-Depth Analysis</div>
         <DateBar />
-        <MainNav currentPage="blog" />
+        <MainNav />
         <CategoryNav />
 
       {/* Overlay Article Grid */}
-      <section className="max-w-360 mx-auto px-6 py-6">
+      <section className="max-w-360 mx-auto px-16 py-6">
         <h1 className="text-3xl font-bold hidden text-gray-900 mb-6">Blog</h1>
         <OverlayArticleGrid items={overlayData.overlayArticles.map(item => ({
           ...item,
@@ -114,7 +114,7 @@ export default function BlogPage() {
       </div>
 
       {/* Main Grid */}
-      <section className="max-w-360 mx-auto px-6 py-8">
+      <section className="max-w-360 mx-auto px-16 py-8">
         <MainGrid
           items={mainGridData.mainGrid}
           heading="Latest Articles"

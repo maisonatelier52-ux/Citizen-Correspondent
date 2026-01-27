@@ -1,6 +1,8 @@
 // components/MainNav.tsx
 "use client";
+
 import React, { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import Image from "next/image";
@@ -11,32 +13,35 @@ const SearchModal = dynamic(() => import("./SearchModal"), {
   ssr: false,
 });
 
-interface MainNavProps {
-    currentPage?: string;
-}
 
-const MainNav: React.FC<MainNavProps> = ({ currentPage = "home" }) => {
+const MainNav: React.FC = () => {
     const [searchOpen, setSearchOpen] = useState(false);
-    const [pagesDropdownOpen, setPagesDropdownOpen] = useState(false);
+    // const [pagesDropdownOpen, setPagesDropdownOpen] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [dropdownTimeout, setDropdownTimeout] = useState<NodeJS.Timeout | null>(null);
+const pathname = usePathname();
 
     const menuItems = [
         { name: "Home", href: "/", title: "Home" },
-        { name: "World", href: "/category/world", title: "World News" },
-        { name: "Business", href: "/category/business", title: "Business News" },
-        { name: "Finance", href: "/category/finance", title: "Finance News" },
-        { name: "Politics", href: "/category/politics", title: "Politics News" },
-        { name: "Pages", href: "#", title: "Pages", hasDropdown: true },
+        { name: "World", href: "/world", title: "World News" },
+        { name: "Business", href: "/business", title: "Business News" },
+        { name: "Finance", href: "/finance", title: "Finance News" },
+        { name: "Politics", href: "/politics", title: "Politics News" },
+        { name: "Opinion", href: "/opinion", title: "Opinion News" },
+        { name: "Health", href: "/health", title: "Health News" },
+        { name: "Education", href: "/education", title: "Education News" },
+        { name: "Global Affairs", href: "/global-affairs", title: "Global Affairs News" },
+
+        // { name: "Pages", href: "#", title: "Pages", hasDropdown: true },
         { name: "Blog", href: "/blog", title: "Blog" },
     ];
 
-    const pagesDropdownItems = [
-        { name: "About Us", href: "/about-us", title: "About Us" },
-        { name: "Authors", href: "/authors", title: "Authors" },
-        { name: "Privacy Policy", href: "/privacy-policy", title: "Privacy Policy" },
-        { name: "Terms & Conditions", href: "/terms-conditions", title: "Terms & Conditions" },
-    ];
+    // const pagesDropdownItems = [
+    //     { name: "About Us", href: "/about-us", title: "About Us" },
+    //     { name: "Our Team", href: "/our-team", title: "Our Team" },
+    //     { name: "Privacy Policy", href: "/privacy-policy", title: "Privacy Policy" },
+    //     { name: "Terms & Conditions", href: "/terms-conditions", title: "Terms & Conditions" },
+    // ];
 
     // Cleanup timeout on unmount
     useEffect(() => {
@@ -50,7 +55,7 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "home" }) => {
     return (
         <>
             <nav className="sticky top-0 z-50 bg-white border-b border-gray-200">
-                <div className="max-w-360 mx-auto px-6">
+                <div className="max-w-360 mx-auto px-16">
                     <div className="flex items-center justify-between h-16">
                         <div className="flex items-center justify-between gap-6">
                         {/* Left: Logo */}
@@ -66,101 +71,41 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "home" }) => {
 
                         {/* Center: Navigation Menu */}
                         <div className="hidden lg:flex items-center space-x-6">
-                            {menuItems.map((item) => {
-                                // Check if current page matches the href
-                                const isActive = 
-                                    (currentPage === "home" && item.href === "/") ||
-                                    (item.href.startsWith("/category/") && currentPage?.includes(item.href.replace("/category/", ""))) ||
-                                    (!item.href.startsWith("/category/") && currentPage === item.href.slice(1));
-                                
-                                if (item.hasDropdown) {
-                                    const handleMouseEnter = () => {
-                                        if (dropdownTimeout) {
-                                            clearTimeout(dropdownTimeout);
-                                            setDropdownTimeout(null);
-                                        }
-                                        setPagesDropdownOpen(true);
-                                    };
+                         {menuItems.map((item) => {
+const isActive =
+  item.href === "/"
+    ? pathname === "/"
+    : pathname.startsWith(item.href);
 
-                                    const handleMouseLeave = () => {
-                                        const timeout = setTimeout(() => {
-                                            setPagesDropdownOpen(false);
-                                        }, 200); // 200ms delay before closing
-                                        setDropdownTimeout(timeout);
-                                    };
+  return (
+    <div key={item.name} className="relative">
+      <Link
+        href={item.href}
+        title={item.title}
+        className={`relative text-sm font-semibold transition-colors duration-200 ${
+          isActive
+            ? "text-orange-500"
+            : "text-black hover:text-orange-500"
+        }`}
+      >
+        {item.name}
+      </Link>
+    </div>
+  );
+})}
 
-                                    return (
-                                        <div
-                                            key={item.name}
-                                            className="relative"
-                                            onMouseEnter={handleMouseEnter}
-                                            onMouseLeave={handleMouseLeave}
-                                        >
-                                            <button
-                                                className={`relative text-sm font-semibold transition-colors duration-200 ${
-                                                    isActive
-                                                        ? "text-orange-500"
-                                                        : "text-black hover:text-orange-500"
-                                                }`}
-                                            >
-                                                {item.name}
-                                                <span className="ml-1 text-xs">{pagesDropdownOpen ? "▲" : "▼"}</span>
-                                            </button>
-                                            
-                                            {/* Dropdown Menu */}
-                                            {pagesDropdownOpen && (
-                                                <div 
-                                                    className="absolute top-full left-0 pt-1 w-48 z-50"
-                                                    onMouseEnter={handleMouseEnter}
-                                                    onMouseLeave={handleMouseLeave}
-                                                >
-                                                    <div className="bg-white border border-gray-200 rounded shadow-lg">
-                                                        <div className="py-1">
-                                                            {pagesDropdownItems.map((dropdownItem) => (
-                                                                <Link
-                                                                    key={dropdownItem.name}
-                                                                    href={dropdownItem.href}
-                                                                    className="block px-4 py-2 text-sm text-black hover:bg-gray-50 hover:text-orange-500 transition-colors duration-200"
-                                                                    title={dropdownItem.title}
-                                                                >
-                                                                    {dropdownItem.name}
-                                                                </Link>
-                                                            ))}
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            )}
-                                        </div>
-                                    );
-                                }
-                                
-                                return (
-                                    <div key={item.name} className="relative">
-                                        <Link
-                                            href={item.href}
-                                            title={item.title}
-                                            className={`relative text-sm font-semibold transition-colors duration-200 ${isActive
-                                                ? "text-orange-500"
-                                                : "text-black hover:text-orange-500"
-                                                }`}
-                                        >
-                                            {item.name}
-                                        </Link>
-                                    </div>
-                                );
-                            })}
                         </div>
                         </div>
 
                         {/* Right: Icons */}
                         <div className="flex items-center space-x-4">
                             {/* Subscribe Button */}
-                            <button
+                            {/* <button
                                 className="hidden md:block bg-black text-white px-3 py-1 text-sm font-medium hover:bg-gray-800 transition-colors duration-200"
                                 title="Subscribe"
                             >
                                 Subscribe
-                            </button>
+                            </button> */}
                             {/* Search Icon */}
                             <button
                                 onClick={() => setSearchOpen(true)}
@@ -196,39 +141,39 @@ const MainNav: React.FC<MainNavProps> = ({ currentPage = "home" }) => {
                     <div className="lg:hidden border-t border-gray-200 bg-white">
                         <div className="px-6 py-4 space-y-3">
                             {menuItems.map((item) => {
-                                const isActive = 
-                                    (currentPage === "home" && item.href === "/") ||
-                                    (item.href.startsWith("/category/") && currentPage?.includes(item.href.replace("/category/", ""))) ||
-                                    (!item.href.startsWith("/category/") && currentPage === item.href.slice(1));
-                                
-                                if (item.hasDropdown) {
-                                    return (
-                                        <div key={item.name}>
-                                            <button
-                                                onClick={() => setPagesDropdownOpen(!pagesDropdownOpen)}
-                                                className="w-full text-left py-2 text-xs font-semibold text-black hover:text-orange-500 transition-colors duration-200 flex items-center justify-between"
-                                            >
-                                                {item.name}
-                                                <span className="text-xs">{pagesDropdownOpen ? "▲" : "▼"}</span>
-                                            </button>
-                                            {pagesDropdownOpen && (
-                                                <div className="pl-4 space-y-2 mt-2">
-                                                    {pagesDropdownItems.map((dropdownItem) => (
-                                                        <Link
-                                                            key={dropdownItem.name}
-                                                            href={dropdownItem.href}
-                                                            onClick={() => setMobileMenuOpen(false)}
-                                                            className="block py-2 text-xs text-gray-700 hover:text-orange-500 transition-colors duration-200"
-                                                            title={dropdownItem.title}
-                                                        >
-                                                            {dropdownItem.name}
-                                                        </Link>
-                                                    ))}
-                                                </div>
-                                            )}
-                                        </div>
-                                    );
-                                }
+const isActive =
+  item.href === "/"
+    ? pathname === "/"
+    : pathname.startsWith(item.href);
+
+                                // if (item.hasDropdown) {
+                                //     return (
+                                //         <div key={item.name}>
+                                //             <button
+                                //                 onClick={() => setPagesDropdownOpen(!pagesDropdownOpen)}
+                                //                 className="w-full text-left py-2 text-xs font-semibold text-black hover:text-orange-500 transition-colors duration-200 flex items-center justify-between"
+                                //             >
+                                //                 {item.name}
+                                //                 <span className="text-xs">{pagesDropdownOpen ? "▲" : "▼"}</span>
+                                //             </button>
+                                //             {pagesDropdownOpen && (
+                                //                 <div className="pl-4 space-y-2 mt-2">
+                                //                     {pagesDropdownItems.map((dropdownItem) => (
+                                //                         <Link
+                                //                             key={dropdownItem.name}
+                                //                             href={dropdownItem.href}
+                                //                             onClick={() => setMobileMenuOpen(false)}
+                                //                             className="block py-2 text-xs text-gray-700 hover:text-orange-500 transition-colors duration-200"
+                                //                             title={dropdownItem.title}
+                                //                         >
+                                //                             {dropdownItem.name}
+                                //                         </Link>
+                                //                     ))}
+                                //                 </div>
+                                //             )}
+                                //         </div>
+                                //     );
+                                // }
                                 
                                 return (
                                     <Link

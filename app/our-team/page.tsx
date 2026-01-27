@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Authors | CitizenCorrespondent",
     description: "Meet the talented team of journalists and writers at CitizenCorrespondent.",
-    url: "https://www.citizencorrespondent.com/authors",
+    url: "https://www.citizencorrespondent.com/our-team",
     siteName: "CitizenCorrespondent",
     type: "website",
     locale: "en_US",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://www.citizencorrespondent.com/authors",
+    canonical: "https://www.citizencorrespondent.com/our-team",
   },
   icons: {
     icon: "/images/cc-favIcon.svg",

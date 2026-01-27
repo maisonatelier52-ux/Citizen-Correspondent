@@ -1,4 +1,3 @@
-// components/Footer.tsx
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
@@ -23,6 +22,7 @@ const Footer: React.FC<FooterProps> = ({
   aboutCompanyLink = "#",
   navigationLinks = [
     { text: "About Us", href: "/about-us" },
+    { text: "Our Team", href: "/our-team" },
     { text: "Privacy Policy", href: "/privacy-policy" },
     { text: "Terms & Conditions", href: "/terms-conditions" },
   ],
@@ -30,7 +30,7 @@ const Footer: React.FC<FooterProps> = ({
   newsletterPlaceholder = "Your email address",
   newsletterButtonText = "Sign Up Now",
   termsText = "I have read and agree to the terms & conditions",
-  copyrightText = "© Foxiz News Network. Ruby Design Company. All Rights Reserved.",
+  copyrightText = "Copyright 2026 CitizenCorrespondent. All Rights Reserved.",
   socialLinks,
 }) => {
   const [email, setEmail] = useState("");
@@ -76,7 +76,7 @@ const Footer: React.FC<FooterProps> = ({
 
   return (
     <footer className="bg-white border-t border-gray-200">
-      <div className="max-w-360 mx-auto px-6 py-6">
+      <div className="max-w-360 mx-auto px-16 py-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left Section: Logo, Description, Social */}
           <div className="space-y-6">

@@ -122,10 +122,10 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
           <div className="flex-1">
             <div className="flex items-center justify-between flex-wrap gap-4">
               <div>
-                <p className="text-sm sm:text-base font-medium text-gray-900">
+                <p className="text-[11px] sm:text-base font-medium text-gray-900">
                   By {author.name} - {author.role}
                 </p>
-                <p className="text-xs sm:text-sm text-gray-600 mt-1">
+                <p className="text-xs sm:text-[11px] text-gray-600 mt-1">
                   Last Updated: {lastUpdated}
                 </p>
               </div>

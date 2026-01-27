@@ -66,7 +66,7 @@ const HorizontalArticleCard: React.FC<HorizontalArticleCardProps> = ({
         <p className="text-base text-gray-700 leading-relaxed line-clamp-3">
           {excerpt}
         </p>
-        <div className="flex items-center gap-4 text-sm text-gray-600">
+        <div className="flex items-center gap-4 text-[12px] text-gray-600">
           <span>{date}</span>
           <button
             type="button"

@@ -63,7 +63,7 @@ const OverlayArticleGrid: React.FC<OverlayArticleGridProps> = ({
                   <div className="text-[10px] sm:text-xs font-semibold uppercase tracking-wide mb-1 sm:mb-2">
                     {item.category}
                   </div>
-                  <h2 className="text-sm sm:text-base md:text-2xl font-bold leading-tight mb-1 sm:mb-2 group-hover:text-orange-400 transition-colors">
+                  <h2 className="text-sm sm:text-base md:text-[23px] font-bold leading-[1.1] mb-1 sm:mb-2 group-hover:text-orange-400 transition-colors">
                     {item.title}
                   </h2>
                   {item.excerpt && (
@@ -71,7 +71,7 @@ const OverlayArticleGrid: React.FC<OverlayArticleGridProps> = ({
                       {item.excerpt}
                     </p>
                   )}
-                  <div className="flex items-center justify-between text-[10px] sm:text-xs">
+                  <div className="flex items-center justify-between text-[10px] sm:text-[11px]">
                     <span>{item.date}</span>
                     <button
                       type="button"

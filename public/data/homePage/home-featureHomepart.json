@@ -2,7 +2,7 @@
   "hero": {
     "category": "Politics",
     "title": "2026 Presidential Race Heats Up as Key Candidates Announce Platforms",
-    "excerpt": "The presidential race is heating up, drawing unprecedented attention as candidates sharpen their platforms ahead of key primary heats.",
+    "excerpt": "The presidential race is heating up, drawing unprecedented attention as candidates sharpen their platforms ahead of key primary heats. As policy differences become more pronounced, the competition is expected to intensify in the weeks ahead.",
     "date": "December 17, 2025",
     "image": "/images/news/politics-presidential-race.webp",
     "slug": "2026-presidential-race-key-candidates-announce-platforms",
@@ -59,13 +59,7 @@
       "slug": "european-union-announces-major-defense-alliance-expansion",
       "bookmarked": false
     },
-    {
-      "category": "Technology",
-      "title": "Apple Vision Pro 2 Sells Out Within Hours of Launch",
-      "date": "December 15, 2025",
-      "slug": "apple-vision-pro-2-sells-out-within-hours-launch",
-      "bookmarked": false
-    },
+    
     {
       "category": "Climate",
       "title": "Amazon Rainforest Recovery Exceeds Expectations After Global Initiative",
