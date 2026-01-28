@@ -24,7 +24,7 @@ const Footer: React.FC<FooterProps> = ({
     { text: "About Us", href: "/about-us" },
     { text: "Our Team", href: "/our-team" },
     { text: "Privacy Policy", href: "/privacy-policy" },
-    { text: "Terms & Conditions", href: "/terms-conditions" },
+    { text: "Terms & Conditions", href: "/terms-and-conditions" },
   ],
   newsletterHeading = "Subscribe Now for Real-time Updates on the Latest Stories!",
   newsletterPlaceholder = "Your email address",
@@ -35,6 +35,7 @@ const Footer: React.FC<FooterProps> = ({
 }) => {
   const [email, setEmail] = useState("");
   const [agreed, setAgreed] = useState(false);
+const [submitSuccess, setSubmitSuccess] = useState(false);
 
   const defaultSocialLinks = [
     {
@@ -68,15 +69,24 @@ const Footer: React.FC<FooterProps> = ({
 
   const socialIcons = socialLinks || defaultSocialLinks;
 
+ 
   const handleNewsletterSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle newsletter subscription
-    console.log("Newsletter signup:", { email, agreed });
-  };
+  e.preventDefault();
+
+  // browser already validates email + checkbox because of `required`
+  setSubmitSuccess(true);
+  setEmail("");
+  setAgreed(false);
+
+  setTimeout(() => {
+    setSubmitSuccess(false);
+  }, 5000);
+};
+
 
   return (
     <footer className="bg-white border-t border-gray-200">
-      <div className="max-w-360 mx-auto px-2 md:px-16 py-6">
+      <div className="max-w-360 mx-auto px-3 md:px-16 py-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left Section: Logo, Description, Social */}
           <div className="space-y-6">
@@ -159,6 +169,12 @@ const Footer: React.FC<FooterProps> = ({
               <h3 className="text-base font-semibold text-gray-900">
                 {newsletterHeading}
               </h3>
+              {submitSuccess && (
+  <div className="p-2 bg-green-50 border border-green-200 text-green-800 rounded text-sm">
+    Successfully subscribed to our newsletter!
+  </div>
+)}
+
               <form onSubmit={handleNewsletterSubmit} className="space-y-3">
                 <div className="flex flex-col sm:flex-row gap-2">
                   <input
@@ -166,12 +182,12 @@ const Footer: React.FC<FooterProps> = ({
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder={newsletterPlaceholder}
-                    className="flex-1 px-4 py-2 bg-gray-100 border border-gray-200 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="flex-1 px-4 py-2 bg-gray-100 border border-gray-200 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-orange-500 focus:border-transparent"
                     required
                   />
                   <button
                     type="submit"
-                    className="px-6 py-2 bg-gray-900 hover:bg-gray-800 text-white font-medium transition-colors duration-200 whitespace-nowrap"
+                    className="px-6 py-2 cursor-pointer bg-gray-900 hover:bg-gray-800 text-white font-medium transition-colors duration-200 whitespace-nowrap"
                   >
                     {newsletterButtonText}
                   </button>
@@ -195,7 +211,7 @@ const Footer: React.FC<FooterProps> = ({
       {/* Copyright Section */}
       <div className="border-t border-gray-200">
         <div className="max-w-360 mx-auto px-6 py-4">
-          <p className="text-sm text-gray-600 text-center">
+          <p className="text-[12px] md:text-sm text-gray-600 text-center">
             {copyrightText}
           </p>
         </div>

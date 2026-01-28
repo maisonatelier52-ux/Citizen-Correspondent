@@ -19,7 +19,7 @@ interface AuthorCardProps {
 
 const AuthorCard: React.FC<AuthorCardProps> = ({ author, reverse = false }) => {
   return (
-    <div className="max-w-360 mx-auto bg-red-900 border border-gray-800 rounded-lg overflow-hidden shadow-2xl">
+    <div className="max-w-360  mx-auto bg-red-900 border border-gray-800 rounded-lg overflow-hidden shadow-2xl">
       <div className={`md:flex ${reverse ? "md:flex-row-reverse" : ""}`}>
         {/* Left: Text */}
         <div className="md:w-2/3 p-6 md:p-16">

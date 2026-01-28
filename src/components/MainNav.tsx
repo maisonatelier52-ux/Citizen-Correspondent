@@ -10,7 +10,7 @@ import { Search } from "lucide-react";
 
 // Lazy load SearchModal - only load when search is opened
 const SearchModal = dynamic(() => import("./SearchModal"), {
-  ssr: false,
+    ssr: false,
 });
 
 
@@ -19,7 +19,7 @@ const MainNav: React.FC = () => {
     // const [pagesDropdownOpen, setPagesDropdownOpen] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [dropdownTimeout, setDropdownTimeout] = useState<NodeJS.Timeout | null>(null);
-const pathname = usePathname();
+    const pathname = usePathname();
 
     const menuItems = [
         { name: "Home", href: "/", title: "Home" },
@@ -32,7 +32,7 @@ const pathname = usePathname();
         { name: "Education", href: "/education", title: "Education News" },
         { name: "Global Affairs", href: "/global-affairs", title: "Global Affairs News" },
         { name: "Featured", href: "/featured", title: "Featured News" },
-        { name: "Climate Change", href: "/climate-change", title: "Climate Change News" },
+        // { name: "Climate Change", href: "/climate-change", title: "Climate Change News" },
         { name: "Hot", href: "/hot", title: "Hot News" },
         { name: "Research", href: "/research", title: "Research News" },
 
@@ -45,7 +45,7 @@ const pathname = usePathname();
     //     { name: "About Us", href: "/about-us", title: "About Us" },
     //     { name: "Our Team", href: "/our-team", title: "Our Team" },
     //     { name: "Privacy Policy", href: "/privacy-policy", title: "Privacy Policy" },
-    //     { name: "Terms & Conditions", href: "/terms-conditions", title: "Terms & Conditions" },
+    //     { name: "Terms & Conditions", href: "/terms-and-conditions", title: "Terms & Conditions" },
     // ];
 
     // Cleanup timeout on unmount
@@ -57,65 +57,70 @@ const pathname = usePathname();
         };
     }, [dropdownTimeout]);
 
+    useEffect(() => {
+  if (mobileMenuOpen) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "";
+  }
+
+  return () => {
+    document.body.style.overflow = "";
+  };
+}, [mobileMenuOpen]);
+
+
     return (
         <>
             <nav className="sticky top-0 z-50 bg-white border-b border-gray-200">
-                <div className="max-w-360 mx-auto px-2 md:px-16">
+                <div className="max-w-360 mx-auto px-3 md:px-16">
                     <div className="flex items-center justify-between h-16">
                         <div className="flex items-center justify-between gap-6">
-                        {/* Left: Logo */}
-                        <Link href="/" title="CitizenCorrespondent Home" className="flex items-center">
-                            <Image
-                                src="/images/cc-logo.svg"
-                                alt="CitizenCorrespondent"
-                                width={200}
-                                height={30}
-                                priority
-                            />
-                        </Link>
+                            {/* Left: Logo */}
+                            <Link href="/" title="CitizenCorrespondent Home" className="flex items-center">
+                                <Image
+                                    src="/images/cc-logo.svg"
+                                    alt="CitizenCorrespondent"
+                                    width={200}
+                                    height={30}
+                                    priority
+                                />
+                            </Link>
 
-                        {/* Center: Navigation Menu */}
-                        <div className="hidden lg:flex items-center space-x-4">
-                         {menuItems.map((item) => {
-const isActive =
-  item.href === "/"
-    ? pathname === "/"
-    : pathname.startsWith(item.href);
+                            {/* Center: Navigation Menu */}
+                            <div className="hidden lg:flex items-center space-x-4">
+                                {menuItems.map((item) => {
+                                    const isActive =
+                                        item.href === "/"
+                                            ? pathname === "/"
+                                            : pathname.startsWith(item.href);
 
-  return (
-    <div key={item.name} className="relative">
-      <Link
-        href={item.href}
-        title={item.title}
-        className={`relative text-sm font-semibold transition-colors duration-200 ${
-          isActive
-            ? "text-orange-500"
-            : "text-black hover:text-orange-500"
-        }`}
-      >
-        {item.name}
-      </Link>
-    </div>
-  );
-})}
+                                    return (
+                                        <div key={item.name} className="relative">
+                                            <Link
+                                                href={item.href}
+                                                title={item.title}
+                                                className={`relative text-sm font-semibold transition-colors duration-200 ${isActive
+                                                        ? "text-orange-500"
+                                                        : "text-black hover:text-orange-500"
+                                                    }`}
+                                            >
+                                                {item.name}
+                                            </Link>
+                                        </div>
+                                    );
+                                })}
 
-                        </div>
+                            </div>
                         </div>
 
                         {/* Right: Icons */}
                         <div className="flex items-center space-x-4">
-                            {/* Subscribe Button */}
-                            {/* <button
-                                className="hidden md:block bg-black text-white px-3 py-1 text-sm font-medium hover:bg-gray-800 transition-colors duration-200"
-                                title="Subscribe"
-                            >
-                                Subscribe
-                            </button> */}
-                            {/* Search Icon */}
+                      
                             <button
                                 onClick={() => setSearchOpen(true)}
-                                className="text-gray-700 hover:text-orange-500 transition-colors duration-200"
-                                title="Search"
+                                 className="text-gray-700 hover:text-orange-500 transition-colors duration-200 hidden lg:block"
+    title="Search"
                             >
                                 <Search className="w-5 h-5" />
                             </button>
@@ -142,55 +147,26 @@ const isActive =
                 </div>
 
                 {/* Mobile Menu */}
-                {mobileMenuOpen && (
-                    <div className="lg:hidden border-t border-gray-200 bg-white">
-                        <div className="px-6 py-4 space-y-3">
+          {mobileMenuOpen && (
+  <div className="lg:hidden fixed inset-0 top-16 z-40 bg-white">
+   <div className="px-6 py-4 space-y-3">
                             {menuItems.map((item) => {
-const isActive =
-  item.href === "/"
-    ? pathname === "/"
-    : pathname.startsWith(item.href);
+                                const isActive =
+                                    item.href === "/"
+                                        ? pathname === "/"
+                                        : pathname.startsWith(item.href);
 
-                                // if (item.hasDropdown) {
-                                //     return (
-                                //         <div key={item.name}>
-                                //             <button
-                                //                 onClick={() => setPagesDropdownOpen(!pagesDropdownOpen)}
-                                //                 className="w-full text-left py-2 text-xs font-semibold text-black hover:text-orange-500 transition-colors duration-200 flex items-center justify-between"
-                                //             >
-                                //                 {item.name}
-                                //                 <span className="text-xs">{pagesDropdownOpen ? "▲" : "▼"}</span>
-                                //             </button>
-                                //             {pagesDropdownOpen && (
-                                //                 <div className="pl-4 space-y-2 mt-2">
-                                //                     {pagesDropdownItems.map((dropdownItem) => (
-                                //                         <Link
-                                //                             key={dropdownItem.name}
-                                //                             href={dropdownItem.href}
-                                //                             onClick={() => setMobileMenuOpen(false)}
-                                //                             className="block py-2 text-xs text-gray-700 hover:text-orange-500 transition-colors duration-200"
-                                //                             title={dropdownItem.title}
-                                //                         >
-                                //                             {dropdownItem.name}
-                                //                         </Link>
-                                //                     ))}
-                                //                 </div>
-                                //             )}
-                                //         </div>
-                                //     );
-                                // }
-                                
+                              
                                 return (
                                     <Link
                                         key={item.name}
                                         href={item.href}
                                         onClick={() => setMobileMenuOpen(false)}
                                         title={item.title}
-                                        className={`block py-2 text-xs font-semibold transition-colors duration-200 ${
-                                            isActive
+                                        className={`block py-2 text-xs font-semibold transition-colors duration-200 ${isActive
                                                 ? "text-orange-500"
                                                 : "text-black hover:text-orange-500"
-                                        }`}
+                                            }`}
                                     >
                                         {item.name}
                                     </Link>

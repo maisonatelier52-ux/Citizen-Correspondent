@@ -39,32 +39,25 @@ const SubscribeNewsletter: React.FC = () => {
     },
   ];
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!email || !agreed) {
-      return;
-    }
+ const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
 
-    setIsSubmitting(true);
+  if (!agreed) return;
 
-    try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+  setIsSubmitting(true);
 
-      setSubmitSuccess(true);
-      setEmail("");
-      setAgreed(false);
+  try {
+    await new Promise((resolve) => setTimeout(resolve, 1000));
 
-      // Hide success message after 5 seconds
-      setTimeout(() => setSubmitSuccess(false), 5000);
-    } catch (error) {
-      console.error("Error subscribing to newsletter:", error);
-      alert("Failed to subscribe. Please try again.");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+    setSubmitSuccess(true);
+    setEmail("");
+    setAgreed(false);
+
+    setTimeout(() => setSubmitSuccess(false), 5000);
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   return (
     <div className="bg-orange-50 p-6 rounded-lg mb-6">
@@ -91,33 +84,23 @@ const SubscribeNewsletter: React.FC = () => {
 
       {/* Success Message */}
       {submitSuccess && (
-        <div className="mb-4 p-3 bg-green-50 border border-green-200 text-green-800 rounded text-sm">
+        <div className="mb-2 p-3 bg-green-50 border border-green-200 text-green-800 rounded text-sm">
           Successfully subscribed to our newsletter!
         </div>
       )}
 
       {/* Email Form */}
       <form onSubmit={handleSubmit} className="mb-5">
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Your email address"
-          className="w-full px-4 py-3 mb-4 bg-white border border-gray-200 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
-          required
-        />
+       <input
+  type="email"
+  value={email}
+  onChange={(e) => setEmail(e.target.value)}
+  placeholder="Your email address"
+  required
+  className="w-full px-4 py-3 mb-4 bg-white border border-gray-200 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-orange-500 focus:border-transparent"
+/>
 
-        <button
-          type="submit"
-          disabled={isSubmitting || !agreed}
-          className={`w-full px-6 py-3 bg-black text-white font-semibold hover:bg-gray-800 transition-colors duration-200 ${
-            isSubmitting || !agreed ? "opacity-50 cursor-not-allowed" : ""
-          }`}
-        >
-          {isSubmitting ? "Signing Up..." : "Sign Up Now"}
-        </button>
-
-        <label className="flex items-start gap-2 mt-3 text-xs text-gray-600 cursor-pointer">
+        <label className="flex items-start gap-2 mb-2 text-xs text-gray-600 cursor-pointer">
           <input
             type="checkbox"
             checked={agreed}
@@ -126,6 +109,16 @@ const SubscribeNewsletter: React.FC = () => {
           />
           <span>I have read and agree to the terms & conditions</span>
         </label>
+        <button
+          type="submit"
+          disabled={isSubmitting || !agreed}
+          className={`w-full px-6 py-3 bg-black cursor-pointer text-white font-semibold hover:bg-gray-800 transition-colors duration-200 ${
+            isSubmitting || !agreed ? "opacity-50 cursor-not-allowed" : ""
+          }`}
+        >
+          {isSubmitting ? "Signing Up..." : "Sign Up Now"}
+        </button>
+
       </form>
 
       {/* Social Media Links */}

@@ -7,7 +7,7 @@ import Link from "next/link";
 const BigAddBanner: React.FC = () => {
   return (
     <section>
-    <div className="max-w-260 mx-auto py-2 md:py-5 px-12 lg:px-6">
+    <div className="max-w-full md:max-w-260 mx-auto md:py-5 px-3 lg:px-6">
       <div className="flex justify-center">
         <Link href="https://www.mirrorstandard.com/" target="_blank" className="block w-full">
           <Image

@@ -13,17 +13,19 @@
       "slug": "exclusive-interview-tech-ceo",
       "title": "Exclusive: OpenAI CEO Sam Altman on the Future of AGI",
       "date": "December 16, 2025",
-      "image": "/images/news/ai-technology.webp",
+      "image": "/images/news/sam-altman-future-of-agi-openai-ceo.webp",
       "live": false,
-      "bookmarked": false
+      "bookmarked": false,
+          "category": "Featured"
     },
     {
       "slug": "investigative-report-climate-data",
       "title": "Investigation: How Climate Data Is Being Manipulated by Industry",
       "date": "December 15, 2025",
-      "image": "/images/news/climate-summit.webp",
+      "image": "/images/news/climate-data-manipulation-industry-investigation.webp",
       "live": false,
-      "bookmarked": false
+      "bookmarked": false,
+          "category": "Featured"
     }
   ],
   "adBanner": {

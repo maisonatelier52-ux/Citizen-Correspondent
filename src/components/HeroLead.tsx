@@ -30,7 +30,8 @@ const HeroLead: React.FC<HeroLeadProps> = ({
   onBookmarkToggle,
   categoryColorClass = "text-orange-600",
 }) => {
-  const linkHref = href || (slug ? `/article/${slug}` : undefined);
+
+  const linkHref = href || (slug ? `/${category.toLocaleLowerCase()}/${slug}` : undefined);
   const Wrapper: React.FC<{ children: React.ReactNode }> = ({ children }) =>
     linkHref ? (
       <Link href={linkHref} title={title} className="block">
@@ -54,8 +55,8 @@ const HeroLead: React.FC<HeroLeadProps> = ({
 
             {/* Title */}
             <Wrapper>
-              <h1 className="text-3xl sm:text-4xl lg:text-[35px] font-bold leading-[1.1] text-gray-900 hover:text-orange-600 transition-colors">
-2026 Presidential Race Accelerates with Major Platform Announcements</h1>
+              <h1 className="text-[30px] sm:text-4xl lg:text-[35px] font-bold leading-none md:leading-[1.1] text-gray-900 hover:text-orange-600 transition-colors">
+                {title}</h1>
             </Wrapper>
 
             {/* Excerpt */}
@@ -71,7 +72,7 @@ const HeroLead: React.FC<HeroLeadProps> = ({
                 className="text-gray-500 hover:text-orange-600 transition-colors"
               >
                 <Bookmark
-                  className="w-4 h-4"
+                  className="w-3 h-3"
                   fill={bookmarked ? "currentColor" : "none"}
                   strokeWidth={bookmarked ? 0 : 2}
                 />

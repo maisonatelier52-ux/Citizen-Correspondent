@@ -21,7 +21,7 @@
       "slug": "fbi-director-confirmation-hearing",
       "title": "New FBI Director Nomination Faces Contentious Senate Hearing",
       "image": "/images/news/government-building.webp",
-      "categories": "Politics",
+      "category": "Politics",
       "date": "December 14, 2025",
       "bookmarked": false
     }, 
@@ -29,7 +29,7 @@
       "slug": "climate-legislation-state-level",
       "title": "12 States Pass Aggressive Climate Legislation Ahead of Federal Action",
       "image": "/images/news/climate-summit.webp",
-      "categories": "Politics",
+      "category": "Politics",
       "date": "December 13, 2025",
       "bookmarked": false
     }

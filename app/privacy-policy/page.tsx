@@ -61,7 +61,7 @@ export default function PrivacyPolicyPage() {
                 <MainNav />
                 <CategoryNav />
 
-                <section className="py-12 px-6">
+                <section className="py-12 px-2 md:px-16">
                     <div className="max-w-360 mx-auto space-y-12 border border-gray-200 rounded-lg p-8">
                         {/* Introduction */}
                         <div className="bg-orange-50 border border-orange-200 rounded-lg p-8">

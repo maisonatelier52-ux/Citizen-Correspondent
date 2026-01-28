@@ -15,7 +15,8 @@
       "date": "December 17, 2025",
       "image": "/images/news/finance-stock-market.webp",
       "live": true,
-      "bookmarked": false
+      "bookmarked": false,
+        "category": "Business"
     },
     {
       "slug": "microsoft-activision-gaming-dominance",
@@ -23,7 +24,8 @@
       "date": "December 15, 2025",
       "image": "/images/news/gaming-esports.webp",
       "live": false,
-      "bookmarked": false
+      "bookmarked": false,
+        "category": "Business"
     }
   ],
   "adBanner": {

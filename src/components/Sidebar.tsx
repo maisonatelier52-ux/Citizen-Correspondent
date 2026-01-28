@@ -32,7 +32,7 @@ const Sidebar: React.FC<SidebarProps> = ({ items, heading, onBookmarkToggle }) =
       )}
       <div className="divide-y divide-gray-200">
         {items.map((item, index) => (
-          <div key={index} className="flex gap-4 py-4">
+          <div key={index} className="flex gap-4 md:py-4 py-2">
             <div className="flex-1 space-y-1">
               <div className="flex items-center gap-2 text-sm text-gray-600">
                 <span>{item.category}</span>
@@ -44,7 +44,7 @@ const Sidebar: React.FC<SidebarProps> = ({ items, heading, onBookmarkToggle }) =
                 )}
               </div>
               <Link
-                href={item.href || (item.slug ? `/article/${item.slug}` : "#")}
+                href={item.href || (item.slug ? `/${item.category.toLocaleLowerCase()}/${item.slug}` : "#")}
                 className="block"
                 title={item.title}
               >
@@ -61,7 +61,7 @@ const Sidebar: React.FC<SidebarProps> = ({ items, heading, onBookmarkToggle }) =
                   className="text-gray-400 hover:text-orange-600 transition-colors"
                 >
                   <Bookmark
-                    className="w-4 h-4"
+                    className="w-3 h-3"
                     fill={item.bookmarked ? "currentColor" : "none"}
                     strokeWidth={item.bookmarked ? 0 : 2}
                   />
@@ -70,7 +70,7 @@ const Sidebar: React.FC<SidebarProps> = ({ items, heading, onBookmarkToggle }) =
             </div>
 
             <Link
-              href={item.href || (item.slug ? `/article/${item.slug}` : "#")}
+              href={item.href || (item.slug ? `/${item.category.toLocaleLowerCase()}/${item.slug}` : "#")}
               className="w-30 h-25 shrink-0 overflow-hidden border border-gray-200 block"
               title={item.title}
             >

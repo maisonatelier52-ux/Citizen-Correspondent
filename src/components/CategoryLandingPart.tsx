@@ -15,6 +15,7 @@ export interface CategoryLandingMainFeature {
     live?: boolean;
     bookmarked?: boolean;
     href?: string;
+    category:string;
 }
 
 export interface CategoryLandingArticle {
@@ -23,6 +24,7 @@ export interface CategoryLandingArticle {
     date: string;
     image: string;
     bookmarked?: boolean;
+    category:string;
 }
 
 export interface CategoryLandingPromo {
@@ -49,15 +51,24 @@ const CategoryLandingPart: React.FC<CategoryLandingPartProps> = ({
     onArticleBookmarkToggle,
     className = "",
 }) => {
-    const mainFeatureHref = mainFeature.href || `/article/${mainFeature.slug}`;
+
+ const normalizeCategory = (category: string): string =>
+  category
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, '-');
+
+const mainFeatureHref =
+  mainFeature.href ||
+  `/${normalizeCategory(mainFeature.category)}/${mainFeature.slug}`;
 
     return (
         <section className={`bg-white py-6 sm:py-8 ${className}`}>
-            <div className="max-w-360 mx-auto px-2 md:px-16">
+            <div className="max-w-360 mx-auto px-3 md:px-16">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 items-start">
                     {/* Left Column: Main Feature Article */}
                     <div className="lg:col-span-6">
-                        <article className="relative w-full h-[520px] sm:h-[590px] overflow-hidden group">
+                        <article className="relative w-full h-[400px] sm:h-[590px] overflow-hidden group">
                             <Link href={mainFeatureHref} title={mainFeature.title} className="block h-full">
                                 <Image
                                     src={mainFeature.image}
@@ -92,16 +103,16 @@ const CategoryLandingPart: React.FC<CategoryLandingPartProps> = ({
                                 {/* Bottom: Title, Excerpt, Date, Bookmark */}
                                 <div className="space-y-3">
                                     <Link href={mainFeatureHref} title={mainFeature.title}>
-                                        <h2 className="text-2xl sm:text-3xl font-bold leading-tight hover:text-orange-400 transition-colors">
+                                        <h2 className="text-2xl sm:text-3xl font-bold leading-[1.1] hover:text-orange-400 transition-colors">
                                             {mainFeature.live && (
                                                 <span className="text-red-500 mr-2">Live:</span>
                                             )}
                                             {mainFeature.title}
                                         </h2>
                                     </Link>
-                                    <p className="text-sm text-gray-200 line-clamp-3">{mainFeature.excerpt}</p>
+                                    <p className="text-sm text-gray-200 leading-tight mt-1 line-clamp-3">{mainFeature.excerpt}</p>
                                     <div className="flex items-center justify-between text-sm">
-                                        <span>{mainFeature.date}</span>
+                                        <span className="text-[11px]">{mainFeature.date}</span>
                                         <button
                                             type="button"
                                             onClick={(e) => {
@@ -113,7 +124,7 @@ const CategoryLandingPart: React.FC<CategoryLandingPartProps> = ({
                                             className="text-white hover:text-orange-400 transition-colors"
                                         >
                                             <Bookmark
-                                                className="w-4 h-4"
+                                                className="w-3 h-3"
                                                 fill={mainFeature.bookmarked ? "currentColor" : "none"}
                                                 strokeWidth={mainFeature.bookmarked ? 0 : 2}
                                             />
@@ -128,7 +139,7 @@ const CategoryLandingPart: React.FC<CategoryLandingPartProps> = ({
                     <div className="lg:col-span-3 flex flex-col gap-4 sm:gap-6">
                         {articles.slice(0, 2).map((article, index) => (
                             <article key={`${article.slug}-${index}`} className="space-y-3">
-                                <Link href={`/article/${article.slug}`} title={article.title} className="block">
+                                <Link href={`/${normalizeCategory(article.category)}/${article.slug}`} title={article.title} className="block">
                                     <div className="relative w-full aspect-5/3 bg-gray-100 overflow-hidden">
                                         <Image
                                             src={article.image}
@@ -142,13 +153,13 @@ const CategoryLandingPart: React.FC<CategoryLandingPartProps> = ({
                                     </div>
                                 </Link>
                                 <div className="space-y-2">
-                                    <Link href={`/article/${article.slug}`} title={article.title}>
+                                    <Link href={`/${normalizeCategory(article.category)}/${article.slug}`} title={article.title}>
                                         <h3 className="text-base sm:text-lg font-bold text-gray-900 leading-tight hover:text-orange-600 transition-colors">
                                             {article.title}
                                         </h3>
                                     </Link>
                                     <div className="flex items-center justify-between text-sm text-gray-600">
-                                        <span>{article.date}</span>
+                                        <span className="text-[11px]">{article.date}</span>
                                         <button
                                             type="button"
                                             onClick={(e) => {
@@ -160,7 +171,7 @@ const CategoryLandingPart: React.FC<CategoryLandingPartProps> = ({
                                             className="text-gray-400 hover:text-orange-600 transition-colors"
                                         >
                                             <Bookmark
-                                                className="w-4 h-4"
+                                                className="w-3 h-3"
                                                 fill={article.bookmarked ? "currentColor" : "none"}
                                                 strokeWidth={article.bookmarked ? 0 : 2}
                                             />

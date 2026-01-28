@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Terms & Conditions | CitizenCorrespondent",
     description: "Read CitizenCorrespondent's Terms & Conditions to understand the rules and guidelines for using our website and services.",
-    url: "https://www.citizencorrespondent.com/terms-conditions",
+    url: "https://www.citizencorrespondent.com/terms-and-conditions",
     siteName: "CitizenCorrespondent",
     type: "website",
     locale: "en_US",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://www.citizencorrespondent.com/terms-conditions",
+    canonical: "https://www.citizencorrespondent.com/terms-and-conditions",
   },
   icons: {
     icon: "/images/cc-favIcon.svg",
@@ -61,7 +61,7 @@ export default function TermsConditionsPage() {
         <MainNav />
         <CategoryNav />
 
-        <section className="py-12 px-6">
+        <section className="py-12 px-2 md:px-16">
           <div className="max-w-360 mx-auto space-y-12 border border-gray-200 rounded-lg p-8">
             {/* Introduction */}
             <div className="bg-orange-50 border border-orange-200 rounded-lg p-8">

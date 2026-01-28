@@ -4,6 +4,7 @@ import DateBar from "@/src/components/DateBar";
 import MainNav from "@/src/components/MainNav";
 import CategoryNav from "@/src/components/CategoryNav";
 import Footer from "@/src/components/Footer";
+import TrendingNews from "@/src/components/TrendingNews";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.citizencorrespondent.com"),
@@ -61,10 +62,10 @@ export default function AboutUsPage() {
       <div className=" bg-white min-h-screen">
         <DateBar />
         <MainNav />
-        <CategoryNav />
-
+        {/* <CategoryNav /> */}
+        <TrendingNews />
         {/* Main Content - Our Story */}
-        <section className="py-12 px-6">
+        <section className="py-5 px-2 md:px-16">
           <div className="max-w-360 mx-auto">
             <div className="bg-white border border-gray-200 rounded-lg p-8 md:p-12 ">
               <div className="flex items-center gap-2 mb-8">
@@ -90,7 +91,7 @@ export default function AboutUsPage() {
         </section>
 
         {/* Mission & Vision Cards */}
-        <section className="py-8 px-6">
+        <section className="py-5 px-2 md:px-16">
           <div className="max-w-360 mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Our Mission */}
@@ -127,7 +128,7 @@ export default function AboutUsPage() {
         </section>
 
         {/* Editorial Principles */}
-        <section className="py-12 px-6">
+        <section className="py-5 px-2 md:px-16">
           <div className="max-w-360 mx-auto">
             <div className="flex items-center gap-2 mb-10">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Our Editorial Principles</h2>
@@ -182,7 +183,7 @@ export default function AboutUsPage() {
         </section>
 
         {/* Stats Banner */}
-        <section className="py-12 px-6">
+        <section className="pb-10 pt-2 px-2 md:px-16">
           <div className="max-w-360 mx-auto">
             <div className="bg-white border border-gray-200 rounded-lg p-8 md:p-12 shadow-sm">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">

@@ -15,7 +15,8 @@
       "date": "December 16, 2025",
       "image": "/images/news/climate-summit.webp",
       "live": false,
-      "bookmarked": false
+      "bookmarked": false,
+          "category": "Opinion"
     },
     {
       "slug": "opinion-social-media-mental-health",
@@ -23,7 +24,8 @@
       "date": "December 15, 2025",
       "image": "/images/news/social-media.webp",
       "live": false,
-      "bookmarked": false
+      "bookmarked": false,
+          "category": "Opinion"
     }
   ],
   "adBanner": {

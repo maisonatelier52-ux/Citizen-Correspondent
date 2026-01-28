@@ -15,7 +15,8 @@
       "date": "December 17, 2025",
       "image": "/images/news/wind-turbines.webp",
       "live": true,
-      "bookmarked": false
+      "bookmarked": false,
+    "category": "Renewable Energy"
     },
     {
       "slug": "battery-storage-breakthrough-2025",
@@ -23,7 +24,8 @@
       "date": "December 16, 2025",
       "image": "/images/news/ev-charging.webp",
       "live": false,
-      "bookmarked": false
+      "bookmarked": false,
+    "category": "Renewable Energy"
     }
   ],
   "adBanner": {

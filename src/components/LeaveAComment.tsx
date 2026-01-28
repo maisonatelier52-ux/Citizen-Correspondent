@@ -127,7 +127,7 @@ const LeaveAComment: React.FC = () => {
   };
 
   return (
-    <div className="bg-white py-4">
+    <div className="bg-white">
       <div className="w-full">
         {/* Header */}
         <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
@@ -145,7 +145,7 @@ const LeaveAComment: React.FC = () => {
 
         {/* Success Message */}
         {submitSuccess && (
-          <div className="mb-6 p-4 bg-green-50 border border-green-200 text-green-800 rounded">
+          <div className="mb-4 p-2 bg-green-50 border border-green-200 text-green-800 rounded">
             Thank you for your comment! It has been submitted successfully.
           </div>
         )}
@@ -153,63 +153,48 @@ const LeaveAComment: React.FC = () => {
         <form onSubmit={handleSubmit}>
           {/* Comment Textarea */}
           <div className="mb-4 sm:mb-6">
-            <textarea
-              placeholder="Leave a Comment *"
-              rows={6}
-              value={formData.comment}
-              onChange={(e) => handleChange("comment", e.target.value)}
-              className={`w-full px-3 py-2 sm:px-4 sm:py-3 bg-gray-50 border ${
-                errors.comment ? "border-red-500" : "border-gray-200"
-              } rounded-none text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent resize-none`}
-            />
-            {errors.comment && (
-              <p className="mt-1 text-xs sm:text-sm text-red-500">{errors.comment}</p>
-            )}
+          <textarea
+  placeholder="Leave a Comment "
+  rows={6}
+  required
+  value={formData.comment}
+  onChange={(e) => handleChange("comment", e.target.value)}
+  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-none text-sm focus:outline-none focus:ring-1 focus:ring-orange-500 resize-none"
+/>
           </div>
-
           {/* Input Fields Row */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
             <div>
-              <input
-                type="text"
-                placeholder="Your name *"
-                value={formData.name}
-                onChange={(e) => handleChange("name", e.target.value)}
-                className={`w-full px-3 py-2 sm:px-4 sm:py-3 bg-gray-50 border ${
-                  errors.name ? "border-red-500" : "border-gray-200"
-                } rounded-none text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent`}
-              />
-              {errors.name && (
-                <p className="mt-1 text-xs sm:text-sm text-red-500">{errors.name}</p>
-              )}
+             <input
+  type="text"
+  placeholder="Your name "
+  required
+  value={formData.name}
+  onChange={(e) => handleChange("name", e.target.value)}
+  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-none text-sm focus:outline-none focus:ring-1 focus:ring-orange-500"
+/>
+
             </div>
             <div>
-              <input
-                type="email"
-                placeholder="Your email *"
-                value={formData.email}
-                onChange={(e) => handleChange("email", e.target.value)}
-                className={`w-full px-3 py-2 sm:px-4 sm:py-3 bg-gray-50 border ${
-                  errors.email ? "border-red-500" : "border-gray-200"
-                } rounded-none text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent`}
-              />
-              {errors.email && (
-                <p className="mt-1 text-xs sm:text-sm text-red-500">{errors.email}</p>
-              )}
+             <input
+  type="email"
+  placeholder="Your email "
+  required
+  value={formData.email}
+  onChange={(e) => handleChange("email", e.target.value)}
+  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-none text-sm focus:outline-none focus:ring-1 focus:ring-orange-500"
+/>
+
             </div>
             <div>
-              <input
-                type="url"
-                placeholder="Your website"
-                value={formData.website}
-                onChange={(e) => handleChange("website", e.target.value)}
-                className={`w-full px-3 py-2 sm:px-4 sm:py-3 bg-gray-50 border ${
-                  errors.website ? "border-red-500" : "border-gray-200"
-                } rounded-none text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent`}
-              />
-              {errors.website && (
-                <p className="mt-1 text-xs sm:text-sm text-red-500">{errors.website}</p>
-              )}
+             <input
+  type="url"
+  placeholder="Your website"
+  value={formData.website}
+  onChange={(e) => handleChange("website", e.target.value)}
+  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-none text-sm focus:outline-none focus:ring-1 focus:ring-orange-500"
+/>
+
             </div>
           </div>
 

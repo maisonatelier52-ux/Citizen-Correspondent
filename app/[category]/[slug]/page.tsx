@@ -15,6 +15,7 @@ import TrendingNews from "@/src/components/TrendingNews";
 interface ArticlePageProps {
   params: Promise<{
     slug: string;
+    category:string;
   }>;
 }
 
@@ -38,13 +39,20 @@ interface ArticleData {
   bookmarked?: boolean;
 }
 
-// Generate metadata for SEO
-export async function generateMetadata({ params }: ArticlePageProps): Promise<Metadata> {
-  const { slug } = await params;
+
+const normalizeCategory = (category: string): string =>
+  category.toLowerCase().trim().replace(/\s+/g, "-");
+
+export async function generateMetadata(
+  { params }: ArticlePageProps
+): Promise<Metadata> {
+  const { slug, category } = await params;
   let articleData: ArticleData;
 
   try {
-    articleData = (await import(`@/public/data/articleDetail/${slug}.json`)).default as ArticleData;
+    articleData = (
+      await import(`@/public/data/articleDetail/${slug}.json`)
+    ).default as ArticleData;
   } catch {
     return {
       title: "Article Not Found | CitizenCorrespondent",
@@ -52,89 +60,116 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
     };
   }
 
-  const url = `https://www.citizencorrespondent.com/article/${slug}`;
+  const normalizeCategory = (value: string) =>
+    value.toLowerCase().trim().replace(/\s+/g, "-");
 
-  // Optimize description: truncate to 155 characters for optimal snippet display
-  const rawDescription = articleData.shortdescription || articleData.introText || articleData.title;
-  const optimizedDescription = rawDescription.length > 155
-    ? rawDescription.substring(0, 152).trim() + "..."
-    : rawDescription;
+  const categorySlug = normalizeCategory(articleData.category);
 
-  // Get image for social sharing - use heroImage if available, otherwise extract first image from content
+  const url = `https://www.citizencorrespondent.com/${categorySlug}/${slug}`;
+
+  // --- Description ---
+  const rawDescription =
+    articleData.shortdescription ||
+    articleData.introText ||
+    articleData.title;
+
+  const optimizedDescription =
+    rawDescription.length > 155
+      ? rawDescription.substring(0, 152).trim() + "..."
+      : rawDescription;
+
+  // --- Image ---
   const getImageUrl = (): string => {
     if (articleData.heroImage) {
-      // Convert relative URLs to absolute URLs
-      return articleData.heroImage.startsWith('/') ? `https://www.citizencorrespondent.com${articleData.heroImage}` : articleData.heroImage;
+      return articleData.heroImage.startsWith("/")
+        ? `https://www.citizencorrespondent.com${articleData.heroImage}`
+        : articleData.heroImage;
     }
 
-    // Look for the first image in content array
-    if (articleData.content && Array.isArray(articleData.content)) {
-      const firstImageBlock = articleData.content.find(block => block.type === 'image');
-      if (firstImageBlock) {
-        // Check for imageUrl first (higher priority), then fallback to content field
-        const imageValue = firstImageBlock.imageUrl || firstImageBlock.content;
-        if (imageValue) {
-          // Convert relative URLs to absolute URLs
-          return imageValue.startsWith('/') ? `https://www.citizencorrespondent.com${imageValue}` : imageValue;
-        }
+    const firstImageBlock = articleData.content?.find(
+      (block) => block.type === "image"
+    );
+
+    if (firstImageBlock) {
+      const imageValue =
+        firstImageBlock.imageUrl || firstImageBlock.content;
+      if (imageValue) {
+        return imageValue.startsWith("/")
+          ? `https://www.citizencorrespondent.com${imageValue}`
+          : imageValue;
       }
     }
 
-
-
-    // Fallback to a default image if no image is found
     return "https://www.citizencorrespondent.com/images/cc-logo.svg";
   };
 
   const imageUrl = getImageUrl();
 
-  // Optimize title: keep base title under 50 chars, then add site name (total ~72 chars max)
-  // Search engines typically show 50-60 chars, so we keep it concise
-  const baseTitle = articleData.title.length > 50
-    ? articleData.title.substring(0, 47).trim() + "..."
-    : articleData.title;
-  const optimizedTitle = `${baseTitle} | CitizenCorrespondent`;
+  // --- Title ---
+  const baseTitle =
+    articleData.title.length > 50
+      ? articleData.title.substring(0, 47).trim() + "..."
+      : articleData.title;
 
   return {
     metadataBase: new URL("https://www.citizencorrespondent.com"),
-    title: optimizedTitle,
+    title: `${baseTitle} | CitizenCorrespondent`,
     description: optimizedDescription,
+
+    alternates: {
+      canonical: url,
+    },
+
     keywords: [
       articleData.category.toLowerCase(),
-      "news",
-      articleData.author.name,
       `${articleData.category.toLowerCase()} news`,
+      "news",
       "latest news",
       "breaking news",
       "citizen correspondent",
-      articleData.title.split(" ").slice(0, 5).join(" ").toLowerCase(),
-      articleData.shortdescription?.split(" ").slice(0, 5).join(" ").toLowerCase() || "",
-    ].filter(Boolean).join(", "),
-    alternates: { canonical: url },
+      articleData.author.name,
+      articleData.title
+        .split(" ")
+        .slice(0, 5)
+        .join(" ")
+        .toLowerCase(),
+      articleData.shortdescription
+        ?.split(" ")
+        .slice(0, 5)
+        .join(" ")
+        .toLowerCase(),
+    ]
+      .filter(Boolean)
+      .join(", "),
+
     openGraph: {
       title: baseTitle,
-      description: articleData.shortdescription || optimizedDescription,
+      description: optimizedDescription,
       url,
       siteName: "CitizenCorrespondent",
-      images: [{ url: imageUrl, width: 1200, height: 630, alt: articleData.title }],
       type: "article",
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: articleData.title,
+        },
+      ],
       publishedTime: articleData.date || articleData.lastUpdated,
       modifiedTime: articleData.lastUpdated,
       authors: [articleData.author.name],
       section: articleData.category,
       locale: "en_US",
     },
+
     twitter: {
       card: "summary_large_image",
       title: baseTitle,
-      description: articleData.shortdescription || optimizedDescription,
+      description: optimizedDescription,
       images: [imageUrl],
     },
-    icons: {
-      icon: "/images/cc-favIcon.svg",
-      shortcut: "/images/cc-favIcon.svg",
-      apple: "/images/cc-favIcon.svg",
-    },
+
     robots: {
       index: true,
       follow: true,
@@ -145,10 +180,29 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
         "max-snippet": -1,
       },
     },
+
+    icons: {
+      icon: "/images/cc-favIcon.svg",
+      shortcut: "/images/cc-favIcon.svg",
+      apple: "/images/cc-favIcon.svg",
+    },
   };
 }
 
 // Generate static params for all articles at build time
+// export async function generateStaticParams() {
+//   const fs = require("fs");
+//   const path = require("path");
+//   const dir = path.join(process.cwd(), "public/data/articleDetail");
+
+//   if (!fs.existsSync(dir)) return [];
+
+//   return fs
+//     .readdirSync(dir)
+//     .filter((f: string) => f.endsWith(".json") && f !== "article-example.json" && f !== "article-sidebar.json")
+//     .map((f: string) => ({ slug: f.replace(".json", "") }));
+// }
+
 export async function generateStaticParams() {
   const fs = require("fs");
   const path = require("path");
@@ -158,17 +212,37 @@ export async function generateStaticParams() {
 
   return fs
     .readdirSync(dir)
-    .filter((f: string) => f.endsWith(".json") && f !== "article-example.json" && f !== "article-sidebar.json")
-    .map((f: string) => ({ slug: f.replace(".json", "") }));
+    .filter(
+      (f: string) =>
+        f.endsWith(".json") &&
+        f !== "article-example.json" &&
+        f !== "article-sidebar.json"
+    )
+    .map((f: string) => {
+      const data = JSON.parse(
+        fs.readFileSync(path.join(dir, f), "utf-8")
+      ) as ArticleData;
+
+      return {
+        slug: data.slug,
+        category: normalizeCategory(data.category),
+      };
+    });
 }
 
 export default async function ArticlePage({ params }: ArticlePageProps) {
-  const { slug } = await params;
+ const { slug, category } = await params;
+
   let articleData: ArticleData;
 
   try {
     articleData = (await import(`@/public/data/articleDetail/${slug}.json`)).default as ArticleData;
   } catch {
+    notFound();
+  }
+    const categorySlug = normalizeCategory(articleData.category);
+
+     if (category !== categorySlug) {
     notFound();
   }
 
@@ -230,7 +304,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://www.citizencorrespondent.com/article/${slug}`,
+      "@id": `https://www.citizencorrespondent.com/${categorySlug}/${slug}`,
     },
     articleSection: articleData.category,
     wordCount: articleData.content.reduce((count, block) => {

@@ -28,7 +28,7 @@ interface HomeLandingPartProps {
 }
 
 const buildLink = (feature: LandingFeature) =>
-    feature.href ?? (feature.slug ? `/article/${feature.slug}` : "#");
+    feature.href ?? (feature.slug ? `/${feature.category.toLocaleLowerCase()}/${feature.slug}` : "#");
 
 const HomeLandingPart: React.FC<HomeLandingPartProps> = ({
     mainFeature,
@@ -40,11 +40,11 @@ const HomeLandingPart: React.FC<HomeLandingPartProps> = ({
 }) => {
     return (
         <section className="bg-white">
-            <div className="max-w-360 mx-auto px-2 md:px-16 py-6 border-b border-gray-200">
+            <div className="max-w-360 mx-auto px-3   md:px-16 py-6 border-b border-gray-200">
               <div className="grid grid-cols-1 lg:grid-cols-13 gap-8 items-start">
 
                     {/* Left: Main feature */}
-            <article className="lg:col-span-8 flex flex-col gap-4">
+            <article className="lg:col-span-8 flex flex-col gap-3">
 
                         <div className="flex items-center gap-2 text-sm font-semibold text-gray-700">
                             <span className="w-3 h-3 rounded-full bg-orange-600" />
@@ -52,7 +52,7 @@ const HomeLandingPart: React.FC<HomeLandingPartProps> = ({
                         </div>
 
                         <Link href={buildLink(mainFeature)}>
-                            <div className="text-4xl sm:text-4xl font-bold leading-tight text-gray-900 hover:text-orange-600 transition-colors">
+                            <div className="text-[32px] sm:text-4xl font-bold leading-tight text-gray-900 hover:text-orange-600 transition-colors">
                                 {mainFeature.title}
                             </div>
                         </Link>
@@ -66,7 +66,7 @@ const HomeLandingPart: React.FC<HomeLandingPartProps> = ({
                                 className="ml-auto text-gray-500 hover:text-orange-600 transition-colors"
                             >
                                 <Bookmark
-                                    className="w-4 h-4"
+                                    className="w-3 h-3"
                                     fill={mainFeature.bookmarked ? "currentColor" : "none"}
                                     strokeWidth={mainFeature.bookmarked ? 0 : 2}
                                 />

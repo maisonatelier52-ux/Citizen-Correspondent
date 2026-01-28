@@ -29,7 +29,7 @@ const HorizontalSidebar: React.FC<HorizontalSidebarProps> = ({
     <section className={`bg-white ${className}`}>
       <div className="flex flex-col gap-4 md:flex-row md:flex-wrap md:gap-4">
         {items.map((item, index) => (
-          <div key={index} className="flex-1 min-w-[200px] max-w-[300px] space-y-1">
+          <div key={index} className="flex-1 space-y-1">
             <div className="flex items-start gap-1">
               <TrendingUp className="w-3 h-3 text-gray-600 mt-0.5 flex-shrink-0" />
               <div className="space-y-0.5">
@@ -43,7 +43,7 @@ const HorizontalSidebar: React.FC<HorizontalSidebarProps> = ({
                   )}
                 </div>
                 <Link
-                  href={item.href || (item.slug ? `/article/${item.slug}` : "#")} 
+                  href={item.href || (item.slug ? `/${item.category.toLocaleLowerCase()}/${item.slug}` : "#")} 
                   title={item.title}
                   className="block"
                 >

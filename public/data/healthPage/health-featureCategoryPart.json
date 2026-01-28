@@ -15,15 +15,17 @@
       "date": "December 17, 2025",
       "image": "/images/news/vaccine.webp",
       "live": true,
-      "bookmarked": false
+      "bookmarked": false,
+          "category": "Health"
     },
     {
       "slug": "mental-health-apps-effectiveness",
       "title": "Study: Mental Health Apps as Effective as Traditional Therapy",
       "date": "December 16, 2025",
-      "image": "/images/news/mental-health.webp",
+      "image": "/images/news/mental-health-apps-vs-traditional-therapy-study.webp",
       "live": false,
-      "bookmarked": false
+      "bookmarked": false,
+          "category": "Health"
     }
   ],
   "adBanner": {

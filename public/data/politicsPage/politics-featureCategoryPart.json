@@ -15,7 +15,8 @@
       "date": "December 17, 2025",
       "image": "/images/news/bipartisan-immigration-reform-bill-passes-senate.webp",
       "live": true,
-      "bookmarked": false
+      "bookmarked": false,
+        "category": "Politics"
     },
     {
       "slug": "supreme-court-ai-copyright-ruling",
@@ -23,7 +24,8 @@
       "date": "December 16, 2025",
       "image": "/images/news/court-law.webp",
       "live": false,
-      "bookmarked": false
+      "bookmarked": false,
+        "category": "Politics"
     }
   ],
   "adBanner": {

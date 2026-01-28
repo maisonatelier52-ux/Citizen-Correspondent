@@ -1,6 +1,6 @@
 // components/ArticleDetail.tsx
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Bookmark, Share2, Mail, Link as LinkIcon, Printer, MoreHorizontal, Clock } from "lucide-react";
@@ -28,8 +28,7 @@ export interface ArticleDetailProps {
   };
   lastUpdated: string;
   content: ArticleContentBlock[];
-  bookmarked?: boolean;
-  onBookmarkToggle?: () => void;
+
   onShare?: (platform: string) => void;
   className?: string;
 }
@@ -43,11 +42,18 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
   author,
   lastUpdated,
   content,
-  bookmarked = false,
-  onBookmarkToggle,
+
   onShare,
   className = "",
 }) => {
+
+  const [bookmarked, setBookmarked] = useState(false);
+
+  const onBookmarkToggle = () => {
+    setBookmarked((prev) => !prev);
+  };
+
+
   const handleShare = (platform: string) => {
     if (onShare) {
       onShare(platform);
@@ -55,7 +61,7 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
       // Default share behavior
       const url = typeof window !== "undefined" ? window.location.href : "";
       const text = title;
-      
+
       switch (platform) {
         case "twitter":
           window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`, "_blank");
@@ -82,7 +88,7 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
         <div className="flex items-center gap-2 mb-4">
           <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
           <Link
-            href={`/category/${category.toLowerCase().replace(/\s+/g, "-")}`}
+            href={`/${category.toLowerCase().replace(/\s+/g, "-")}`}
             className="text-sm font-medium text-orange-500 hover:text-orange-600 transition-colors"
           >
             {category}
@@ -90,60 +96,80 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
         </div>
 
         {/* Main Title */}
-        <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4 sm:mb-6 leading-tight">
+        <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 mb-3 sm:mb-6 leading-tight">
           {title}
         </h1>
 
         {/* Introductory Text */}
-        <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-2">
+        <p className="text-sm sm:text-base text-gray-700 leading-tight mb-2">
           {introText}
         </p>
 
 
         {/* Article Action Bar */}
-        <ArticleActionBar 
+        <ArticleActionBar
           readingTime={parseInt(readingTime.replace(/[^0-9]/g, ""))}
           onShare={onShare}
           onBookmarkToggle={onBookmarkToggle}
-          onMoreOptions={() => {}}
+          onMoreOptions={() => { }}
         />
 
         {/* Author Section */}
-        <div className="flex items-start gap-4 mb-4  pt-2">
-          <div className="relative w-12 h-12 sm:w-16 sm:h-16 shrink-0">
-            <Image
-              src={author.image}
-              alt={author.name}
-              fill
-              className="rounded-full object-cover"
-              sizes="48px sm:64px"
-            />
-          </div>
-          <div className="flex-1">
-            <div className="flex items-center justify-between flex-wrap gap-4">
-              <div>
-                <p className="text-[11px] sm:text-base font-medium text-gray-900">
-                  By {author.name} - {author.role}
-                </p>
-                <p className="text-xs sm:text-[11px] text-gray-600 mt-1">
-                  Last Updated: {lastUpdated}
-                </p>
-              </div>
-              <button
-                onClick={onBookmarkToggle}
-                className="flex items-center gap-2 text-gray-600 hover:text-orange-500 transition-colors"
-                aria-label={bookmarked ? "Remove bookmark" : "Save bookmark"}
-              >
-                <Bookmark
-                  className="w-4 h-4 sm:w-5 sm:h-5"
-                  fill={bookmarked ? "currentColor" : "none"}
-                  strokeWidth={bookmarked ? 0 : 2}
-                />
-                <span className="text-xs sm:text-sm font-medium">Save It</span>
-              </button>
-            </div>
-          </div>
-        </div>
+       <div className="flex items-center gap-4 mb-4 pt-2">
+  {/* Author Image */}
+ 
+  <div className="relative w-12 h-12 sm:w-16 sm:h-16 shrink-0">
+  <Link href="/our-team" className="flex items-center gap-4">
+    <Image
+      src={author.image}
+      alt={author.name}
+      fill
+      className="rounded-full object-cover"
+      sizes="48px sm:64px"
+    />
+      </Link>
+  </div>
+
+  {/* Author Details */}
+  <div className="flex-1">
+    <div className="flex items-center justify-between flex-wrap gap-4">
+        <Link href="/our-team" className="flex items-center gap-4">
+    <div className="flex flex-col justify-center gap-1">
+  <p className="text-[11px] sm:text-[14px] font-medium text-gray-900">
+    By {author.name} – {author.role}
+  </p>
+
+  <div className="flex items-center gap-2 text-[11px] text-gray-600">
+    <span>Last Updated: {lastUpdated}</span>
+
+    {/* dot */}
+    <span className="text-gray-400">•</span>
+
+    {/* Bookmark */}
+    <button
+      onClick={onBookmarkToggle}
+      className="flex items-center hover:text-orange-500 transition-colors"
+      aria-label={bookmarked ? "Remove bookmark" : "Save bookmark"}
+    >
+      <Bookmark
+        className="  w-3 h-3 cursor-pointer"
+        fill={bookmarked ? "currentColor" : "none"}
+        strokeWidth={bookmarked ? 0 : 2}
+      />
+      <span className="ml-1">save it</span>
+    </button>
+  </div>
+</div>
+
+      
+        </Link>
+
+    
+    </div>
+  </div>
+</div>
+ 
+
 
         {/* Article Content */}
         <div className="prose prose-lg max-w-none">
@@ -154,7 +180,7 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
               return (
                 <HeadingTag
                   key={index}
-                  className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mt-6 sm:mt-8 mb-3 sm:mb-4 first:mt-0"
+                  className="text-xl sm:text-2xl md:text-[27px] font-bold text-gray-900 md:mt-4 mt-2 mb-2 md:mb-5 first:mt-0 relative inline-block after:content-[''] after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-0.5 after:bg-gradient-to-r after:from-transparent after:via-gray-400 after:to-transparent font-serif"
                 >
                   {block.content}
                 </HeadingTag>
@@ -172,13 +198,13 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
                     />
                   </div>
                   {block.content && (
-                    <p className="text-xs sm:text-sm text-gray-600 mt-2 italic">{block.content}</p>
+                    <p className="text-xs sm:text-[12px] text-gray-600 mt-2 italic">{block.content}</p>
                   )}
                 </div>
               );
             } else if (block.type === "paragraph") {
               return (
-                <p key={index} className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
+                <p key={index} className="text-sm sm:text-[15px] text-gray-700 leading-tight mb-2">
                   {block.content}
                 </p>
               );
@@ -188,7 +214,7 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
         </div>
 
         {/* Leave a Comment Section */}
-        <div className="mt-12 pt-8 border-t border-gray-200">
+        <div className="mt-5 md:mt-10 pt-8 border-t border-gray-200">
           <LeaveAComment />
         </div>
       </div>

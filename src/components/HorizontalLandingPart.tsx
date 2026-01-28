@@ -30,7 +30,7 @@ const HorizontalLandingPart: React.FC<HorizontalLandingPartProps> = ({
 }) => {
   return (
     <section className="bg-white">
-      <div className="max-w-360 mx-auto py-6 sm:py-8">
+      <div className="max-w-360 mx-auto py-0 sm:py-8">
         {heading && (
           <div className="flex items-center gap-2 mb-3 sm:mb-4">
             <h2 className="text-lg sm:text-xl font-semibold text-gray-900">{heading}</h2>
@@ -43,7 +43,7 @@ const HorizontalLandingPart: React.FC<HorizontalLandingPartProps> = ({
             <div className="bg-orange-50 border lg:h-[550px] border-orange-100 rounded-lg p-6 sm:p-8 flex flex-col justify-between h-full">
               <div className="space-y-4">
                 <p className="text-sm font-semibold text-orange-700 uppercase tracking-wide">
-                  Technology
+                  World
                 </p>
                 <h2 className="text-2xl sm:text-[24px] font-black leading-tight text-red-900 whitespace-pre-line">
                   {intro.title}
@@ -54,10 +54,10 @@ const HorizontalLandingPart: React.FC<HorizontalLandingPartProps> = ({
               </div>
               <div className="mt-6">
                 <Link
-                  href={intro.buttonHref}
+                  href='/world'
                   className="inline-flex items-center justify-center border border-gray-900 px-6 py-2 text-sm font-semibold text-gray-900 hover:bg-gray-900 hover:text-white transition-colors"
                 >
-                  {intro.buttonLabel}
+               Explore More
                 </Link>
               </div>
             </div>

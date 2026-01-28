@@ -15,7 +15,8 @@
       "date": "December 17, 2025",
       "image": "/images/news/military-ship.webp",
       "live": true,
-      "bookmarked": false
+      "bookmarked": false,
+    "category": "World"
     },
     {
       "slug": "israel-hamas-hostage-negotiations",
@@ -23,12 +24,14 @@
       "date": "December 16, 2025",
       "image": "/images/news/middle-east.webp",
       "live": false,
-      "bookmarked": false
+      "bookmarked": false,
+    "category": "World"
     }
   ],
   "adBanner": {
     "image": "/images/news/ad-banner.webp",
     "link": "https://example.com",
-    "alt": "Advertisement"
+    "alt": "Advertisement",
+    "category": "World"
   }
 }

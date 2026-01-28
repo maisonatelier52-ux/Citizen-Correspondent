@@ -193,7 +193,6 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
     const featuredArticle = featureData.featuredArticle as FeaturedArticleCardProps;
 
-
     const rightArticles = featureData.rightArticles as ArticleCardSmallProps[];
     const adBanner = featureData.adBanner as AdBannerProps;
     const mainGridItems = mainGridData.mainGrid as MainGridItem[];
@@ -206,6 +205,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         date: featuredArticle.date,
         image: featuredArticle.image,
         tags: [featuredArticle.category],
+        category: featuredArticle.category,
         live: false, // Can be set from data if available
         bookmarked: featuredArticle.bookmarked,
         // href: articleHref,
@@ -216,13 +216,14 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         title: article.title,
         date: article.date,
         image: article.image,
+        category: article.category,
         bookmarked: article.bookmarked,
     }));
 
     const promo: CategoryLandingPromo = {
         title: `Impressive ${categoryName} News Coverage`,
-     body: `Stay informed with the latest ${categoryName.toLowerCase()} news, insights, and analysis. Get comprehensive coverage of breaking stories, key trends, and major developments shaping the ${categoryName.toLowerCase()} landscape. Our reporting brings context, clarity, and timely updates to help readers understand the issues that matter most. From policy decisions to real-world impacts, our journalism aims to inform and engage a broad audience across regions and communities today. Coverage is guided by accuracy, independence, and a commitment to responsible reporting. Our newsroom closely follows developments as they unfold, ensuring readers receive reliable information they can trust.`,
-buttonLabel: "Explore More",
+        body: `Stay informed with the latest ${categoryName.toLowerCase()} news, insights, and analysis. Get comprehensive coverage of breaking stories, key trends, and major developments shaping the ${categoryName.toLowerCase()} landscape. Our reporting brings context, clarity, and updates to help readers understand the issues that matter most. From policy decisions to real-world impacts, our journalism aims to inform and engage a broad audience worldwide across diverse global perspectives. Coverage is guided by accuracy, independence, and a commitment to responsible reporting with depth and balance.`,
+        buttonLabel: "Explore More",
         buttonHref: `/${category}`,
     };
 
@@ -268,7 +269,7 @@ buttonLabel: "Explore More",
                     promo={promo}
                 />
 
-                <div className="max-w-360 mx-auto px-2 md:px-16 pb-12 border-t border-gray-400">
+                <div className="max-w-360 mx-auto px-3 md:px-16 pb-12 border-t border-gray-400">
                     <MainGrid items={mainGridItems} heading={categoryName} />
                 </div>
 

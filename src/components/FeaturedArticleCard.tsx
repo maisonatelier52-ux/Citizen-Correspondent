@@ -28,7 +28,7 @@ const FeaturedArticleCard: React.FC<FeaturedArticleCardProps> = ({
   onBookmarkToggle,
   href,
 }) => {
-  const articleHref = href || `/article/${slug}`;
+  const articleHref = href || `/${slug}`;
   return (
     <article className="relative w-full h-[500px] overflow-hidden group">
       <Link href={articleHref} title={title} className="block h-full">
@@ -71,7 +71,7 @@ const FeaturedArticleCard: React.FC<FeaturedArticleCardProps> = ({
               className="text-white hover:text-orange-400 transition-colors"
             >
               <Bookmark
-                className="w-4 h-4"
+                className="w-3 h-3"
                 fill={bookmarked ? "currentColor" : "none"}
                 strokeWidth={bookmarked ? 0 : 2}
               />

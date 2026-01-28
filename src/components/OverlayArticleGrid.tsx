@@ -42,7 +42,7 @@ const OverlayArticleGrid: React.FC<OverlayArticleGridProps> = ({
             key={`${item.slug}-${index}`} 
             className={`relative group ${index === 0 ? 'md:col-span-2 lg:col-span-2' : ''}`}
           >
-            <Link href={`/article/${item.slug}`} title={item.title} className="block">
+            <Link href={`/${item.category.toLocaleLowerCase()}/${item.slug}`} title={item.title} className="block">
               <div className="relative w-full aspect-[4/2] sm:aspect-[3/4] md:aspect-auto md:h-[433px] overflow-hidden">
                 <Image
                   src={item.image}

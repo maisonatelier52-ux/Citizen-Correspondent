@@ -61,7 +61,7 @@ const ArticleWithSidebar: React.FC<ArticleWithSidebarProps> = ({
   }, []);
 
   return (
-    <div className={`max-w-360 mx-auto px-2 md:px-16 grid grid-cols-1 lg:grid-cols-4 gap-12 py-4 bg-white ${className}`}>
+    <div className={`max-w-360 mx-auto px-3 md:px-16 grid grid-cols-1 lg:grid-cols-4 gap-12 py-4 bg-white ${className}`}>
       {/* Left: Article Detail + End Marker */}
       <div className="lg:col-span-3">
         <ArticleDetail
@@ -73,11 +73,9 @@ const ArticleWithSidebar: React.FC<ArticleWithSidebarProps> = ({
           author={article.author}
           lastUpdated={article.lastUpdated}
           content={article.content}
-          bookmarked={article.bookmarked}
-          onBookmarkToggle={onBookmarkToggle}
           onShare={onShare}
         />
-        <div className="article-end h-1"></div> {/* Invisible marker */}
+        <div className="article-end h-1"></div>
       </div>
 
       {/* Right: Sticky Sidebar */}

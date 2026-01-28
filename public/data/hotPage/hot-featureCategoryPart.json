@@ -15,7 +15,8 @@
       "date": "December 17, 2025",
       "image": "/images/news/concert-music.webp",
       "live": true,
-      "bookmarked": false
+      "bookmarked": false,
+          "category": "Hot"
     },
     {
       "slug": "world-cup-2026-host-cities-announced",
@@ -23,7 +24,8 @@
       "date": "December 16, 2025",
       "image": "/images/news/soccer-football.webp",
       "live": false,
-      "bookmarked": false
+      "bookmarked": false,
+          "category": "Hot"
     }
   ],
   "adBanner": {

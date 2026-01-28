@@ -36,7 +36,7 @@ const CategoryIntro: React.FC<CategoryIntroProps> = ({
 
   return (
     <section className={`bg-white pt-8 ${className}`}>
-      <div className="max-w-360 mx-auto px-2 md:px-16">
+      <div className="max-w-360 mx-auto px-3 md:px-16">
         {/* Header with Category Name and Follow Button */}
         <div className="flex items-center justify-between mb-4">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
@@ -44,11 +44,11 @@ const CategoryIntro: React.FC<CategoryIntroProps> = ({
           </h1>
           <button
             onClick={handleFollow}
-            className="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded hover:bg-gray-50 transition-colors duration-200"
+            className="flex items-center gap-2 px-2 md:px-4 py-1 md:py-2 border border-gray-300 rounded hover:bg-gray-50 transition-colors duration-200"
           >
             {following ? (
               <>
-                <span className="text-sm font-medium text-gray-700">Following</span>
+                <span className="text-[12px] md:text-sm font-medium text-gray-700">Following</span>
               </>
             ) : (
               <>
@@ -60,7 +60,7 @@ const CategoryIntro: React.FC<CategoryIntroProps> = ({
         </div>
 
         {/* Description */}
-        <p className="text-base text-gray-600 leading-relaxed mb-6 max-w-4xl">
+        <p className="text-base text-gray-600 leading-tight mb-6 max-w-4xl">
           {description}
         </p>
 
@@ -81,8 +81,8 @@ const CategoryIntro: React.FC<CategoryIntroProps> = ({
             {relatedTopics.map((topic) => (
               <Link
                 key={topic}
-                href={`/category/${topic.toLowerCase().replace(/\s+/g, "-")}`}
-                className="px-4 py-1.5 border border-gray-900 rounded-3xl text-sm font-bold text-gray-700 hover:bg-gray-50 hover:border-orange-500 hover:text-orange-500 transition-colors duration-200"
+                href={`/${topic.toLowerCase().replace(/\s+/g, "-")}`}
+                className="px-3 md:px-4 py-1.5 border border-gray-900 rounded-3xl text-[12px] md:text-sm font-bold text-gray-700 hover:bg-gray-50 hover:border-orange-500 hover:text-orange-500 transition-colors duration-200"
               >
                 {topic}
               </Link>

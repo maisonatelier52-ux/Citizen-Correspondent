@@ -12,6 +12,7 @@ export interface ArticleCardSmallProps {
   image: string;
   live?: boolean;
   bookmarked?: boolean;
+  category:string;
   onBookmarkToggle?: () => void;
 }
 
@@ -26,7 +27,7 @@ const ArticleCardSmall: React.FC<ArticleCardSmallProps> = ({
 }) => {
   return (
     <article className="flex gap-4 pb-6 border-b border-gray-200 last:border-0 last:pb-0">
-      <Link href={`/article/${slug}`} title={title} className="block shrink-0">
+      <Link href={`/${slug}`} title={title} className="block shrink-0">
         <div className="relative w-32 h-24 overflow-hidden">
           <Image
             src={image}
@@ -48,7 +49,7 @@ const ArticleCardSmall: React.FC<ArticleCardSmallProps> = ({
             <span>Live:</span>
           </div>
         )}
-        <Link href={`/article/${slug}`} title={title}>
+        <Link href={`/${slug}`} title={title}>
           <h2 className="text-base font-semibold text-gray-900 leading-snug hover:text-orange-600 transition-colors">
             {title}
           </h2>
@@ -66,7 +67,7 @@ const ArticleCardSmall: React.FC<ArticleCardSmallProps> = ({
             className="text-gray-400 hover:text-orange-600 transition-colors"
           >
             <Bookmark
-              className="w-4 h-4"
+              className="w-3 h-3"
               fill={bookmarked ? "currentColor" : "none"}
               strokeWidth={bookmarked ? 0 : 2}
             />

@@ -15,15 +15,17 @@
       "date": "December 17, 2025",
       "image": "/images/news/nato-announces-new-defense-spending-targets-for-2030.webp",
       "live": true,
-      "bookmarked": false
+      "bookmarked": false,
+        "category": "Global Affairs"
     },
     {
       "slug": "un-reform-security-council",
       "title": "UN Security Council Expansion: India, Brazil, Germany Gain Seats",
       "date": "December 16, 2025",
-      "image": "/images/news/india-taj-mahal.webp",
+      "image": "/images/news/un-security-council-expansion-india-brazil-germany.webp",
       "live": false,
-      "bookmarked": false
+      "bookmarked": false,
+        "category": "Global Affairs"
     }
   ],
   "adBanner": {

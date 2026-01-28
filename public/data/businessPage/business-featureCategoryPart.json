@@ -5,7 +5,7 @@
     "title": "OpenAI Valued at $200 Billion in Largest Private Tech Funding Round Ever",
     "excerpt": "OpenAI has closed a historic $15 billion funding round, valuing the AI company at $200 billion. The investment, led by Microsoft and SoftBank, will accelerate the development of AGI and expand enterprise AI solutions globally.",
     "date": "December 17, 2025",
-    "image": "/images/news/ai-technology.webp",
+    "image": "/images/news/openai-200-billion-valuation-funding-round.webp",
     "bookmarked": false
   },
   "rightArticles": [
@@ -15,7 +15,8 @@
       "date": "December 17, 2025",
       "image": "/images/news/drone-delivery.webp",
       "live": true,
-      "bookmarked": false
+      "bookmarked": false,
+          "category": "Business"
     },
     {
       "slug": "walmart-acquires-vizio-smart-tv",
@@ -23,7 +24,8 @@
       "date": "December 16, 2025",
       "image": "/images/news/business-team.webp",
       "live": false,
-      "bookmarked": false
+      "bookmarked": false,
+          "category": "Business"
     }
   ],
   "adBanner": {

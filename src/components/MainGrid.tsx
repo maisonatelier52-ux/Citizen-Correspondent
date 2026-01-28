@@ -58,8 +58,14 @@ const MainGrid: React.FC<MainGridProps> = ({
       setVisibleCount(initialCount);
     }
   };
+  const normalizeCategory = (category: string): string =>
+  category
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, '-');
 
   return (
+    
     <section className={className}>
       {heading && (
         <div className="flex items-center gap-2 mt-4 mb-4">
@@ -73,7 +79,7 @@ const MainGrid: React.FC<MainGridProps> = ({
             <div className="flex flex-row-reverse gap-3 md:flex-col">
               <div className="w-2/5 md:w-full">
                 <Link
-                  href={`/article/${item.slug}`}
+                  href={`/${normalizeCategory(item.categories[0])}/${item.slug}`}
                   title={item.title}
                   className="block overflow-hidden"
                 >
@@ -100,7 +106,7 @@ const MainGrid: React.FC<MainGridProps> = ({
                   </div>
 
                   <Link
-                    href={`/article/${item.slug}`}
+                    href={`/${normalizeCategory(item.categories[0])}/${item.slug}`}
                     title={item.title}
                     className="block"
                   >
@@ -110,7 +116,7 @@ const MainGrid: React.FC<MainGridProps> = ({
                   </Link>
 
                   <div className="flex items-center gap-3 text-[11px] text-gray-600">
-                    <span>{item.date}</span>
+                    <span className="text-[11px]">{item.date}</span>
                     <button
                       type="button"
                       aria-label={item.bookmarked ? "Remove bookmark" : "Save bookmark"}
@@ -118,7 +124,7 @@ const MainGrid: React.FC<MainGridProps> = ({
                       className="text-gray-400 hover:text-orange-600 transition-colors"
                     >
                       <Bookmark
-                        className="w-4 h-4"
+                        className="w-3 h-3"
                         fill={item.bookmarked ? "currentColor" : "none"}
                         strokeWidth={item.bookmarked ? 0 : 2}
                       />
