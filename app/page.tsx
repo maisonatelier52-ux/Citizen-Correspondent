@@ -218,7 +218,7 @@ export default async function HomePage() {
         />
 
         {/* Technology horizontal landing section */}
-        <div className="max-w-360 mx-auto px-3 md:px-16 py-0">
+        <div className="max-w-360 mx-auto px-3 md:px-16 pt-5 md:pt-0">
           <HorizontalLandingPart
             intro={horizontalLandingIntro}
             article={horizontalLandingArticle}
