@@ -73,6 +73,9 @@ const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => {
 
   if (!isOpen) return null;
 
+  const normalizeCategory = (category: string): string =>
+  category.toLowerCase().trim().replace(/\s+/g, "-");
+
   return (
     <div
       className="fixed inset-0 flex backdrop-blur items-center justify-center z-50 p-4 transition-all duration-300 ease-in-out opacity-100 visible"
@@ -101,7 +104,7 @@ const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => {
             {results.map((article) => (
               <Link
                 key={article.slug}
-                href={`/${article.slug}`}
+                href={`/${normalizeCategory(article.category)}/${article.slug}`}
                 title={`${article.title} – ${article.category} News`}
                 onClick={onClose}
                 className="block p-4 hover:bg-gray-900 border-b border-gray-800 transition"
