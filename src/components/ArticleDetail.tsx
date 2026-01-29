@@ -176,8 +176,8 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
       return (
         <HeadingTag
           key={index}
-          className="text-xl sm:text-2xl md:text-[27px] font-bold text-gray-900 md:mt-4 mt-2 mb-2 md:mb-5 first:mt-0 relative inline-block after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-1 after:bg-red-600 font-serif"
-        >
+        className="text-xl sm:text-2xl md:text-[27px] font-bold text-gray-900 md:mt-4 mt-2 mb-4 md:mb-5 first:mt-0 relative inline-block after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-1/4 after:h-0.5 after:bg-red-600 font-serif"
+         >
           {block.content}
         </HeadingTag>
       );
