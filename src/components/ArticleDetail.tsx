@@ -168,74 +168,74 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
 
 
         {/* Article Content */}
-      <div className="prose prose-lg max-w-none">
-  {content.map((block, index) => {
-    if (block.type === "heading") {
-      const level = block.level || 2;
-      const HeadingTag = `h${level}` as React.ElementType;
-      return (
-        <HeadingTag
-          key={index}
-        className="text-xl sm:text-2xl md:text-[27px] font-bold text-gray-900 md:mt-4 mt-2 mb-4 md:mb-5 first:mt-0 relative inline-block after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-1/4 after:h-0.5 after:bg-red-600 font-serif"
-         >
-          {block.content}
-        </HeadingTag>
-      );
-    } else if (block.type === "image") {
-      return (
-        <div key={index} className="my-2 sm:my-2">
-          <div className="relative w-full aspect-video bg-gray-100">
-            <Image
-              src={block.imageUrl || ""}
-              alt={block.imageAlt || block.content}
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 896px"
-            />
+        <div className="prose prose-lg max-w-none">
+          {content.map((block, index) => {
+            if (block.type === "heading") {
+              const level = block.level || 2;
+              const HeadingTag = `h${level}` as React.ElementType;
+              return (
+                <HeadingTag
+                  key={index}
+                  className="text-xl sm:text-2xl md:text-[27px] font-bold text-gray-900 md:mt-4 mt-2 mb-4 md:mb-5 first:mt-0 relative inline-block after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-1/4 after:h-0.5 after:bg-red-600 font-serif"
+                >
+                  {block.content}
+                </HeadingTag>
+              );
+            } else if (block.type === "image") {
+              return (
+                <div key={index} className="my-2 sm:my-2">
+                  <div className="relative w-full aspect-video bg-gray-100">
+                    <Image
+                      src={block.imageUrl || ""}
+                      alt={block.imageAlt || block.content}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 896px"
+                    />
+                  </div>
+                  {block.content && (
+                    <p className="text-xs sm:text-[12px] text-gray-600 mt-2 italic">{block.content}</p>
+                  )}
+                </div>
+              );
+            } else if (block.type === "paragraph") {
+              return (
+                <p key={index} className="text-sm sm:text-[15px] text-gray-700 leading-tight mb-2">
+                  {block.content}
+                </p>
+              );
+            }
+            return null;
+          })}
+        </div>
+
+
+        <section className="w-full bg-white pt-2 md:pt-5">
+          <div className="mx-auto max-w-4xl text-center px-4">
+            {/* Quote Icon */}
+            <div className="text-[35px] md:text-6xl font-bold text-red-600 leading-none">
+              “
+            </div>
+
+            {/* Quote Text */}
+            <p className="text-[16px] md:text-[26px] font-semibold text-gray-900 leading-tight">
+              {summary}
+
+            </p>
+
+            {/* Author */}
+            <div className="mt-2 flex items-center justify-center gap-3">
+              <span className="h-[2px] w-8 bg-red-600"></span>
+              <span className="text-[12px] font-medium text-gray-500">
+                Dieter Rams
+              </span>
+            </div>
           </div>
-          {block.content && (
-            <p className="text-xs sm:text-[12px] text-gray-600 mt-2 italic">{block.content}</p>
-          )}
+        </section>
+        <div className="mt-5 md:mt-10 pt-3">
+
+          <ShareArticle title={title} />
         </div>
-      );
-    } else if (block.type === "paragraph") {
-      return (
-        <p key={index} className="text-sm sm:text-[15px] text-gray-700 leading-tight mb-2">
-          {block.content}
-        </p>
-      );
-    }
-    return null;
-  })}
-</div>
-
-
-         <section className="w-full bg-white pt-2 md:pt-5">
-      <div className="mx-auto max-w-4xl text-center px-4">
-        {/* Quote Icon */}
-        <div className="text-[35px] md:text-6xl font-bold text-red-600 leading-none">
-          “
-        </div>
-
-        {/* Quote Text */}
-        <p className="text-[16px] md:text-[26px] font-semibold text-gray-900 leading-tight">
-          {summary}
-         
-        </p>
-
-        {/* Author */}
-        <div className="mt-2 flex items-center justify-center gap-3">
-          <span className="h-[2px] w-8 bg-red-600"></span>
-          <span className="text-[12px] font-medium text-gray-500">
-            Dieter Rams
-          </span>
-        </div>
-      </div>
-    </section>
-       <div className="mt-5 md:mt-10 pt-3">
-
-<ShareArticle title={title}/>
-       </div>
         {/* Leave a Comment Section */}
         <div className="mt-5 md:mt-10">
           <LeaveAComment />
