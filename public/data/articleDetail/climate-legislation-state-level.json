@@ -14,7 +14,7 @@
                     {
                         "type":  "image",
                         "content":  "States lead on climate action",
-                        "imageUrl":  "/images/news/climate-summit.webp",
+                        "imageUrl":  "/images/news/12-states-aggressive-climate-legislation.webp",
                         "imageAlt":  "Climate summit"
                     },
                     {
@@ -45,5 +45,7 @@
                         "content":  "State action is creating pressure for federal standards. Businesses operating nationally prefer unified regulations to a patchwork of state requirements."
                     }
                 ],
-    "bookmarked":  false
+    "bookmarked":  false,
+    "summary": "Twelve U.S. states pass aggressive climate legislation with stricter emissions and clean energy targets, putting pressure on federal action."
+
 }

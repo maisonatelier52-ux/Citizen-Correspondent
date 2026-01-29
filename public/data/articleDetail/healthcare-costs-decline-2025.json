@@ -14,7 +14,7 @@
                     {
                         "type":  "image",
                         "content":  "Healthcare costs declining",
-                        "imageUrl":  "/images/news/data-analytics.webp",
+                        "imageUrl":  "/images/news/us-healthcare-costs-decline-20-years.webp",
                         "imageAlt":  "Healthcare data"
                     },
                     {
@@ -45,5 +45,7 @@
                         "content":  "Economists are cautiously optimistic that structural changes could bend the cost curve permanently. However, an aging population and new technologies may eventually reverse the trend."
                     }
                 ],
-    "bookmarked":  false
+    "bookmarked":  false,
+    "summary": "US healthcare costs decline for the first time in 20 years, driven by drug price negotiations, telehealth, and value-based care."
+
 }

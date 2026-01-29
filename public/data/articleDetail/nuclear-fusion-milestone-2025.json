@@ -14,7 +14,7 @@
                     {
                         "type":  "image",
                         "content":  "Fusion breakthrough at LLNL",
-                        "imageUrl":  "/images/news/quantum-computer.webp",
+                        "imageUrl":  "/images/news/nuclear-fusion-net-energy-gain-llnl.webp",
                         "imageAlt":  "Fusion research"
                     },
                     {
@@ -45,5 +45,7 @@
                         "content":  "Private fusion companies have raised over $5 billion following the breakthrough. Multiple approachesâ€”laser, magnetic confinement, and novel designsâ€”are racing toward commercialization."
                     }
                 ],
-    "bookmarked":  false
+    "bookmarked":  false,
+    "summary": "Lawrence Livermore achieves net energy gain in fusion again, producing 50% more energy and advancing toward commercial reactors by 2040."
+
 }

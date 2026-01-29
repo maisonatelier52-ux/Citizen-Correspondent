@@ -14,7 +14,7 @@
                     {
                         "type":  "image",
                         "content":  "TikTok Supreme Court case",
-                        "imageUrl":  "/images/news/social-media.webp",
+                        "imageUrl":  "/images/news/supreme-court-tiktok-first-amendment.webp",
                         "imageAlt":  "Social media"
                     },
                     {
@@ -45,5 +45,7 @@
                         "content":  "A ruling against TikTok could force a sale to American buyers or result in a US ban. Creators and businesses dependent on the platform have joined legal challenges."
                     }
                 ],
-    "bookmarked":  false
+    "bookmarked":  false,
+    "summary": "Supreme Court to hear landmark TikTok sale-or-ban case, weighing national security concerns against First Amendment rights."
+
 }

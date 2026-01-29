@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Bookmark, Share2, Mail, Link as LinkIcon, Printer, MoreHorizontal, Clock } from "lucide-react";
 import LeaveAComment from "./LeaveAComment";
 import ArticleActionBar from "./ArticleActionBar";
+import ShareArticle from "./ShareArticle";
 
 export interface ArticleContentBlock {
   type: "heading" | "paragraph" | "image";
@@ -28,7 +29,7 @@ export interface ArticleDetailProps {
   };
   lastUpdated: string;
   content: ArticleContentBlock[];
-
+  summary: string;
   onShare?: (platform: string) => void;
   className?: string;
 }
@@ -42,7 +43,7 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
   author,
   lastUpdated,
   content,
-
+  summary,
   onShare,
   className = "",
 }) => {
@@ -58,7 +59,6 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
     if (onShare) {
       onShare(platform);
     } else {
-      // Default share behavior
       const url = typeof window !== "undefined" ? window.location.href : "";
       const text = title;
 
@@ -115,60 +115,56 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
         />
 
         {/* Author Section */}
-       <div className="flex items-center gap-4 mb-4 pt-2">
-  {/* Author Image */}
- 
-  <div className="relative w-12 h-12 sm:w-16 sm:h-16 shrink-0">
-  <Link href="/our-team" className="flex items-center gap-4">
-    <Image
-      src={author.image}
-      alt={author.name}
-      fill
-      className="rounded-full object-cover"
-      sizes="48px sm:64px"
-    />
-      </Link>
-  </div>
+        <div className="flex items-center gap-4 mb-4 pt-2">
+          {/* Author Image */}
 
-  {/* Author Details */}
-  <div className="flex-1">
-    <div className="flex items-center justify-between flex-wrap gap-4">
-        <Link href="/our-team" className="flex items-center gap-4">
-    <div className="flex flex-col justify-center gap-1">
-  <p className="text-[11px] sm:text-[14px] font-medium text-gray-900">
-    By {author.name} – {author.role}
-  </p>
+          <div className="relative w-12 h-12 sm:w-16 sm:h-16 shrink-0">
+            <Link href="/our-team" className="flex items-center gap-4">
+              <Image
+                src={author.image}
+                alt={author.name}
+                fill
+                className="rounded-full object-cover"
+                sizes="48px sm:64px"
+              />
+            </Link>
+          </div>
 
-  <div className="flex items-center gap-2 text-[11px] text-gray-600">
-    <span>Last Updated: {lastUpdated}</span>
+          {/* Author Details */}
+          <div className="flex-1">
+            <div className="flex items-center justify-between flex-wrap gap-4">
+              <Link href="/our-team" className="flex items-center gap-4">
+                <div className="flex flex-col justify-center gap-1">
+                  <p className="text-[11px] sm:text-[14px] font-medium text-gray-900">
+                    By {author.name} – {author.role}
+                  </p>
 
-    {/* dot */}
-    <span className="text-gray-400">•</span>
+                  <div className="flex items-center gap-2 text-[11px] text-gray-600">
+                    <span>Last Updated: {lastUpdated}</span>
 
-    {/* Bookmark */}
-    <button
-      onClick={onBookmarkToggle}
-      className="flex items-center hover:text-orange-500 transition-colors"
-      aria-label={bookmarked ? "Remove bookmark" : "Save bookmark"}
-    >
-      <Bookmark
-        className="  w-3 h-3 cursor-pointer"
-        fill={bookmarked ? "currentColor" : "none"}
-        strokeWidth={bookmarked ? 0 : 2}
-      />
-      <span className="ml-1">save it</span>
-    </button>
-  </div>
-</div>
+                    {/* dot */}
+                    <span className="text-gray-400">•</span>
 
-      
-        </Link>
+                    {/* Bookmark */}
+                    <button
+                      onClick={onBookmarkToggle}
+                      className="flex items-center hover:text-orange-500 transition-colors"
+                      aria-label={bookmarked ? "Remove bookmark" : "Save bookmark"}
+                    >
+                      <Bookmark
+                        className="  w-3 h-3 cursor-pointer"
+                        fill={bookmarked ? "currentColor" : "none"}
+                        strokeWidth={bookmarked ? 0 : 2}
+                      />
+                      <span className="ml-1">save it</span>
+                    </button>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
 
-    
-    </div>
-  </div>
-</div>
- 
 
 
         {/* Article Content */}
@@ -213,8 +209,34 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
           })}
         </div>
 
+         <section className="w-full bg-white pt-2 md:pt-5">
+      <div className="mx-auto max-w-4xl text-center px-4">
+        {/* Quote Icon */}
+        <div className="text-[35px] md:text-6xl font-bold text-orange-500 leading-none">
+          “
+        </div>
+
+        {/* Quote Text */}
+        <p className="text-[16px] md:text-[26px] font-semibold text-gray-900 leading-tight">
+          {summary}
+         
+        </p>
+
+        {/* Author */}
+        <div className="mt-2 flex items-center justify-center gap-3">
+          <span className="h-[2px] w-8 bg-orange-500"></span>
+          <span className="text-[12px] font-medium text-gray-500">
+            Dieter Rams
+          </span>
+        </div>
+      </div>
+    </section>
+       <div className="mt-5 md:mt-10 pt-3">
+
+<ShareArticle title={title}/>
+       </div>
         {/* Leave a Comment Section */}
-        <div className="mt-5 md:mt-10 pt-8 border-t border-gray-200">
+        <div className="mt-5 md:mt-10">
           <LeaveAComment />
         </div>
       </div>

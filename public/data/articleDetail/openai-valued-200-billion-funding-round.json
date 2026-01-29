@@ -57,5 +57,7 @@
                         "content":  "New enterprise features include enhanced security, custom model training, and dedicated support for Fortune 500 companies."
                     }
                 ],
-    "bookmarked":  false
+    "bookmarked":  false,
+    "summary": "OpenAI raises $15B, valuing it at $200B, funding AGI development and enterprise AI expansion."
+
 }

@@ -14,7 +14,7 @@
                     {
                         "type":  "image",
                         "content":  "CRISPR cures sickle cell",
-                        "imageUrl":  "/images/news/medical-research.webp",
+                        "imageUrl":  "/images/news/crispr-gene-therapy-sickle-cell-cure.webp",
                         "imageAlt":  "Medical research"
                     },
                     {
@@ -45,5 +45,7 @@
                         "content":  "Sickle cell affects millions worldwide, primarily in Africa and among African diaspora populations. The challenge now is making the expensive treatment accessible globally."
                     }
                 ],
-    "bookmarked":  false
+    "bookmarked":  false,
+    "summary": "CRISPR gene therapy has cured sickle cell disease in 100 patients, offering a permanent solution that eliminates the need for lifelong blood transfusions."
+
 }

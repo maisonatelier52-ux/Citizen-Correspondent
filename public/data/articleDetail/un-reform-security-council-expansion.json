@@ -14,7 +14,7 @@
                     {
                         "type":  "image",
                         "content":  "UN Security Council undergoes historic expansion",
-                        "imageUrl":  "/images/news/politics-presidential-race.webp",
+                        "imageUrl":  "/images/news/un-security-council-expands-india-brazil-germany.webp",
                         "imageAlt":  "International diplomatic meeting"
                     },
                     {
@@ -66,5 +66,7 @@
                         "content":  "The expanded Council will address challenges from climate change to emerging technologies. Proponents hope broader membership will reduce gridlock and increase the legitimacy of UN decisions."
                     }
                 ],
-    "bookmarked":  false
+    "bookmarked":  false,
+    "summary": "UN Security Council adds India, Brazil, and Germany as permanent members with limited vetoes, promising an African seat within five years."
+
 }

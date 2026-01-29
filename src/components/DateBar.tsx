@@ -52,7 +52,7 @@ const DateBar: React.FC<DateBarProps> = ({
         <div className="text-xs text-end flex-1 hidden md:block">{message}</div>
 
         {/* Right: Explore Now Button */}
-        <button className="bg-red-900 hover:bg-orange-600 text-white px-4 py-1.5 text-xs transition-colors duration-200">
+        <button className="bg-red-900  text-white px-4 py-1.5 text-xs transition-colors duration-200">
           {buttonText}
         </button>
       </div>

@@ -13,6 +13,7 @@ interface ArticleWithSidebarProps {
     title: string;
     introText: string;
     readingTime?: string;
+      summary:string;
     author: {
       name: string;
       role: string;
@@ -28,6 +29,7 @@ interface ArticleWithSidebarProps {
   onShare?: (platform: string) => void;
   onSidebarBookmarkToggle?: (index: number) => void;
   className?: string;
+
 }
 
 const ArticleWithSidebar: React.FC<ArticleWithSidebarProps> = ({
@@ -73,6 +75,7 @@ const ArticleWithSidebar: React.FC<ArticleWithSidebarProps> = ({
           author={article.author}
           lastUpdated={article.lastUpdated}
           content={article.content}
+          summary={article.summary}
           onShare={onShare}
         />
         <div className="article-end h-1"></div>

@@ -1,7 +1,7 @@
 {
     "slug":  "opinion-housing-crisis-solutions",
     "category":  "Opinion",
-    "title":  "Opinion: America\u0027s Housing Crisis Requires Bold Government Intervention",
+    "title":  "Opinion: America's Housing Crisis Requires Bold Government Intervention",
     "introText":  "Decades of restrictive zoning, NIMBYism, and underinvestment have created a housing affordability crisis that threatens the American Dream. Only bold government actionâ€”at all levelsâ€”can restore the possibility of homeownership for working families.",
     "readingTime":  "8 Min Read",
     "author":  {
@@ -14,7 +14,7 @@
                     {
                         "type":  "image",
                         "content":  "Housing affordability crisis",
-                        "imageUrl":  "/images/news/house-keys.webp",
+                        "imageUrl":  "/images/news/americas-housing-crisis-government-intervention.webp",
                         "imageAlt":  "House keys"
                     },
                     {
@@ -45,5 +45,7 @@
                         "content":  "Federal incentives for zoning reform, massive public housing investment, and tenant protections can restore housing affordability. The political will to challenge homeowner interests is the missing ingredient."
                     }
                 ],
-    "bookmarked":  false
+    "bookmarked":  false,
+    "summary": "America's housing crisis needs bold government action on zoning, investment, and tenant protections."
+
 }

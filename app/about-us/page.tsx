@@ -65,7 +65,7 @@ export default function AboutUsPage() {
         {/* <CategoryNav /> */}
         <TrendingNews />
         {/* Main Content - Our Story */}
-        <section className="py-5 px-2 md:px-16">
+        <section className="py-5 px-3 md:px-16">
           <div className="max-w-360 mx-auto">
             <div className="bg-white border border-gray-200 rounded-lg p-8 md:p-12 ">
               <div className="flex items-center gap-2 mb-8">

@@ -14,7 +14,7 @@
                     {
                         "type":  "image",
                         "content":  "Floating solar innovation",
-                        "imageUrl":  "/images/news/solar-panels.webp",
+                        "imageUrl":  "/images/news/floating-solar-farms-reservoirs.webp",
                         "imageAlt":  "Solar panels"
                     },
                     {
@@ -45,5 +45,7 @@
                         "content":  "Floating solar avoids land-use conflicts that constrain conventional solar development. The approach is particularly valuable in densely populated regions with limited available land."
                     }
                 ],
-    "bookmarked":  false
+    "bookmarked":  false,
+    "summary": "Floating solar farms are turning reservoirs into power plants, improving efficiency while conserving water and avoiding land-use conflicts."
+
 }

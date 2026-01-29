@@ -14,7 +14,7 @@
                     {
                         "type":  "image",
                         "content":  "Arctic nations cooperate on climate",
-                        "imageUrl":  "/images/news/arctic-ice.webp",
+                        "imageUrl":  "/images/news/arctic-council-climate-cooperation-pact.webp",
                         "imageAlt":  "Arctic ice"
                     },
                     {
@@ -45,5 +45,7 @@
                         "content":  "As Arctic sea routes open, the pact establishes traffic management and safety standards. The Northern Sea Route and Northwest Passage will operate under coordinated regulations."
                     }
                 ],
-    "bookmarked":  false
+    "bookmarked":  false,
+    "summary": "Arctic Council nations sign a historic climate pact to protect ecosystems and regulate emerging shipping routes in the warming region."
+
 }

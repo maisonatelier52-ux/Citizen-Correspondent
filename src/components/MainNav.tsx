@@ -7,6 +7,7 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 import Image from "next/image";
 import { Search } from "lucide-react";
+import MobileMenu from "./MobileMenu";
 
 // Lazy load SearchModal - only load when search is opened
 const SearchModal = dynamic(() => import("./SearchModal"), {
@@ -147,34 +148,12 @@ const MainNav: React.FC = () => {
                 </div>
 
                 {/* Mobile Menu */}
-          {mobileMenuOpen && (
-  <div className="lg:hidden fixed inset-0 top-16 z-40 bg-white">
-   <div className="px-6 py-4 space-y-3">
-                            {menuItems.map((item) => {
-                                const isActive =
-                                    item.href === "/"
-                                        ? pathname === "/"
-                                        : pathname.startsWith(item.href);
-
-                              
-                                return (
-                                    <Link
-                                        key={item.name}
-                                        href={item.href}
-                                        onClick={() => setMobileMenuOpen(false)}
-                                        title={item.title}
-                                        className={`block py-2 text-xs font-semibold transition-colors duration-200 ${isActive
-                                                ? "text-orange-500"
-                                                : "text-black hover:text-orange-500"
-                                            }`}
-                                    >
-                                        {item.name}
-                                    </Link>
-                                );
-                            })}
-                        </div>
-                    </div>
-                )}
+        {mobileMenuOpen && (
+  <MobileMenu
+    menuItems={menuItems}
+    onClose={() => setMobileMenuOpen(false)}
+  />
+)}
             </nav>
 
             {/* Search Modal */}

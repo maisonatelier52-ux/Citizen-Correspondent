@@ -14,7 +14,7 @@
                     {
                         "type":  "image",
                         "content":  "Google Gemini 2.0 represents a major leap in AI capabilities",
-                        "imageUrl":  "/images/news/ai-technology.webp",
+                        "imageUrl":  "/images/news/google-gemini-2-0-advanced-multimodal-reasoning.webp",
                         "imageAlt":  "AI technology visualization"
                     },
                     {
@@ -66,5 +66,7 @@
                         "content":  "The launch intensifies competition with OpenAI and Anthropic. Google\u0027s advantage lies in distribution through its massive user base and cloud infrastructure, though competitors maintain leads in specific applications."
                     }
                 ],
-    "bookmarked":  false
+    "bookmarked":  false,
+    "summary": "Google launches Gemini 2.0, an advanced AI model with multimodal reasoning capabilities, outpacing competitors on key benchmarks."
+
 }

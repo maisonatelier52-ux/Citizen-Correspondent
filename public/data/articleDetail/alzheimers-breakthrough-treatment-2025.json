@@ -14,7 +14,7 @@
                     {
                         "type":  "image",
                         "content":  "Alzheimer\u0027s treatment breakthrough",
-                        "imageUrl":  "/images/news/healthcare-medical.webp",
+                        "imageUrl":  "/images/news/alzheimers-treatment-70-percent-improvement.webp",
                         "imageAlt":  "Medical research"
                     },
                     {
@@ -45,5 +45,8 @@
                         "content":  "The FDA has granted breakthrough therapy designation, expediting review. Approval could come by mid-2026. If approved, 6 million Americans with Alzheimer\u0027s could benefit."
                     }
                 ],
-    "bookmarked":  false
+    "bookmarked":  false,
+    "summary": "A groundbreaking Alzheimer's treatment shows 70% cognitive improvement in trials, with FDA approval expected by mid-2026."
+
+    
 }

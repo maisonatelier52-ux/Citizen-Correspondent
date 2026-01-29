@@ -3,7 +3,8 @@
 import { MoreHorizontal } from 'lucide-react';
 import { Share2 } from "lucide-react";
 import { useState } from "react";
-import { FaFacebook, FaLinkedin, FaReddit, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaMedium, FaReddit, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookF } from 'react-icons/fa6';
 interface ArticleActionBarProps {
   readingTime?: number; // in minutes
   onShare?: (platform: string) => void;
@@ -51,29 +52,25 @@ export default function ArticleActionBar({
   const shareLinks = [
     {
       name: "Facebook",
-      href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
+      href: `#`,
       icon: (
         <FaFacebook className="w-5 h-5 text-current" />
       ),
     },
 
     {
-      name: "WhatsApp",
-      href: `https://api.whatsapp.com/send?text=${encodeURIComponent(
-        `${title} ${url}`
-      )}`,
+      name: "Medium",
+      href: `#`,
       icon: (
-        <FaWhatsapp className="w-5 h-5 text-current" />
+        <FaMedium className="w-5 h-5 text-current" />
       ),
     },
 
     {
-      name: "LinkedIn",
-      href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
-        url
-      )}`,
+      name: "Twitter",
+      href: `#`,
       icon: (
-        <FaLinkedin className="w-5 h-5 text-current" />
+        <FaTwitter className="w-5 h-5 text-current" />
       ),
     },
 

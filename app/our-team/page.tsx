@@ -71,7 +71,7 @@ export default function AuthorsPage() {
         <MainNav />
         <CategoryNav />
 
-        <section className="py-12 px-2 md:px-16 space-y-10 bg-gray-50">
+        <section className="py-12 px-3 md:px-16 space-y-10 bg-gray-50">
           {authors.map((author, index) => (
             <AuthorCard key={author.name} author={author} reverse={index % 2 === 1} />
           ))}

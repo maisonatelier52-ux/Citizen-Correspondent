@@ -14,7 +14,7 @@
                     {
                         "type":  "image",
                         "content":  "Cancer research breakthrough",
-                        "imageUrl":  "/images/news/medical-research.webp",
+                        "imageUrl":  "/images/news/scientist-revolutionary-cancer-treatment.webp",
                         "imageAlt":  "Cancer research"
                     },
                     {
@@ -45,5 +45,7 @@
                         "content":  "The breakthrough came in 2023. Patients with terminal diagnoses achieved complete remission. Now her approach is revolutionizing oncology, and Rodriguez is mentioned for the Nobel Prize."
                     }
                 ],
-    "bookmarked":  false
+    "bookmarked":  false,
+    "summary": "Dr. Elena Rodriguez's groundbreaking cancer immunotherapy is curing previously terminal cancers, revolutionizing oncology."
+
 }

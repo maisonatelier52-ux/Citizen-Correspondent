@@ -14,7 +14,7 @@
                     {
                         "type":  "image",
                         "content":  "Taylor Swift breaks streaming record",
-                        "imageUrl":  "/images/news/concert-music.webp",
+                        "imageUrl":  "/images/news/taylor-swift-surprise-album-spotify-record.webp",
                         "imageAlt":  "Concert performance"
                     },
                     {
@@ -45,5 +45,7 @@
                         "content":  "The release demonstrates Swift\u0027s unmatched ability to command attention in a fragmented media landscape. Other artists are studying her direct-to-fan approach."
                     }
                 ],
-    "bookmarked":  false
+    "bookmarked":  false,
+    "summary": "Taylor Swift's surprise album, 'Midnight Revisions,' broke Spotify's single-day streaming record with 500 million streams in 24 hours. The release topped charts in 92 countries and caused fan frenzy, including sold-out merchandise. Swift's direct-to-fan strategy continues to redefine the music industry."
+
 }

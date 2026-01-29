@@ -14,7 +14,7 @@
                     {
                         "type":  "image",
                         "content":  "Boeing 737 MAX orders rebound strongly",
-                        "imageUrl":  "/images/news/airplane.webp",
+                        "imageUrl":  "/images/news/boeing-737-max-orders-surge.webp",
                         "imageAlt":  "Commercial airplane"
                     },
                     {
@@ -53,5 +53,7 @@
                         "content":  "Boeing plans to increase 737 MAX production to 50 aircraft per month by late 2026, up from the current 38. The ramp-up will require significant workforce expansion at Boeing\u0027s Renton, Washington facility."
                     }
                 ],
-    "bookmarked":  false
+    "bookmarked":  false,
+    "summary": "Boeing sees a surge in 737 MAX orders after safety certifications are renewed, with over 500 new aircraft committed by airlines."
+
 }

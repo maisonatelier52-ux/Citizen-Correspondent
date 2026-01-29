@@ -14,7 +14,7 @@
                     {
                         "type":  "image",
                         "content":  "Carbon capture breakthrough",
-                        "imageUrl":  "/images/news/power-lines.webp",
+                        "imageUrl":  "/images/news/carbon-capture-technology-low-cost.webp",
                         "imageAlt":  "Carbon capture"
                     },
                     {
@@ -45,5 +45,7 @@
                         "content":  "Oil majors and tech companies have expressed interest in licensing the technology. Carbon removal credits could fund deployment, with companies paying to offset emissions."
                     }
                 ],
-    "bookmarked":  false
+    "bookmarked":  false,
+    "summary": "A new carbon capture technology removes CO2 at one-tenth the cost of existing methods, making large-scale carbon removal economically viable."
+
 }

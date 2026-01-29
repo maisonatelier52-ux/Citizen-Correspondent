@@ -25,6 +25,7 @@ interface ArticleData {
   title: string;
   introText: string;
   shortdescription?: string;
+  summary:string;
   readingTime?: string;
   author: {
     name: string;
@@ -351,6 +352,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               readingTime: articleData.readingTime,
               author: articleData.author,
               lastUpdated: articleData.lastUpdated,
+              summary:articleData.summary,
               content: articleData.content as ArticleContentBlock[],
               bookmarked: articleData.bookmarked,
             }}

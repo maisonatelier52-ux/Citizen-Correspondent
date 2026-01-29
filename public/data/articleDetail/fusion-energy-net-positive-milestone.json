@@ -14,7 +14,7 @@
                     {
                         "type":  "image",
                         "content":  "MIT fusion breakthrough",
-                        "imageUrl":  "/images/news/quantum-computer.webp",
+                        "imageUrl":  "/images/news/mit-sustained-net-positive-fusion-energy.webp",
                         "imageAlt":  "Fusion research"
                     },
                     {
@@ -45,5 +45,7 @@
                         "content":  "Commonwealth Fusion Systems, MIT\u0027s spin-off, is building a demonstration power plant targeting 2030 operation. Fusion could provide unlimited clean energy within a generation."
                     }
                 ],
-    "bookmarked":  false
+    "bookmarked":  false,
+    "summary": "MIT achieves sustained net-positive fusion energy, marking a major milestone in the path to commercial fusion power by 2030."
+
 }

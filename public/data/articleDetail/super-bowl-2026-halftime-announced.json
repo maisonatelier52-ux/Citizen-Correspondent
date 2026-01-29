@@ -14,7 +14,7 @@
                     {
                         "type":  "image",
                         "content":  "BeyoncÃ© Super Bowl announcement",
-                        "imageUrl":  "/images/news/concert-music.webp",
+                        "imageUrl":  "/images/news/super-bowl-2026-halftime-beyonce.webp",
                         "imageAlt":  "Concert"
                     },
                     {
@@ -45,5 +45,7 @@
                         "content":  "The announcement sent social media into a frenzy, with #BeyonceSuperBowl trending worldwide for 48 hours. Ticket demand for the game itself has surged following the news."
                     }
                 ],
-    "bookmarked":  false
+    "bookmarked":  false,
+    "summary": "Beyoncé will headline the Super Bowl 2026 halftime show in Las Vegas, sparking massive buzz and rising ticket demand."
+
 }

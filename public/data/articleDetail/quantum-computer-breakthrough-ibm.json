@@ -66,5 +66,7 @@
                         "content":  "Google, Microsoft, and startups like IonQ are pursuing competing approaches to quantum computing. The race to quantum advantage â€“ where quantum computers solve practical problems better than classical systems â€“ is intensifying across the industry."
                     }
                 ],
-    "bookmarked":  false
+    "bookmarked":  false,
+    "summary": "IBM's 1000-qubit quantum processor achieves quantum supremacy, demonstrating calculations impossible for classical computers and opening doors for practical quantum computing."
+
 }

@@ -1,7 +1,7 @@
 {
     "slug":  "battery-storage-breakthrough-2025",
     "category":  "Renewable Energy",
-    "title":  "Tesla\u0027s New Battery Technology Doubles Energy Storage Capacity",
+    "title":  "Tesla's New Battery Technology Doubles Energy Storage Capacity",
     "introText":  "Tesla has unveiled next-generation battery technology that doubles energy density while reducing costs 30%. The breakthrough could accelerate both electric vehicle adoption and grid-scale energy storage deployment.",
     "readingTime":  "7 Min Read",
     "author":  {
@@ -14,7 +14,7 @@
                     {
                         "type":  "image",
                         "content":  "Tesla battery breakthrough",
-                        "imageUrl":  "/images/news/ev-charging.webp",
+                        "imageUrl":  "/images/news/tesla-battery-technology-double-capacity.webp",
                         "imageAlt":  "EV charging"
                     },
                     {
@@ -45,5 +45,7 @@
                         "content":  "Grid-scale storage projects become more economical, enabling higher renewable energy penetration. Tesla\u0027s Megapack product will use the new technology starting in 2026."
                     }
                 ],
-    "bookmarked":  false
+    "bookmarked":  false,
+    "summary": "Tesla's new battery technology doubles energy density, reducing costs by 30%, and could boost electric vehicle adoption and grid-scale storage."
+
 }
