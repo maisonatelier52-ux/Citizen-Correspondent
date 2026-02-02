@@ -108,7 +108,7 @@ const [submitSuccess, setSubmitSuccess] = useState(false);
               {socialIcons.map((social) => (
                 <a
                   key={social.name}
-                  href="#"
+                  href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-gray-100 hover:bg-orange-500 rounded flex items-center justify-center text-gray-600 hover:text-white transition-colors duration-200"

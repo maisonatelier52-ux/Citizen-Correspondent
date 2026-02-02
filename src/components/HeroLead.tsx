@@ -46,7 +46,7 @@ const HeroLead: React.FC<HeroLeadProps> = ({
       <div className="max-w-360 mx-auto py-0 lg:py-2">
         <div className="flex flex-col-reverse lg:flex-row gap-3 items-start">
           {/* Text column */}
-          <div className="flex-2 space-y-4 mt-0">
+          <div className="flex-2 space-y-3 mt-0">
             {/* Category pill */}
             <div className="flex items-center gap-2 text-sm font-semibold text-gray-700">
               <span className="w-3 h-3 rounded-full bg-orange-600" />
@@ -60,24 +60,10 @@ const HeroLead: React.FC<HeroLeadProps> = ({
             </Wrapper>
 
             {/* Excerpt */}
-            <p className="text-sm text-gray-700 leading-tight">{excerpt}</p>
+            <p className="text-sm text-gray-700 leading-tight mb-1">{excerpt}</p>
 
-            {/* Meta row */}
-            <div className="flex items-center gap-4 text-[11px] text-gray-600">
-              <span>{date}</span>
-              <button
-                type="button"
-                onClick={onBookmarkToggle}
-                aria-label={bookmarked ? "Remove bookmark" : "Save bookmark"}
-                className="text-gray-500 hover:text-orange-600 transition-colors"
-              >
-                {/* <Bookmark
-                  className="w-3 h-3"
-                  fill={bookmarked ? "currentColor" : "none"}
-                  strokeWidth={bookmarked ? 0 : 2}
-                /> */}
-              </button>
-            </div>
+              <span className="text-[11px] text-gray-600">{date}</span>
+          
           </div>
 
           {/* Image column */}
