@@ -61,7 +61,6 @@ export default function AuthorsPage() {
     email: string;
     bio: string;
     photo: string;
-    website?: string;
   }>;
 
   return (

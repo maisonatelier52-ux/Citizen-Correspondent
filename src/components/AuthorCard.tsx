@@ -43,19 +43,7 @@ const AuthorCard: React.FC<AuthorCardProps> = ({ author, reverse = false }) => {
             {author.bio}
           </p>
 
-          {author.website && (
-            <p className="text-orange-500 font-medium text-sm md:text-base">
-              <Link  
-                href={author.website} 
-                className="underline hover:no-underline break-all"
-                title={`Visit ${author.name}'s website`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {author.website.replace("https://", "").replace("http://", "")}
-              </Link>
-            </p>
-          )}
+        
         </div>
 
         {/* Right: Photo */}
