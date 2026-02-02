@@ -123,11 +123,11 @@ const mainFeatureHref =
                                             aria-label={mainFeature.bookmarked ? "Remove bookmark" : "Save bookmark"}
                                             className="text-white hover:text-orange-400 transition-colors"
                                         >
-                                            <Bookmark
+                                            {/* <Bookmark
                                                 className="w-3 h-3"
                                                 fill={mainFeature.bookmarked ? "currentColor" : "none"}
                                                 strokeWidth={mainFeature.bookmarked ? 0 : 2}
-                                            />
+                                            /> */}
                                         </button>
                                     </div>
                                 </div>
@@ -170,11 +170,11 @@ const mainFeatureHref =
                                             aria-label={article.bookmarked ? "Remove bookmark" : "Save bookmark"}
                                             className="text-gray-400 hover:text-orange-600 transition-colors"
                                         >
-                                            <Bookmark
+                                            {/* <Bookmark
                                                 className="w-3 h-3"
                                                 fill={article.bookmarked ? "currentColor" : "none"}
                                                 strokeWidth={article.bookmarked ? 0 : 2}
-                                            />
+                                            /> */}
                                         </button>
                                     </div>
                                 </div>

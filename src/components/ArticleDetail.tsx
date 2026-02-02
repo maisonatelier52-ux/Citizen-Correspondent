@@ -96,29 +96,29 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
         </div>
 
         {/* Main Title */}
-        <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 mb-3 sm:mb-6 leading-tight">
+        <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 mb-3 leading-[1.1]">
           {title}
         </h1>
 
         {/* Introductory Text */}
-        <p className="text-sm sm:text-base text-gray-700 leading-tight mb-2">
+        <p className="text-sm sm:text-base text-gray-700 leading-tight mb-1">
           {introText}
         </p>
 
 
         {/* Article Action Bar */}
-        <ArticleActionBar
+        {/* <ArticleActionBar
           readingTime={parseInt(readingTime.replace(/[^0-9]/g, ""))}
           onShare={onShare}
           onBookmarkToggle={onBookmarkToggle}
           onMoreOptions={() => { }}
-        />
+        /> */}
 
         {/* Author Section */}
-        <div className="flex items-center gap-4 mb-4 pt-2">
+        <div className="flex items-center gap-2 md:gap-4 mb-4 pt-2">
           {/* Author Image */}
 
-          <div className="relative w-12 h-12 sm:w-16 sm:h-16 shrink-0">
+          <div className="relative w-9 h-9 sm:w-12 sm:h-12 shrink-0">
             <Link href="/our-team" className="flex items-center gap-4">
               <Image
                 src={author.image}
@@ -134,19 +134,19 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
           <div className="flex-1">
             <div className="flex items-center justify-between flex-wrap gap-4">
               <Link href="/our-team" className="flex items-center gap-4">
-                <div className="flex flex-col justify-center gap-1">
-                  <p className="text-[11px] sm:text-[14px] font-medium text-gray-900">
+                <div className="flex flex-col justify-center">
+                  <p className="text-[10px] sm:text-[12px] font-medium text-gray-900">
                     By {author.name} – {author.role}
                   </p>
 
-                  <div className="flex items-center gap-2 text-[11px] text-gray-600">
+                  <div className="flex items-center gap-2 text-[10px] text-gray-600">
                     <span>Last Updated: {lastUpdated}</span>
 
                     {/* dot */}
-                    <span className="text-gray-400">•</span>
+                    {/* <span className="text-gray-400">•</span> */}
 
                     {/* Bookmark */}
-                    <button
+                    {/* <button
                       onClick={onBookmarkToggle}
                       className="flex items-center hover:text-orange-500 transition-colors"
                       aria-label={bookmarked ? "Remove bookmark" : "Save bookmark"}
@@ -157,7 +157,7 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
                         strokeWidth={bookmarked ? 0 : 2}
                       />
                       <span className="ml-1">save it</span>
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </Link>
@@ -227,7 +227,7 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
             <div className="mt-2 flex items-center justify-center gap-3">
               <span className="h-[2px] w-8 bg-red-600"></span>
               <span className="text-[12px] font-medium text-gray-500">
-                Dieter Rams
+                {author.name}
               </span>
             </div>
           </div>

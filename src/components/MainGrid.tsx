@@ -123,11 +123,11 @@ const MainGrid: React.FC<MainGridProps> = ({
                       onClick={() => onBookmarkToggle?.(index)}
                       className="text-gray-400 hover:text-orange-600 transition-colors"
                     >
-                      <Bookmark
+                      {/* <Bookmark
                         className="w-3 h-3"
                         fill={item.bookmarked ? "currentColor" : "none"}
                         strokeWidth={item.bookmarked ? 0 : 2}
-                      />
+                      /> */}
                     </button>
                   </div>
                 </div>
@@ -152,7 +152,7 @@ const MainGrid: React.FC<MainGridProps> = ({
             <button
               type="button"
               onClick={handleShowLess}
-              className="text-sm font-medium text-gray-700 hover:text-orange-600 transition-colors"
+              className="text-sm font-medium cursor-pointer text-gray-700 hover:text-orange-600 transition-colors"
             >
               {showLessLabel}
             </button>

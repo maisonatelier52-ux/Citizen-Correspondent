@@ -101,7 +101,7 @@ export async function generateMetadata(
       }
     }
 
-    return "https://www.citizencorrespondent.com/images/cc-logo.svg";
+    return "https://www.citizencorrespondent.com/images/citizen-correspondent-logo.webp";
   };
 
   const imageUrl = getImageUrl();
@@ -277,7 +277,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
 
     // Fallback to a default image if no image is found
-    return "https://www.citizencorrespondent.com/images/cc-logo.svg";
+    return "https://www.citizencorrespondent.com/images/citizen-correspondent-logo.webp";
   };
 
   const schemaImageUrl = getSchemaImageUrl();
@@ -300,7 +300,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       name: "CitizenCorrespondent",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.citizencorrespondent.com/images/cc-logo.svg",
+        url: "https://www.citizencorrespondent.com/images/citizen-correspondent-logo.webp",
       },
     },
     mainEntityOfPage: {
@@ -317,7 +317,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   };
 
   // Add image if available
-  if (schemaImageUrl && schemaImageUrl !== "https://www.citizencorrespondent.com/images/cc-logo.svg") {
+  if (schemaImageUrl && schemaImageUrl !== "https://www.citizencorrespondent.com/images/citizen-correspondent-logo.webp") {
     schemaData.image = {
       "@type": "ImageObject",
       url: schemaImageUrl,
@@ -328,7 +328,6 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
   return (
     <>
-      {/* JSON-LD Schema for SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

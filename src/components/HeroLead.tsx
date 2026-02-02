@@ -71,11 +71,11 @@ const HeroLead: React.FC<HeroLeadProps> = ({
                 aria-label={bookmarked ? "Remove bookmark" : "Save bookmark"}
                 className="text-gray-500 hover:text-orange-600 transition-colors"
               >
-                <Bookmark
+                {/* <Bookmark
                   className="w-3 h-3"
                   fill={bookmarked ? "currentColor" : "none"}
                   strokeWidth={bookmarked ? 0 : 2}
-                />
+                /> */}
               </button>
             </div>
           </div>

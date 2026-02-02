@@ -75,12 +75,12 @@ const MainNav: React.FC = () => {
         <>
             <nav className="sticky top-0 z-50 bg-white border-b border-gray-200">
                 <div className="max-w-360 mx-auto px-3 md:px-16">
-                    <div className="flex items-center justify-between h-16">
+                    <div className="flex items-center justify-between py-2">
                         <div className="flex items-center justify-between gap-6">
                             {/* Left: Logo */}
                             <Link href="/" title="CitizenCorrespondent Home" className="flex items-center">
                                 <Image
-                                    src="/images/cc-logo.svg"
+                                    src="/images/citizen-correspondent-logo.webp"
                                     alt="CitizenCorrespondent"
                                     width={200}
                                     height={30}

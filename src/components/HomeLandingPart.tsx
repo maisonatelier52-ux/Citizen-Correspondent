@@ -65,11 +65,11 @@ const HomeLandingPart: React.FC<HomeLandingPartProps> = ({
                                 aria-label={mainFeature.bookmarked ? "Remove bookmark" : "Save bookmark"}
                                 className="ml-auto text-gray-500 hover:text-orange-600 transition-colors"
                             >
-                                <Bookmark
+                                {/* <Bookmark
                                     className="w-3 h-3"
                                     fill={mainFeature.bookmarked ? "currentColor" : "none"}
                                     strokeWidth={mainFeature.bookmarked ? 0 : 2}
-                                />
+                                /> */}
                             </button>
                         </div>
 

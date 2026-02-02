@@ -62,11 +62,11 @@ const HorizontalSidebar: React.FC<HorizontalSidebarProps> = ({
                 onClick={() => onBookmarkToggle?.(index)}
                 className="text-gray-400 hover:text-orange-600 transition-colors"
               >
-                <Bookmark
+                {/* <Bookmark
                   className="w-3 h-3"
                   fill={item.bookmarked ? "currentColor" : "none"}
                   strokeWidth={item.bookmarked ? 0 : 2}
-                />
+                /> */}
               </button>
             </div>
           </div>

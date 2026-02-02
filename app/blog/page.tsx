@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://www.citizencorrespondent.com/images/cc-logo.svg",
+        url: "https://www.citizencorrespondent.com/images/citizen-correspondent-logo.webp",
         width: 1200,
         height: 630,
         alt: "Blog | CitizenCorrespondent",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Blog | CitizenCorrespondent",
     description: "Explore our blog for curated articles, in-depth analysis, and featured stories.",
-    images: ["https://www.citizencorrespondent.com/images/cc-logo.svg"],
+    images: ["https://www.citizencorrespondent.com/images/citizen-correspondent-logo.webp"],
   },
   robots: {
     index: true,
@@ -86,7 +86,7 @@ export default function BlogPage() {
               name: "CitizenCorrespondent",
               logo: {
                 "@type": "ImageObject",
-                url: "https://www.citizencorrespondent.com/images/cc-logo.svg",
+                url: "https://www.citizencorrespondent.com/images/citizen-correspondent-logo.webp",
               },
             },
           }),

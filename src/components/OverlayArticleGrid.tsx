@@ -83,11 +83,11 @@ const OverlayArticleGrid: React.FC<OverlayArticleGridProps> = ({
                       aria-label={item.bookmarked ? "Remove bookmark" : "Save bookmark"}
                       className="text-white hover:text-orange-400 transition-colors"
                     >
-                      <Bookmark
+                      {/* <Bookmark
                         className="w-3 h-3 sm:w-4 sm:h-4"
                         fill={item.bookmarked ? "currentColor" : "none"}
                         strokeWidth={item.bookmarked ? 0 : 2}
-                      />
+                      /> */}
                     </button>
                   </div>
                 </div>

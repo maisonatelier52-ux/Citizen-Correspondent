@@ -93,7 +93,7 @@ const [submitSuccess, setSubmitSuccess] = useState(false);
             {/* Logo */}
             <Link href="/" title="CitizenCorrespondent Home" className="flex items-center">
               <Image
-                src="/images/cc-logo.svg"
+                src="/images/citizen-correspondent-logo.webp"
                 alt="CitizenCorrespondent"
                 width={200}
                 height={30}

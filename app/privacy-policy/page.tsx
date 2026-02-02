@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         locale: "en_US",
         images: [
             {
-                url: "https://www.citizencorrespondent.com/images/cc-logo.svg",
+                url: "https://www.citizencorrespondent.com/images/citizen-correspondent-logo.webp",
                 width: 1200,
                 height: 630,
                 alt: "Privacy Policy | CitizenCorrespondent",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Privacy Policy | CitizenCorrespondent",
         description: "Read CitizenCorrespondent's Privacy Policy to understand how we protect your information.",
-        images: ["https://www.citizencorrespondent.com/images/cc-logo.svg"],
+        images: ["https://www.citizencorrespondent.com/images/citizen-correspondent-logo.webp"],
     },
     robots: {
         index: true,
