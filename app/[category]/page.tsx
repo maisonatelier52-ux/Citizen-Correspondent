@@ -17,7 +17,6 @@ import { Metadata } from "next";
 import TrendingNews from "@/src/components/TrendingNews";
 
 
-console.log('helo is here ')
 interface CategoryPageProps {
     params: Promise<{
         category: string;
