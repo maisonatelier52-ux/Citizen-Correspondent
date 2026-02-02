@@ -99,7 +99,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ menuItems, onClose }) => {
     </span>
 
     <div className="flex items-center gap-4 text-gray-700 ">
-      <Link href="#" aria-label="YouTube" className="hover:text-orange-500">
+      {/* <Link href="#" aria-label="YouTube" className="hover:text-orange-500">
      <FaFacebookF />
       </Link>
       <Link href="#" aria-label="Instagram" className="hover:text-orange-500">
@@ -107,13 +107,13 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ menuItems, onClose }) => {
       </Link>
       <Link href="#" aria-label="Medium" className="hover:text-orange-500">
         <FaMedium/>
-      </Link>
-      <Link href="#" aria-label="Facebook" className="hover:text-orange-500">
+      </Link> */}
+      <Link href="https://substack.com/@citizencorrespondent" aria-label="Facebook" className="hover:text-orange-500">
         <SiSubstack/>
       </Link>
-      <Link href="#" aria-label="RSS" className="hover:text-orange-500">
+      {/* <Link href="#" aria-label="RSS" className="hover:text-orange-500">
         <FaReddit/>
-      </Link>
+      </Link> */}
     </div>
     
   </div>
