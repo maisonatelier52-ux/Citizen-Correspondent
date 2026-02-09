@@ -16,20 +16,24 @@ export interface ArticleContentBlock {
   level?: number; // For heading levels (1-6)
 }
 
+interface Sub {
+  title:string;
+  descr:string;
+}
+interface Author{
+  name:string;
+  image:string;
+  role:string;
+}
 export interface ArticleDetailProps {
   slug: string;
   category: string;
   title: string;
-  introText: string;
-  readingTime?: string;
-  author: {
-    name: string;
-    role: string;
-    image: string;
-  };
-  lastUpdated: string;
-  content: ArticleContentBlock[];
-  summary: string;
+  shortdescription: string;
+  date: string;
+  image:string;
+  sub: Sub[];
+  author:Author;
   onShare?: (platform: string) => void;
   className?: string;
 }
@@ -38,48 +42,15 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
   slug,
   category,
   title,
-  introText,
-  readingTime = "8 Min Read",
+  image,
+  shortdescription,
+  date,
+  sub,
   author,
-  lastUpdated,
-  content,
-  summary,
-  onShare,
   className = "",
 }) => {
 
-  const [bookmarked, setBookmarked] = useState(false);
-
-  const onBookmarkToggle = () => {
-    setBookmarked((prev) => !prev);
-  };
-
-
-  const handleShare = (platform: string) => {
-    if (onShare) {
-      onShare(platform);
-    } else {
-      const url = typeof window !== "undefined" ? window.location.href : "";
-      const text = title;
-
-      switch (platform) {
-        case "twitter":
-          window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`, "_blank");
-          break;
-        case "email":
-          window.location.href = `mailto:?subject=${encodeURIComponent(text)}&body=${encodeURIComponent(url)}`;
-          break;
-        case "link":
-          if (navigator.clipboard) {
-            navigator.clipboard.writeText(url);
-          }
-          break;
-        case "print":
-          window.print();
-          break;
-      }
-    }
-  };
+console.log(author,'author')
 
   return (
     <article className={`bg-white ${className}`}>
@@ -102,7 +73,7 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
 
         {/* Introductory Text */}
         <p className="text-sm sm:text-base text-gray-700 leading-tight mb-1">
-          {introText}
+          {shortdescription}
         </p>
 
 
@@ -120,14 +91,14 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
 
           <div className="relative w-9 h-9 sm:w-12 sm:h-12 shrink-0">
             <Link href="/our-team" className="flex items-center gap-4">
-              <Image
+          
+            </Link>    <Image
                 src={author.image}
                 alt={author.name}
                 fill
                 className="rounded-full object-cover"
                 sizes="48px sm:64px"
               />
-            </Link>
           </div>
 
           {/* Author Details */}
@@ -140,7 +111,7 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
                   </p>
 
                   <div className="flex items-center gap-2 text-[10px] text-gray-600">
-                    <span>Last Updated: {lastUpdated}</span>
+                    <span>Last Updated: {date}</span>
 
                     {/* dot */}
                     {/* <span className="text-gray-400">•</span> */}
@@ -169,69 +140,42 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
 
         {/* Article Content */}
         <div className="prose prose-lg max-w-none">
-          {content.map((block, index) => {
-            if (block.type === "heading") {
-              const level = block.level || 2;
-              const HeadingTag = `h${level}` as React.ElementType;
-              return (
-                <HeadingTag
-                  key={index}
-                  className="text-xl sm:text-2xl md:text-[27px] font-bold text-gray-900 md:mt-4 mt-2 mb-4 md:mb-5 first:mt-0 relative inline-block after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-1/4 after:h-0.5 after:bg-red-600 font-serif"
-                >
-                  {block.content}
-                </HeadingTag>
-              );
-            } else if (block.type === "image") {
-              return (
-                <div key={index} className="my-2 sm:my-2">
+        
+                <div key={slug} className="my-2 sm:my-2">
                   <div className="relative w-full aspect-video bg-gray-100">
                     <Image
-                      src={block.imageUrl || ""}
-                      alt={block.imageAlt || block.content}
+                      src={image}
+                      alt={title}
                       fill
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 896px"
                     />
                   </div>
-                  {block.content && (
-                    <p className="text-xs sm:text-[12px] text-gray-600 mt-2 italic">{block.content}</p>
-                  )}
+                 
+                    {/* <p className="text-xs sm:text-[12px] text-gray-600 mt-2 italic">{sub[0].descr}</p> */}
+               
                 </div>
-              );
-            } else if (block.type === "paragraph") {
-              return (
-                <p key={index} className="text-sm sm:text-[15px] text-gray-700 leading-tight mb-2">
-                  {block.content}
-                </p>
-              );
-            }
-            return null;
-          })}
+             
+             {sub?.map((item, index) => (
+  <div key={index}>
+    {/* Show heading only if title exists */}
+    {item.title && item.title.trim() !== "" && (
+      <h2
+        className="text-xl sm:text-2xl md:text-[27px] font-bold text-gray-900 md:mt-4 mt-2 mb-4 md:mb-5 first:mt-0 relative inline-block after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-1/4 after:h-0.5 after:bg-red-600 font-serif"
+      >
+        {item.title}
+      </h2>
+    )}
+
+    {/* Description always shown if exists */}
+    {item.descr && (
+      <p className="text-sm sm:text-[15px] text-gray-700 leading-tight mb-2">
+        {item.descr}
+      </p>
+    )}
+  </div>
+))}
         </div>
-
-
-        <section className="w-full bg-white pt-2 md:pt-5">
-          <div className="mx-auto max-w-4xl text-center px-4">
-            {/* Quote Icon */}
-            <div className="text-[35px] md:text-6xl font-bold text-red-600 leading-none">
-              “
-            </div>
-
-            {/* Quote Text */}
-            <p className="text-[16px] md:text-[26px] font-semibold text-gray-900 leading-tight">
-              {summary}
-
-            </p>
-
-            {/* Author */}
-            <div className="mt-2 flex items-center justify-center gap-3">
-              <span className="h-[2px] w-8 bg-red-600"></span>
-              <span className="text-[12px] font-medium text-gray-500">
-                {author.name}
-              </span>
-            </div>
-          </div>
-        </section>
         <div className="mt-5 md:mt-10 pt-3">
 
           <ShareArticle title={title} />

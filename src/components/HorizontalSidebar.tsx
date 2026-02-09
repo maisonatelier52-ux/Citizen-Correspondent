@@ -4,6 +4,10 @@ import React from "react";
 import Link from "next/link";
 import { Bookmark, Dot, TrendingUp } from "lucide-react";
 
+interface Sub {
+  title:string;
+  descr:string;
+}
 export interface HorizontalSidebarItem {
   category: string;
   title: string;
@@ -12,6 +16,9 @@ export interface HorizontalSidebarItem {
   bookmarked?: boolean;
   slug?: string;
   href?: string;
+  image:string;
+  sub:Sub[];
+  shortdescription:string;
 }
 
 interface HorizontalSidebarProps {

@@ -9,16 +9,17 @@ import FinanceData from '../../public/data/financePage/finance-featureCategoryPa
 import HealthData from '../../public/data/healthPage/health-featureCategoryPart.json';
 import EducationData from '../../public/data/educationPage/education-featureCategoryPart.json';
 import GlobalAffairsData from '../../public/data/global-affairsPage/global-affairs-featureCategoryPart.json';
+import Link from 'next/link';
 
 const newsItems = [
-  { label: 'WORLD', title: WorldData.featuredArticle.title },
-  { label: 'BUSINESS', title: BusinessData.featuredArticle.title },
-  { label: 'POLITICS', title: PoliticsData.featuredArticle.title },
-  { label: 'OPINION', title: OpinionData.featuredArticle.title },
-  { label: 'FINANCE', title: FinanceData.featuredArticle.title },
-  { label: 'HEALTH', title: HealthData.featuredArticle.title },
-  { label: 'EDUCATION', title: EducationData.featuredArticle.title },
-  { label: 'GLOBAL', title: GlobalAffairsData.featuredArticle.title },
+  { label: 'WORLD', title: WorldData.featuredArticle.title, slug:  WorldData.featuredArticle.slug},
+  { label: 'BUSINESS', title: BusinessData.featuredArticle.title, slug: BusinessData.featuredArticle.slug },
+  { label: 'POLITICS', title: PoliticsData.featuredArticle.title, slug:PoliticsData.featuredArticle.slug },
+  { label: 'OPINION', title: OpinionData.featuredArticle.title, slug:OpinionData.featuredArticle.slug },
+  { label: 'FINANCE', title: FinanceData.featuredArticle.title, slug:FinanceData.featuredArticle.slug},
+  { label: 'HEALTH', title: HealthData.featuredArticle.title, slug:HealthData.featuredArticle.slug },
+  { label: 'EDUCATION', title: EducationData.featuredArticle.title, slug:EducationData.featuredArticle.slug },
+  { label: 'GLOBAL', title: GlobalAffairsData.featuredArticle.title, slug:GlobalAffairsData.featuredArticle.slug },
 ];
 
 
@@ -26,6 +27,10 @@ const newsItems = [
 const tickerItems = [...newsItems, ...newsItems];
 
 export default function TrendingNews() {
+
+  const normalizeCategory = (value: string) =>
+    value.toLowerCase().trim().replace(/\s+/g, "-");
+
   return (
     <div className="w-full overflow-hidden bg-black text-white border-y border-gray-800">
       <div className="ticker-track flex whitespace-nowrap py-1.5">
@@ -35,14 +40,18 @@ export default function TrendingNews() {
             className="flex items-center mx-8 gap-3 text-sm"
           >
             {/* Styled prefix badge */}
-         <span className="bg-red-700 text-white text-xs font-bold px-3 py-1 uppercase tracking-wider">
-  {item.label}
-</span>
+            <Link href={`/${normalizeCategory(item.label)}`}>
+              <span className="bg-red-700 text-white text-xs font-bold px-3 py-1 uppercase tracking-wider">
+                {item.label}
+              </span>
+            </Link>
             {/* Headline */}
+            <Link href={`/${normalizeCategory(item.label)}/${item.slug}`}>
+
             <span className="text-gray-100 font-medium">
               {item.title}
             </span>
-
+</Link>
             {/* Animated separator */}
             <span className="text-gray-600 text-lg">|</span>
           </div>

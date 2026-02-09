@@ -1,50 +1,50 @@
 [
   {
     "name": "Sarah Mitchell",
-    "email": "sarah.mitchell@citizencorrespondent.com",
-    "bio": "Sarah Mitchell is an award-winning investigative journalist with over 15 years of experience covering global politics and international affairs. Her in-depth reporting has exposed corruption scandals and human rights violations across multiple continents. Sarah holds a Master's degree in International Relations from Oxford University and has been recognized with the Pulitzer Prize for International Reporting.",
-    "photo": "/images/authors/author-1.webp"
+    "email": "sarah.mitchell@Qlork.com",
+    "bio": "Senior News Correspondent covering global news, business news, and major current events, delivering accurate and timely reporting across multiple sectors. Specializes in breaking news, international affairs, market trends, and in-depth analysis of emerging developments. Focused on fact-based journalism, trending topics, and comprehensive coverage to keep readers informed on the world’s most important stories. Committed to editorial integrity, credibility, and high-quality SEO-optimized news content that meets modern digital journalism standards.",
+    "photo": "/images/authors/sarah-mitchell.webp"
   },
   {
     "name": "James Chen",
-    "email": "james.chen@citizencorrespondent.com",
-    "bio": "James Chen is a technology and business correspondent specializing in artificial intelligence, startups, and the intersection of innovation and policy. With a background in computer science and journalism, James brings a unique perspective to tech reporting. His work has been featured in major publications and he regularly appears as a technology analyst on leading news networks.",
-    "photo": "/images/authors/author-2.webp"
+    "email": "james.chen@Qlork.com",
+    "bio": "Senior Editorial Analyst specializing in global markets, business strategy, and economic trends, providing data-driven insights and expert commentary. Covers finance news, industry developments, and policy impacts with clear analysis and context. Focused on market intelligence, investment trends, and emerging business opportunities shaping the global economy. Committed to delivering accurate, research-based content that supports informed decision-making and high-quality financial journalism.",
+    "photo": "/images/authors/james-chen.webp"
   },
   {
     "name": "Maria Rodriguez",
-    "email": "maria.rodriguez@citizencorrespondent.com",
-    "bio": "Maria Rodriguez is an environmental journalist and climate change expert with a passion for covering renewable energy, sustainability, and environmental policy. She has reported from over 40 countries, documenting the impacts of climate change and the solutions being implemented worldwide. Maria holds a Ph.D. in Environmental Science and has authored two books on climate action.",
-    "photo": "/images/authors/author-3.webp"
+    "email": "maria.rodriguez@Qlork.com",
+    "bio": "Senior Staff Writer covering global news, social trends, and human-interest stories with clear and engaging reporting. Focuses on current events, public issues, and community developments across multiple sectors. Specializes in feature writing, in-depth storytelling, and timely coverage of topics shaping society. Committed to accurate, reader-focused journalism that delivers credible and informative news content.",
+    "photo": "/images/authors/maria-rodriguez.webp"
   },
   {
     "name": "David Thompson",
-    "email": "david.thompson@citizencorrespondent.com",
-    "bio": "David Thompson is a veteran financial journalist with two decades of experience covering markets, economics, and corporate finance. He has broken numerous stories on major financial institutions and economic policies. David's analytical reporting has helped readers navigate complex financial landscapes, and he is a regular contributor to financial news programs and economic forums.",
-    "photo": "/images/authors/author-4.webp"
+    "email": "david.thompson@Qlork.com",
+    "bio": "News Reporter covering breaking news, current events, and developing stories across multiple sectors. Focuses on timely updates, on-the-ground reporting, and clear coverage of local and global developments. Specializes in fast, accurate reporting on trending topics, public affairs, and major incidents. Committed to delivering reliable, fact-checked news that keeps readers informed in real time.",
+    "photo": "/images/authors/david-thompson.webp"
   },
   {
     "name": "Aisha Patel",
-    "email": "aisha.patel@citizencorrespondent.com",
-    "bio": "Aisha Patel is a health and science journalist focusing on medical breakthroughs, public health policy, and healthcare innovation. Her reporting has covered everything from pandemic responses to cutting-edge medical research. Aisha holds a Master's in Public Health and has won multiple awards for her coverage of global health crises and medical ethics.",
-    "photo": "/images/authors/author-5.webp"
+    "email": "aisha.patel@Qlork.com",
+    "bio": "Global Affairs Correspondent covering international news, geopolitical developments, and cross-border policy issues. Focuses on global politics, economic relations, and major events shaping the international landscape. Provides in-depth analysis and timely reporting on diplomacy, security, and emerging global trends. Committed to accurate, balanced journalism that helps readers understand complex world affairs.",
+    "photo": "/images/authors/aisha-patel.webp"
   },
   {
     "name": "Robert Kim",
-    "email": "robert.kim@citizencorrespondent.com",
-    "bio": "Robert Kim is a political correspondent specializing in elections, policy analysis, and government accountability. With extensive experience covering local, state, and federal politics, Robert provides readers with clear, unbiased analysis of complex political developments. His investigative work has led to policy changes and increased government transparency.",
-    "photo": "/images/authors/author-6.webp"
+    "email": "robert.kim@Qlork.com",
+    "bio": "Staff Correspondent covering global news, business developments, and major current events across multiple sectors. Focuses on breaking stories, industry trends, and public affairs with clear and timely reporting. Provides in-depth coverage of emerging issues, market movements, and international developments. Committed to accurate, fact-based journalism that keeps readers informed and engaged.",
+    "photo": "/images/authors/robert-kim.webp"
   },
   {
     "name": "Emily Watson",
-    "email": "emily.watson@citizencorrespondent.com",
+    "email": "emily.watson@Qlork.com",
     "bio": "Emily Watson is a versatile journalist covering education, social issues, and cultural trends. With a background in sociology and journalism, Emily brings depth and empathy to stories about education reform, social justice, and community development. Her feature articles have sparked important conversations and policy discussions across the country.",
-    "photo": "/images/authors/author-7.webp"
+    "photo": "/images/authors/emily-watson.webp"
   },
   {
     "name": "Michael Anderson",
-    "email": "michael.anderson@citizencorrespondent.com",
+    "email": "michael.anderson@Qlork.com",
     "bio": "Michael Anderson is a breaking news reporter and foreign correspondent with expertise in international relations, conflict zones, and global security. He has reported from war zones, covered major international summits, and broken stories on diplomatic developments. Michael's fearless reporting has earned him recognition from press organizations worldwide.",
-    "photo": "/images/authors/author-8.webp"
+    "photo": "/images/authors/michael-anderson.webp"
   }
 ]

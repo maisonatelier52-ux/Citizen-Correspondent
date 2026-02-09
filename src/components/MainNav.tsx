@@ -35,7 +35,6 @@ const MainNav: React.FC = () => {
         { name: "Featured", href: "/featured", title: "Featured News" },
         // { name: "Climate Change", href: "/climate-change", title: "Climate Change News" },
         { name: "Hot", href: "/hot", title: "Hot News" },
-        { name: "Research", href: "/research", title: "Research News" },
 
 
 
@@ -75,15 +74,15 @@ const MainNav: React.FC = () => {
         <>
             <nav className="sticky top-0 z-50 bg-white border-b border-gray-200">
                 <div className="max-w-360 mx-auto px-3 md:px-16">
-                    <div className="flex items-center justify-between py-2">
+                    <div className="flex items-center justify-between py-4">
                         <div className="flex items-center justify-between gap-6">
                             {/* Left: Logo */}
-                            <Link href="/" title="CitizenCorrespondent Home" className="flex items-center">
+                            <Link href="/" title="Qlork Home" className="flex items-center">
                                 <Image
-                                    src="/images/citizen-correspondent-logo.webp"
-                                    alt="CitizenCorrespondent"
-                                    width={200}
-                                    height={30}
+                                    src="/images/news/qlork-logo.webp"
+                                    alt="Qlork"
+                                    width={90}
+                                    height={20}
                                     priority
                                 />
                             </Link>

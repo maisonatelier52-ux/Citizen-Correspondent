@@ -9,7 +9,7 @@ import Sidebar, { SidebarItem } from "./Sidebar";
 export interface LandingFeature {
     category: string;
     title: string;
-    excerpt?: string;
+    shortdescription: string;
     date: string;
     image: string;
     slug?: string;
@@ -20,7 +20,6 @@ export interface LandingFeature {
 
 interface HomeLandingPartProps {
     mainFeature: LandingFeature;
-    secondaryFeature: LandingFeature;
     sidebarItems: SidebarItem[];
     onMainBookmarkToggle?: () => void;
     onSecondaryBookmarkToggle?: () => void;
@@ -32,7 +31,6 @@ const buildLink = (feature: LandingFeature) =>
 
 const HomeLandingPart: React.FC<HomeLandingPartProps> = ({
     mainFeature,
-    secondaryFeature,
     sidebarItems,
     onMainBookmarkToggle,
     onSecondaryBookmarkToggle,
@@ -91,9 +89,9 @@ const HomeLandingPart: React.FC<HomeLandingPartProps> = ({
                             </div>
                         </Link>
 
-                        {mainFeature.excerpt && (
-                            <p className="text-sm text-gray-700 leading-[1.3]">{mainFeature.excerpt}</p>
-                        )}
+                       
+                            <p className="text-sm text-gray-700 leading-[1.3]">{mainFeature.shortdescription}</p>
+              
                     </article>
 
                     {/* Middle: Secondary feature */}

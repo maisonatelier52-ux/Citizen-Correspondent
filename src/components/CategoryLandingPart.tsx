@@ -8,7 +8,7 @@ import { Bookmark, Dot } from "lucide-react";
 export interface CategoryLandingMainFeature {
     slug: string;
     title: string;
-    excerpt: string;
+    shortdescription: string;
     date: string;
     image: string;
     tags?: string[];
@@ -110,25 +110,10 @@ const mainFeatureHref =
                                             {mainFeature.title}
                                         </h2>
                                     </Link>
-                                    <p className="text-sm text-gray-200 leading-tight mt-1 line-clamp-3">{mainFeature.excerpt}</p>
+                                    <p className="text-sm text-gray-200 leading-tight mt-1 line-clamp-3">{mainFeature.shortdescription}</p>
                                     <div className="flex items-center justify-between text-sm">
                                         <span className="text-[11px]">{mainFeature.date}</span>
-                                        <button
-                                            type="button"
-                                            onClick={(e) => {
-                                                e.preventDefault();
-                                                e.stopPropagation();
-                                                onMainBookmarkToggle?.();
-                                            }}
-                                            aria-label={mainFeature.bookmarked ? "Remove bookmark" : "Save bookmark"}
-                                            className="text-white hover:text-orange-400 transition-colors"
-                                        >
-                                            {/* <Bookmark
-                                                className="w-3 h-3"
-                                                fill={mainFeature.bookmarked ? "currentColor" : "none"}
-                                                strokeWidth={mainFeature.bookmarked ? 0 : 2}
-                                            /> */}
-                                        </button>
+                                       
                                     </div>
                                 </div>
                             </div>

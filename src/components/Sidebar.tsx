@@ -9,9 +9,7 @@ export interface SidebarItem {
   title: string;
   date: string;
   image: string;
-  live?: boolean;
-  bookmarked?: boolean;
-  slug?: string;
+  slug: string;
   href?: string;
 }
 
@@ -36,15 +34,10 @@ const Sidebar: React.FC<SidebarProps> = ({ items, heading, onBookmarkToggle }) =
             <div className="flex-1 space-y-1">
               <div className="flex items-center gap-2 text-sm text-gray-600">
                 <span>{item.category}</span>
-                {item.live && (
-                  <span className="flex items-center gap-1 text-red-600 font-semibold">
-                    <Dot className="w-5 h-5 fill-red-600 text-red-600" />
-                    Live
-                  </span>
-                )}
+
               </div>
               <Link
-                href={item.href || (item.slug ? `/${item.category.toLocaleLowerCase()}/${item.slug}` : "#")}
+                href={item.href || (item.slug ? `/${item.category}/${item.slug}` : "#")}
                 className="block"
                 title={item.title}
               >
@@ -54,23 +47,12 @@ const Sidebar: React.FC<SidebarProps> = ({ items, heading, onBookmarkToggle }) =
               </Link>
               <div className="flex items-center gap-3 text-[11px] text-gray-600">
                 <span>{item.date}</span>
-                <button
-                  type="button"
-                  aria-label={item.bookmarked ? "Remove bookmark" : "Save bookmark"}
-                  onClick={() => onBookmarkToggle?.(index)}
-                  className="text-gray-400 hover:text-orange-600 transition-colors"
-                >
-                  {/* <Bookmark
-                    className="w-3 h-3"
-                    fill={item.bookmarked ? "currentColor" : "none"}
-                    strokeWidth={item.bookmarked ? 0 : 2}
-                  /> */}
-                </button>
+               
               </div>
             </div>
 
             <Link
-              href={item.href || (item.slug ? `/${item.category.toLocaleLowerCase()}/${item.slug}` : "#")}
+              href={item.href || (item.slug ? `/${item.category}/${item.slug}` : "#")}
               className="w-30 h-25 shrink-0 overflow-hidden border border-gray-200 block"
               title={item.title}
             >

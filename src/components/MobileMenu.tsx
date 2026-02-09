@@ -26,8 +26,8 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ menuItems, onClose }) => {
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
-    <div className="lg:hidden fixed inset-0 top-16 z-40 bg-white">
-      <div className="px-6 pt-12 pb-6 space-y-6">
+    <div className="lg:hidden fixed inset-0 top-13 z-40 bg-white">
+      <div className="px-6 pt-10 pb-6 space-y-6">
         
         {/* Categories Title */}
         <div className="space-y-2">
@@ -108,7 +108,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ menuItems, onClose }) => {
       <Link href="#" aria-label="Medium" className="hover:text-orange-500">
         <FaMedium/>
       </Link> */}
-      <Link href="https://substack.com/@citizencorrespondent" aria-label="Facebook" className="hover:text-orange-500">
+      <Link href="https://substack.com/@Qlork" aria-label="Facebook" className="hover:text-orange-500">
         <SiSubstack/>
       </Link>
       {/* <Link href="#" aria-label="RSS" className="hover:text-orange-500">

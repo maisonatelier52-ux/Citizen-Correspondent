@@ -52,8 +52,8 @@ const LoadingScreen = () => {
         }}
       >
         <Image
-          src="/images/cc-favIcon.svg"
-          alt="CitizenCorrespondent"
+          src="/images/qlork-favIcon.webp"
+          alt="Qlork"
           width={200}
           height={50}
           priority

@@ -1,19 +1,15 @@
-// components/HorizontalArticleCard.tsx
 "use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Bookmark } from "lucide-react";
 
 export interface HorizontalArticleCardProps {
   slug: string;
   category: string;
   title: string;
-  excerpt: string;
   date: string;
   image: string;
-  bookmarked?: boolean;
-  onBookmarkToggle?: () => void;
+  shortdescription:string;
   heading?: string;
 }
 
@@ -21,12 +17,10 @@ const HorizontalArticleCard: React.FC<HorizontalArticleCardProps> = ({
   slug,
   category,
   title,
-  excerpt,
   date,
   image,
-  bookmarked = false,
-  onBookmarkToggle,
   heading,
+  shortdescription
 }) => {
   return (
     <div className="bg-white">
@@ -64,26 +58,11 @@ const HorizontalArticleCard: React.FC<HorizontalArticleCardProps> = ({
           </h2>
         </Link>
         <p className="text-base text-gray-700 leading-[1.3] line-clamp-3">
-          {excerpt}
+          {shortdescription}
         </p>
         <div className="flex items-center gap-4 text-[12px] text-gray-600">
           <span>{date}</span>
-          <button
-            type="button"
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              onBookmarkToggle?.();
-            }}
-            aria-label={bookmarked ? "Remove bookmark" : "Save bookmark"}
-            className="text-gray-400 hover:text-orange-600 transition-colors"
-          >
-            {/* <Bookmark
-              className="w-3 h-3"
-              fill={bookmarked ? "currentColor" : "none"}
-              strokeWidth={bookmarked ? 0 : 2}
-            /> */}
-          </button>
+        
         </div>
       </div>
     </article>

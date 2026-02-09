@@ -1,4 +1,4 @@
-# robots.txt for CitizenCorrespondent
+# robots.txt for Qlork
 User-agent: *
 Allow: /
 
@@ -8,7 +8,7 @@ Disallow: /_next/
 Disallow: /admin/
 
 # Sitemap location
-Sitemap: https://www.citizencorrespondent.com/sitemap.xml
+Sitemap: https://www.Qlork.com/sitemap.xml
 
 # Crawl-delay (optional, adjust as needed)
 Crawl-delay: 1

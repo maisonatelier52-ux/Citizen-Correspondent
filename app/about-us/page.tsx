@@ -7,12 +7,12 @@ import Footer from "@/src/components/Footer";
 import TrendingNews from "@/src/components/TrendingNews";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.citizencorrespondent.com"),
-  title: "About Us | CitizenCorrespondent",
-  description: "Learn about CitizenCorrespondent - our mission, vision, and commitment to delivering accurate, unbiased, and timely news. Founded in 2025, we are dedicated to quality journalism.",
+  metadataBase: new URL("https://www.Qlork.com"),
+  title: "About Us | Qlork",
+  description: "Learn about Qlork - our mission, vision, and commitment to delivering accurate, unbiased, and timely news. Founded in 2025, we are dedicated to quality journalism.",
   keywords: [
     "about us",
-    "citizen correspondent",
+    "qlork",
     "news organization",
     "journalism",
     "editorial principles",
@@ -21,38 +21,38 @@ export const metadata: Metadata = {
     "quality journalism",
   ].join(", "),
   openGraph: {
-    title: "About Us | CitizenCorrespondent",
-    description: "Learn about CitizenCorrespondent - our mission, vision, and commitment to delivering accurate, unbiased, and timely news.",
-    url: "https://www.citizencorrespondent.com/about-us",
-    siteName: "CitizenCorrespondent",
+    title: "About Us | Qlork",
+    description: "Learn about Qlork - our mission, vision, and commitment to delivering accurate, unbiased, and timely news.",
+    url: "https://www.Qlork.com/about-us",
+    siteName: "Qlork",
     type: "website",
     locale: "en_US",
     images: [
       {
-        url: "https://www.citizencorrespondent.com/images/citizen-correspondent-logo.webp",
+        url: "https://www.Qlork.com/images/news/qlork-logo.webp",
         width: 1200,
         height: 630,
-        alt: "About Us | CitizenCorrespondent",
+        alt: "About Us | Qlork",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Us | CitizenCorrespondent",
-    description: "Learn about CitizenCorrespondent - our mission, vision, and commitment to quality journalism.",
-    images: ["https://www.citizencorrespondent.com/images/citizen-correspondent-logo.webp"],
+    title: "About Us | Qlork",
+    description: "Learn about Qlork - our mission, vision, and commitment to quality journalism.",
+    images: ["https://www.Qlork.com/images/news/qlork-logo.webp"],
   },
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://www.citizencorrespondent.com/about-us",
+    canonical: "https://www.Qlork.com/about-us",
   },
   icons: {
-    icon: "/images/cc-favIcon.svg",
-    shortcut: "/images/cc-favIcon.svg",
-    apple: "/images/cc-favIcon.svg",
+    icon: "/images/qlork-favIcon.webp",
+    shortcut: "/images/qlork-favIcon.webp",
+    apple: "/images/qlork-favIcon.webp",
   },
 };
 
@@ -83,7 +83,7 @@ export default function AboutUsPage() {
                   Through political upheavals, global crises, and technological revolutions, we've remained steadfast in our mission: to inform and empower our audience with reliable, well-researched journalism that cuts through the noise.
                 </p>
                 <p className="text-lg md:text-xl font-semibold text-orange-600 pt-4">
-                  At CitizenCorrespondent, we don't just report the news — we help you understand what it means for your money, your future, and the world economy.
+                  At Qlork, we don't just report the news — we help you understand what it means for your money, your future, and the world economy.
                 </p>
               </div>
             </div>

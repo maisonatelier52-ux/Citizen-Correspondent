@@ -5,19 +5,24 @@ import Image from "next/image";
 import Link from "next/link";
 import { Bookmark } from "lucide-react";
 
+interface Sub{
+  title:string;
+  descr:string;
+}
 export interface MainGridItem {
-  slug: string;
+  category: string;
   title: string;
+  shortdescription: string;
   image: string;
-  categories: string[];
+  slug: string;
   date: string;
-  bookmarked?: boolean;
+  sub:Sub[];
 }
 
 interface MainGridProps {
   items: MainGridItem[];
   heading?: string;
-  initialRows?: number; // Number of rows to show initially (default: 1)
+  initialRows?: number; 
   onBookmarkToggle?: (index: number) => void;
   onShowMore?: () => void;
   onShowLess?: () => void;
@@ -29,7 +34,7 @@ interface MainGridProps {
 const MainGrid: React.FC<MainGridProps> = ({
   items,
   heading,
-  initialRows = 1, // Default to 1 row (4 items)
+  initialRows = 1, 
   onBookmarkToggle,
   onShowMore,
   onShowLess,
@@ -79,7 +84,7 @@ const MainGrid: React.FC<MainGridProps> = ({
             <div className="flex flex-row-reverse gap-3 md:flex-col">
               <div className="w-2/5 md:w-full">
                 <Link
-                  href={`/${normalizeCategory(item.categories[0])}/${item.slug}`}
+                  href={`/${item.category}/${item.slug}`}
                   title={item.title}
                   className="block overflow-hidden"
                 >
@@ -101,12 +106,12 @@ const MainGrid: React.FC<MainGridProps> = ({
                 <div className="flex flex-col space-y-1 md:space-y-2">
                   <div className="flex items-center gap-2 text-sm text-gray-600">
                     <span className="font-medium text-gray-700">
-                      {item.categories[0] || item.categories.join(" / ")}
+                      {item.category}
                     </span>
                   </div>
 
                   <Link
-                    href={`/${normalizeCategory(item.categories[0])}/${item.slug}`}
+                    href={`/${item.category}/${item.slug}`}
                     title={item.title}
                     className="block"
                   >
@@ -117,18 +122,7 @@ const MainGrid: React.FC<MainGridProps> = ({
 
                   <div className="flex items-center gap-3 text-[11px] text-gray-600">
                     <span className="text-[11px]">{item.date}</span>
-                    <button
-                      type="button"
-                      aria-label={item.bookmarked ? "Remove bookmark" : "Save bookmark"}
-                      onClick={() => onBookmarkToggle?.(index)}
-                      className="text-gray-400 hover:text-orange-600 transition-colors"
-                    >
-                      {/* <Bookmark
-                        className="w-3 h-3"
-                        fill={item.bookmarked ? "currentColor" : "none"}
-                        strokeWidth={item.bookmarked ? 0 : 2}
-                      /> */}
-                    </button>
+                   
                   </div>
                 </div>
               </div>

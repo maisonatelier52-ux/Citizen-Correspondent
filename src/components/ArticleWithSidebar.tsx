@@ -6,22 +6,25 @@ import ArticleDetail, { ArticleDetailProps, ArticleContentBlock } from "./Articl
 import Sidebar, { SidebarItem } from "./Sidebar";
 import SubscribeNewsletter from "./SubscribeNewsletter";
 
+interface Sub {
+  title:string;
+  descr:string;
+}
+interface Author {
+  name:string;
+  role:string;
+  image:string;
+}
 interface ArticleWithSidebarProps {
   article: {
     slug: string;
     category: string;
     title: string;
-    introText: string;
-    readingTime?: string;
-      summary:string;
-    author: {
-      name: string;
-      role: string;
-      image: string;
-    };
-    lastUpdated: string;
-    content: ArticleContentBlock[];
-    bookmarked?: boolean;
+    shortdescription: string;
+    date: string;
+    sub: Sub[];
+    image:string;
+    author:Author;
   };
   sidebarItems: SidebarItem[];
   sidebarHeading?: string;
@@ -70,12 +73,11 @@ const ArticleWithSidebar: React.FC<ArticleWithSidebarProps> = ({
           slug={article.slug}
           category={article.category}
           title={article.title}
-          introText={article.introText}
-          readingTime={article.readingTime}
+          shortdescription={article.shortdescription}
           author={article.author}
-          lastUpdated={article.lastUpdated}
-          content={article.content}
-          summary={article.summary}
+          image={article.image}
+          date={article.date}
+          sub={article.sub}
           onShare={onShare}
         />
         <div className="article-end h-1"></div>

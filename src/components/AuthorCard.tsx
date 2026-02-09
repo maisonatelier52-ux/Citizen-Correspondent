@@ -50,7 +50,7 @@ const AuthorCard: React.FC<AuthorCardProps> = ({ author, reverse = false }) => {
         <div className="md:w-1/3 relative min-h-64 md:min-h-0">
           <Image
             src={author.photo}
-            alt={`${author.name} – CitizenCorrespondent Author`}
+            alt={`${author.name} – Qlork Author`}
             fill
             priority
             className={`object-cover md:rounded-none shadow-2xl ${reverse ? "md:rounded-l-lg" : "md:rounded-r-lg"}`}

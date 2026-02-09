@@ -5,14 +5,19 @@ import HeroLead from "./HeroLead";
 import Sidebar, { SidebarItem } from "./Sidebar";
 import HorizontalSidebar, { HorizontalSidebarItem } from "./HorizontalSidebar";
 
+export interface Sub {
+  title:string;
+  descr:string;
+}
 export interface HeroArticle {
   category: string;
   title: string;
-  excerpt: string;
   date: string;
   image: string;
-  slug?: string;
-  bookmarked?: boolean;
+  slug: string;
+  shortdescription:string;
+  topic:string;
+  sub:Sub[];
 }
 
 interface FeatureHomePartProps {
@@ -41,12 +46,11 @@ const FeatureHomePart: React.FC<FeatureHomePartProps> = ({
               <HeroLead
                 category={hero.category}
                 title={hero.title}
-                excerpt={hero.excerpt}
+                shortdescription={hero.shortdescription}
                 date={hero.date}
                 image={hero.image}
                 slug={hero.slug}
-                bookmarked={hero.bookmarked}
-                onBookmarkToggle={onHeroBookmarkToggle}
+                sub={hero.sub}
               />
               <HorizontalSidebar
                 items={horizontalItems}

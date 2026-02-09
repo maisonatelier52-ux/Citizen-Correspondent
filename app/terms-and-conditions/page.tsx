@@ -5,51 +5,51 @@ import CategoryNav from "@/src/components/CategoryNav";
 import Footer from "@/src/components/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.citizencorrespondent.com"),
-  title: "Terms & Conditions | CitizenCorrespondent",
-  description: "Read CitizenCorrespondent's Terms & Conditions to understand the rules and guidelines for using our website and services.",
+  metadataBase: new URL("https://www.Qlork.com"),
+  title: "Terms & Conditions | Qlork",
+  description: "Read Qlork's Terms & Conditions to understand the rules and guidelines for using our website and services.",
   keywords: [
     "terms and conditions",
     "terms of service",
     "user agreement",
     "website terms",
-    "citizen correspondent terms",
+    "qlork terms",
     "legal terms",
     "service agreement",
   ].join(", "),
   openGraph: {
-    title: "Terms & Conditions | CitizenCorrespondent",
-    description: "Read CitizenCorrespondent's Terms & Conditions to understand the rules and guidelines for using our website and services.",
-    url: "https://www.citizencorrespondent.com/terms-and-conditions",
-    siteName: "CitizenCorrespondent",
+    title: "Terms & Conditions | Qlork",
+    description: "Read Qlork's Terms & Conditions to understand the rules and guidelines for using our website and services.",
+    url: "https://www.Qlork.com/terms-and-conditions",
+    siteName: "Qlork",
     type: "website",
     locale: "en_US",
     images: [
       {
-        url: "https://www.citizencorrespondent.com/images/citizen-correspondent-logo.webp",
+        url: "https://www.Qlork.com/images/news/qlork-logo.webp",
         width: 1200,
         height: 630,
-        alt: "Terms & Conditions | CitizenCorrespondent",
+        alt: "Terms & Conditions | Qlork",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Terms & Conditions | CitizenCorrespondent",
-    description: "Read CitizenCorrespondent's Terms & Conditions to understand the rules for using our website.",
-    images: ["https://www.citizencorrespondent.com/images/citizen-correspondent-logo.webp"],
+    title: "Terms & Conditions | Qlork",
+    description: "Read Qlork's Terms & Conditions to understand the rules for using our website.",
+    images: ["https://www.Qlork.com/images/news/qlork-logo.webp"],
   },
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://www.citizencorrespondent.com/terms-and-conditions",
+    canonical: "https://www.Qlork.com/terms-and-conditions",
   },
   icons: {
-    icon: "/images/cc-favIcon.svg",
-    shortcut: "/images/cc-favIcon.svg",
-    apple: "/images/cc-favIcon.svg",
+    icon: "/images/qlork-favIcon.webp",
+    shortcut: "/images/qlork-favIcon.webp",
+    apple: "/images/qlork-favIcon.webp",
   },
 };
 
@@ -66,7 +66,7 @@ export default function TermsConditionsPage() {
             {/* Introduction */}
             <div className="bg-orange-50 border border-orange-200 rounded-lg p-8">
               <p className="text-base md:text-lg leading-relaxed text-gray-700">
-                Your use of this website and services is subject to these Terms & Conditions. By accessing or using CitizenCorrespondent, you agree to be bound by these terms.
+                Your use of this website and services is subject to these Terms & Conditions. By accessing or using Qlork, you agree to be bound by these terms.
                 If you do not agree with any part of these terms, you must not use our website or services.
               </p>
             </div>
@@ -185,7 +185,7 @@ export default function TermsConditionsPage() {
               </p>
               <ul className="list-disc pl-8 space-y-2 text-base md:text-lg text-gray-700">
                 <li>News content may be updated or corrected as new information becomes available</li>
-                <li>Opinions expressed in opinion pieces are those of the authors, not necessarily CitizenCorrespondent</li>
+                <li>Opinions expressed in opinion pieces are those of the authors, not necessarily Qlork</li>
                 <li>We make reasonable efforts to verify information but cannot guarantee absolute accuracy</li>
                 <li>Breaking news may contain preliminary information subject to change</li>
               </ul>

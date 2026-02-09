@@ -5,51 +5,51 @@ import CategoryNav from "@/src/components/CategoryNav";
 import Footer from "@/src/components/Footer";
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://www.citizencorrespondent.com"),
-    title: "Privacy Policy | CitizenCorrespondent",
-    description: "Read CitizenCorrespondent's Privacy Policy to understand how we collect, use, disclose, and safeguard your information when you visit our website.",
+    metadataBase: new URL("https://www.Qlork.com"),
+    title: "Privacy Policy | Qlork",
+    description: "Read Qlork's Privacy Policy to understand how we collect, use, disclose, and safeguard your information when you visit our website.",
     keywords: [
         "privacy policy",
         "data protection",
         "cookie policy",
         "personal information",
-        "citizen correspondent privacy",
+        "qlork privacy",
         "data security",
         "user rights",
     ].join(", "),
     openGraph: {
-        title: "Privacy Policy | CitizenCorrespondent",
-        description: "Read CitizenCorrespondent's Privacy Policy to understand how we collect, use, disclose, and safeguard your information.",
-        url: "https://www.citizencorrespondent.com/privacy-policy",
-        siteName: "CitizenCorrespondent",
+        title: "Privacy Policy | Qlork",
+        description: "Read Qlork's Privacy Policy to understand how we collect, use, disclose, and safeguard your information.",
+        url: "https://www.Qlork.com/privacy-policy",
+        siteName: "Qlork",
         type: "website",
         locale: "en_US",
         images: [
             {
-                url: "https://www.citizencorrespondent.com/images/citizen-correspondent-logo.webp",
+                url: "https://www.Qlork.com/images/news/qlork-logo.webp",
                 width: 1200,
                 height: 630,
-                alt: "Privacy Policy | CitizenCorrespondent",
+                alt: "Privacy Policy | Qlork",
             },
         ],
     },
     twitter: {
         card: "summary_large_image",
-        title: "Privacy Policy | CitizenCorrespondent",
-        description: "Read CitizenCorrespondent's Privacy Policy to understand how we protect your information.",
-        images: ["https://www.citizencorrespondent.com/images/citizen-correspondent-logo.webp"],
+        title: "Privacy Policy | Qlork",
+        description: "Read Qlork's Privacy Policy to understand how we protect your information.",
+        images: ["https://www.Qlork.com/images/news/qlork-logo.webp"],
     },
     robots: {
         index: true,
         follow: true,
     },
     alternates: {
-        canonical: "https://www.citizencorrespondent.com/privacy-policy",
+        canonical: "https://www.Qlork.com/privacy-policy",
     },
     icons: {
-        icon: "/images/cc-favIcon.svg",
-        shortcut: "/images/cc-favIcon.svg",
-        apple: "/images/cc-favIcon.svg",
+        icon: "/images/qlork-favIcon.webp",
+        shortcut: "/images/qlork-favIcon.webp",
+        apple: "/images/qlork-favIcon.webp",
     },
 };
 

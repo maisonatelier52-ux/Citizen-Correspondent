@@ -16,6 +16,16 @@ import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import TrendingNews from "@/src/components/TrendingNews";
 
+import businessData from '../../public/data/business.json';
+import educationData from '../../public/data/education.json';
+import featuredData from '../../public/data/featured.json';
+import financeData from '../../public/data/finance.json';
+import healthData from '../../public/data/health.json';
+import hotData from '../../public/data/hot.json';
+import opinionData from '../../public/data/opinion.json';
+import politicsData from '../../public/data/politics.json';
+import worldData from '../../public/data/world.json';
+import globalaffairsData from '../../public/data/global-affairs.json';
 
 interface CategoryPageProps {
     params: Promise<{
@@ -23,25 +33,42 @@ interface CategoryPageProps {
     }>;
 }
 
+interface Sub {
+    title:string;
+    descr:string;
+}
+interface NewsItem {
+  category: string;
+  title: string;
+  shortdescription: string;
+  image: string;
+  slug: string;
+  date: string;
+  sub:Sub[];
+}
 
-// Map slug to category name
-const slugToCategory: Record<string, string> = {
-    world: "World",
-    business: "Business",
-    finance: "Finance",
-    politics: "Politics",
-    opinion: "Opinion",
-    education: "Education",
-    "global-affairs": "Global Affairs",
-    featured: "Featured",
-    "renewable-energy": "Renewable Energy",
-    "climate-change": "Climate Change",
-    hot: "Hot",
-    research: "Research",
-    health: "Health",
+
+const allData: Record<string, NewsItem[]> = {
+  business: businessData,
+  world: worldData,
+  education: educationData,
+  finance: financeData,
+  featured: featuredData,
+  health: healthData,
+  hot: hotData,
+  opinion: opinionData,
+  politics: politicsData,
+  "global-affairs": globalaffairsData
 };
 
-// Category descriptions
+export async function generateStaticParams() {
+  return Object.keys(allData).map((category) => ({
+    category,
+  }));
+
+}
+
+
 const categoryDescriptions: Record<string, string> = {
     world: "Latest global news, international affairs, and world events. Breaking news, analysis, and expert perspectives on issues shaping our world in 2025.",
     business: "Latest business news, market updates, and industry insights. Coverage of startups, Fortune 500 companies, and stories for entrepreneurs and investors.",
@@ -58,218 +85,105 @@ const categoryDescriptions: Record<string, string> = {
     health: "Health news, medical breakthroughs, wellness tips, and healthcare policy. Public health updates, medical research, and healthy lifestyle guidance.",
 };
 
-// All available categories for related topics
-const allCategories = [
-    "Business",
-    "Finance",
-    "Politics",
-    "World",
-    "Health",
-    "Education",
-    "Research",
-    "Opinion",
-    "Global Affairs",
-    "Featured",
-    "Hot",
-    "Renewable Energy",
-    "Climate Change",
-];
+export async function generateMetadata({
+  params,
+}: {
+  params: { category: string };
+}): Promise<Metadata> {
 
-// Function to get related topics, excluding the current category
-const getRelatedTopics = (currentCategory: string) => {
-    const filteredCategories = allCategories.filter(
-        (cat) => cat.toLowerCase().replace(/\s+/g, "-") !== currentCategory.toLowerCase().replace(/\s+/g, "-")
-    );
-    // Shuffle and take the first 6
-    return filteredCategories.sort(() => 0.5 - Math.random()).slice(0, 6);
-};
+  const { category } = params;
+  const siteUrl = "https://www.prpromotionhub.com";
+  const categoryUrl = `${siteUrl}/${category}`;
 
-// Generate static params for all categories
-export function generateStaticParams() {
-    return Object.keys(slugToCategory).map((category) => ({
-        category,
-    }));
-}
+  const data = allData[category];
 
-// Generate metadata for SEO
-export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
-    const { category } = await params;
-    console.log(category, 'cateogy')
-    const categoryName = slugToCategory[category] || category;
-    const description = categoryDescriptions[category] || categoryDescriptions.opinion;
-
-    if (!slugToCategory[category]) {
-        return {
-            title: "Category Not Found | CitizenCorrespondent",
-            robots: { index: false, follow: false },
-        };
-    }
-
-    const url = `https://www.citizencorrespondent.com/${category}`;
-
-    // Optimize description: truncate to 155 characters for optimal snippet display
-    const optimizedDescription = description.length > 155
-        ? description.substring(0, 152).trim() + "..."
-        : description;
-
+  if (!data || data.length === 0) {
     return {
-        metadataBase: new URL("https://www.citizencorrespondent.com"),
-        title: `${categoryName} News | CitizenCorrespondent`,
-        description: optimizedDescription,
-        keywords: [
-            `${categoryName.toLowerCase()} news`,
-            `${categoryName.toLowerCase()} 2025`,
-            "latest news",
-            "breaking news",
-            "citizen correspondent",
-            `${categoryName.toLowerCase()} articles`,
-            `${categoryName.toLowerCase()} updates`,
-        ].join(", "),
-        alternates: { canonical: url },
-        openGraph: {
-            title: `${categoryName} News – Latest Stories 2025 | CitizenCorrespondent`,
-            description: optimizedDescription,
-            url,
-            siteName: "CitizenCorrespondent",
-            type: "website",
-            locale: "en_US",
-            images: [
-                {
-                    url: "https://www.citizencorrespondent.com/images/citizen-correspondent-logo.webp",
-                    width: 1200,
-                    height: 630,
-                    alt: `${categoryName} News – CitizenCorrespondent`,
-                },
-            ],
-        },
-        twitter: {
-            card: "summary_large_image",
-            title: `${categoryName} News 2025 | CitizenCorrespondent`,
-            description: optimizedDescription,
-            images: ["https://www.citizencorrespondent.com/images/citizen-correspondent-logo.webp"],
-        },
-        icons: {
-            icon: "/images/cc-favIcon.svg",
-            shortcut: "/images/cc-favIcon.svg",
-            apple: "/images/cc-favIcon.svg",
-        },
-        robots: {
-            index: true,
-            follow: true,
-            googleBot: {
-                index: true,
-                follow: true,
-                "max-image-preview": "large",
-                "max-snippet": -1,
-            },
-        },
+      title: "Category Not Found – PR Promotion Hub",
+      robots: { index: false, follow: false },
     };
+  }
+
+  const firstArticle = data[0];
+
+  const image =
+    firstArticle.image.startsWith("http")
+      ? firstArticle.image
+      : `${siteUrl}${firstArticle.image}`;
+
+  return {
+    title: `${firstArticle.category} News – PR Promotion Hub`,
+    description: `Latest ${firstArticle.category} news, updates, and analysis.`,
+    alternates: {
+      canonical: categoryUrl,
+    },
+    openGraph: {
+      title: `${firstArticle.category} News – PR Promotion Hub`,
+      description: `Latest ${firstArticle.category} news and updates.`,
+      url: categoryUrl,
+      siteName: "PR Promotion Hub",
+      type: "website",
+      images: [
+        {
+          url: image,
+          width: 1200,
+          height: 630,
+        },
+      ],
+    },
+  };
 }
 
-export default async function CategoryPage({ params }: CategoryPageProps) {
+
+export default async function CategoryPage({
+  params,
+}: {
+  params: Promise<{ category: string }>;
+}) {
+
     const { category } = await params;
-    const categoryName = slugToCategory[category] || category;
-    const categoryDescription = categoryDescriptions[category] || categoryDescriptions.opinion;
-    const relatedTopics = getRelatedTopics(category);
-
-    if (!slugToCategory[category]) {
-        notFound();
-    }
-
-    // Dynamic imports for category data
-    let featureData: any;
-    let mainGridData: any;
-
-    try {
-        const folderName = `${category}Page`;
-        [featureData, mainGridData] = await Promise.all([
-            import(`@/public/data/${folderName}/${category}-featureCategoryPart.json`).then((m) => m.default),
-            import(`@/public/data/${folderName}/${category}-mainGrid.json`).then((m) => m.default),
-        ]);
-    } catch (error) {
-        notFound();
-    }
-
-    const featuredArticle = featureData.featuredArticle as FeaturedArticleCardProps;
-
-    const rightArticles = featureData.rightArticles as ArticleCardSmallProps[];
-    const adBanner = featureData.adBanner as AdBannerProps;
-    const mainGridItems = mainGridData.mainGrid as MainGridItem[];
-
-    // Map data for CategoryLandingPart
-    const mainFeature: CategoryLandingMainFeature = {
-        slug: featuredArticle.slug,
-        title: featuredArticle.title,
-        excerpt: featuredArticle.excerpt,
-        date: featuredArticle.date,
-        image: featuredArticle.image,
-        tags: [featuredArticle.category],
-        category: featuredArticle.category,
-        live: false, // Can be set from data if available
-        bookmarked: featuredArticle.bookmarked,
-        // href: articleHref,
-    };
-
-    const articles: CategoryLandingArticle[] = rightArticles.slice(0, 2).map((article) => ({
-        slug: article.slug,
-        title: article.title,
-        date: article.date,
-        image: article.image,
-        category: article.category,
-        bookmarked: article.bookmarked,
-    }));
+    
+    const relatedCategories = Object.keys(allData)
+    .filter((cat) => cat !== category) 
+    .slice(0, 4);
+    
+    const data = allData[category];
+ 
+  if (!data) {
+  notFound();
+}
 
     const promo: CategoryLandingPromo = {
-        title: `Impressive ${categoryName} News Coverage`,
-        body: `Stay informed with the latest ${categoryName.toLowerCase()} news, insights, and analysis. Get comprehensive coverage of breaking stories, key trends, and major developments shaping the ${categoryName.toLowerCase()} landscape. Our reporting brings context, clarity, and updates to help readers understand the issues that matter most. From policy decisions to real-world impacts, our journalism aims to inform and engage a broad audience worldwide across diverse global perspectives. Coverage is guided by accuracy, independence, and a commitment to responsible reporting with depth and balance.`,
+        title: `Impressive ${data[0].category} News Coverage`,
+        body: `Stay informed with the latest ${data[0].category} news, insights, and analysis. Get comprehensive coverage of breaking stories, key trends, and major developments shaping the ${data[0].category} landscape. Our reporting brings context, clarity, and updates to help readers understand the issues that matter most. From policy decisions to real-world impacts, our journalism aims to inform and engage a broad audience worldwide across diverse global perspectives. Coverage is guided by accuracy, independence, and a commitment to responsible reporting with depth and balance.`,
         buttonLabel: "Explore More",
         buttonHref: `/${category}`,
     };
 
     return (
         <>
-            {/* CollectionPage Schema */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "CollectionPage",
-                        name: `${categoryName} – CitizenCorrespondent`,
-                        description: categoryDescription,
-                        url: `https://www.citizencorrespondent.com/${category}`,
-                        publisher: {
-                            "@type": "Organization",
-                            name: "CitizenCorrespondent",
-                            logo: {
-                                "@type": "ImageObject",
-                                url: "https://www.citizencorrespondent.com/images/citizen-correspondent-logo.webp",
-                            },
-                        },
-                    }),
-                }}
-            />
+           
 
             <div className="bg-white min-h-screen">
-                <div className="hidden">{categoryName} News – Latest Stories 2025</div>
+                <div className="hidden">{data[0].category} News – Latest Stories 2025</div>
                 <DateBar />
                 <MainNav />
                 {/* <CategoryNav /> */}
                 <TrendingNews />
                 <CategoryIntro
-                    categoryName={categoryName}
-                    description={categoryDescription}
-                    relatedTopics={relatedTopics}
+                    categoryName={data[0].category}
+                  
+                    relatedTopics={relatedCategories}
                 />
 
                 <CategoryLandingPart
-                    mainFeature={mainFeature}
-                    articles={articles}
+                    mainFeature={data[0]}
+                    articles={[data[1],data[2]]}
                     promo={promo}
                 />
 
                 <div className="max-w-360 mx-auto px-3 md:px-16 pb-12 border-t border-gray-400">
-                    <MainGrid items={mainGridItems} heading={categoryName} />
+                    <MainGrid items={[data[3],data[4],data[5],data[6],data[7],data[8]]} heading={data[0].category} />
                 </div>
 
                 <Footer />
@@ -277,3 +191,5 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         </>
     );
 }
+
+

@@ -1,4 +1,3 @@
-// app/page.tsx
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
@@ -26,6 +25,18 @@ import HorizontalLandingPart from "@/src/components/HorizontalLandingPart";
 import ArticlePageNav from "@/src/components/ArticlePageNav";
 import TrendingNews from "@/src/components/TrendingNews";
 import SecondBanner from "@/src/components/SecondBanner";
+
+import businessData from '../public/data/business.json';
+import educationData from '../public/data/education.json';
+import featuredData from '../public/data/featured.json';
+import financeData from '../public/data/finance.json';
+import healthData from '../public/data/health.json';
+import hotData from '../public/data/hot.json';
+import opinionData from '../public/data/opinion.json';
+import politicsData from '../public/data/politics.json';
+import worldData from '../public/data/world.json';
+import globalaffairsData from '../public/data/global-affairs.json';
+
 
 // Lazy load below-the-fold components for code splitting
 const MainGrid = dynamic(() => import("@/src/components/MainGrid"), {
@@ -57,8 +68,8 @@ const Footer = dynamic(() => import("@/src/components/Footer"), {
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.citizencorrespondent.com"),
-  title: "CitizenCorrespondent – Latest News & Breaking Stories 2025",
+  metadataBase: new URL("https://www.Qlork.com"),
+  title: "Qlork – Latest News & Breaking Stories 2025",
   description: "Breaking news, analysis & coverage of world events, politics, business, technology & health. Your trusted source for reliable journalism in 2025.",
   keywords: [
     "breaking news",
@@ -70,38 +81,38 @@ export const metadata: Metadata = {
     "health news",
     "finance news",
     "global affairs",
-    "citizen correspondent",
+    "qlork",
     "news 2025",
     "current events",
     "news analysis",
     "journalism",
   ].join(", "),
   openGraph: {
-    title: "CitizenCorrespondent – Latest News & Breaking Stories 2025",
+    title: "Qlork – Latest News & Breaking Stories 2025",
     description: "Breaking news, analysis & coverage of world events, politics, business, technology & health. Trusted journalism in 2025.",
-    url: "https://www.citizencorrespondent.com",
-    siteName: "CitizenCorrespondent",
+    url: "https://www.Qlork.com",
+    siteName: "Qlork",
     images: [
       {
-        url: "https://www.citizencorrespondent.com/images/citizen-correspondent-logo.webp",
+        url: "https://www.Qlork.com/images/news/qlork-logo.webp",
         width: 1200,
         height: 630,
-        alt: "CitizenCorrespondent – Latest News & Breaking Stories 2025",
+        alt: "Qlork – Latest News & Breaking Stories 2025",
       },
     ],
     locale: "en_US",
     type: "website",
   },
   icons: {
-    icon: "/images/cc-favIcon.svg",
-    shortcut: "/images/cc-favIcon.svg",
-    apple: "/images/cc-favIcon.svg",
+    icon: "/images/qlork-favIcon.webp",
+    shortcut: "/images/qlork-favIcon.webp",
+    apple: "/images/qlork-favIcon.webp",
   },
   twitter: {
     card: "summary_large_image",
-    title: "CitizenCorrespondent – Latest News & Breaking Stories 2025",
+    title: "Qlork – Latest News & Breaking Stories 2025",
     description: "Breaking news, in-depth analysis & comprehensive coverage of world events, politics, business, technology & health. Trusted journalism in 2025.",
-    images: ["https://www.citizencorrespondent.com/images/citizen-correspondent-logo.webp"],
+    images: ["https://www.Qlork.com/images/news/qlork-logo.webp"],
   },
   robots: {
     index: true,
@@ -114,51 +125,18 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://www.citizencorrespondent.com",
+    canonical: "https://www.Qlork.com",
   },
 };
 
 export default async function HomePage() {
-  const heroArticle = homeData.hero as HeroArticle;
-  const sidebarItems = homeData.sidebar as SidebarItem[];
-  const horizontalItems = homeData.horizontal as HorizontalSidebarItem[];
-  const mainGridItems = mainGridData.mainGrid as MainGridItem[];
-
-  // Preload critical hero image for LCP
-  const heroImage = heroArticle.image;
-
-  // Lazy load below-the-fold data (non-technology sections)
-  const [mainGridEnvironmentData, mainGridMoreNewsData, overlayGridPoliticsData, featureCategoryData] =
-    await Promise.all([
-      import("@/public/data/homePage/home-mainGrid-environment.json"),
-      import("@/public/data/homePage/home-mainGrid-moreNews.json"),
-      import("@/public/data/homePage/home-overlayGrid-politics.json"),
-      import("@/public/data/homePage/home-featureCategoryPart.json"),
-    ]);
-
-  const mainGridEnvironmentItems = mainGridEnvironmentData.default.mainGrid as MainGridItem[];
-  const mainGridMoreNewsItems = mainGridMoreNewsData.default.mainGrid as MainGridItem[];
-  const overlayGridPoliticsItems = overlayGridPoliticsData.default.overlayGrid as OverlayArticleGridItem[];
-  const featuredArticle = featureCategoryData.default.featuredArticle as FeaturedArticleCardProps;
-  const rightArticles = featureCategoryData.default.rightArticles as ArticleCardSmallProps[];
-  const adBanner = featureCategoryData.default.adBanner as AdBannerProps;
-
-  // Data for HomeLandingPart (business layout) from dedicated JSON
-  const homeLandingMain = (homeLandingPartData as any).mainFeature;
-  const homeLandingSecondary = (homeLandingPartData as any).secondaryFeature;
-  const homeLandingSidebar = (homeLandingPartData as any).sidebar as SidebarItem[];
-
-  // Data for HorizontalLandingPart (technology layout) from dedicated JSON
+  
+  
   const horizontalLandingIntro = (horizontalLandingPartData as any).intro;
-  const horizontalLandingArticle = (horizontalLandingPartData as any)
-    .article as HorizontalArticleCardProps;
-  const horizontalLandingGrid = (horizontalLandingPartData as any)
-    .mainGrid as MainGridItem[];
-
   return (
     <>
       {/* Preload critical hero image for LCP */}
-      <link rel="preload" as="image" href={heroImage} fetchPriority="high" />
+      {/* <link rel="preload" as="image" href={heroImage} fetchPriority="high" /> */}
 
       {/* WebSite Schema */}
       <script
@@ -167,11 +145,11 @@ export default async function HomePage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebSite",
-            name: "CitizenCorrespondent",
-            url: "https://www.citizencorrespondent.com",
+            name: "Qlork",
+            url: "https://www.Qlork.com",
             potentialAction: {
               "@type": "SearchAction",
-              target: "https://www.citizencorrespondent.com/search?q={search_term_string}",
+              target: "https://www.Qlork.com/search?q={search_term_string}",
               "query-input": "required name=search_term_string",
             },
           }),
@@ -185,13 +163,13 @@ export default async function HomePage() {
         <TrendingNews />
 
         <FeatureHomePart
-          hero={heroArticle}
-          sidebarItems={sidebarItems}
-          horizontalItems={horizontalItems}
+          hero={politicsData[7]}
+          sidebarItems={[businessData[0],businessData[1],businessData[2],businessData[3]]}
+          horizontalItems={[worldData[8],opinionData[6],educationData[4],financeData[0]]}
         />
 
         <div className="max-w-360 mx-auto px-3 md:px-16 pb-12 border-t border-gray-200">
-          <MainGrid items={mainGridItems} heading="World" />
+          <MainGrid items={[worldData[0],worldData[1],worldData[2],worldData[3],worldData[4]]} heading="World" />
         </div>
 
         {/* Visible heading with title keywords for SEO */}
@@ -212,17 +190,16 @@ export default async function HomePage() {
 
         {/* Business landing layout (data from home-homelandingpart.json) */}
         <HomeLandingPart
-          mainFeature={homeLandingMain}
-          secondaryFeature={homeLandingSecondary}
-          sidebarItems={homeLandingSidebar}
+          mainFeature={featuredData[1]}
+          sidebarItems={[globalaffairsData[0],featuredData[0],hotData[0],opinionData[0],worldData[5]]}
         />
 
         {/* Technology horizontal landing section */}
         <div className="max-w-360 mx-auto px-3 md:px-16 pt-5 md:pt-0">
           <HorizontalLandingPart
             intro={horizontalLandingIntro}
-            article={horizontalLandingArticle}
-            mainGridItems={horizontalLandingGrid}
+            article={globalaffairsData[1]}
+            mainGridItems={[politicsData[2],businessData[4],hotData[1],worldData[6]]}
             heading="Technology"
           />
         </div>
@@ -235,20 +212,20 @@ export default async function HomePage() {
 
         <Suspense fallback={<div className="h-64 animate-pulse bg-gray-100" />}>
           <div className="max-w-360 mx-auto px-3 md:px-16 pb-12">
-            <MainGridLazy items={mainGridEnvironmentItems} heading="Environment" />
+            <MainGridLazy items={[opinionData[1],opinionData[2],opinionData[3],opinionData[4]]} heading="Opinion" />
           </div>
         </Suspense>
         <ArticlePageNav />
 
         <Suspense fallback={<div className="h-96 animate-pulse bg-gray-100" />}>
           <div className="max-w-360 mx-auto px-3 md:px-16 pb-12 border-t border-gray-200">
-            <OverlayArticleGrid items={overlayGridPoliticsItems} heading="Politics" />
+            <OverlayArticleGrid items={[politicsData[3],hotData[2],worldData[7],politicsData[6]]} heading="Latest News" />
           </div>
         </Suspense>
 
         <Suspense fallback={<div className="h-64 animate-pulse bg-gray-100" />}>
           <div className="max-w-360 mx-auto px-3 md:px-16 pb-12 border-t border-gray-200">
-            <MainGridLazy items={mainGridMoreNewsItems} heading="More News" initialRows={2} />
+            <MainGridLazy items={[financeData[2],worldData[9],opinionData[5],politicsData[5],globalaffairsData[2],healthData[0],healthData[1],educationData[2],financeData[6],businessData[7],healthData[3],educationData[3]]} heading="More News" initialRows={2} />
           </div>
         </Suspense>
 

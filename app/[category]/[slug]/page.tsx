@@ -12,331 +12,214 @@ import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import TrendingNews from "@/src/components/TrendingNews";
 
-interface ArticlePageProps {
-  params: Promise<{
-    slug: string;
-    category:string;
-  }>;
-}
+import businessData from '../../../public/data/business.json';
+import educationData from '../../../public/data/education.json';
+import featuredData from '../../../public/data/featured.json';
+import financeData from '../../../public/data/finance.json';
+import healthData from '../../../public/data/health.json';
+import hotData from '../../../public/data/hot.json';
+import opinionData from '../../../public/data/opinion.json';
+import politicsData from '../../../public/data/politics.json';
+import worldData from '../../../public/data/world.json';
+import globalaffairsData from '../../../public/data/global-affairs.json';
 
-interface ArticleData {
-  slug: string;
-  category: string;
-  title: string;
-  introText: string;
-  shortdescription?: string;
-  summary:string;
-  readingTime?: string;
-  author: {
-    name: string;
-    role: string;
-    image: string;
-  };
-  date?: string;
-  lastUpdated: string;
-  heroImage?: string;
-
-  content: ArticleContentBlock[];
-  bookmarked?: boolean;
-}
+  export async function generateStaticParams() {
+    const allData = [
+      { category: 'business', articles: businessData },
+      { category: 'education', articles: educationData },
+      { category: 'featured', articles: featuredData },
+      { category: 'world', articles: worldData },
+      { category: 'health', articles: healthData },
+      { category: 'hot', articles: hotData },
+      { category: 'finance', articles: financeData },
+      { category: 'opinion', articles: opinionData },
+      { category: 'politics', articles: politicsData },
+      { category: 'global-affairs', articles: globalaffairsData },
 
 
-const normalizeCategory = (category: string): string =>
-  category.toLowerCase().trim().replace(/\s+/g, "-");
+    ];
 
-export async function generateMetadata(
-  { params }: ArticlePageProps
-): Promise<Metadata> {
-  const { slug, category } = await params;
-  let articleData: ArticleData;
-
-  try {
-    articleData = (
-      await import(`@/public/data/articleDetail/${slug}.json`)
-    ).default as ArticleData;
-  } catch {
-    return {
-      title: "Article Not Found | CitizenCorrespondent",
-      robots: { index: false, follow: false },
-    };
-  }
-
-  const normalizeCategory = (value: string) =>
-    value.toLowerCase().trim().replace(/\s+/g, "-");
-
-  const categorySlug = normalizeCategory(articleData.category);
-
-  const url = `https://www.citizencorrespondent.com/${categorySlug}/${slug}`;
-
-  // --- Description ---
-  const rawDescription =
-    articleData.shortdescription ||
-    articleData.introText ||
-    articleData.title;
-
-  const optimizedDescription =
-    rawDescription.length > 155
-      ? rawDescription.substring(0, 152).trim() + "..."
-      : rawDescription;
-
-  // --- Image ---
-  const getImageUrl = (): string => {
-    if (articleData.heroImage) {
-      return articleData.heroImage.startsWith("/")
-        ? `https://www.citizencorrespondent.com${articleData.heroImage}`
-        : articleData.heroImage;
-    }
-
-    const firstImageBlock = articleData.content?.find(
-      (block) => block.type === "image"
+ 
+    const params = allData.flatMap(({ category, articles }) =>
+      articles.map((article) => ({
+        category,
+        slug: article.slug,
+      }))
     );
 
-    if (firstImageBlock) {
-      const imageValue =
-        firstImageBlock.imageUrl || firstImageBlock.content;
-      if (imageValue) {
-        return imageValue.startsWith("/")
-          ? `https://www.citizencorrespondent.com${imageValue}`
-          : imageValue;
-      }
-    }
+    return params;
+  }
 
-    return "https://www.citizencorrespondent.com/images/citizen-correspondent-logo.webp";
+  interface Sub {
+    title:string;
+    descr:string;
+  }
+  interface Author{
+    name:string;
+    role:string;
+    image:string;
+  }
+    interface NewsItem {
+    category: string;
+    title: string;
+    shortdescription: string;
+    image: string;
+    slug: string;
+    sub: Sub[];
+    date: string;
+    author:Author;
+  }
+  
+   interface DetailPageProps {
+    params: Promise<{ category: string, slug: string }>;
+  }
+
+  const allData: Record<string, NewsItem[]> = {
+    business: businessData,
+    education: educationData,
+    world: worldData,
+    featured: featuredData,
+    finance: financeData,
+    health: healthData,
+    politics: politicsData,
+    hot:hotData,
+    "global-affairs":globalaffairsData
   };
 
-  const imageUrl = getImageUrl();
+    export async function generateMetadata(
+    { params }: DetailPageProps
+  ): Promise<Metadata> {
+    const { category, slug } = await params;
 
-  // --- Title ---
-  const baseTitle =
-    articleData.title.length > 50
-      ? articleData.title.substring(0, 47).trim() + "..."
-      : articleData.title;
+    const allDataMap: Record<string, NewsItem[]> = {
+      business: businessData,
+    education: educationData,
+    world: worldData,
+    featured: featuredData,
+    finance: financeData,
+    health: healthData,
+    politics: politicsData,
+    hot:hotData,
+    "global-affairs":globalaffairsData
 
-  return {
-    metadataBase: new URL("https://www.citizencorrespondent.com"),
-    title: `${baseTitle} | CitizenCorrespondent`,
-    description: optimizedDescription,
+    };
 
-    alternates: {
-      canonical: url,
-    },
+    const articles = allDataMap[category] || [];
+    const article = articles.find((a) => a.slug === slug);
 
-    keywords: [
-      articleData.category.toLowerCase(),
-      `${articleData.category.toLowerCase()} news`,
-      "news",
-      "latest news",
-      "breaking news",
-      "citizen correspondent",
-      articleData.author.name,
-      articleData.title
-        .split(" ")
-        .slice(0, 5)
-        .join(" ")
-        .toLowerCase(),
-      articleData.shortdescription
-        ?.split(" ")
-        .slice(0, 5)
-        .join(" ")
-        .toLowerCase(),
-    ]
-      .filter(Boolean)
-      .join(", "),
+    const siteUrl = "https://www.prpromotionhub.com";
+    const currentUrl = `${siteUrl}/${category}/${slug}`;
 
-    openGraph: {
-      title: baseTitle,
-      description: optimizedDescription,
-      url,
-      siteName: "CitizenCorrespondent",
-      type: "article",
-      images: [
-        {
-          url: imageUrl,
-          width: 1200,
-          height: 630,
-          alt: articleData.title,
-        },
-      ],
-      publishedTime: articleData.date || articleData.lastUpdated,
-      modifiedTime: articleData.lastUpdated,
-      authors: [articleData.author.name],
-      section: articleData.category,
-      locale: "en_US",
-    },
+    const imageUrl =
+      article?.image?.startsWith("http")
+        ? article.image
+        : `${siteUrl}${article?.image || "/images/pr-logo.webp"}`;
 
-    twitter: {
-      card: "summary_large_image",
-      title: baseTitle,
-      description: optimizedDescription,
-      images: [imageUrl],
-    },
-
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        "max-image-preview": "large",
-        "max-snippet": -1,
-      },
-    },
-
-    icons: {
-      icon: "/images/cc-favIcon.svg",
-      shortcut: "/images/cc-favIcon.svg",
-      apple: "/images/cc-favIcon.svg",
-    },
-  };
-}
-
-// Generate static params for all articles at build time
-// export async function generateStaticParams() {
-//   const fs = require("fs");
-//   const path = require("path");
-//   const dir = path.join(process.cwd(), "public/data/articleDetail");
-
-//   if (!fs.existsSync(dir)) return [];
-
-//   return fs
-//     .readdirSync(dir)
-//     .filter((f: string) => f.endsWith(".json") && f !== "article-example.json" && f !== "article-sidebar.json")
-//     .map((f: string) => ({ slug: f.replace(".json", "") }));
-// }
-
-export async function generateStaticParams() {
-  const fs = require("fs");
-  const path = require("path");
-  const dir = path.join(process.cwd(), "public/data/articleDetail");
-
-  if (!fs.existsSync(dir)) return [];
-
-  return fs
-    .readdirSync(dir)
-    .filter(
-      (f: string) =>
-        f.endsWith(".json") &&
-        f !== "article-example.json" &&
-        f !== "article-sidebar.json"
-    )
-    .map((f: string) => {
-      const data = JSON.parse(
-        fs.readFileSync(path.join(dir, f), "utf-8")
-      ) as ArticleData;
-
+    if (!article) {
       return {
-        slug: data.slug,
-        category: normalizeCategory(data.category),
+        title: "Article Not Found – PR Promotion Hub",
+        description: "The requested article could not be found.",
+        robots: { index: false, follow: false },
       };
-    });
-}
-
-export default async function ArticlePage({ params }: ArticlePageProps) {
- const { slug, category } = await params;
-
-  let articleData: ArticleData;
-
-  try {
-    articleData = (await import(`@/public/data/articleDetail/${slug}.json`)).default as ArticleData;
-  } catch {
-    notFound();
-  }
-    const categorySlug = normalizeCategory(articleData.category);
-
-     if (category !== categorySlug) {
-    notFound();
-  }
-
-  // Load sidebar data for article pages
-  const sidebarData = await import("@/public/data/articleDetail/article-sidebar.json").then((m) => m.default);
-  const sidebarItems = sidebarData.sidebar as SidebarItem[];
-
-  // Load "You May Also Like" data
-  const youMayAlsoLikeData = await import("@/public/data/homePage/home-mainGrid-moreNews.json").then((m) => m.default);
-  const youMayAlsoLikeItems = youMayAlsoLikeData.mainGrid.slice(0, 8) as MainGridItem[];
-
-  // Get image for JSON-LD schema - use heroImage if available, otherwise extract first image from content
-  const getSchemaImageUrl = (): string => {
-    if (articleData.heroImage) {
-      // Convert relative URLs to absolute URLs
-      return articleData.heroImage.startsWith('/') ? `https://www.citizencorrespondent.com${articleData.heroImage}` : articleData.heroImage;
     }
 
-    // Look for the first image in content array
-    if (articleData.content && Array.isArray(articleData.content)) {
-      const firstImageBlock = articleData.content.find(block => block.type === 'image');
-      if (firstImageBlock) {
-        // Check for imageUrl first (higher priority), then fallback to content field
-        const imageValue = firstImageBlock.imageUrl || firstImageBlock.content;
-        if (imageValue) {
-          // Convert relative URLs to absolute URLs
-          return imageValue.startsWith('/') ? `https://www.citizencorrespondent.com${imageValue}` : imageValue;
-        }
-      }
-    }
+    // const slugOverride = slugMetadataMap[slug] || {};
 
+    return {
+      title:  article.title,
+      description:
+        article.shortdescription,
 
-    // Fallback to a default image if no image is found
-    return "https://www.citizencorrespondent.com/images/citizen-correspondent-logo.webp";
-  };
+      keywords: `${article.category}, pr news, marketing news, business news, ${article.title}`,
 
-  const schemaImageUrl = getSchemaImageUrl();
+      // authors: [{ name: article.author.name }],
 
-  // Build schema object
-  const schemaData: any = {
-    "@context": "https://schema.org",
-    "@type": "NewsArticle",
-    headline: articleData.title,
-    description: articleData.shortdescription || articleData.introText || articleData.title,
-    datePublished: articleData.date || articleData.lastUpdated,
-    dateModified: articleData.lastUpdated,
-    author: {
-      "@type": "Person",
-      name: articleData.author.name,
-      jobTitle: articleData.author.role,
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "CitizenCorrespondent",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.citizencorrespondent.com/images/citizen-correspondent-logo.webp",
+      alternates: {
+        canonical: currentUrl,
       },
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `https://www.citizencorrespondent.com/${categorySlug}/${slug}`,
-    },
-    articleSection: articleData.category,
-    wordCount: articleData.content.reduce((count, block) => {
-      if (block.type === "paragraph") {
-        return count + (block.content?.split(" ").length || 0);
-      }
-      return count;
-    }, 0),
-  };
 
-  // Add image if available
-  if (schemaImageUrl && schemaImageUrl !== "https://www.citizencorrespondent.com/images/citizen-correspondent-logo.webp") {
-    schemaData.image = {
-      "@type": "ImageObject",
-      url: schemaImageUrl,
-      width: 1200,
-      height: 630,
+      openGraph: {
+        title: article.title,
+        description: article.shortdescription,
+        url: currentUrl,
+        siteName: "PR Promotion Hub",
+        locale: "en_US",
+        type: "article",
+        images: [
+          {
+            url: imageUrl,
+            width: 1200,
+            height: 630,
+            alt: article.title,
+          },
+        ],
+      },
+
+      twitter: {
+        card: "summary_large_image",
+        title: article.title,
+        description: article.shortdescription,
+        images: [imageUrl],
+        site: "@prpromotionhub",
+        creator: "@prpromotionhub",
+      },
+
+      other: {
+        "script:ld+json": JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "NewsArticle",
+          headline: article.title,
+          description: article.shortdescription,
+          datePublished: article.date,
+          dateModified: article.date,
+          author: {
+            "@type": "Person",
+            // name: article.author,
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "PR Promotion Hub",
+            logo: {
+              "@type": "ImageObject",
+              url: `${siteUrl}/images/pr-logo.webp`,
+            },
+          },
+          image: imageUrl,
+          url: currentUrl,
+          articleBody: article.shortdescription?.slice(0, 200),
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": currentUrl,
+          },
+          keywords: `${article.category}, pr news, marketing, business`,
+        }),
+      },
     };
   }
+
+  export default async function DetailPage({ params }: DetailPageProps) {
+    const { category, slug } = await params;
+    const data = allData[category?.toLowerCase()];
+
+ if (!data) {
+  notFound();
+}
+    const article = data.find(item => item.slug === slug);
+ if (!article) {
+  notFound();
+}
+
+const relatedArticles = data.filter(item => item.slug !== slug);
+
+const sidebarItems = relatedArticles.slice(0, 3);
+const youMayAlsoLikeItems = relatedArticles.slice(3,8);
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(schemaData),
-        }}
-      />
+     
 
       <div className="bg-white min-h-screen">
-        <div className="hidden">{articleData.title} | CitizenCorrespondent</div>
+        <div className="hidden">{article.title} | Qlork</div>
         <DateBar />
         <MainNav />
         {/* <CategoryNav /> */}
@@ -344,16 +227,14 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         <div className="">
           <ArticleWithSidebar
             article={{
-              slug: articleData.slug,
-              category: articleData.category,
-              title: articleData.title,
-              introText: articleData.introText,
-              readingTime: articleData.readingTime,
-              author: articleData.author,
-              lastUpdated: articleData.lastUpdated,
-              summary:articleData.summary,
-              content: articleData.content as ArticleContentBlock[],
-              bookmarked: articleData.bookmarked,
+              slug: article.slug,
+              category: article.category,
+              title: article.title,
+              shortdescription: article.shortdescription,
+              author: article.author,
+              image:article.image,
+              date: article.date,
+              sub: article.sub,
             }}
             sidebarItems={sidebarItems}
             sidebarHeading="Latest News"

@@ -8,7 +8,7 @@ interface DateBarProps {
 }
 
 const DateBar: React.FC<DateBarProps> = ({
-  message = "Exclusive insights, data, and analysis for financial market experts.",
+  message = "Exclusive news, insights, and analysis for financial market experts.",
   buttonText = "Explore Now",
 }) => {
   const [isVisible, setIsVisible] = useState(false);

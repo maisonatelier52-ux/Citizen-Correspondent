@@ -3,10 +3,10 @@ import "./globals.css";
 // import LoadingScreen from "@/src/components/LoadingScreen";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.citizencorrespondent.com"),
+  metadataBase: new URL("https://www.Qlork.com"),
   title: {
-    default: "CitizenCorrespondent – Latest News & Breaking Stories 2025",
-    template: "%s | CitizenCorrespondent",
+    default: "Qlork – Latest News & Breaking Stories 2025",
+    template: "%s | Qlork",
   },
   description: "Breaking news, analysis & coverage of world events, politics, business, technology & health. Your trusted source for reliable journalism in 2025.",
   keywords: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "health news",
     "finance news",
     "global affairs",
-    "citizen correspondent",
+    "qlork",
     "news 2025",
     "current events",
     "news analysis",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     "reliable news",
     "trusted journalism",
   ].join(", "),
-  authors: [{ name: "CitizenCorrespondent" }],
-  creator: "CitizenCorrespondent",
-  publisher: "CitizenCorrespondent",
+  authors: [{ name: "Qlork" }],
+  creator: "Qlork",
+  publisher: "Qlork",
   formatDetection: {
     email: false,
     address: false,
@@ -38,25 +38,25 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.citizencorrespondent.com",
-    siteName: "CitizenCorrespondent",
-    title: "CitizenCorrespondent – Latest News & Breaking Stories 2025",
+    url: "https://www.Qlork.com",
+    siteName: "Qlork",
+    title: "Qlork – Latest News & Breaking Stories 2025",
     description: "Breaking news, analysis & coverage of world events, politics, business, technology & health. Trusted journalism in 2025.",
     images: [
       {
-        url: "https://www.citizencorrespondent.com/images/.svg",
+        url: "https://www.Qlork.com/images/qlork-twitter-card.webp",
         width: 1200,
         height: 630,
-        alt: "CitizenCorrespondent – Latest News & Breaking Stories 2025",
+        alt: "Qlork – Latest News & Breaking Stories 2025",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "CitizenCorrespondent – Latest News & Breaking Stories 2025",
+    title: "Qlork – Latest News & Breaking Stories 2025",
     description: "Stay instantly connected with breaking stories and live updates. Your trusted source for reliable journalism.",
-    images: ["https://www.citizencorrespondent.com/images/citizen-correspondent-logo.webp"],
-    creator: "@CitizenCorrespondent",
+    images: ["https://www.Qlork.com/images/news/qlork-logo.webp"],
+    creator: "@Qlork",
   },
   robots: {
     index: true,
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://www.citizencorrespondent.com",
+    canonical: "https://www.Qlork.com",
   },
   verification: {
     google: "your-google-verification-code",
@@ -78,14 +78,14 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/images/cc-favIcon.svg", type: "image/svg+xml" },
-      { url: "/images/cc-favIcon.svg", type: "image/svg+xml", sizes: "any" },
+      { url: "/images/qlork-favIcon.webp", type: "image/svg+xml" },
+      { url: "/images/qlork-favIcon.webp", type: "image/svg+xml", sizes: "any" },
     ],
-    shortcut: "/images/cc-favIcon.svg",
-    apple: "/images/cc-favIcon.svg",
+    shortcut: "/images/qlork-favIcon.webp",
+    apple: "/images/qlork-favIcon.webp",
     other: {
       rel: "apple-touch-icon-precomposed",
-      url: "/images/cc-favIcon.svg",
+      url: "/images/qlork-favIcon.webp",
     },
   },
 };
@@ -103,11 +103,11 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         
         {/* Favicon */}
-        <link rel="icon" href="/images/cc-favIcon.svg" type="image/svg+xml" />
-        <link rel="shortcut icon" href="/images/cc-favIcon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/images/cc-favIcon.svg" />
-        <link rel="icon" type="image/svg+xml" sizes="any" href="/images/cc-favIcon.svg" />
-        <link rel="icon" type="image/svg+xml" href="/images/cc-favIcon.svg" />
+        {/* <link rel="icon" href="/images/qlork-favIcon.webp" type="image/svg+xml" />
+        <link rel="shortcut icon" href="/images/qlork-favIcon.webp" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/images/qlork-favIcon.webp" />
+        <link rel="icon" type="image/svg+xml" sizes="any" href="/images/qlork-favIcon.webp" />
+        <link rel="icon" type="image/svg+xml" href="/images/qlork-favIcon.webp" /> */}
       </head>
       <body className="font-sans antialiased">
         {/* <LoadingScreen /> */}

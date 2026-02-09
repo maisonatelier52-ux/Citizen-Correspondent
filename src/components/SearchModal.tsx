@@ -90,7 +90,7 @@ const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => {
               type="search"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search articles..."
+              placeholder="Search news"
               className="flex-1 px-4 py-3 text-sm text-white outline-none placeholder-gray-500 font-medium bg-black"
               autoFocus
             />
