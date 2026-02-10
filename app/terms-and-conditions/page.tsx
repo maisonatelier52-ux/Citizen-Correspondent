@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://www.Qlork.com/images/news/qlork-logo.webp",
+        url: "https://www.Qlork.com/images/news-img/qlork-logo.webp",
         width: 1200,
         height: 630,
         alt: "Terms & Conditions | Qlork",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Terms & Conditions | Qlork",
     description: "Read Qlork's Terms & Conditions to understand the rules for using our website.",
-    images: ["https://www.Qlork.com/images/news/qlork-logo.webp"],
+    images: ["https://www.Qlork.com/images/news-img/qlork-logo.webp"],
   },
   robots: {
     index: true,

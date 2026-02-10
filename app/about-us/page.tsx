@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://www.Qlork.com/images/news/qlork-logo.webp",
+        url: "https://www.Qlork.com/images/news-img/qlork-logo.webp",
         width: 1200,
         height: 630,
         alt: "About Us | Qlork",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "About Us | Qlork",
     description: "Learn about Qlork - our mission, vision, and commitment to quality journalism.",
-    images: ["https://www.Qlork.com/images/news/qlork-logo.webp"],
+    images: ["https://www.Qlork.com/images/news-img/qlork-logo.webp"],
   },
   robots: {
     index: true,

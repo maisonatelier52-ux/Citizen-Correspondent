@@ -1,29 +1,28 @@
 'use client';
 
 import React from 'react';
-import WorldData from '../../public/data/worldPage/world-featureCategoryPart.json';
-import BusinessData from '../../public/data/businessPage/business-featureCategoryPart.json';
-import PoliticsData from '../../public/data/politicsPage/politics-featureCategoryPart.json';
-import OpinionData from '../../public/data/opinionPage/opinion-featureCategoryPart.json';
-import FinanceData from '../../public/data/financePage/finance-featureCategoryPart.json';
-import HealthData from '../../public/data/healthPage/health-featureCategoryPart.json';
-import EducationData from '../../public/data/educationPage/education-featureCategoryPart.json';
-import GlobalAffairsData from '../../public/data/global-affairsPage/global-affairs-featureCategoryPart.json';
+import WorldData from '../../public/data/world.json';
+import BusinessData from '../../public/data/business.json';
+import PoliticsData from '../../public/data/politics.json';
+import OpinionData from '../../public/data/opinion.json';
+import FinanceData from '../../public/data/finance.json';
+import HealthData from '../../public/data/health.json';
+import EducationData from '../../public/data/education.json';
+import GlobalAffairsData from '../../public/data/global-affairs.json';
 import Link from 'next/link';
 
 const newsItems = [
-  { label: 'WORLD', title: WorldData.featuredArticle.title, slug:  WorldData.featuredArticle.slug},
-  { label: 'BUSINESS', title: BusinessData.featuredArticle.title, slug: BusinessData.featuredArticle.slug },
-  { label: 'POLITICS', title: PoliticsData.featuredArticle.title, slug:PoliticsData.featuredArticle.slug },
-  { label: 'OPINION', title: OpinionData.featuredArticle.title, slug:OpinionData.featuredArticle.slug },
-  { label: 'FINANCE', title: FinanceData.featuredArticle.title, slug:FinanceData.featuredArticle.slug},
-  { label: 'HEALTH', title: HealthData.featuredArticle.title, slug:HealthData.featuredArticle.slug },
-  { label: 'EDUCATION', title: EducationData.featuredArticle.title, slug:EducationData.featuredArticle.slug },
-  { label: 'GLOBAL', title: GlobalAffairsData.featuredArticle.title, slug:GlobalAffairsData.featuredArticle.slug },
+  { label: 'WORLD', title: WorldData[0].title, slug:  WorldData[0].slug},
+  { label: 'BUSINESS', title: BusinessData[0].title, slug: BusinessData[0].slug },
+  { label: 'POLITICS', title: PoliticsData[0].title, slug:PoliticsData[0].slug },
+  { label: 'OPINION', title: OpinionData[0].title, slug:OpinionData[0].slug },
+  { label: 'FINANCE', title: FinanceData[0].title, slug:FinanceData[0].slug},
+  { label: 'HEALTH', title: HealthData[0].title, slug:HealthData[0].slug },
+  { label: 'EDUCATION', title: EducationData[0].title, slug:EducationData[0].slug },
+  { label: 'GLOBAL', title: GlobalAffairsData[0].title, slug:GlobalAffairsData[0].slug },
 ];
 
 
-// duplicate for seamless loop
 const tickerItems = [...newsItems, ...newsItems];
 
 export default function TrendingNews() {

@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-// import LoadingScreen from "@/src/components/LoadingScreen";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.Qlork.com"),
   title: {
-    default: "Qlork – Latest News & Breaking Stories 2025",
+    default: "Qlork – Latest News & Breaking Stories",
     template: "%s | Qlork",
   },
   description: "Breaking news, analysis & coverage of world events, politics, business, technology & health. Your trusted source for reliable journalism in 2025.",
@@ -40,22 +39,22 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://www.Qlork.com",
     siteName: "Qlork",
-    title: "Qlork – Latest News & Breaking Stories 2025",
+    title: "Qlork – Latest News & Breaking Stories",
     description: "Breaking news, analysis & coverage of world events, politics, business, technology & health. Trusted journalism in 2025.",
     images: [
       {
         url: "https://www.Qlork.com/images/qlork-twitter-card.webp",
         width: 1200,
         height: 630,
-        alt: "Qlork – Latest News & Breaking Stories 2025",
+        alt: "Qlork – Latest News & Breaking Stories",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Qlork – Latest News & Breaking Stories 2025",
+    title: "Qlork – Latest News & Breaking Stories",
     description: "Stay instantly connected with breaking stories and live updates. Your trusted source for reliable journalism.",
-    images: ["https://www.Qlork.com/images/news/qlork-logo.webp"],
+    images: ["https://www.Qlork.com/images/news-img/qlork-logo.webp"],
     creator: "@Qlork",
   },
   robots: {

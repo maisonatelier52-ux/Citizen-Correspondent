@@ -93,7 +93,7 @@ const [submitSuccess, setSubmitSuccess] = useState(false);
             {/* Logo */}
             <Link href="/" title="Qlork Home" className="flex items-center">
               <Image
-                src="/images/news/qlork-logo.webp"
+                src="/images/news-img/qlork-logo.webp"
                 alt="Qlork"
                 width={90}
                 height={30}

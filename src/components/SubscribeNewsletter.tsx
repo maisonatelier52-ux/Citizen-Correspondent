@@ -64,7 +64,7 @@ const SubscribeNewsletter: React.FC = () => {
       {/* Logo Icon */}
       <div className="mb-4">
         <Image
-          src="/images/news/qlork-logo.webp"
+          src="/images/news-img/qlork-logo.webp"
           alt="Qlork"
           width={100}
           height={60}

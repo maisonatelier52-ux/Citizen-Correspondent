@@ -1,24 +1,11 @@
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
-import { FeaturedArticleCardProps } from "@/src/components/FeaturedArticleCard";
-import { ArticleCardSmallProps } from "@/src/components/ArticleCardSmall";
-import { AdBannerProps } from "@/src/components/AdBanner";
-import { OverlayArticleGridItem } from "@/src/components/OverlayArticleGrid";
-import { HorizontalArticleCardProps } from "@/src/components/HorizontalArticleCard";
-import { HeroArticle } from "@/src/components/FeatureHomePart";
-import { SidebarItem } from "@/src/components/Sidebar";
-import { HorizontalSidebarItem } from "@/src/components/HorizontalSidebar";
-import { MainGridItem } from "@/src/components/MainGrid";
-import homeData from "@/public/data/homePage/home-featureHomepart.json";
-import mainGridData from "@/public/data/homePage/home-mainGrid.json";
-import homeLandingPartData from "@/public/data/homePage/home-homelandingpart.json";
 import horizontalLandingPartData from "@/public/data/homePage/home-horizondallandingpart.json";
 
 // Critical above-the-fold components - import directly (no dynamic import for faster load)
 import DateBar from "@/src/components/DateBar";
 import MainNav from "@/src/components/MainNav";
-import CategoryNav from "@/src/components/CategoryNav";
 import FeatureHomePart from "@/src/components/FeatureHomePart";
 import HomeLandingPart from "@/src/components/HomeLandingPart";
 import HorizontalLandingPart from "@/src/components/HorizontalLandingPart";
@@ -69,7 +56,7 @@ const Footer = dynamic(() => import("@/src/components/Footer"), {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.Qlork.com"),
-  title: "Qlork – Latest News & Breaking Stories 2025",
+  title: "Qlork – Latest News & Breaking Stories",
   description: "Breaking news, analysis & coverage of world events, politics, business, technology & health. Your trusted source for reliable journalism in 2025.",
   keywords: [
     "breaking news",
@@ -88,16 +75,16 @@ export const metadata: Metadata = {
     "journalism",
   ].join(", "),
   openGraph: {
-    title: "Qlork – Latest News & Breaking Stories 2025",
+    title: "Qlork – Latest News & Breaking Stories",
     description: "Breaking news, analysis & coverage of world events, politics, business, technology & health. Trusted journalism in 2025.",
     url: "https://www.Qlork.com",
     siteName: "Qlork",
     images: [
       {
-        url: "https://www.Qlork.com/images/news/qlork-logo.webp",
+        url: "https://www.Qlork.com/images/news-img/qlork-logo.webp",
         width: 1200,
         height: 630,
-        alt: "Qlork – Latest News & Breaking Stories 2025",
+        alt: "Qlork – Latest News & Breaking Stories",
       },
     ],
     locale: "en_US",
@@ -110,9 +97,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Qlork – Latest News & Breaking Stories 2025",
+    title: "Qlork – Latest News & Breaking Stories",
     description: "Breaking news, in-depth analysis & comprehensive coverage of world events, politics, business, technology & health. Trusted journalism in 2025.",
-    images: ["https://www.Qlork.com/images/news/qlork-logo.webp"],
+    images: ["https://www.Qlork.com/images/news-img/qlork-logo.webp"],
   },
   robots: {
     index: true,
@@ -175,7 +162,7 @@ export default async function HomePage() {
         {/* Visible heading with title keywords for SEO */}
         <div className="max-w-360 mx-auto px-3 md:px-16 py-4">
           <div className="text-1xl md:text-1xl font-bold text-gray-900 mb-2">
-            Latest News & Breaking Stories 2025
+            Latest News & Breaking Stories
           </div>
           <p className="text-base text-gray-700 leading-tight">
             Stay informed with the latest breaking news and stories from around the world. Get real-time updates on politics, business, technology, health, and more.
