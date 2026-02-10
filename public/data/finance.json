@@ -1,5 +1,4 @@
 [
-  
  {
   "category": "finance",
   "topic": "finance",
@@ -31,10 +30,10 @@
     }
   ],
   "author": {
-    "name": "Staff Reporter",
-    "role": "Financial Correspondent",
-    "bio": "Covers financial markets, corporate earnings, and global business trends with a focus on data-driven reporting.",
-    "image": "",
+  "name": "David Thompson",
+        "role": "News Reporter",
+        "bio": "",
+         "image": "/images/authors/david-thompson.webp",
     "email": "",
     "twitter": "",
     "facebook": "",
@@ -75,12 +74,12 @@
         }
     ],
     "author": {
-        "name": "Associated Press",
-        "role": "Financial Correspondent",
-        "bio": "Covers personal finance, tax planning and wealth management topics that affect households and investors.",
-        "image": "ap-news-author.jpg",
+       "name": "David Thompson",
+        "role": "News Reporter",
+        "bio": "",
+         "image": "/images/authors/david-thompson.webp",
         "email": "",
-        "twitter": "https://twitter.com/AP",
+        "twitter": "",
         "facebook": "",
         "instagram": "",
         "substack": "",
@@ -120,12 +119,12 @@
         }
     ],
     "author": {
-        "name": "Associated Press",
-        "role": "Personal Finance Correspondent",
-        "bio": "Covers personal finance issues that affect individuals and households, including tax season developments, budgeting, and financial planning.",
-        "image": "ap-news-author.jpg",
+  "name": "David Thompson",
+        "role": "News Reporter",
+        "bio": "",
+         "image": "/images/authors/david-thompson.webp",
         "email": "",
-        "twitter": "https://twitter.com/AP",
+        "twitter": "",
         "facebook": "",
         "instagram": "",
         "substack": "",

@@ -23,36 +23,11 @@ import opinionData from '../public/data/opinion.json';
 import politicsData from '../public/data/politics.json';
 import worldData from '../public/data/world.json';
 import globalaffairsData from '../public/data/global-affairs.json';
-
-
-// Lazy load below-the-fold components for code splitting
-const MainGrid = dynamic(() => import("@/src/components/MainGrid"), {
-  loading: () => <div className="h-64 animate-pulse bg-gray-100" />,
-});
-
-const MainGridLazy = dynamic(() => import("@/src/components/MainGrid"), {
-  loading: () => <div className="h-64 animate-pulse bg-gray-100" />,
-});
-
-const FeatureCategoryPart = dynamic(() => import("@/src/components/FeatureCategoryPart"), {
-  loading: () => <div className="h-96 animate-pulse bg-gray-100" />,
-});
-
-const BigAddBanner = dynamic(() => import("@/src/components/BigAddBanner"), {
-  loading: () => <div className="h-32 animate-pulse bg-gray-100" />,
-});
-
-const HorizontalArticleCard = dynamic(() => import("@/src/components/HorizontalArticleCard"), {
-  loading: () => <div className="h-64 animate-pulse bg-gray-100" />,
-});
-
-const OverlayArticleGrid = dynamic(() => import("@/src/components/OverlayArticleGrid"), {
-  loading: () => <div className="h-96 animate-pulse bg-gray-100" />,
-});
-
-const Footer = dynamic(() => import("@/src/components/Footer"), {
-  loading: () => <div className="h-64 animate-pulse bg-gray-100" />,
-});
+import MainGrid from "@/src/components/MainGrid";
+import MainGridLazy from "@/src/components/MainGrid"
+import BigAddBanner from "@/src/components/BigAddBanner";
+import OverlayArticleGrid from "@/src/components/OverlayArticleGrid";
+import Footer from "@/src/components/Footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.Qlork.com"),
@@ -159,7 +134,6 @@ export default async function HomePage() {
           <MainGrid items={[worldData[0],worldData[1],worldData[2],worldData[3],worldData[4]]} heading="World" />
         </div>
 
-        {/* Visible heading with title keywords for SEO */}
         <div className="max-w-360 mx-auto px-3 md:px-16 py-4">
           <div className="text-1xl md:text-1xl font-bold text-gray-900 mb-2">
             Latest News & Breaking Stories
@@ -175,13 +149,11 @@ export default async function HomePage() {
           </div>
         </Suspense>
 
-        {/* Business landing layout (data from home-homelandingpart.json) */}
         <HomeLandingPart
           mainFeature={featuredData[1]}
           sidebarItems={[globalaffairsData[0],featuredData[0],hotData[0],opinionData[0],worldData[5]]}
         />
 
-        {/* Technology horizontal landing section */}
         <div className="max-w-360 mx-auto px-3 md:px-16 pt-5 md:pt-0">
           <HorizontalLandingPart
             intro={horizontalLandingIntro}

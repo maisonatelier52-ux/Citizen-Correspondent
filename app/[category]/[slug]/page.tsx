@@ -1,17 +1,12 @@
 import DateBar from "@/src/components/DateBar";
 import MainNav from "@/src/components/MainNav";
-import CategoryNav from "@/src/components/CategoryNav";
 import ArticleWithSidebar from "@/src/components/ArticleWithSidebar";
 import MainGrid from "@/src/components/MainGrid";
 import ArticlePageNav from "@/src/components/ArticlePageNav";
 import Footer from "@/src/components/Footer";
-import { ArticleContentBlock } from "@/src/components/ArticleDetail";
-import { SidebarItem } from "@/src/components/Sidebar";
-import { MainGridItem } from "@/src/components/MainGrid";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import TrendingNews from "@/src/components/TrendingNews";
-
 import businessData from '../../../public/data/business.json';
 import educationData from '../../../public/data/education.json';
 import featuredData from '../../../public/data/featured.json';
@@ -66,6 +61,7 @@ import globalaffairsData from '../../../public/data/global-affairs.json';
     image: string;
     slug: string;
     sub: Sub[];
+    topic:string;
     date: string;
     author:Author;
   }
@@ -83,10 +79,11 @@ import globalaffairsData from '../../../public/data/global-affairs.json';
     health: healthData,
     politics: politicsData,
     hot:hotData,
+    opinion:opinionData,
     "global-affairs":globalaffairsData
   };
 
-    export async function generateMetadata(
+export async function generateMetadata(
     { params }: DetailPageProps
   ): Promise<Metadata> {
     const { category, slug } = await params;
@@ -216,13 +213,10 @@ const youMayAlsoLikeItems = relatedArticles.slice(3,8);
 
   return (
     <>
-     
-
       <div className="bg-white min-h-screen">
         <div className="hidden">{article.title} | Qlork</div>
         <DateBar />
         <MainNav />
-        {/* <CategoryNav /> */}
         <TrendingNews />
         <div className="">
           <ArticleWithSidebar
@@ -235,6 +229,7 @@ const youMayAlsoLikeItems = relatedArticles.slice(3,8);
               image:article.image,
               date: article.date,
               sub: article.sub,
+              topic:article.topic
             }}
             sidebarItems={sidebarItems}
             sidebarHeading="Latest News"

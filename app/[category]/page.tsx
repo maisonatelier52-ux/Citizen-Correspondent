@@ -1,21 +1,14 @@
 import DateBar from "@/src/components/DateBar";
 import MainNav from "@/src/components/MainNav";
-import CategoryNav from "@/src/components/CategoryNav";
 import CategoryIntro from "@/src/components/CategoryIntro";
 import CategoryLandingPart, {
-    CategoryLandingMainFeature,
-    CategoryLandingArticle,
     CategoryLandingPromo,
 } from "@/src/components/CategoryLandingPart";
-import { FeaturedArticleCardProps } from "@/src/components/FeaturedArticleCard";
-import { ArticleCardSmallProps } from "@/src/components/ArticleCardSmall";
-import { AdBannerProps } from "@/src/components/AdBanner";
-import MainGrid, { MainGridItem } from "@/src/components/MainGrid";
+import MainGrid from "@/src/components/MainGrid";
 import Footer from "@/src/components/Footer";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import TrendingNews from "@/src/components/TrendingNews";
-
 import businessData from '../../public/data/business.json';
 import educationData from '../../public/data/education.json';
 import featuredData from '../../public/data/featured.json';
@@ -27,16 +20,11 @@ import politicsData from '../../public/data/politics.json';
 import worldData from '../../public/data/world.json';
 import globalaffairsData from '../../public/data/global-affairs.json';
 
-interface CategoryPageProps {
-    params: Promise<{
-        category: string;
-    }>;
-}
-
 interface Sub {
     title:string;
     descr:string;
 }
+
 interface NewsItem {
   category: string;
   title: string;
@@ -46,7 +34,6 @@ interface NewsItem {
   date: string;
   sub:Sub[];
 }
-
 
 const allData: Record<string, NewsItem[]> = {
   business: businessData,
@@ -78,8 +65,7 @@ const categoryDescriptions: Record<string, string> = {
     education: "Latest education developments from K-12 to higher education. Policy changes, innovative teaching methods, student achievements, and learning's future.",
     "global-affairs": "In-depth coverage of international relations, diplomacy, and global events. How nations interact, cooperate, and address shared challenges.",
     featured: "Handpicked top stories, exclusive interviews, and must-read articles. The best of our journalism and the most important stories of 2025.",
-    "renewable-energy": "Latest renewable energy developments, sustainable technology, and green initiatives. Solar, wind, hydroelectric, and clean energy solutions 2025.",
-    "climate-change": "Climate science, environmental policy, and sustainability coverage. Latest research, climate action, and solutions to address global warming.",
+   "climate-change": "Climate science, environmental policy, and sustainability coverage. Latest research, climate action, and solutions to address global warming.",
     hot: "Breaking news and trending stories everyone's talking about. Latest updates on viral topics, social media trends, and stories capturing global attention.",
     research: "Groundbreaking research, scientific discoveries, and academic studies. Latest findings in medicine, technology, and science shaping our world 2025.",
     health: "Health news, medical breakthroughs, wellness tips, and healthcare policy. Public health updates, medical research, and healthy lifestyle guidance.",
@@ -91,7 +77,7 @@ export async function generateMetadata({
   params: { category: string };
 }): Promise<Metadata> {
 
-  const { category } = params;
+  const { category } = await params;
   const siteUrl = "https://www.prpromotionhub.com";
   const categoryUrl = `${siteUrl}/${category}`;
 

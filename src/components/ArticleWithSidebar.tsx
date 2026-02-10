@@ -23,6 +23,7 @@ interface ArticleWithSidebarProps {
     shortdescription: string;
     date: string;
     sub: Sub[];
+    topic:string;
     image:string;
     author:Author;
   };
@@ -78,6 +79,7 @@ const ArticleWithSidebar: React.FC<ArticleWithSidebarProps> = ({
           image={article.image}
           date={article.date}
           sub={article.sub}
+          topic={article.topic}
           onShare={onShare}
         />
         <div className="article-end h-1"></div>

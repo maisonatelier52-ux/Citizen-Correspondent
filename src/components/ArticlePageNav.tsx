@@ -14,13 +14,11 @@ const ArticlePageNav: React.FC = () => {
     { name: "Education", slug: "education" },
     { name: "Global Affairs", slug: "global-affairs" },
     { name: "Featured", slug: "featured" },
-    { name: "Renewable Energy", slug: "renewable-energy" },
     // { name: "Climate Change", slug: "climate-change" },
     { name: "Hot", slug: "hot" },
     { name: "Politics", slug: "politics" },
-    { name: "Research", slug: "research" },
     { name: "Health", slug: "health" },
-    { name: "Markets", slug: "finance" },
+    { name: "Finance", slug: "finance" },
     // { name: "Policy Analysis", slug: "policy-analysis" },
   ];
 

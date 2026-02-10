@@ -13,10 +13,8 @@ const CategoryNav: React.FC<CategoryNavProps> = ({
     "Education",
     "Global Affairs",
     "Featured",
-    "Renewable Energy",
     // "Climate Change",
     "Hot",
-    "Research",
     "Health",
   ],
 }) => {

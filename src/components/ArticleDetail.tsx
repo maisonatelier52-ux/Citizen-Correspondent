@@ -34,6 +34,7 @@ export interface ArticleDetailProps {
   image:string;
   sub: Sub[];
   author:Author;
+  topic:string;
   onShare?: (platform: string) => void;
   className?: string;
 }
@@ -47,6 +48,7 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({
   date,
   sub,
   author,
+  topic,
   className = "",
 }) => {
 
@@ -58,12 +60,11 @@ console.log(author,'author')
         {/* Category Tag */}
         <div className="flex items-center gap-2 mb-4">
           <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
-          <Link
-            href={`/${category.toLowerCase().replace(/\s+/g, "-")}`}
+          <p
             className="text-sm font-medium text-orange-500 hover:text-orange-600 transition-colors"
           >
-            {category}
-          </Link>
+            {topic}
+          </p>
         </div>
 
         {/* Main Title */}
@@ -92,7 +93,8 @@ console.log(author,'author')
           <div className="relative w-9 h-9 sm:w-12 sm:h-12 shrink-0">
             <Link href="/our-team" className="flex items-center gap-4">
           
-            </Link>    <Image
+            </Link>
+            <Image
                 src={author.image}
                 alt={author.name}
                 fill
