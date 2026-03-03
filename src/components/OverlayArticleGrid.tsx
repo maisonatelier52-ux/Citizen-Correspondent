@@ -1,9 +1,6 @@
-// components/OverlayArticleGrid.tsx
-"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Bookmark } from "lucide-react";
 
 export interface OverlayArticleGridItem {
   slug: string;
@@ -11,6 +8,7 @@ export interface OverlayArticleGridItem {
   category: string;
   date: string;
   image: string;
+  topic: string;
   excerpt?: string;
   bookmarked?: boolean;
 }
@@ -18,14 +16,12 @@ export interface OverlayArticleGridItem {
 interface OverlayArticleGridProps {
   items: OverlayArticleGridItem[];
   heading?: string;
-  onBookmarkToggle?: (index: number) => void;
   className?: string;
 }
 
 const OverlayArticleGrid: React.FC<OverlayArticleGridProps> = ({
   items,
   heading,
-  onBookmarkToggle,
   className = "",
 }) => {
   return (
@@ -38,11 +34,15 @@ const OverlayArticleGrid: React.FC<OverlayArticleGridProps> = ({
       )}
       <div className="grid grid-cols-1 gap-3 md:grid-cols-3 lg:grid-cols-5">
         {items.slice(0, 4).map((item, index) => (
-          <article 
-            key={`${item.slug}-${index}`} 
-            className={`relative group ${index === 0 ? 'md:col-span-2 lg:col-span-2' : ''}`}
+          <article
+            key={`${item.slug}-${index}`}
+            className={`relative group ${index === 0 ? "md:col-span-2 lg:col-span-2" : ""}`}
           >
-            <Link href={`/${item.category.toLocaleLowerCase()}/${item.slug}`} title={item.title} className="block">
+            <Link
+              href={`/${item.category.toLocaleLowerCase()}/${item.slug}`}
+              title={item.title}
+              className="block"
+            >
               <div className="relative w-full aspect-[4/2] sm:aspect-[3/4] md:aspect-auto md:h-[433px] overflow-hidden">
                 <Image
                   src={item.image}
@@ -57,15 +57,15 @@ const OverlayArticleGrid: React.FC<OverlayArticleGridProps> = ({
                 />
                 {/* Dark Gradient Overlay */}
                 <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/50 to-transparent" />
-                
+
                 {/* Content Overlay */}
                 <div className="absolute inset-0 flex flex-col justify-end p-3 sm:p-4 text-white">
-                  <div className="text-[10px] sm:text-xs font-semibold uppercase tracking-wide mb-1 sm:mb-2">
-                    {item.category}
+                  <div className="text-[11px] font-semibold uppercase tracking-wide mb-1 sm:mb-2">
+                    {item.topic}
                   </div>
-                  <h2 className="text-sm sm:text-base md:text-[23px] font-bold leading-[1.1] mb-1 sm:mb-2 group-hover:text-orange-400 transition-colors">
+                  <h3 className="text-sm sm:text-base md:text-[23px] font-bold leading-[1.1] mb-1 sm:mb-2  transition-colors">
                     {item.title}
-                  </h2>
+                  </h3>
                   {item.excerpt && (
                     <p className="text-[10px] sm:text-xs text-gray-200 line-clamp-2 mb-1 sm:mb-2">
                       {item.excerpt}
@@ -73,22 +73,6 @@ const OverlayArticleGrid: React.FC<OverlayArticleGridProps> = ({
                   )}
                   <div className="flex items-center justify-between text-[10px] sm:text-[11px]">
                     <span>{item.date}</span>
-                    <button
-                      type="button"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        onBookmarkToggle?.(index);
-                      }}
-                      aria-label={item.bookmarked ? "Remove bookmark" : "Save bookmark"}
-                      className="text-white hover:text-orange-400 transition-colors"
-                    >
-                      {/* <Bookmark
-                        className="w-3 h-3 sm:w-4 sm:h-4"
-                        fill={item.bookmarked ? "currentColor" : "none"}
-                        strokeWidth={item.bookmarked ? 0 : 2}
-                      /> */}
-                    </button>
                   </div>
                 </div>
               </div>
@@ -101,4 +85,3 @@ const OverlayArticleGrid: React.FC<OverlayArticleGridProps> = ({
 };
 
 export default OverlayArticleGrid;
-

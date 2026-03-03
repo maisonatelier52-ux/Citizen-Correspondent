@@ -1,13 +1,11 @@
-// components/FeatureHomePart.tsx
-"use client";
 import React from "react";
 import HeroLead from "./HeroLead";
 import Sidebar, { SidebarItem } from "./Sidebar";
 import HorizontalSidebar, { HorizontalSidebarItem } from "./HorizontalSidebar";
 
 export interface Sub {
-  title:string;
-  descr:string;
+  title: string;
+  descr: string;
 }
 export interface HeroArticle {
   category: string;
@@ -15,9 +13,9 @@ export interface HeroArticle {
   date: string;
   image: string;
   slug: string;
-  shortdescription:string;
-  topic:string;
-  sub:Sub[];
+  shortdescription: string;
+  topic: string;
+  sub: Sub[];
 }
 
 interface FeatureHomePartProps {
@@ -33,9 +31,6 @@ const FeatureHomePart: React.FC<FeatureHomePartProps> = ({
   hero,
   sidebarItems,
   horizontalItems,
-  onHeroBookmarkToggle,
-  onSidebarBookmarkToggle,
-  onHorizontalBookmarkToggle,
 }) => {
   return (
     <section className="bg-white">
@@ -51,15 +46,17 @@ const FeatureHomePart: React.FC<FeatureHomePartProps> = ({
                 image={hero.image}
                 slug={hero.slug}
                 sub={hero.sub}
+                topic={hero.topic}
               />
               <HorizontalSidebar
                 items={horizontalItems}
-                onBookmarkToggle={onHorizontalBookmarkToggle}
               />
             </div>
           </div>
           <div className="w-full xl:w-105 shrink-0">
-            <Sidebar items={sidebarItems} onBookmarkToggle={onSidebarBookmarkToggle} />
+            <Sidebar
+              items={sidebarItems}
+            />
           </div>
         </div>
       </div>
@@ -68,4 +65,3 @@ const FeatureHomePart: React.FC<FeatureHomePartProps> = ({
 };
 
 export default FeatureHomePart;
-

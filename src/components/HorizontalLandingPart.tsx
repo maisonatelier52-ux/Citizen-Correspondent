@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Link from "next/link";
 import HorizontalArticleCard, {
@@ -16,14 +14,12 @@ export interface HorizontalLandingIntro {
 }
 
 interface HorizontalLandingPartProps {
-  intro: HorizontalLandingIntro;
   article: HorizontalArticleCardProps;
   mainGridItems: MainGridItem[];
   heading?: string;
 }
 
 const HorizontalLandingPart: React.FC<HorizontalLandingPartProps> = ({
-  intro,
   article,
   mainGridItems,
   heading,
@@ -33,7 +29,9 @@ const HorizontalLandingPart: React.FC<HorizontalLandingPartProps> = ({
       <div className="max-w-360 mx-auto py-0 sm:py-8">
         {heading && (
           <div className="flex items-center gap-2 mb-3 sm:mb-4">
-            <h2 className="text-lg sm:text-xl font-semibold text-gray-900">{heading}</h2>
+            <h2 className="text-lg sm:text-xl font-semibold text-gray-900">
+              {heading}
+            </h2>
             <span className="text-gray-500 text-lg">›</span>
           </div>
         )}
@@ -45,25 +43,33 @@ const HorizontalLandingPart: React.FC<HorizontalLandingPartProps> = ({
                 <p className="text-sm font-semibold text-orange-700 uppercase tracking-wide">
                   World
                 </p>
-                <h2 className="text-2xl sm:text-[24px] font-black leading-tight text-red-900 whitespace-pre-line">
-                  {intro.title}
-                </h2>
+                <h3 className="text-2xl sm:text-[24px] font-black leading-tight text-red-900 whitespace-pre-line">
+                  Global Perspectives and World Affairs
+                </h3>
                 <p className="text-sm text-gray-700 leading-[1.4]">
-                  {intro.body}
+                  A closer look at the stories shaping our planet. From
+                  international developments and geopolitics to culture,
+                  climate, and social change, we explore the forces influencing
+                  life across borders. Our coverage connects global events with
+                  real-world impact, offering context, clarity, and diverse
+                  perspectives to help readers better understand an
+                  interconnected world. Through timely reporting and thoughtful
+                  storytelling, we bring the world closer to you every day
+                  worldwide.
                 </p>
               </div>
               <div className="mt-6">
                 <Link
-                  href='/world'
+                  href="/world"
+                  title="world-category"
                   className="inline-flex items-center justify-center border border-gray-900 px-6 py-2 text-sm font-semibold text-gray-900 hover:bg-gray-900 hover:text-white transition-colors"
                 >
-               Explore More
+                  Explore More
                 </Link>
               </div>
             </div>
           </div>
-
-          {/* Right: horizontal article + grid */}
+          {/* Right: horizontal article and grid */}
           <div className="lg:col-span-3 space-y-6">
             <HorizontalArticleCard {...article} />
             <MainGrid items={mainGridItems} />
@@ -75,5 +81,3 @@ const HorizontalLandingPart: React.FC<HorizontalLandingPartProps> = ({
 };
 
 export default HorizontalLandingPart;
-
-

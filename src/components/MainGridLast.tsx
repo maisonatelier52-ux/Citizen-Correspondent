@@ -29,7 +29,7 @@ interface MainGridProps {
   className?: string;
 }
 
-const MainGrid: React.FC<MainGridProps> = ({
+const MainGridLast: React.FC<MainGridProps> = ({
   items,
   heading,
   initialRows = 1,
@@ -39,7 +39,7 @@ const MainGrid: React.FC<MainGridProps> = ({
   showLessLabel = "Show Less ←",
   className = "",
 }) => {
-  const initialCount = initialRows * 4;
+  const initialCount = initialRows * 9;
   const [visibleCount, setVisibleCount] = useState(initialCount);
   const itemsToShow = items.slice(0, visibleCount);
   const hasMore = items.length > visibleCount;
@@ -103,7 +103,6 @@ const MainGrid: React.FC<MainGridProps> = ({
                       {item.topic}
                     </span>
                   </div>
-
                   <Link
                     href={`/${item.category}/${item.slug}`}
                     title={item.title}
@@ -149,4 +148,4 @@ const MainGrid: React.FC<MainGridProps> = ({
   );
 };
 
-export default MainGrid;
+export default MainGridLast;

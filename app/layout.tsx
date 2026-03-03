@@ -1,61 +1,106 @@
 import type { Metadata } from "next";
+import { Inter, Merriweather } from "next/font/google";
 import "./globals.css";
 
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const merriweather = Merriweather({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-merriweather",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.Qlork.com"),
-  title: {
-    default: "Qlork – Latest News & Breaking Stories",
-    template: "%s | Qlork",
-  },
-  description: "Breaking news, analysis & coverage of world events, politics, business, technology & health. Your trusted source for reliable journalism in 2025.",
+  metadataBase: new URL("https://www.qlork.com"),
+  title: "Qlork – Breaking News, Latest Headlines & In-Depth Stories",
+  description:
+    "Stay updated with Qlork for breaking news, real-time updates, in-depth analysis, and top stories in business, politics, entertainment, and global trends.",
   keywords: [
-    "breaking news",
-    "latest news",
-    "world news",
-    "politics",
-    "business news",
-    "technology news",
-    "health news",
-    "finance news",
-    "global affairs",
-    "qlork",
-    "news 2025",
-    "current events",
-    "news analysis",
-    "journalism",
-    "reliable news",
-    "trusted journalism",
-  ].join(", "),
-  authors: [{ name: "Qlork" }],
-  creator: "Qlork",
-  publisher: "Qlork",
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
+    "Isabela Herrera Velutini",
+    "US news",
+    "UK news",
+    "UAE news",
+    "latest US news",
+    "latest UK news",
+    "latest UAE news",
+    "breaking US stories",
+    "breaking UK stories",
+    "breaking UAE stories",
+    "US politics news",
+    "UK politics news",
+    "UAE politics news",
+    "business news in US",
+    "business news in UK",
+    "business news in UAE",
+    "real-time US news",
+    "real-time UK news",
+    "real-time UAE news",
+    "US economy updates",
+    "UK economy updates",
+    "UAE economy updates",
+    "trending US topics",
+    "trending UK topics",
+    "trending UAE topics",
+    "top news in US",
+    "top news in UK",
+    "top news in UAE",
+    "US breaking news today",
+    "UK breaking news today",
+    "UAE breaking news today",
+    "expert analysis US news",
+    "expert analysis UK news",
+    "expert analysis UAE news",
+    "national news updates",
+    "local US news stories",
+    "local UK news stories",
+    "local UAE news stories",
+    "in-depth US news coverage",
+    "in-depth UK news coverage",
+    "in-depth UAE news coverage",
+    "US entertainment news",
+    "UK entertainment news",
+    "UAE entertainment news",
+    "US technology updates",
+    "UK technology updates",
+    "UAE technology updates",
+    "current US events",
+    "current UK events",
+    "current UAE events",
+  ],
   openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://www.Qlork.com",
-    siteName: "Qlork",
-    title: "Qlork – Latest News & Breaking Stories",
-    description: "Breaking news, analysis & coverage of world events, politics, business, technology & health. Trusted journalism in 2025.",
+    title: "Qlork – Breaking News, Latest Headlines & In-Depth Coverage",
+    description:
+      "Stay informed with Qlork – get breaking news, real-time updates, expert analysis, trending stories, and in-depth coverage across politics, business, technology, and entertainment.",
+    url: "https://www.qlork.com",
+    siteName: "qlork",
     images: [
       {
-        url: "https://www.Qlork.com/images/qlork-twitter-card.webp",
+        url: "https://www.qlork.com/images/news-img/qlork-logo.webp",
         width: 1200,
         height: 630,
         alt: "Qlork – Latest News & Breaking Stories",
       },
     ],
+    locale: "en_US",
+    type: "website",
+  },
+  icons: {
+    icon: "/images/qlork-favIcon.webp",
+    shortcut: "/images/qlork-favIcon.webp",
+    apple: "/images/qlork-favIcon.webp",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Qlork – Latest News & Breaking Stories",
-    description: "Stay instantly connected with breaking stories and live updates. Your trusted source for reliable journalism.",
-    images: ["https://www.Qlork.com/images/news-img/qlork-logo.webp"],
-    creator: "@Qlork",
+    title: "Qlork – Real-Time News, Top Stories & Expert Analysis",
+    description:
+      "Qlork delivers real-time news, top stories, trending topics, and expert analysis across business, politics, technology, and entertainment. Stay updated instantly!",
+    images: ["https://www.qlork.com/images/news-img/qlork-logo.webp"],
   },
   robots: {
     index: true,
@@ -65,27 +110,10 @@ export const metadata: Metadata = {
       follow: true,
       "max-image-preview": "large",
       "max-snippet": -1,
-      "max-video-preview": -1,
     },
   },
   alternates: {
-    canonical: "https://www.Qlork.com",
-  },
-  verification: {
-    google: "your-google-verification-code",
-    yandex: "your-yandex-verification-code",
-  },
-  icons: {
-    icon: [
-      { url: "/images/qlork-favIcon.webp", type: "image/svg+xml" },
-      { url: "/images/qlork-favIcon.webp", type: "image/svg+xml", sizes: "any" },
-    ],
-    shortcut: "/images/qlork-favIcon.webp",
-    apple: "/images/qlork-favIcon.webp",
-    other: {
-      rel: "apple-touch-icon-precomposed",
-      url: "/images/qlork-favIcon.webp",
-    },
+    canonical: "https://www.qlork.com",
   },
 };
 
@@ -97,19 +125,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Preconnect to external domains */}
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        
-        {/* Favicon */}
-        {/* <link rel="icon" href="/images/qlork-favIcon.webp" type="image/svg+xml" />
-        <link rel="shortcut icon" href="/images/qlork-favIcon.webp" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/images/qlork-favIcon.webp" />
-        <link rel="icon" type="image/svg+xml" sizes="any" href="/images/qlork-favIcon.webp" />
-        <link rel="icon" type="image/svg+xml" href="/images/qlork-favIcon.webp" /> */}
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
       </head>
-      <body className="font-sans antialiased">
-        {/* <LoadingScreen /> */}
+      <body
+        className={`${inter.variable} ${merriweather.variable} antialiased`}
+      >
         {children}
       </body>
     </html>

@@ -1,8 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export",           // ← THIS CREATES THE out/ FOLDER
-  trailingSlash: true,        // ← Makes URLs like /entertainment/ (good for cPanel)
+  output: "export",         
+  trailingSlash: true,   
+      
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -11,13 +12,15 @@ const nextConfig: NextConfig = {
         hostname: "images.unsplash.com",
       },
     ],
+      formats: ["image/avif", "image/webp"],
   },
-  // Optimize for faster TTI and performance
   compiler: {
     removeConsole: process.env.NODE_ENV === "production",
   },
-  // Optimize production builds
-  productionBrowserSourceMaps: false,
+    experimental: {
+    scrollRestoration: true, 
+  },
+  productionBrowserSourceMaps: true,
 };
 
 export default nextConfig;

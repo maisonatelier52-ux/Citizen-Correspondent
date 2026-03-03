@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FaFacebook, FaFacebookF, FaInstagram, FaMedium, FaReddit, FaTwitter } from "react-icons/fa";
 import { SiSubstack } from "react-icons/si";
+import { FaInstagram } from "react-icons/fa";
 
 interface MenuItem {
   name: string;
@@ -63,10 +63,10 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ menuItems, onClose }) => {
         {/* Footer Links */}
         <div className="space-y-4 text-xs font-semibold text-gray-700">
           <div className="grid grid-cols-2 gap-4 text-left">
-            <Link href="/about-us" onClick={onClose} className="hover:text-orange-500">
+            <Link href="/about-us" onClick={onClose} className="hover:text-orange-500" title="about us">
               About Us
             </Link>
-            <Link href="/our-team" onClick={onClose} className="hover:text-orange-500">
+            <Link href="/our-team" onClick={onClose} className="hover:text-orange-500" title="our team">
               Our Team
             </Link>
           </div>
@@ -75,6 +75,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ menuItems, onClose }) => {
             <Link
               href="/privacy-policy"
               onClick={onClose}
+              title="privacy policy"
               className="hover:text-orange-500"
             >
               Privacy Policy
@@ -82,6 +83,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ menuItems, onClose }) => {
             <Link
               href="/terms-and-conditions"
               onClick={onClose}
+              title="terms and conditions"
               className="hover:text-orange-500"
             >
               Terms & Conditions
@@ -108,8 +110,11 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ menuItems, onClose }) => {
       <Link href="#" aria-label="Medium" className="hover:text-orange-500">
         <FaMedium/>
       </Link> */}
-      <Link href="https://substack.com/@Qlork" aria-label="Facebook" className="hover:text-orange-500">
+      <Link href="https://substack.com/@Qlork" aria-label="Substack" className="hover:text-orange-500">
         <SiSubstack/>
+      </Link>
+      <Link href="https://www.instagram.com/qlork_news/" aria-label="Instagram" className="hover:text-orange-500">
+        <FaInstagram/>
       </Link>
       {/* <Link href="#" aria-label="RSS" className="hover:text-orange-500">
         <FaReddit/>

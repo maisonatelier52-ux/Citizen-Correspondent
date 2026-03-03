@@ -9,6 +9,7 @@ import {
   FaLink,
 } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 interface ShareArticleProps {
   title: string;
@@ -80,13 +81,12 @@ function ShareIcon({
   children: React.ReactNode;
 }) {
   return (
-    <a
+    <Link
       href={href}
       target="_blank"
-      rel="noopener noreferrer"
       className="flex h-8 w-8 md:h-10 md:w-10 items-center justify-center rounded bg-gray-100 text-gray-700 hover:bg-gray-200 transition"
     >
       {children}
-    </a>
+    </Link>
   );
 }

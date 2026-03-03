@@ -1,15 +1,16 @@
 import { Metadata } from "next";
 import DateBar from "@/src/components/DateBar";
 import MainNav from "@/src/components/MainNav";
-import CategoryNav from "@/src/components/CategoryNav";
 import Footer from "@/src/components/Footer";
 import AuthorCard from "@/src/components/AuthorCard";
 import authorsData from "@/public/data/authors.json";
+import TrendingNews from "@/src/components/TrendingNews";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.Qlork.com"),
+  metadataBase: new URL("https://www.qlork.com"),
   title: "Authors | Qlork",
-  description: "Meet the talented team of journalists and writers at Qlork. Our award-winning authors bring you in-depth reporting, analysis, and breaking news from around the world.",
+  description:
+    "Meet the talented team of journalists and writers at Qlork. Our award-winning authors bring you in-depth reporting, analysis, and breaking news from around the world.",
   keywords: [
     "authors",
     "journalists",
@@ -22,13 +23,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Authors | Qlork",
     description: "Meet the talented team of journalists and writers at Qlork.",
-    url: "https://www.Qlork.com/our-team",
+    url: "https://www.qlork.com/our-team",
     siteName: "Qlork",
     type: "website",
     locale: "en_US",
     images: [
       {
-        url: "https://www.Qlork.com/images/news-img/qlork-logo.webp",
+        url: "https://www.qlork.com/images/news-img/qlork-logo.webp",
         width: 1200,
         height: 630,
         alt: "Authors | Qlork",
@@ -39,14 +40,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Authors | Qlork",
     description: "Meet the talented team of journalists and writers at Qlork.",
-    images: ["https://www.Qlork.com/images/news-img/qlork-logo.webp"],
+    images: ["https://www.qlork.com/images/news-img/qlork-logo.webp"],
   },
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://www.Qlork.com/our-team",
+    canonical: "https://www.qlork.com/our-team",
   },
   icons: {
     icon: "/images/qlork-favIcon.webp",
@@ -68,17 +69,18 @@ export default function AuthorsPage() {
       <div className="bg-white min-h-screen">
         <DateBar />
         <MainNav />
-        <CategoryNav />
-
+        <TrendingNews />
         <section className="py-12 px-3 md:px-16 space-y-10 bg-gray-50">
           {authors.map((author, index) => (
-            <AuthorCard key={author.name} author={author} reverse={index % 2 === 1} />
+            <AuthorCard
+              key={author.name}
+              author={author}
+              reverse={index % 2 === 1}
+            />
           ))}
         </section>
-
         <Footer />
       </div>
     </>
   );
 }
-

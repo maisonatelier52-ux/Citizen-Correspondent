@@ -1,8 +1,7 @@
-// components/ArticleWithSidebar.tsx
 "use client";
 
 import React, { useEffect, useState } from "react";
-import ArticleDetail, { ArticleDetailProps, ArticleContentBlock } from "./ArticleDetail";
+import ArticleDetail from "./ArticleDetail";
 import Sidebar, { SidebarItem } from "./Sidebar";
 import SubscribeNewsletter from "./SubscribeNewsletter";
 
@@ -29,9 +28,6 @@ interface ArticleWithSidebarProps {
   };
   sidebarItems: SidebarItem[];
   sidebarHeading?: string;
-  onBookmarkToggle?: () => void;
-  onShare?: (platform: string) => void;
-  onSidebarBookmarkToggle?: (index: number) => void;
   className?: string;
 
 }
@@ -40,9 +36,6 @@ const ArticleWithSidebar: React.FC<ArticleWithSidebarProps> = ({
   article,
   sidebarItems,
   sidebarHeading,
-  onBookmarkToggle,
-  onShare,
-  onSidebarBookmarkToggle,
   className = "",
 }) => {
   const [isSticky, setIsSticky] = useState(false);
@@ -68,7 +61,7 @@ const ArticleWithSidebar: React.FC<ArticleWithSidebarProps> = ({
 
   return (
     <div className={`max-w-360 mx-auto px-3 md:px-16 grid grid-cols-1 lg:grid-cols-4 gap-12 py-4 bg-white ${className}`}>
-      {/* Left: Article Detail + End Marker */}
+      {/* Left: Article Detail */}
       <div className="lg:col-span-3">
         <ArticleDetail
           slug={article.slug}
@@ -80,7 +73,6 @@ const ArticleWithSidebar: React.FC<ArticleWithSidebarProps> = ({
           date={article.date}
           sub={article.sub}
           topic={article.topic}
-          onShare={onShare}
         />
         <div className="article-end h-1"></div>
       </div>
@@ -89,13 +81,11 @@ const ArticleWithSidebar: React.FC<ArticleWithSidebarProps> = ({
       <aside className="lg:col-span-1">
         {/* Subscribe Newsletter - Not Sticky */}
         <SubscribeNewsletter />
-        
         {/* Latest News Sidebar - Sticky */}
         <div className={`sidebar-sticky ${isSticky ? "sticky top-5 z-10" : ""}`}>
           <Sidebar
             items={sidebarItems}
             heading={sidebarHeading}
-            onBookmarkToggle={onSidebarBookmarkToggle}
           />
         </div>
       </aside>

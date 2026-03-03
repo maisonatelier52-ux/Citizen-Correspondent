@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -15,6 +14,7 @@ interface HeroLeadProps {
   image: string;
   slug: string;
   sub: Sub[];
+  topic:string;
   categoryColorClass?: string;
 }
 
@@ -26,7 +26,8 @@ const HeroLead: React.FC<HeroLeadProps> = ({
   image,
   slug,
   sub,
-  categoryColorClass = "text-orange-600",
+  topic,
+  categoryColorClass = "text-red-600",
 }) => {
 
   const linkHref = `/${category.toLocaleLowerCase()}/${slug}`
@@ -45,11 +46,11 @@ const HeroLead: React.FC<HeroLeadProps> = ({
         <div className="flex flex-col-reverse lg:flex-row gap-3 items-start">
           <div className="flex-2 space-y-3 mt-0">
             <div className="flex items-center gap-2 text-sm font-semibold text-gray-700">
-              <span className="w-3 h-3 rounded-full bg-orange-600" />
-              <span className={categoryColorClass}>{category}</span>
+              <span className="w-3 h-3 rounded-full bg-red-600" />
+              <span className='text-red-600'>{topic}</span>
             </div>
             <Wrapper>
-              <h1 className="text-[30px] sm:text-4xl lg:text-[35px] font-bold leading-none md:leading-[1.1] text-gray-900 hover:text-orange-600 transition-colors">
+              <h1 className="text-[30px] sm:text-4xl lg:text-[35px] font-bold leading-none md:leading-[1.1] text-gray-900  transition-colors">
                 {title}</h1>
             </Wrapper>
             <p className="text-sm text-gray-700 leading-tight mb-1">{shortdescription}</p>

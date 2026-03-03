@@ -1,4 +1,3 @@
-// components/LeaveAComment.tsx
 "use client";
 import React, { useState } from "react";
 import { MessageSquare } from "lucide-react";
@@ -132,9 +131,9 @@ const LeaveAComment: React.FC = () => {
         {/* Header */}
         <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
           <MessageSquare className="w-5 h-5 sm:w-6 sm:h-6 text-gray-900" />
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">
+          <p className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">
             Leave a Comment
-          </h2>
+          </p>
         </div>
 
         {/* Privacy Notice */}

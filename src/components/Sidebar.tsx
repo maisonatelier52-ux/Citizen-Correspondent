@@ -1,8 +1,5 @@
-// components/Sidebar.tsx
-"use client";
 import React from "react";
 import Link from "next/link";
-import { Bookmark, Dot } from "lucide-react";
 
 export interface SidebarItem {
   category: string;
@@ -10,16 +7,19 @@ export interface SidebarItem {
   date: string;
   image: string;
   slug: string;
+  topic: string;
   href?: string;
 }
 
 interface SidebarProps {
   items: SidebarItem[];
   heading?: string;
-  onBookmarkToggle?: (index: number) => void;
 }
 
-const Sidebar: React.FC<SidebarProps> = ({ items, heading, onBookmarkToggle }) => {
+const Sidebar: React.FC<SidebarProps> = ({
+  items,
+  heading,
+}) => {
   return (
     <aside className="bg-white">
       {heading && (
@@ -32,27 +32,30 @@ const Sidebar: React.FC<SidebarProps> = ({ items, heading, onBookmarkToggle }) =
         {items.map((item, index) => (
           <div key={index} className="flex gap-4 md:py-4 py-2">
             <div className="flex-1 space-y-1">
-              <div className="flex items-center gap-2 text-sm text-gray-600">
-                <span>{item.category}</span>
-
+              <div className="flex items-center gap-2 text-[11px] text-gray-600">
+                <span>{item.topic}</span>
               </div>
               <Link
-                href={item.href || (item.slug ? `/${item.category}/${item.slug}` : "#")}
+                href={
+                  item.href ||
+                  (item.slug ? `/${item.category}/${item.slug}` : "#")
+                }
                 className="block"
                 title={item.title}
               >
-                <h2 className="text-sm font-semibold text-gray-900 leading-snug hover:text-orange-600 transition-colors">
+                <h3 className="text-sm font-semibold text-gray-900 leading-snug  transition-colors">
                   {item.title}
-                </h2>
+                </h3>
               </Link>
               <div className="flex items-center gap-3 text-[11px] text-gray-600">
                 <span>{item.date}</span>
-               
               </div>
             </div>
-
             <Link
-              href={item.href || (item.slug ? `/${item.category}/${item.slug}` : "#")}
+              href={
+                item.href ||
+                (item.slug ? `/${item.category}/${item.slug}` : "#")
+              }
               className="w-30 h-25 shrink-0 overflow-hidden border border-gray-200 block"
               title={item.title}
             >
@@ -73,4 +76,3 @@ const Sidebar: React.FC<SidebarProps> = ({ items, heading, onBookmarkToggle }) =
 };
 
 export default Sidebar;
-

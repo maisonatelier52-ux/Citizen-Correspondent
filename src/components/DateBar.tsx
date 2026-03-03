@@ -1,4 +1,3 @@
-// components/DateBar.tsx
 "use client";
 import React, { useState, useEffect } from "react";
 
@@ -15,24 +14,23 @@ const DateBar: React.FC<DateBarProps> = ({
   const [currentDate, setCurrentDate] = useState("");
 
   useEffect(() => {
-    // Format current date
     const formatDate = () => {
       const today = new Date();
-      const options: Intl.DateTimeFormatOptions = { 
-        weekday: 'long', 
-        day: 'numeric', 
-        month: 'short', 
-        year: 'numeric' 
+      const options: Intl.DateTimeFormatOptions = {
+        weekday: "long",
+        day: "numeric",
+        month: "short",
+        year: "numeric",
       };
-      return today.toLocaleDateString('en-US', options);
+      return today.toLocaleDateString("en-US", options);
     };
-    
+
     setCurrentDate(formatDate());
   }, []);
 
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsVisible(window.innerWidth >= 768); // md breakpoint is 768px
+      setIsVisible(window.innerWidth >= 768);
     };
 
     checkScreenSize();
@@ -45,13 +43,8 @@ const DateBar: React.FC<DateBarProps> = ({
   return (
     <div className="bg-black text-white">
       <div className="max-w-360 mx-auto px-16 flex items-center justify-between flex-wrap gap-4">
-        {/* Left: Date */}
         <div className="text-xs font-medium">{currentDate}</div>
-
-        {/* Center: Message */}
         <div className="text-xs text-end flex-1 hidden md:block">{message}</div>
-
-        {/* Right: Explore Now Button */}
         <button className="bg-red-900  text-white px-4 py-1.5 text-xs transition-colors duration-200">
           {buttonText}
         </button>
@@ -61,4 +54,3 @@ const DateBar: React.FC<DateBarProps> = ({
 };
 
 export default DateBar;
-

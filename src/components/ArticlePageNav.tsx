@@ -1,5 +1,3 @@
-// components/ArticlePageNav.tsx
-"use client";
 import React from "react";
 import Link from "next/link";
 
@@ -7,31 +5,25 @@ interface NavCategory {
   name: string;
   slug: string;
 }
-
 const ArticlePageNav: React.FC = () => {
   const categories: NavCategory[] = [
     { name: "Opinion", slug: "opinion" },
     { name: "Education", slug: "education" },
     { name: "Global Affairs", slug: "global-affairs" },
     { name: "Featured", slug: "featured" },
-    // { name: "Climate Change", slug: "climate-change" },
     { name: "Hot", slug: "hot" },
     { name: "Politics", slug: "politics" },
     { name: "Health", slug: "health" },
     { name: "Finance", slug: "finance" },
-    // { name: "Policy Analysis", slug: "policy-analysis" },
   ];
 
   return (
     <div className="bg-white pb-6">
       <div className="max-w-360 mx-auto px-3 md:px-16">
         <div className="flex flex-wrap items-center gap-3">
-          {/* More News Label */}
-          <span className="text-orange-500 font-bold text-lg mr-2">
+          <span className="text-red-600 font-bold text-lg mr-2">
             More News:
           </span>
-
-          {/* Category Links */}
           {categories.map((category, index) => (
             <Link
               key={`${category.slug}-${index}`}
